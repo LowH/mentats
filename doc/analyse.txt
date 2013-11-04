@@ -1,0 +1,30 @@
+
+
+* Analyse économique / marché pour chaque utilisateur, en euros
+** taux de croissance utilisateurs
+
+* Etat des plateformes e-learning ?
+
+* Typologie utilisateurs
+** Editeur
+*** API editeur
+*** Creation de contenus type
+
+* Pour chaque utilisateur déterminer les besoins
+** écrire des phrases
+*** aider <utilisateur> à <action> <objet>
+*** permettre à <utilisateur> de <action> <objet>
+** pour chaque phrases, se demander : pourquoi ?
+*** éliminer les besoins relatifs au produit imaginé pour ne garder que les besoins fonctionnels
+
+* lister / brainstormer, _puis_ unifier
+
+* aspect temps
+** tous les ... pendant ...
+** raisonable
+
+
+------
+
+modèles de voiture
+la voiture pour tout le monde, la voiture pliable

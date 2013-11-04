@@ -1,0 +1,2 @@
+
+(define-route "/" (index/))
