@@ -1,4 +1,4 @@
-var competences = {};
+var competences;
 
 $(function() {
 
@@ -18,6 +18,12 @@ $(function() {
       });
     });
 
+    var nodes = $('svg g.element[model-id]');
+    nodes.click(function() {
+      nodes.removeClass('focus');
+      this.addClass('focus');
+    });
+
     // Links must be added after all the elements. This is because when the links
     // are added to the graph, link source/target
     // elements must be in the graph already.
@@ -30,8 +36,8 @@ $(function() {
       source: { id: parentElementLabel },
       target: { id: childElementLabel },
       attrs: { '.marker-target': { d: 'M 4 0 L 0 2 L 4 4 z' },
-	       '.line': { 'stroke-width': '2px' } },
-      smooth: true
+	       '.line': { 'stroke-width': '3px' } },
+      smooth: false
     });
   }
 
@@ -42,11 +48,11 @@ $(function() {
     // Compute width/height of the rectangle based on the number
     // of lines in the label and the letter size. 0.6 * letterSize is
     // an approximation of the monospace font letter width.
-    var letterSize = 12;
-    var width = 2 * (letterSize * (0.6 * maxLineLength + 1));
-    var height = 2 * ((node.label.split('\n').length + 1) * letterSize);
+    var letterSize = 14;
+    var width = (letterSize * (0.6 * (maxLineLength + 2)));
+    var height = ((node.label.split('\n').length + 1) * letterSize);
 
-    return new joint.shapes.basic.Rect({
+    return new joint.shapes.mentats.Competence({
       id: node.label,
       size: { width: width, height: height },
       attrs: {
@@ -63,32 +69,62 @@ $(function() {
   // Main.
   // -----
 
-  var graph = new joint.dia.Graph;
+  competences = {
+    graph: new joint.dia.Graph,
+
+    add: function () {
+      this.graph.addCell(makeElement({label: '?'}));
+    },
+
+    load: function (name) {
+      var self = this;
+      $.ajax({ url: '/graphs/' + name + '.json',
+	       cache: false,
+	       error: function (xhr, status, err) {
+		 console.log(status);
+		 console.log(err);
+		 console.log(xhr);
+	       },
+	       success: function(data, status, xhr) {
+		 //console.log(data, status, xhr);
+		 var cells = buildGraph(data);
+		 self.graph.resetCells(cells);
+		 joint.layout.DirectedGraph.layout(self.graph, { setLinkVertices: false });
+	       }});
+    }
+  };
+
+  competences.load('demo');
 
   var paper = new joint.dia.Paper({
-
     el: $('#paper'),
     width: 900,
     height: 600,
-    gridSize: 1,
-    model: graph
+    gridSize: 10,
+    model: competences.graph
+  });
+  console.log(paper);
+  paper.on({
+    'cell:pointerdown': function(cell) {
+      console.log('cell:pointerdown', cell);
+      if (cell.model.get('type') != "mentats.Competence") return;
+      var previous = paper.model.get('focusedCell');
+      if (previous == cell) return;
+      if (previous) previous.trigger('competence:blur');
+      cell.trigger('competence:focus');
+      paper.model.set('focusedCell', cell);
+    },
+    'competence:focus': function (cell) {
+      console.log('competence:focus', cell);
+      cell.$el.addClass('focused');
+    },
+    'competence:blur': function (cell) {
+      console.log('competence:blur', cell);
+      cell.$el.removeClass('focused');
+    }
   });
 
   // Just give the viewport a little padding.
   V(paper.viewport).translate(20, 20);
-
-  competences.load = function (name) {
-    $.ajax({ url: '/graphs/' + name + '.json',
-	     complete: function (xhr, status) {
-	       console.log('complete', xhr, status);
-	     },
-	     success: function(data, status, xhr) {
-	       console.log('success', data, status, xhr);
-	       var cells = buildGraph(data);
-	       graph.resetCells(cells);
-	       joint.layout.DirectedGraph.layout(graph, { setLinkVertices: false });
-	     }});
-  }
-  competences.load('demo');
 
 });

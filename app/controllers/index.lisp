@@ -1,3 +1,7 @@
 (defun index/ ()
-    (render-view :index :index :html
-		 `(:title "mentats")))
+  (template-let ((title "mentats")
+		 (favicon nil)
+		 (meta nil)
+		 (nav nil)
+		 (nav-right nil))
+    (render-view :index :index :html)))

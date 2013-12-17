@@ -1,3 +1,3 @@
 (setf *port* 4207)
 (setf *layout* :main)
-(setf *debug* '(:assets :js))
+(setf *debug* '(:request :reply :assets :js))

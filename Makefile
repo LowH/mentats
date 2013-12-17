@@ -1,4 +1,4 @@
-##  Makefile for $NAME
+##  Makefile for mentats
 ##  Usage: make (|build|clean|install|load|targets)
 
 APP = mentats
