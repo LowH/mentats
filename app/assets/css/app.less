@@ -2,3 +2,19 @@
 @import "font-awesome";
 @import "font-awesome/ie7";
 @import "joint";
+
+svg .mentats.graph.Element {
+	cursor: auto;
+	&.focused {
+		rect {
+			cursor: move;
+		}
+		rect.focus {
+			stroke: #fd0;
+			stroke-width: 12;
+		}
+		text.name {
+			cursor: text;
+		}
+	}
+}
