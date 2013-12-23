@@ -1,0 +1,10 @@
+[
+  { "label": "a", "status": 1, "pred": [] },
+  { "label": "b", "pred": ["a"] },
+  { "label": "c", "pred": ["a"] },
+  { "label": "d", "pred": ["c"] },
+  { "label": "e", "pred": ["c"] },
+  { "label": "f", "pred": ["b"] },
+  { "label": "g", "pred": ["b"] },
+  { "label": "h", "pred": ["f", "d"] }
+]

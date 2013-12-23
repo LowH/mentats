@@ -3,31 +3,29 @@ var mentats = { graph: {} };
 
 mentats.graph.Element = joint.dia.Element.extend({
 
-  markup: '<rect class="box focus"/><rect class="box"/><text class="name"/>',
+  markup: ('<rect class="focus box" rx="5" ry="5"/>' +
+	   '<rect class="main box" rx="5" ry="5"/>' +
+	   '<text class="name"/>' +
+	   '<circle class="focus link btn" r="4" />'),
 
   defaults: joint.util.deepSupplement({
     type: 'mentats.graph.Element',
     attrs: {
-      'rect.box': { fill: '#FFFFFF',
-		    stroke: 'black',
-		    'stroke-width': 1,
-		    width: 1,
-		    height: 1,
-		    rx: 5,
-		    ry: 5 },
-      'rect.focus': { fill: '',
-		      stroke: '',
-		      'stroke-width': 0 },
-      'text.name': { 'font-size': 14,
-		     text: '',
-		     'ref-x': .5,
-		     'ref-y': .54,
-		     ref: 'rect.box',
-		     'y-alignment': 'middle',
-		     'x-alignment': 'middle',
-		     fill: 'black',
-		     stroke: '',
-		     'font-family': 'monospace' }
+      '.main.box': { fill: '#FFFFFF',
+		     stroke: 'black',
+		     'stroke-width': 1 },
+      '.box': { width: 1, height: 1 },
+      'circle.btn': { 'ref-dx': -5,
+		      'ref-dy': -5,
+		      'y-alignment': 1,
+		      'x-alignment': 1 },
+      '.name': { 'font-size': 14,
+		 text: '',
+		 'ref-x': .5,
+		 'ref-y': .54,
+		 ref: '.main.box',
+		 'y-alignment': 'middle',
+		 'x-alignment': 'middle' }
     }
   }, joint.dia.Element.prototype.defaults),
 
@@ -41,8 +39,6 @@ mentats.graph.Element = joint.dia.Element.extend({
   },
 
   typeset: function () {
-    console.log('typeset', arguments);
-
     var text = this.get('name');
     var maxLineLength = _.max(text.split('\n'), function(l) { return l.length; }).length;
     var letterSize = 14;
@@ -51,9 +47,8 @@ mentats.graph.Element = joint.dia.Element.extend({
     var height = Math.ceil(((text.split('\n').length + 1) * letterSize) / snap) * snap;
 
     var attrs = joint.util.deepSupplement({
-      'text.name': { text: text },
-      'rect.box': { width: width,
-		    height: height }
+      '.box': { width: width, height: height },
+      '.name': { text: text },
     }, this.get('attrs'));
 
     this.set({
@@ -73,7 +68,7 @@ mentats.graph.Element = joint.dia.Element.extend({
 mentats.graph.ElementView = joint.dia.ElementView.extend({
 
   initialize: function () {
-    _.bindAll(this, 'promptName');
+    _.bindAll(this, 'focus', 'blur', 'promptName', 'linkBtn');
     joint.dia.ElementView.prototype.initialize.apply(this, arguments);
     this.on({
       'focus': this.focus,
@@ -83,21 +78,30 @@ mentats.graph.ElementView = joint.dia.ElementView.extend({
   
   focus: function () {
     this.el.classList.add('focused');
-    console.log(this.$el.find('text.name'));
-    this.$el.find('text.name').on('mousedown', this.promptName);
+    //this.$el.find('text.name').on('mousedown', this.promptName);
+    this.$el.find('.link.btn').on('mousedown', this.linkBtn);
   },
 
   blur: function () {
     this.el.classList.remove('focused');
-    this.$el.find('text.name').off('mousedown', this.promptName);
+    //this.$el.find('text.name').off('mousedown', this.promptName);
+    this.$el.find('.link.btn').off('mousedown', this.linkBtn);
   },
 
   promptName: function (evt) {
-    console.log('view.promptName', arguments);
     this.model.promptName();
     evt.preventDefault();
     evt.stopPropagation();
-  }
+  },
+
+  linkBtn: function (evt) {
+    // FIXME: remove multiple links to same target
+    var localPoint = this.paper.snapToGrid({ x: evt.clientX, y: evt.clientY });
+    var linkView = this.paper.spawnLink({ id: this.model.id }, localPoint);
+    evt.target = linkView.$('.marker-arrowhead[end="target"]')[0];
+    this.paper.pointerdown(evt);
+    evt.stopPropagation();
+  },
 
 });
 
@@ -105,7 +109,7 @@ mentats.graph.Link = joint.dia.Link.extend({
 
   defaults: joint.util.deepSupplement({
     type: 'mentats.graph.Link',
-    attrs: { '.marker-target': { d: 'M 4 0 L 0 2 L 4 4 z' },
+    attrs: { '.marker-target': { d: 'M 8 -2 L 0 2 L 8 6 z' },
 	     '.line': { 'stroke-width': '3px' } },
     smooth: false
   }, joint.dia.Link.prototype.defaults)
@@ -113,6 +117,31 @@ mentats.graph.Link = joint.dia.Link.extend({
 });
 
 mentats.graph.LinkView = joint.dia.LinkView.extend({
+
+  options: joint.util.deepSupplement({
+    shortLinkLength: 50
+  }, joint.dia.LinkView.prototype.options),
+
+  /*
+  initialize: function() {
+    joint.dia.LinkView.prototype.initialize.apply(this, arguments);
+    console.log('linkview.initialize', this.$el.data('view'));
+  },
+
+  pointerdown: function(evt) {
+    console.log('linkview.pointerdown', arguments);
+    joint.dia.LinkView.prototype.pointerdown.apply(this, arguments);
+  },
+  */
+
+  pointerup: function(evt) {
+    joint.dia.LinkView.prototype.pointerup.apply(this, arguments);
+    var target = this.model.get('target');
+    if (!target.id || this.model.get('source').id === target.id) {
+      console.log('remove', this.model);
+      this.model.remove();
+    }
+  }
 
 });
 
@@ -126,6 +155,23 @@ mentats.graph.Editor = joint.dia.Paper.extend({
     elementView: mentats.graph.ElementView,
     linkView: mentats.graph.LinkView,
   },
+
+    findView: function(el) {
+      console.log('findView', el);
+        var $el = this.$(el);
+
+        if ($el.length === 0 || $el[0] === this.el) {
+            return undefined;
+        }
+
+        if ($el.data('view')) {
+
+	  console.log('findView ->', $el.data('view'));
+            return $el.data('view');
+        }
+
+        return this.findView($el.parent());
+    },
 
   initialize: function () {
     joint.dia.Paper.prototype.initialize.apply(this, arguments);
@@ -156,17 +202,52 @@ mentats.graph.Editor = joint.dia.Paper.extend({
     evt = this.normalizeEvent(evt);
     var view = this.findView(evt.target);
     var localPoint = this.snapToGrid({ x: evt.clientX, y: evt.clientY });
+    console.log('editor.pointerdown', evt.target, view);
     if (view) {
       this.sourceView = view;
       if (view.model.get('type') == 'mentats.graph.Element')
 	this.focus(view);
-      else
-	this.focus(null);
       view.pointerdown(evt, localPoint.x, localPoint.y);
     } else {
       this.focus(null);
       this.trigger('blank:pointerdown', evt, localPoint.x, localPoint.y);
     }
+  },
+
+  pointermove: function(evt) {
+    evt.preventDefault();
+    evt = this.normalizeEvent(evt);
+    if (this.sourceView) {
+      var localPoint = this.snapToGrid({ x: evt.clientX, y: evt.clientY });
+      this.sourceView.pointermove(evt, localPoint.x, localPoint.y);
+    }
+  },
+
+  spawnElement: function () {
+    var e = new mentats.graph.Element({
+      name: "",
+      position: { x: 10, y: 10 }
+    });
+    e.promptName();
+    this.model.addCell(e);
+    this.focus(e);
+    return e;
+  },
+
+  spawnLink: function (source, target) {
+    var l = new mentats.graph.Link({ source: source, target: target });
+    return this.addCell(l);
+  },
+
+  addCell: function(cell) {
+    var view = this.createViewForModel(cell);
+    V(this.viewport).append(view.el);
+    view.paper = this;
+    view.render();
+    // This is the only way to prevent image dragging in Firefox that works.
+    // Setting -moz-user-select: none, draggable="false" attribute or user-drag: none didn't help.
+    $(view.el).find('image').on('dragstart', function() { return false; });
+    return view;
   }
 
 });
@@ -224,15 +305,9 @@ $(function() {
   competences = {
     graph: new joint.dia.Graph,
 
-    add: function () {
-      var e = makeElement({label: '?'});
-      this.graph.addCell(e);
-      this.editor.focus(e);
-    },
-
     load: function (name) {
       var self = this;
-      $.ajax({ url: '/graphs/' + name + '.json',
+      $.ajax({ url: '/assets/' + name + '.json',
 	       cache: false,
 	       error: function (xhr, status, err) {
 		 console.log(status);

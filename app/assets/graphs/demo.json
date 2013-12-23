@@ -1,0 +1,7 @@
+[
+  { "label": "Math CP", "status": 1, "pred": [] },
+  { "label": "Chiffres", "pred": ["Math CP"] },
+  { "label": "Complément à 10", "pred": ["Chiffres"] },
+  { "label": "Addition", "pred": ["Chiffres"] },
+  { "label": "Soustraction", "pred": ["Chiffres", "Addition"] }
+]
