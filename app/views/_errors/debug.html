@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>«= (quote-html $status) »</title>
+</head>
+<body>
+  <h1>«= (quote-html $status) »</h1>
+  <h2>«= (quote-html $message) »</h2>
+  <code>«= (quote-html (str $condition)) »</code>
+  <ol>
+    « (dolist (frame (reverse $backtrace)) »
+    <hr/>
+    <li>
+      <span class="func">«= (quote-html (format nil "~S" (trivial-backtrace::frame-func frame))) »</span>
+      <span class="source-filename">«= (quote-html (format nil "~S" (trivial-backtrace::frame-source-filename frame))) »</span>
+      <span class="source-pos">«= (quote-html (format nil "~S" (trivial-backtrace::frame-source-pos frame))) »</span>
+      <table class="vars">
+	« (dolist (var (trivial-backtrace::frame-vars frame)) »
+	<tr>
+	  <td valign="top">«= (quote-html (format nil "~S" (trivial-backtrace::var-name var))) »</td>
+	  <td valign="top">«= (quote-html (format nil "~S" (trivial-backtrace::var-value var))) »</td>
+	</tr>
+	« ) »
+      </table>
+    </li>
+    « ) »
+  </ol>
+</body>
+</html>

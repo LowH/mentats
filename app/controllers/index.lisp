@@ -1,7 +1,0 @@
-(defun index/ ()
-  (template-let ((title "mentats")
-		 (favicon nil)
-		 (meta nil)
-		 (nav nil)
-		 (nav-right nil))
-    (render-view :index :index :html)))

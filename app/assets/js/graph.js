@@ -9,6 +9,7 @@ mentats.graph.Element = joint.dia.Element.extend({
 	   '<circle class="focus link btn" r="4" />'),
 
   defaults: joint.util.deepSupplement({
+    name: '',
     type: 'mentats.graph.Element',
     attrs: {
       '.main.box': { fill: '#FFFFFF',
@@ -17,6 +18,7 @@ mentats.graph.Element = joint.dia.Element.extend({
       '.box': { width: 1, height: 1 },
       'circle.btn': { 'ref-dx': -5,
 		      'ref-dy': -5,
+		      ref: '.main.box',
 		      'y-alignment': 1,
 		      'x-alignment': 1 },
       '.name': { 'font-size': 14,
@@ -61,6 +63,10 @@ mentats.graph.Element = joint.dia.Element.extend({
     var n = prompt("Nouveau nom :", this.get('name'));
     if (n)
       this.set({name: n});
+  },
+
+  url: function () {
+    return "/competence/id:" + this.id;
   }
 
 });
@@ -112,7 +118,11 @@ mentats.graph.Link = joint.dia.Link.extend({
     attrs: { '.marker-target': { d: 'M 8 -2 L 0 2 L 8 6 z' },
 	     '.line': { 'stroke-width': '3px' } },
     smooth: false
-  }, joint.dia.Link.prototype.defaults)
+  }, joint.dia.Link.prototype.defaults),
+
+  url: function () {
+    return "/competence/link:" + this.id;
+  }
 
 });
 
@@ -145,6 +155,27 @@ mentats.graph.LinkView = joint.dia.LinkView.extend({
 
 });
 
+mentats.graph.Graph = joint.dia.Graph.extend({
+
+  fromJSON: function (json) {
+    console.log(json.cells);
+    json.cells = _.map(json.cells, function (c) {
+      var element = new mentats.graph.Element ();
+      element.id = c.id;
+      delete c.id;
+      element.attr(c);
+      return element;
+    });
+    console.log(json.cells);
+    joint.dia.Graph.prototype.fromJSON.apply(this, [json]);
+  },
+
+  url: function () {
+    return "/competence/id:" + this.id;
+  }
+
+});
+
 mentats.graph.Editor = joint.dia.Paper.extend({
 
   options: {
@@ -155,7 +186,7 @@ mentats.graph.Editor = joint.dia.Paper.extend({
     elementView: mentats.graph.ElementView,
     linkView: mentats.graph.LinkView,
   },
-
+  /*
     findView: function(el) {
       console.log('findView', el);
         var $el = this.$(el);
@@ -172,11 +203,13 @@ mentats.graph.Editor = joint.dia.Paper.extend({
 
         return this.findView($el.parent());
     },
-
+  */
   initialize: function () {
+    _.bindAll(this, 'keypress', 'spawnElement');
     joint.dia.Paper.prototype.initialize.apply(this, arguments);
     this.on({ 'resize': this.resizeViewBox });
     this.resizeViewBox();
+    $(window).on('keypress', this.keypress);
   },
 
   resizeViewBox: function () {
@@ -190,11 +223,27 @@ mentats.graph.Editor = joint.dia.Paper.extend({
       view = this.findViewByModel(view);
     if (this.focused == view)
       return;
-    if (this.focused)
+    if (this.focused) {
       this.focused.trigger('blur');
+      if (this.options.toolbar && !view)
+	this.options.toolbar.find('.btn.renameElement').addClass('disabled');
+    }
+    else if (this.options.toolbar && view)
+      this.options.toolbar.find('.btn.renameElement').removeClass('disabled');
     this.focused = view;
     if (view)
       view.trigger('focus');
+  },
+
+  keypress: function(evt) {
+    console.log('keypress', evt);
+    if (evt.keyCode == 13) { // Enter
+      var view = this.focused;
+      if (view) {
+	evt.preventDefault();
+	view.model.promptName();
+      }
+    }
   },
 
   pointerdown: function(evt) {
@@ -229,9 +278,14 @@ mentats.graph.Editor = joint.dia.Paper.extend({
       position: { x: 10, y: 10 }
     });
     e.promptName();
-    this.model.addCell(e);
+    this.model.get('cells').add(e);
     this.focus(e);
     return e;
+  },
+
+  renameElement: function () {
+    if (this.focused)
+      this.focused.promptName();
   },
 
   spawnLink: function (source, target) {
@@ -256,98 +310,31 @@ mentats.graph.Editor = joint.dia.Paper.extend({
 ////  TEST
 
 
-var competences;
-
 $(function() {
-
-  // Helpers.
-  // --------
-
-  function buildGraph(g) {
-
-    var elements = [];
-    var links = [];
-
-    _.each(g, function(node) {
-      var e = makeElement(node);
-      elements.push(e);
-      _.each(node.pred, function(predecessor) {
-        links.push(makeLink(predecessor, e.id));
-      });
+  $('.mentats.graph.editor').each(function() {
+    console.log(this);
+    var $editor = $(this);
+    var $toolbar = $editor.find('.toolbar');
+    var graph = new mentats.graph.Graph();
+    var paper = new mentats.graph.Editor({
+      el: $editor.find('.paper')[0],
+      width: 900,
+      height: 600,
+      model: graph,
+      toolbar: $toolbar
     });
-
-    // Links must be added after all the elements. This is because when the links
-    // are added to the graph, link source/target
-    // elements must be in the graph already.
-    return elements.concat(links);
-  }
-
-  function makeElement(node) {
-
-    return new mentats.graph.Element({
-      id: node.id || node.label,
-      name: node.label,
-      position: { x: 10, y: 10 }
+    $toolbar.find('.btn.addElement').click(function (evt) {
+      evt.preventDefault();
+      paper.spawnElement();
     });
-  }
-
-  function makeLink(parentId, childId) {
-
-    return new mentats.graph.Link({
-      source: { id: parentId },
-      target: { id: childId }
+    $toolbar.find('.btn.renameElement').click(function (evt) {
+      evt.preventDefault();
+      paper.renameElement();
     });
-  }
-
-  // Main.
-  // -----
-
-  competences = {
-    graph: new joint.dia.Graph,
-
-    load: function (name) {
-      var self = this;
-      $.ajax({ url: '/assets/' + name + '.json',
-	       cache: false,
-	       error: function (xhr, status, err) {
-		 console.log(status);
-		 console.log(err);
-		 console.log(xhr);
-	       },
-	       success: function(data, status, xhr) {
-		 //console.log(data, status, xhr);
-		 var cells = buildGraph(data);
-		 self.graph.resetCells(cells);
-		 joint.layout.DirectedGraph.layout(self.graph,
-						   { setLinkVertices: false });
-	       }});
-    }
-  };
-
-  competences.load('demo');
-
-  competences.editor = new mentats.graph.Editor({
-    el: $('#paper'),
-    width: 900,
-    height: 600,
-    model: competences.graph
+    $toolbar.find('.btn.save').click(function (evt) {
+      evt.preventDefault();
+      graph.sync('update', graph);
+    });
+    graph.fromJSON($editor.data('competence'));
   });
-/*
-  competences.editor.on({
-    'all': function(evt, data) {
-      console.log(evt, data);
-    }
-  });
-*/
-  $(window).keypress(function (evt) {
-    console.log('keypress', evt);
-    if (evt.keyCode == 13) { // Enter
-      var view = competences.editor.focused;
-      if (view) {
-	evt.preventDefault();
-	view.model.promptName();
-      }
-    }
-  });
-
 });
