@@ -101,11 +101,8 @@ mentats.graph.ElementView = joint.dia.ElementView.extend({
   },
 
   linkBtn: function (evt) {
-    // FIXME: remove multiple links to same target
-    var localPoint = this.paper.snapToGrid({ x: evt.clientX, y: evt.clientY });
-    var linkView = this.paper.spawnLink({ id: this.model.id }, localPoint);
-    evt.target = linkView.$('.marker-arrowhead[end="target"]')[0];
-    this.paper.pointerdown(evt);
+    this.paper.spawnLink({ id: this.model.id }, evt);
+    evt.preventDefault();
     evt.stopPropagation();
   },
 
@@ -148,27 +145,64 @@ mentats.graph.LinkView = joint.dia.LinkView.extend({
     joint.dia.LinkView.prototype.pointerup.apply(this, arguments);
     var target = this.model.get('target');
     if (!target.id || this.model.get('source').id === target.id) {
-      console.log('remove', this.model);
+      //console.log('remove', this.model);
       this.model.remove();
     }
+    // FIXME: remove multiple links to same target
   }
+
+});
+
+mentats.graph.GraphCells = joint.dia.GraphCells.extend({
+
+    model: function(attrs, options) {
+      //console.log('model', attrs, options);
+      if (attrs.type === 'mentats.graph.Link') {
+        return new mentats.graph.Link(attrs, options);
+      }
+
+      var module = attrs.type.split('.')[0];
+      var entity = attrs.type.split('.')[1];
+      if (joint.shapes[module] && joint.shapes[module][entity]) {
+        return new joint.shapes[module][entity](attrs, options);
+      }
+      return new mentats.graph.Element(attrs, options);
+    }
 
 });
 
 mentats.graph.Graph = joint.dia.Graph.extend({
 
-  fromJSON: function (json) {
-    console.log(json.cells);
-    json.cells = _.map(json.cells, function (c) {
-      var element = new mentats.graph.Element ();
-      element.id = c.id;
-      delete c.id;
-      element.attr(c);
-      return element;
-    });
-    console.log(json.cells);
-    joint.dia.Graph.prototype.fromJSON.apply(this, [json]);
+  initialize: function() {
+    var cells = new mentats.graph.GraphCells;
+    this.set('cells', cells);
+    cells.on('all', this.trigger, this);
+    cells.on('remove', this.removeCell, this);
   },
+
+  /*
+  fromJSON: function (json) {
+    //console.log(json.cells);
+    var options = {add: true, merge: false, remove: false};
+    var cells = [];
+    _.each(json.cells, function (attrs) {
+      //console.log('attrs', attrs);
+      var model;
+      if (attrs.type == 'mentats.graph.Element')
+	model = new mentats.graph.Element(attrs, options);
+      else if (attrs.type == 'mentats.graph.Link')
+	model = new mentats.graph.Link(attrs, options);
+      if (!model._validate(attrs, options)) {
+        console.log('invalid', attrs);
+      } else {
+	cells.push(model);
+      }
+    });
+    //console.log(cells);
+    json.cells = cells;
+    return joint.dia.Graph.prototype.fromJSON.apply(this, [json]);
+  },
+  */
 
   url: function () {
     return "/competence/id:" + this.id;
@@ -205,7 +239,7 @@ mentats.graph.Editor = joint.dia.Paper.extend({
     },
   */
   initialize: function () {
-    _.bindAll(this, 'keypress', 'spawnElement');
+    _.bindAll(this, 'keypress', 'spawnElement', 'spawnLink');
     joint.dia.Paper.prototype.initialize.apply(this, arguments);
     this.on({ 'resize': this.resizeViewBox });
     this.resizeViewBox();
@@ -236,7 +270,7 @@ mentats.graph.Editor = joint.dia.Paper.extend({
   },
 
   keypress: function(evt) {
-    console.log('keypress', evt);
+    //console.log('keypress', evt);
     if (evt.keyCode == 13) { // Enter
       var view = this.focused;
       if (view) {
@@ -251,7 +285,7 @@ mentats.graph.Editor = joint.dia.Paper.extend({
     evt = this.normalizeEvent(evt);
     var view = this.findView(evt.target);
     var localPoint = this.snapToGrid({ x: evt.clientX, y: evt.clientY });
-    console.log('editor.pointerdown', evt.target, view);
+    //console.log('editor.pointerdown', evt.target, view);
     if (view) {
       this.sourceView = view;
       if (view.model.get('type') == 'mentats.graph.Element')
@@ -289,8 +323,13 @@ mentats.graph.Editor = joint.dia.Paper.extend({
   },
 
   spawnLink: function (source, target) {
+    if (target.clientX) {
+      var localPoint = this.snapToGrid({ x: target.clientX, y: target.clientY });
+      localPoint.event = target;
+      target = localPoint;
+    }
     var l = new mentats.graph.Link({ source: source, target: target });
-    return this.addCell(l);
+    this.model.get('cells').add(l);
   },
 
   addCell: function(cell) {
@@ -298,6 +337,15 @@ mentats.graph.Editor = joint.dia.Paper.extend({
     V(this.viewport).append(view.el);
     view.paper = this;
     view.render();
+
+    //console.log('addCell', cell);
+    var target = cell.get('target');
+    if (target && target.event) {
+      //console.log('TARGET', target);
+      target.event.target = view.$('.marker-arrowhead[end="target"]')[0];
+      this.pointerdown(target.event);
+    }
+
     // This is the only way to prevent image dragging in Firefox that works.
     // Setting -moz-user-select: none, draggable="false" attribute or user-drag: none didn't help.
     $(view.el).find('image').on('dragstart', function() { return false; });
@@ -312,7 +360,7 @@ mentats.graph.Editor = joint.dia.Paper.extend({
 
 $(function() {
   $('.mentats.graph.editor').each(function() {
-    console.log(this);
+    //console.log(this);
     var $editor = $(this);
     var $toolbar = $editor.find('.toolbar');
     var graph = new mentats.graph.Graph();
