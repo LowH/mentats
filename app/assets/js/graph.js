@@ -269,14 +269,66 @@ mentats.graph.Editor = joint.dia.Paper.extend({
       view.trigger('focus');
   },
 
-  keypress: function(evt) {
-    //console.log('keypress', evt);
-    if (evt.keyCode == 13) { // Enter
-      var view = this.focused;
-      if (view) {
-	evt.preventDefault();
-	view.model.promptName();
+  moveFocus: function (direction) {
+    var o = this.focused.model.get('position');
+    var m;
+    switch (direction) {
+    case 0: m = function (c) { return {a:(o.y - c.y), b:(c.x - o.x)}}; break;
+    case 1: m = function (c) { return {a:(c.x - o.x), b:(c.y - o.y)}}; break;
+    case 2: m = function (c) { return {a:(c.y - o.y), b:(c.x - o.x)}}; break;
+    case 3: m = function (c) { return {a:(o.x - c.x), b:(c.y - o.y)}}; break;
+    }
+    var s = null;
+    var sd = 1000000000;
+    this.model.get('cells').each(function (cell) {
+      if (cell == this.focused) return;
+      var c = cell.get('position');
+      if (!c) return;
+      var d = m(c);
+      if (d.a > 0 &&
+	  Math.abs(d.b)/4 <= d.a &&
+	  d.a * d.a + d.b * d.b < sd) {
+	s = cell;
+	sd = d.a * d.a + d.b * d.b;
       }
+    });
+    if (s)
+      this.focus(s);
+  },
+
+  keypress: function(evt) {
+    console.log('keypress', evt);
+    switch (evt.keyCode || String.fromCharCode(evt.charCode)) {
+    case 13: // Enter
+      if (this.focused) {
+	evt.preventDefault();
+	this.focused.model.promptName();
+      }
+      break;
+    case 'h': case 37: // ←
+      if (this.focused) {
+	evt.preventDefault();
+	this.moveFocus(3);
+      }
+      break;
+    case 'j': case 40: // ↓
+      if (this.focused) {
+	evt.preventDefault();
+	this.moveFocus(2);
+      }
+      break;
+    case 'k': case 38: // ↑
+      if (this.focused) {
+	evt.preventDefault();
+	this.moveFocus(0);
+      }
+      break;
+    case 'l': case 39: // →
+      if (this.focused) {
+	evt.preventDefault();
+	this.moveFocus(1);
+      }
+      break;
     }
   },
 
