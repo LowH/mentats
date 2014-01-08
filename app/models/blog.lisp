@@ -1,0 +1,27 @@
+
+
+(defun read-article (path)
+  (with-input-from-file/utf-8 (stream path)
+    (let ((obj (json:make-object nil nil)))
+      (labels ((eat ()
+		 (let ((line (the string (read-line stream nil ""))))
+		   (cond ((emptyp line) (setf (slot-value obj :body)
+					      (read-into-string stream)))
+			 (t (cl-ppcre:register-groups-bind (name val)
+				("^([A-Za-z0-9]+):\\s+(.*)\\s*$" line)
+			      (when-let ((name (find-symbol (string-upcase name)
+							    :keyword)))
+				(setf (slot-value obj name) val)))
+			    (eat))))))
+	(eat))
+      obj)))
+
+(defun get-article (property article)
+  (when (slot-boundp article property)
+    (slot-value article property)))
+
+(defun blog.articles ()
+  (loop :for path :in (directory "data/blog/*.txt")
+     :for pathname = (pathname path)
+     :unless (char= #\. (char (pathname-name pathname) 0))
+     :collect (read-article pathname)))

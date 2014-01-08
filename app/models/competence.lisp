@@ -123,3 +123,11 @@
 		      (:parent . ,(competence.parent c))
 		      (:cells . ,(or (competence.cells c) #())))
 		    nil))
+
+
+;; graphe domaines de competences
+
+;; les graphes de competence, un par domaine
+
+
+;;domaine : nombres de 0 à 9

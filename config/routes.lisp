@@ -9,4 +9,7 @@
 (define-route "/competence/name:{name}" `(/competence :name ,(uri-var 'name)))
 (define-route "/competence/id:{id}" `(/competence :id ,(uri-var 'id)))
 
+(define-route "/blog" `(/blog))
+(define-route "/blog{/article}" `(/blog ,(uri-var 'article)))
+
 (define-assets-route "/assets{/name}{.ext}" "public/assets{/name}{.ext}")

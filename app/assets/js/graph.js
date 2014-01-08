@@ -296,6 +296,33 @@ mentats.graph.Editor = joint.dia.Paper.extend({
       this.focus(s);
   },
 
+  spawnLinked: function (direction) {
+    var s = this.focused.model;
+    var e = this.spawnElement();
+
+    var p = s.get('position');
+    switch (direction) {
+    case 0: p.y = p.y - 30 - e.get('size').height; break;
+    case 1: p.x = p.x + 30 + s.get('size').width; break;
+    case 2: p.y = p.y + 30 + s.get('size').height; break;
+    case 3: p.x = p.x - 30 - e.get('size').width; break;
+    }
+    e.set({position: p});
+    var l = new mentats.graph.Link({source: s, target: e });
+    this.model.get('cells').add(l);
+  },
+
+  moveFocused: function (direction) {
+    var p = this.focused.model.get('position');
+    switch (direction) {
+    case 0: p.y = p.y - 5; break;
+    case 1: p.x = p.x + 5; break;
+    case 2: p.y = p.y + 5; break;
+    case 3: p.x = p.x - 5; break;
+    }
+    this.focused.model.set({position: p});
+  },
+
   keypress: function(evt) {
     console.log('keypress', evt);
     switch (evt.keyCode || String.fromCharCode(evt.charCode)) {
@@ -308,25 +335,40 @@ mentats.graph.Editor = joint.dia.Paper.extend({
     case 'h': case 37: // ←
       if (this.focused) {
 	evt.preventDefault();
-	this.moveFocus(3);
+	var d = 3;
+	if (evt.ctrlKey) {
+	  this.spawnLinked(3);
+	} else {
+	  if (evt.shiftKey) {
+	    this.moveFocused(3);
+	  } else {
+	    this.moveFocus(3);
+	  }
+	}
       }
       break;
     case 'j': case 40: // ↓
       if (this.focused) {
 	evt.preventDefault();
-	this.moveFocus(2);
+	if      (evt.ctrlKey)  { this.spawnLinked(2); }
+	else if (evt.shiftKey) { this.moveFocused(2); }
+	else                   { this.moveFocus(2); }
       }
       break;
     case 'k': case 38: // ↑
       if (this.focused) {
 	evt.preventDefault();
-	this.moveFocus(0);
+	if      (evt.ctrlKey)  { this.spawnLinked(0); }
+	else if (evt.shiftKey) { this.moveFocused(0); }
+	else                   { this.moveFocus(0); }
       }
       break;
     case 'l': case 39: // →
       if (this.focused) {
 	evt.preventDefault();
-	this.moveFocus(1);
+	if      (evt.ctrlKey)  { this.spawnLinked(1); }
+	else if (evt.shiftKey) { this.moveFocused(1); }
+	else                   { this.moveFocus(1); }
       }
       break;
     }

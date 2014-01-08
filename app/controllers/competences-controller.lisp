@@ -54,7 +54,7 @@
 (defun /competence (&key name id)
   (let ((c (cond (id (or (find-competence id)
 			 (http-error "404 Not found" "No competence with ID ~S" id)))
-		 (name (or (find-competence-by-name name)
+		 (name (or (find-competence-by-name name) ; FIXME
 			   (http-error "404 Not found" "No competence named ~S" name))))))
     (format t "COMPETENCE ~S" c)
     (template-let ((title "Mentats")

@@ -1,0 +1,68 @@
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+	opacity: 0.5;
+}
+
+.mentats.graph.editor {
+	.toolbar {
+		width: 37px;
+		padding: 0;
+		float: left;
+		.btn {
+			font-size: 24px;
+			height: 32px;
+			line-height: 31px;
+			margin: 0 5px 5px 0;
+			padding: 0;
+			width: 32px;
+		}
+	}
+	.paper {
+		background: #fff;
+		margin-left: 37px;
+		border: solid 1px #ccc;
+		border-radius: 3px 3px 3px 3px;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	}
+}
+
+svg .mentats.graph.Element {
+	cursor: auto;
+	.focus.box {
+		fill: none;
+		stroke: none;
+		stroke-width: 0;
+	}
+	.name {
+		font-size: 14;
+		font-family: monospace;
+	}
+	circle.btn {
+		fill: none;
+		stroke: none;
+		stroke-width: 0;
+	}
+	&.focused {
+		.focus.box {
+			stroke: #fd0;
+			stroke-width: 8;
+		}
+		.main.box {
+			cursor: move;
+		}
+		.name {
+			/*cursor: text;*/
+		}
+		circle.btn {
+			fill:   #333;
+			stroke: none;
+			cursor: auto;
+		}
+	}
+}
+svg .link {
+	.marker-arrowhead[end="source"],
+	.link-tools .tool-remove * {
+			stroke: none;
+			fill: none;
+	}
+}

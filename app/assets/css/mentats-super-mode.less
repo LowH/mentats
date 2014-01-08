@@ -1,0 +1,62 @@
+
+@black: #800903;
+@gray-darker:            lighten(@black, 13.5%); // #222
+@gray-dark:              lighten(@black, 20%);   // #333
+@gray:                   lighten(@black, 33.5%); // #555
+@gray-light:             lighten(@black, 60%);   // #999
+@gray-lighter:           lighten(@black, 93.5%); // #eee
+
+@brand-primary: #f03010;
+@body-bg: #ffd04d;
+
+@navbar-default-bg: #48d059;
+@navbar-default-link-color: #fe9;
+
+.btn {
+	box-shadow: 0 0 6px #ddf;
+}
+.form-control:focus {
+	box-shadow: 0 0 6px #ccf;
+	border: solid 1px #ccf;
+}
+.navbar {
+	border-radius: 0;
+	color: @brand-primary;
+	&.navbar-default {
+		box-shadow: 0 8px 0 #fe8;
+	}
+	.nav {
+		font-weight: 600;
+		font-size: 22px;
+	}
+	.navbar-brand {
+		text-shadow: -1px 1px 2px #000010;
+		color: inherit;
+		font-size: 42px;
+		line-height: 48px;
+		padding: 0 15px;
+		font-weight: 900;
+		text-transform: uppercase;
+		text-decoration: blink;
+	}
+}
+
+/*
+*:focus {
+	outline: 0 !important;
+}
+
+button, input, select, textarea {
+	vertical-align: top;
+}
+
+.btn {
+	font-size: 19px;
+	padding-left: 4px;
+	padding-right: 4px;
+	min-width: 32px;
+}
+.competence form.update {
+	display: inline-block;
+}
+*/

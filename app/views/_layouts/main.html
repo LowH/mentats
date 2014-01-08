@@ -13,17 +13,17 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>«= $title »</title>
+    <title>«=(h $title)»</title>
     « (dolist (meta $meta)
         (destructuring-bind (name content) meta »
-    <meta name="«= name »" content="«= content »"/>
+    <meta name="«=(h name)»" content="«=(h content)»"/>
     « )) »
     « (when $favicon »
-    <link rel="shortcut icon" href="«= $favicon »"/>
+    <link rel="shortcut icon" href="«=(h $favicon)»"/>
     « ) »
     « (print-asset-tag "app.css") »
   </head>
-  <body class="«= $controller » «= $controller »--«= $action »">
+  <body class="«=(h $controller)» «=(h $controller)»--«=(h $action)»">
 
     <nav class="navbar navbar-default" role="navigation">
       <div class="navbar-header">
