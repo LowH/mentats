@@ -4,7 +4,8 @@
     (render-view :blog :index '.html)))
 
 (defun /blog#show (article)
-  (render-view :blog :show '.html))
+  (template-let (article)
+    (render-view :blog :show '.html)))
 
 (defun /blog (&optional article)
   (when article

@@ -1,0 +1,8 @@
+<div class="article" data-article="«=(h (j article))»">
+  <div class="header">
+    <h2 class="title">«=(h (get-article :title article))»</h2>
+    <small class="author">«=(h (get-article :author article))»</small><br/>
+    <small class="date">«=(h (get-article :date article))»</small>
+  </div>
+  <div class="body">« (print-markdown (get-article :body article)) »</div>
+</div>
