@@ -59,7 +59,7 @@
 		   (write-char #\] out))
 	     tags)
 	(write-char #\Space out))
-      (write-string (article-slug article) out))))
+      (write-string (blog-article-slug article) out))))
 
 (defun blog-article-uri (article)
   (multiple-value-bind (s m h day month year)
@@ -88,7 +88,8 @@
 		   ".md")))
     (format t "~&WILD ~S~%" wild)
     (loop
-       :for path :in (directory (merge-pathnames wild *blog-path*))
+       :for path :in (sort (directory (merge-pathnames wild *blog-path*))
+			   #'string> :key #'namestring)
        :for pathname = (pathname path)
        :for name = (pathname-name pathname)
        :with i = -1

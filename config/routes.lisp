@@ -21,5 +21,7 @@
 (define-route "/session/login" '(/session/login))
 (define-route "/session/logout" '(/session/logout))
 
+(define-route "/user/{login}" `(/user ,(uri-var 'login)))
+
 (define-route "/" `(/wiki "index"))
 (define-route "{/slug}" `(/wiki ,(uri-var 'slug)))

@@ -21,6 +21,7 @@
   (redirect-to `(/wiki "index")))
 
 (defun /wiki (&optional (slug (when (eq *method* :GET) "index")))
+  (print `(session-data ,(session-data (session))))
   (let ((article (when slug
 		   (or (wiki-read-article slug)
 		       (http-error "404 Not found"

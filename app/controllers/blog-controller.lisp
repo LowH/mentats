@@ -11,14 +11,14 @@
   (with-form-data (article)
     (let ((a (read-article (the string article))))
       (write-blog.article a)
-      (redirect-to (article-uri a)))))
+      (redirect-to (blog-article-uri a)))))
 
 (defun /blog#update (a)
   (with-form-data (article)
     (let ((new (read-article (the string article))))
       (delete-blog.article a)
       (write-blog.article new)
-      (redirect-to (article-uri new)))))
+      (redirect-to (blog-article-uri new)))))
 
 (defun /blog#delete (a)
   (delete-blog.article a)

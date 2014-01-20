@@ -2,14 +2,14 @@
   <ul class="nav navbar-nav">
     <li><a href="/competence">Compétences</a></li>
     <li><a href="/blog">Blog</a></li>
+  </ul>
+  <ul class="nav navbar-nav navbar-right">
+    « (cond ((current-user) »
+    <li><a href="«=(h (uri-for `(/user ,(current-user))))»">«=(h (current-user))»</a></li>
+    <li><a href="«=(h (uri-for `(/session/logout)))»">Déconnexion</a></li>
+    « ) (t »
     <li>
-      « (cond (*user* »
-      <a href="«=(h (uri-for `(/user/profile ,*user*)))»">«=(h (user-login *user*))»</a>
-      « ) (t »
       <form method="POST" action="/session/login" class="navbar-form navbar-left" role="login">
-	<input type="hidden" name="hmac" value="«=(h $login-hmac)»"/>
-	<input type="hidden" name="date" value="«=(h $login-date)»"/>
-	<input type="hidden" name="nonce" value="«=(h $login-nonce)»"/>
 	<div class="form-group">
 	  <input type="text" name="l" class="form-control input-sm" placeholder="login"/>
 	</div>
@@ -18,9 +18,7 @@
 	</div>
 	<button type="submit" class="btn btn-default input-sm"><i class="icon-ok"></i></button>
       </form>
-      « )) »
     </li>
-  </ul>
-  <ul class="nav navbar-nav navbar-right">
+    « )) »
   </ul>
 </div>
