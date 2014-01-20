@@ -16,9 +16,9 @@
 
 (defun wiki-read-article (name)
   (let ((path (the pathname (wiki-path name))))
-    (unless (probe-file path)
-      (http-error "404 Not found" "Wiki article not found ~S" name))
-    (set-attributes (read-article path) :name name)))
+    (when (probe-file path)
+      (when-let ((article (read-article path)))
+	(set-attributes article :name name)))))
 
 (defun wiki-write-article (article)
   (write-article (the pathname (wiki-path article)) article))

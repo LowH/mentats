@@ -24,8 +24,13 @@
   (print `(session-data ,(session-data (session))))
   (let ((article (when slug
 		   (or (wiki-read-article slug)
-		       (http-error "404 Not found"
-				   "Blog article not found.")))))
+		       (set-attributes {}
+				       :name slug
+				       :title (cl-ppcre:scan-to-strings
+					       "[^/]+" slug)
+				       :author (current-user)
+				       :date (get-universal-time)
+				       :body "")))))
     (ecase *method*
       ((:GET)    (/wiki#show article))
       ((:POST)   (/wiki#create))
