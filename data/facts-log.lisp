@@ -72,3 +72,13 @@
 (LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
                                #(LOWH-FACTS.ANON::COMPETENCE-0003
                                  COMPETENCE.NAME "graphe"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0003
+                                 COMPETENCE.NAME "graphe"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0003
+                                 COMPETENCE.NAME "graphe"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0003
+                                 COMPETENCE.CELLS
+                                 #({"name":"zefzer","id":"9e881c3c-8136-41e5-b152-7c3b95b09ab2","type":"mentats.graph.Element","size":{"width":70,"height":30},"position":{"x":10,"y":10},"attrs":{".box":{"width":70,"height":30},".name":{"text":"zefzer"}}})))
