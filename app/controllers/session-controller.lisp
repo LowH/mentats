@@ -16,6 +16,7 @@
       (http-error "403 Forbidden" "Login/pass not found"))
     (session-reset)
     (setf (current-user) l)
+    (session)
     (redirect-to (or (and redirect-to
 			  (char= #\/ (char redirect-to 0))
 			  redirect-to)
