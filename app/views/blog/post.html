@@ -1,0 +1,17 @@
+<h2>Nouvel article</h2>
+<div class="article" id="post_new">
+  <form action="«=(h (uri-for `(/blog)))»" method="POST">
+    <div class="edit new">
+      <label class="sr-only" for="article">Nouvel article</label>
+      <textarea name="article" class="form-control" rows="15">Title: Nouvel article
+Date: «=(h (rw-ut:write-time-string (get-universal-time)))»
+Author: 
+
+Hello world !</textarea>
+      <button type="submit" class="btn btn-success form-control"
+	      title="Valider">
+	<i class="icon-ok"></i>
+      </button>
+    </div>
+  </form>
+</div>

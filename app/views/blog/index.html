@@ -1,3 +1,5 @@
 « (dolist (article $articles)
     (template-let (article)
       (render-view :blog :show '.html))) »
+<hr/>
+« (render-view :blog :post '.html) »

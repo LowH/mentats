@@ -20,6 +20,8 @@
 
 (defun /competence#create ()
   (with-form-data (competence.name)
+    (when (emptyp competence.name)
+      (http-error "400 Invalid request" "Bad input"))
     (add-competence 'competence.name competence.name)
     (redirect-to `(/competence :name ,competence.name))))
 
@@ -38,6 +40,8 @@
 (defun /competence#update (c)
   (with-form-data (name cells)
     (declare (type string name))
+    (when (emptyp name)
+      (http-error "400 Invalid request" "Bad input"))
     (facts:with-transaction
       (setf (competence.name c) name)
       (setf (competence.cells c) cells))
@@ -57,9 +61,7 @@
 		 (name (or (find-competence-by-name name) ; FIXME
 			   (http-error "404 Not found" "No competence named ~S" name))))))
     (format t "COMPETENCE ~S" c)
-    (template-let ((title "Mentats")
-		   (nav '("<li><a href=\"/competence\">Compétences</a></li>"))
-		   (nav-right '("<li><small>50 µg &nbsp; &nbsp; </small></li>")))
+    (template-let ((title "Mentats"))
       (ecase *method*
 	((:GET)    (if c (/competence#show c) (/competence#index)))
 	((:POST)   (/competence#create))

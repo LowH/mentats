@@ -1,8 +1,26 @@
-.blog {
-	.article {
-		.header {
-			padding-bottom: 1em;
-			background: #f0f0f0;
+.article {
+	.edit {
+		display: none;
+		margin-bottom: 3em;
+		&.new {
+			display: block;
+		}
+		textarea {
+			font-family: @font-family-monospace;
+			color: #000;
 		}
 	}
+	.header {
+		padding-bottom: 1em;
+		background: #fefefe;
+		h2 {
+			margin-bottom: 0;
+		}
+	}
+	.infos {
+		margin: 0.5em 0;
+	}
+}
+.blog--index .article .btn-toolbar {
+	display: none;
 }

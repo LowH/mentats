@@ -4,8 +4,9 @@
 </head>
 <body>
   <h1>«= (quote-html $status) »</h1>
-  <h2>«= (quote-html $message) »</h2>
-  <code>«= (quote-html (str $condition)) »</code>
+  <bold><pre>«= (quote-html $message) »</pre></bold>
+  <hr>
+  <pre>«= (quote-html (str $condition)) »</pre>
   <ol>
     « (dolist (frame (reverse $backtrace)) »
     <hr/>

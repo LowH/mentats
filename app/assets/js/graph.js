@@ -323,6 +323,17 @@ mentats.graph.Editor = joint.dia.Paper.extend({
     this.focused.model.set({position: p});
   },
 
+  removeFocused: function () {
+    var cells = this.model.get('cells');
+    var links = cells.getConnectedLinks(this.focused);
+    console.log('cells', cells, links);
+    _.each(links, function (x) {
+      console.log('rm', arguments);
+      x.remove();
+    });
+    this.focused.remove();
+  },
+
   keypress: function(evt) {
     console.log('keypress', evt);
     switch (evt.keyCode || String.fromCharCode(evt.charCode)) {
@@ -369,6 +380,12 @@ mentats.graph.Editor = joint.dia.Paper.extend({
 	if      (evt.ctrlKey)  { this.spawnLinked(1); }
 	else if (evt.shiftKey) { this.moveFocused(1); }
 	else                   { this.moveFocus(1); }
+      }
+      break;
+    case 'd': case 46: // delete
+      if (this.focused) {
+	evt.preventDefault();
+	this.removeFocused();
       }
       break;
     }

@@ -33,25 +33,14 @@
 	  <span class="icon-bar"></span>
 	  <span class="icon-bar"></span>
 	</button>
-	<a class="navbar-brand" href="#">Mentats</a>
+	<a class="navbar-brand" href="/">Mentats</a>
       </div>
 
-      <div class="collapse navbar-collapse" id="navbar-main-collapse">
-	<ul class="nav navbar-nav">
-	  « (dolist (nav $nav) »
-	  «= nav »
-	  « ) »
-	</ul>
-	<ul class="nav navbar-nav navbar-right">
-	  « (dolist (nav $nav-right) »
-	  «= nav »
-	  « ) »
-      </ul>
+      « (print-template #.(find-template '.html "_nav" "_layouts")) »
     </nav>
 
     <div class="container">
-      « (when $template
-          (print-template $template)) »
+      « (when $template (print-template $template)) »
     </div>
 
     « (print-asset-tag "app.js") »

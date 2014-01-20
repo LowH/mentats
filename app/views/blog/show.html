@@ -1,8 +1,43 @@
-<div class="article" data-article="«=(h (j article))»">
-  <div class="header">
-    <h2 class="title">«=(h (get-article :title article))»</h2>
-    <small class="author">«=(h (get-article :author article))»</small><br/>
-    <small class="date">«=(h (get-article :date article))»</small>
-  </div>
-  <div class="body">« (print-markdown (get-article :body article)) »</div>
+« (let ((id (str "post_"
+                 (article-year $article) #\-
+                 (article-month $article) #\_
+		 (blog-article-slug $article)))) »
+
+<div class="article" id="«=(h id)»" data-article="«=(h (j $article))»">
+  <form action="«=(h (blog-article-uri $article))»" method="POST">
+    <div class="header">
+      <div class="btn-toolbar pull-right">
+	<div class="btn-group btn-group-xs">
+	  <button class="btn btn-default active" role="show" onclick="return article.show(«=(h (j id))»)">Lire</button>
+	  <button class="btn btn-default" role="edit" onclick="return article.edit(«=(h (j id))»)">Éditer</button>
+	  <!-- <button class="btn btn-default" role="preview" onclick="return article.preview(«=(h (j id))»)">Prévisualiser</button> -->
+	</div>
+
+	<div class="btn-group btn-group-xs">
+	  <button class="btn btn-default" role="delete" type="submit" name="_method" value="DELETE" onclick="return article.rm(«=(h (j id))»)">Supprimer</button>
+	</div>
+      </div>
+
+      <h2 class="title"><a href="«=(h (blog-article-uri $article))»">«=(h (article.title $article))»</a></h2>
+
+      <div style="position:relative">
+	<div class="edit">
+	  <label class="sr-only" for="article">Éditer</label>
+	  <textarea name="article" class="form-control" rows="15">«=(h (write-article nil $article))»</textarea>
+	  <button type="submit" class="btn btn-success form-control"
+		  title="Valider" name="_method" value="PUT">
+	    <i class="icon-ok"></i>
+	  </button>
+	</div>
+	<div class="display">
+	  <div class="infos">
+	    <small class="author">«=(h (article.author $article))»</small><br/>
+	    <small class="date">«=(h (rw-ut:write-time-string (article.date $article) "YYYY-MM-DD"))»</small>
+	  </div>
+	  <div class="body">« (print-markdown (article.body $article)) »</div>
+	</div>
+      </div>
+    </div>
+  </form>
 </div>
+« ) »

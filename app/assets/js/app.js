@@ -5,6 +5,7 @@
  *= require joint.nojquery
  *= require joint.layout.DirectedGraph
  *= require graph
+ *= require article
  */
 
 $(function () {
