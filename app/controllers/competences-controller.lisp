@@ -20,10 +20,9 @@
 
 (defun /competence#create ()
   (with-form-data (competence.name)
-    (when (emptyp competence.name)
-      (http-error "400 Invalid request" "Bad input"))
-    (add-competence 'competence.name competence.name)
-    (redirect-to `(/competence :name ,competence.name))))
+    (cond ((emptyp competence.name) (redirect-to `(/competence)))
+	  (:otherwise (add-competence 'competence.name competence.name)
+		      (redirect-to `(/competence :name ,competence.name))))))
 
 (defmacro with-assoc (bindings alist &body body)
   (let ((g!alist (gensym "ALIST-")))
