@@ -24,4 +24,6 @@
   (write-article (the pathname (wiki-path article)) article))
 
 (defun wiki-delete-article (article)
-  (delete-file (wiki-path article)))
+  (let ((path (wiki-path article)))
+    (when (probe-file path)
+      (delete-file path))))
