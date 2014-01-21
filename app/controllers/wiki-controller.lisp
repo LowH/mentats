@@ -27,7 +27,7 @@
 		       (set-attributes {}
 				       :name slug
 				       :title (cl-ppcre:scan-to-strings
-					       "[^/]+" slug)
+					       "[^/]+$" slug)
 				       :author (current-user)
 				       :date (get-universal-time)
 				       :body "")))))
