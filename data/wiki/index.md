@@ -1,15 +1,14 @@
 Name: index
 Title: Tuto
-Author: r00k
 Date: 2014-01-01
+Author: r00k
 
 Bienvenue sur le tutoriel inquisiteur de MENTATS
 ================================================
 
-MENTATS assiste les choix pédagogiques, 
+MENTATS assiste les choix pédagogiques et réduit le temps de préparation des enseignants.
 
-MENTATS améliore l'efficacité, 
+Suivez ce tutoriel pour découvrir cet outil.
 
-MENTATS réduit le temps de préparation.
+[Les modules](/tuto/module)
 
-[Les modules](/modules)
