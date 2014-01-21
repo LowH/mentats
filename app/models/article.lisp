@@ -55,6 +55,7 @@
   (force-output output))
 
 (defmethod write-article ((output pathname) article)
+  (ensure-directories-exist output)
   (with-output-to-file/utf-8 (stream output)
     (write-article stream article)))
 
