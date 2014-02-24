@@ -14,7 +14,8 @@ Définition formelle
 * **Évaluation** Donné par un *enseignant* concernant un *élève* et une *compétence*.
 * **Élève** Un *nom*.
 * **Classe** Une classe est constituée d'élèves. Elle est gérée par un ou plusieurs enseignants.
-* **Module** Identifié par un *auteur*, un *niveau* et une *discipline*.
+* **Module** Identifié par un *auteur*, un *niveau*, une *discipline* et une *version*.
+* **Version** Une *date* ou un *numéro*.
 * **Niveau** Un *nom*.
 * **Discipline** Un *nom*.
 * **Auteur** Un *user*.
@@ -55,16 +56,20 @@ Affiche une collection de *ressources* associées à la *compétence*.
 Actions
 =======
 
-+   Suivre un tutoriel.
-+   S'inscrire : création d'un *user* avec *login*, *mot de passe* et adresse e-mail.
-+   S'identifier avec *login* et *mot de passe*.
-    +   Choisir un *module*.
-        +   Passer en *mode édition*.
-            +   Ajouter un *domaine* à un *module*.
-            +   Enlever un *domaine* à un *module*.
-            +   Ajouter un *domaine* aux prérequis d'un autre *domaine*.
-            +   Sortir du *mode édition*.
-        +   Choisir un *domaine*.
+On veut pouvoir :
+
++   **DONE** Créer et suivre un tutoriel → [Wiki](https://www.pivotaltracker.com/story/show/64193150) 3h
++   S'inscrire : création d'un *user* avec *login*, *mot de passe* et adresse e-mail → [Inscription](https://www.pivotaltracker.com/story/show/64260572) 2h → [Validation par e-mail] 3h
++   S'identifier avec *login* et *mot de passe* → [Login](https://www.pivotaltracker.com/story/show/64044186) 2h → [page Dashboard](https://www.pivotaltracker.com/story/show/64241178) 4h
+    +   Visualiser des *modules* → [Vignette module]() 1h
+    +   Visualiser le nombre d'élèves pour chaque *module* → 1h
+    +   Choisir un *module* → [Page Dashboard # module]() 3h
+        +   Visualiser les statistiques de la *classe* pour chaque *module* → 4h
+        +   Passer en *mode édition* → 2h
+            +   Ajouter/enlever un *domaine* à un *module* → 6h
+            +   Ajouter un *domaine* aux prérequis d'un autre *domaine* → 6h
+            +   Sortir du *mode édition*
+        +   Choisir un *domaine*
             +   Passer en *mode édition*
                 +   Ajouter une *compétence* à un *domaine*.
                 +   Enlever une *compétence* à un *domaine*.
@@ -81,7 +86,12 @@ Actions
                 +   Retourner au *domaine* parent d'une *compétence*.
             +   Retourner au *module* parent d'un *domaine*.
     +   Sélectionner un *élève*.
-        +   Valider une *compétence* pour un *élève* pour une *compétence*.
+        +   Valider une *compétence* pour un *élève*.
         +   Visualise les résultats d'un *élève*.
         +   Retourner à la *classe* d'un *élève*.
-    +   Visualiser les résultats de toute la *classe*.
+    +   Administrer une *classe*.
+    +   Administrer des *modules* → [Admin modules](https://www.pivotaltracker.com/story/show/65252638) 2h
+
+
+ROOK BUMPed on 27012014
+B was here 2014-02-06

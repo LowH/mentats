@@ -1,10 +1,7 @@
-Name: tuto/compétence
+Name: tuto/competence
 Title: Les compétences
-Date: 2014-01-21 17:02:44
-
+Date: 2014-01-21 20:11:51
 
 [<-- Les domaines](/tuto/domaine)
 
-
-[Les ressources](/tuto/ressource)
-
+[<button class="btn btn-primary pull-right" type="button">Les ressources &nbsp;<i class="icon-arrow-right"></i></button>](/tuto/ressource)

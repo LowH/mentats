@@ -14,13 +14,11 @@ Le nom d'un *module* indique toujours :
 
 * une discipline ( Lecture-Compréhension, Géométrie, Histoire, ...)
 
-* l'identifiant de son contributeur
-
-* un numéro de version / date d'édition.
-
 Il contient, pour la discipline indiquée et pour le niveau indiqué, des cartographies de *compétences* organisées par *domaines* et un ensemble de *ressources*.
 
-Pour la suite du tutoriel, nous allons utiliser le *module* : CP - Nombres et Opérations (OlivierTHOMAS) v0.
+Les modules sont présentés avec les identifiants de leurs *propriétaires* : les utilisateurs responsables de leur modération. 
 
+Pour la suite du tutoriel, nous allons utiliser le *module* : CP - Nombres et Opérations
 
-[Les domaines](/tuto/domaine)
+[<button class="btn btn-primary pull-right" type="button"> Domaines, Compétences, Graphes &nbsp;<i class="icon-arrow-left"></i></button>](/tuto/domainecompetencegraphe)
+
