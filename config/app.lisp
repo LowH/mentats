@@ -8,3 +8,5 @@
 
 (define-template-var nav-right
     '())
+
+(require :cl-bcrypt)

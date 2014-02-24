@@ -18,6 +18,7 @@
 						    :month ,(uri-var 'month)
 						    :slug ,(uri-var 'slug)))
 
+(define-route "/inscription" '(/register))
 (define-route "/session/login" '(/session/login))
 (define-route "/session/logout" '(/session/logout))
 

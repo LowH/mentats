@@ -2,13 +2,14 @@
 (defmacro current-user ()
   `(session-get :user))
 
-(trace session session-attach session-get)
-
 (defun /session/login#get ()
   (render-view :session :login '.html))
 
 (defun check-password (login pass)
-  (string= login pass))
+  (facts:with ((?user 'user.login login
+		      'user.password-hash ?hash))
+    (when (string= ?hash (bcrypt pass :salt ?hash))
+      (return t))))
 
 (defun /session/login#post ()
   (with-form-data (l p redirect-to)

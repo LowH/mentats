@@ -1,0 +1,34 @@
+<h2>Compétences</h2>
+
+<div class="competence">
+  <form role="form" class="form-horizontal" method="POST" action="«= (h (uri-for '(/competence))) »">
+    <legend>Créer</legend>
+    <div class="form-group">
+      <label for="competence.name" class="col-sm-2 control-label">Nom</label>
+      <div class="col-sm-9">
+	<input type="text" class="form-control"
+	       name="competence.name"
+	       placeholder="Nom" />
+      </div>
+      <div class="col-sm-1">
+	<button type="submit" class="btn btn-success form-control"
+		title="Créer"
+		name="_method"
+		value="POST"
+		>
+	  <i class="icon-plus"></i>
+	</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="competences">
+  <legend>Index</legend>
+  « (dolist (c $competences)
+      (destructuring-bind (id . name) c »
+  <div class="competence">
+    <a href="«=(h (uri-for `(/competence :name ,name)))»">«= (h name) »</a>
+  </div>
+  « )) »
+</div>
