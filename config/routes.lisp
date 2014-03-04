@@ -18,9 +18,11 @@
 						    :month ,(uri-var 'month)
 						    :slug ,(uri-var 'slug)))
 
-(define-route "/inscription" '(/register))
-(define-route "/session/login" '(/session/login))
-(define-route "/session/logout" '(/session/logout))
+(define-route "/account/register" '(/account/register))
+(define-route "/account/register/ok" '(/account/register/ok))
+(define-route "/account/login" '(/account/login))
+(define-route "/account/logout" '(/account/logout))
+(define-route "/account/reset-password" '(/account/reset-password))
 
 (define-route "/user/{login}" `(/user ,(uri-var 'login)))
 

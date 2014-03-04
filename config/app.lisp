@@ -1,6 +1,7 @@
 (setf *port* 4207)
 (setf *layout* :main)
-(setf *debug* '(:app :assets))
+(setf (debug-p :app) t)
+(setf (debug-p :assets) t)
 
 (define-template-var nav
     '("<li><a href=\"/competence\">Compétences</a></li>"
@@ -10,3 +11,6 @@
     '())
 
 (require :cl-bcrypt)
+(use-package :cl-bcrypt)
+
+(require :gravatar)

@@ -39,6 +39,15 @@
       « (print-template #.(find-template '.html "_nav" "_layouts")) »
     </nav>
 
+    <div id="messages" class="container">
+      « (dolist (alert $alerts) »
+      «   (destructuring-bind (level message) alert »
+      <div class="alert alert-«=(h level)»">
+	«=(h message)»
+      </div>
+      « )) »
+    </div>
+
     <div class="container">
       « (when $template (print-template $template)) »
     </div>

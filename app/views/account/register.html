@@ -1,0 +1,63 @@
+<div class="row">
+
+<div class="col-sm-8">
+
+<h1>Inscription</h1>
+<form id="register" role="form" action="«=(h (uri-for '(/account/register)))»" method="POST">
+  <div class="form-group">
+    <label for="name">Nom</label>
+    <div>
+      <input type="text" class="form-control input-lg" name="name" value="«=(h $name)»"/>
+      <span class="validation"></span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="email">E-mail</label>
+    <div>
+      <input type="email" class="form-control input-lg" name="email" value="«=(h $email)»" required/>
+      <span class="validation"></span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="password">Mot de passe</label>
+    <div>
+      <input type="password" class="form-control input-lg" name="password" required/>
+      <span class="validation"></span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="password-confirmation">Confirmation</label>
+    <div>
+      <input type="password" class="form-control input-lg" name="password-confirmation" data-confirmation-for="password" required/>
+      <span class="validation"></span>
+    </div>
+  </div>
+  <div class="form-group">
+    <div>
+      <button type="submit" class="btn btn-primary form-control input-lg" name="_method" value="POST"><i class="icon-ok"></i> Envoyer</button>
+    </div>
+  </div>
+</form>
+
+</div>
+<div class="col-sm-4">
+
+<div class="panel panel-info">
+  <div class="panel-body">
+    <p>
+      <strong>Bonjour, ... !</strong><br/>
+      Veuillez entrer votre nom, ou un pseudonyme si vous le souhaitez.
+    </p>
+    <p>
+      <strong>Confidentialité</strong><br/>
+      Mentats demande votre adresse électronique uniquement pour la gestion de votre compte et l'envoi de vos identifiants.
+    </p>
+    <p>
+      <strong>La phrase du capitaine</strong><br/>
+      Quelle est la longueur du mot de passe le plus efficace ? Choisissez un mot de passe suffisament long ─ <em>vous pouvez même entrer une phrase</em> ─ avec de la ponctuation, des majuscules et pourquoi pas quelques chiffres.
+    </p>
+  </div>
+</div>
+
+</div>
+</div>

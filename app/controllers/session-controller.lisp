@@ -1,7 +1,4 @@
 
-(defmacro current-user ()
-  `(session-get :user))
-
 (defun /session/login#get ()
   (render-view :session :login '.html))
 

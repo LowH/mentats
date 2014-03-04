@@ -28,7 +28,7 @@
 				       :name slug
 				       :title (cl-ppcre:scan-to-strings
 					       "[^/]+$" slug)
-				       :author (current-user)
+				       :author (user.name (session-user))
 				       :date (get-universal-time)
 				       :body "")))))
     (ecase *method*
