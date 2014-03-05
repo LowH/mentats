@@ -1,0 +1,32 @@
+<div class="article" id="«=(h $id)»" data-article="«=(h (j $article))»">
+  <form action="«=(h (wiki-uri $article))»" method="POST">
+    <div class="header">
+      <div class="btn-toolbar pull-right">
+	<div class="btn-group btn-group-xs">
+	  <button type="button" class="btn btn-default active" role="show">Lire</button>
+	  <button type="button" class="btn btn-default" role="edit">Éditer</button>
+	  <!-- <button type="button" class="btn btn-default" role="preview">Prévisualiser</button> -->
+	</div>
+
+	<div class="btn-group btn-group-xs">
+	  <button class="btn btn-default" role="delete" type="submit" name="_method" value="DELETE">Supprimer</button>
+	</div>
+      </div>
+      <h1 class="title"><a href="«=(h (wiki-uri $article))»">«=(h (article.title $article))»</a></h1>
+    </div>
+    
+    <div style="position:relative">
+      <div class="edit">
+	<label class="sr-only" for="article">Éditer</label>
+	<textarea name="article" class="form-control" rows="15">«=(h (write-article nil $article))»</textarea>
+	<button type="submit" class="btn btn-success form-control"
+		title="Valider" name="_method" value="PUT">
+	  <i class="icon-ok"></i>
+	</button>
+      </div>
+      <div class="display">
+	<div class="body">« (print-markdown (article.body $article)) »</div>
+      </div>
+    </div>
+  </form>
+</div>
