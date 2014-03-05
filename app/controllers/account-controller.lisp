@@ -56,7 +56,7 @@
 			     'user.email email
 			     'user.password-hash (hash-password password))))
 	    ;; FIXME: e-mail confirmation
-	    (redirect-to `(/account/registered)))))))
+	    (redirect-to `(/account/register/ok)))))))
 
 (defun /account/register ()
   (template-let ((alerts nil))
