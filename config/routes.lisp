@@ -14,5 +14,7 @@
 
 (define-route "/user/{login}" `(/user ,(uri-var 'login)))
 
+(define-route "/favicon.ico" (find-route "/assets/favicon.ico"))
+
 (define-route "/" `(/wiki "index"))
 (define-route "{/slug}" `(/wiki ,(uri-var 'slug)))
