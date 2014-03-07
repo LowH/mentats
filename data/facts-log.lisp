@@ -129,3 +129,40 @@
 (LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
                                #(LOWH-FACTS.ANON::COMPETENCE-0006
                                  COMPETENCE.NAME "geometrie C3"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::USER :IS-A USER))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::USER USER.ID "MKixCbL2sSc."))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::USER USER.NAME
+                                 "Olivier THOMAS"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::USER USER.EMAIL
+                                 "olivier@lowh.net"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::USER USER.PASSWORD-HASH
+                                 "$2a$12$MCZnMdD9BOqnU2zGCESySOuRcNU9WkONNRd/RoqxSZ2O.IWfW/.aG"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::USER-0001 :IS-A USER))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::USER-0001 USER.ID
+                                 "PMonc1oGW5c."))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::USER-0001 USER.NAME "Thomas"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::USER-0001 USER.EMAIL
+                                 "thomas@lowh.net"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::USER-0001 USER.PASSWORD-HASH
+                                 "$2a$12$ugk1y4biRg/3XgJIZE.Fhe2abNW7ynXkARi8PFM.rNHrVMQY49RfK"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::USER-0001 USER.ID
+                                 "PSlPyU2SHGA."))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::USER-0001 USER.NAME "test"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::USER-0001 USER.EMAIL
+                                 "billitch@lowh.net"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::USER-0001 USER.PASSWORD-HASH
+                                 "$2a$12$.x1gleoiZbEQYpOeYzwLK.IJXQf1Htkz8/1r30rEmOJZasTzTM1F2"))
