@@ -1,6 +1,6 @@
 Name: tuto/contribuer
-Title: Contribuer
 Date: 2014-02-01 15:31:35
+Title: Contribuer
 
 [<-- Les ressources](/tuto/ressources)
 
@@ -17,4 +17,4 @@ En vous inscrivant, vous pourrez :
 
 [insert un mot sur le droit d'auteur]
 
-[<button class="btn btn-primary pull-right" type="button"> S'inscrire &nbsp;<i class="icon-arrow-left"></i></button>](/inscription)
+[<button class="btn btn-primary pull-right" type="button"> S'inscrire &nbsp;<i class="icon-arrow-left"></i></button>](/account/register)

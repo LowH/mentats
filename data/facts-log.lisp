@@ -166,3 +166,14 @@
 (LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
                                #(LOWH-FACTS.ANON::USER-0001 USER.PASSWORD-HASH
                                  "$2a$12$.x1gleoiZbEQYpOeYzwLK.IJXQf1Htkz8/1r30rEmOJZasTzTM1F2"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::USER-0001 USER.ID
+                                 "IyXTDgMMA5k."))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::USER-0001 USER.NAME "Test"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::USER-0001 USER.EMAIL
+                                 "test@lowh.net"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::USER-0001 USER.PASSWORD-HASH
+                                 "$2a$12$G3z.a2fekz1Z1WBIxmdCwelIz13oWTL9pGV.LF68Zg1a4cjP4AryC"))
