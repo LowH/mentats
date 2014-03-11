@@ -1,7 +1,7 @@
 
 (define-resource competence
   (has-one name)
-  (has-one parent :many children)
+  (has-one parent :having children)
   (has-one cells)
   (has-many requires))
 
@@ -18,11 +18,3 @@
 		      (:parent . ,(competence.parent c))
 		      (:cells . ,(or (competence.cells c) #())))
 		    nil))
-
-
-;; graphe domaines de competences
-
-;; les graphes de competence, un par domaine
-
-
-;;domaine : nombres de 0 à 9

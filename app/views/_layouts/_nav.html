@@ -3,7 +3,7 @@
   </ul>
   <ul class="nav navbar-nav navbar-right">
     « (cond ((session-user) »
-    <li><a href="«=(h (uri-for `(/user ,(user.name (session-user)))))»">
+    <li><a href="«=(h (user-uri (session-user)))»">
       <img class="avatar" src="«=(h (gravatar:image-url (user.email (session-user)) :size 32 :default :mm))»" alt=""/>
       «=(h (user.name (session-user)))»
     </a></li>
@@ -11,6 +11,7 @@
     « ) (t »
     <li>
       <form method="POST" action="«=(h (uri-for '(/account/login)))»" class="navbar-form navbar-left" role="login">
+	<input type="hidden" name="redirect-to" value="«=(h *uri*)»"/>
 	<div class="form-group">
 	  <input type="text" name="l" class="form-control input-sm" placeholder="Adresse e-mail"/>
 	</div>

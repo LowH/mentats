@@ -1,0 +1,13 @@
+<h2>L&gt; Commands</h2>
+
+<ul>
+  « (dolist (command $available-commands) »
+  <li>
+    <h3>«=(h (string-upcase command))»</h3>
+    <p>«=(h (documentation (symbol-function command) t))»</p>
+    <form action="«=(h (uri-for `(/> ,command)))»" method="POST">
+      <button class="btn btn-default" type="submit">(«=(h (string-upcase command))»)</button>
+    </form>
+  </li>
+  « ) »
+</ul>

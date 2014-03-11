@@ -52,11 +52,11 @@
       (if error-fields
 	  (template-let (error-fields name email)
 			(render-view :account :register '.html))
-	  (let ((u (add-user 'user.name name
-			     'user.email email
-			     'user.password-hash (hash-password password))))
-	    ;; FIXME: e-mail confirmation
-	    (redirect-to `(/account/register/ok)))))))
+	  (progn (add-user 'user.name name
+			   'user.email email
+			   'user.password-hash (hash-password password))
+		 ;; FIXME: e-mail confirmation
+		 (redirect-to `(/account/register/ok)))))))
 
 (defun /account/register ()
   (template-let ((alerts nil))

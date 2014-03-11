@@ -6,6 +6,9 @@
   (has-one name)
   (has-one group))
 
+(defun user-uri (user)
+  (uri-for `(/user ,(user.id user))))
+
 (defun hash-password (password)
   (bcrypt password))
 

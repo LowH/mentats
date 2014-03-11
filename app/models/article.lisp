@@ -4,6 +4,51 @@
 (define-accessors article
   :author :body :date :name :tags :title)
 
+;;  filename
+
+(defun article-filename (article)
+  (with-output-to-string (out)
+    (let ((date (article.date article))
+	  (tags (article.tags article)))
+      (when date
+	(write-string (rw-ut:write-time-string (article.date article)
+					       "YYYY-MM-DD? hh?:mm?:ss")
+		      out)
+	(write-char #\Space out))
+      (unless (emptyp tags)
+	(map nil (lambda (tag)
+		   (assert (every (lambda (c) (not (find c "[]"))) tag)
+			   () "Invalid tag name ~S" tag)
+		   (write-char #\[ out)
+		   (write-string tag out)
+		   (write-char #\] out))
+	     tags)
+	(write-char #\Space out))
+      (write-string (blog-article-slug article) out))))
+
+(defun article-filename-attributes (filename)
+  (flet ((parse-tags (tags)
+	   (cl-ppcre:split "\\] *\\[" tags)))
+    (cl-ppcre:register-groups-bind (date
+				    (#'parse-tags tags)
+				    name)
+	("^(?:(-?[1-9][-0-9]+[ T]?[0-9:]*[0-9]) +)?(?:\\[([^\\]]+(?:\\]\\[[^\\]]+)+)\\] +)?([^.]+)\\s*$"
+	 filename)
+      (let ((attributes))
+	(when tags
+	  (setq attributes `(:tags ,tags .,attributes)))
+	(when date
+	  (setq attributes `(:date ,(rw-ut:read-time-string date)
+				   .,attributes)))
+	attributes))))
+
+#+test(list
+(article-filename-attributes "abc")
+(article-filename-attributes "[LOL][OK] abc")
+(article-filename-attributes "2013-01-11 abc")
+(article-filename-attributes "2013-01-11 [LOL][OK] abc")
+)
+
 ;;    read
 
 (defgeneric read-article (input))

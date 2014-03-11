@@ -1,59 +1,9 @@
-<h1>Compétence «=(h $name)»</h1>
-
-<form role="form" class="form-horizontal" method="POST" action="«=(h (uri-for `(/competence :name ,$name)))»">
-  <legend>Modifier</legend>
-  <input type="hidden" name="id" value="«=(h $id)»"/>
-  <div class="form-group">
-    <label for="name" class="col-sm-2 control-label">Renommer</label>
-    <div class="col-sm-9">
-      <input type="text" class="form-control"
-	     name="name"
-	     value="«=(h $name)»" />
-    </div>
-    <div class="col-sm-1">
-      <button type="submit" class="btn btn-success form-control"
-	      title="Valider"
-	      name="_method"
-	      value="PUT">
-	<i class="icon-ok"></i>
-      </button>
-    </div>
+<div class="module thumbnail" style="background:url(«=(h (asset-url (module-image $module)))») no-repeat 0 0;">
+  <div class="caption">
+    <h1><a href="«=(h (module-uri $module))»">«=(h (module.discipline $module))» <span class="badge">«=(h (module.level $module))»</span></a></h1>
+    <p class="owner"><a href="«=(h (user-uri (module.owner $module)))»">«=(h (user.name (module.owner $module)))»</a></p>
+    « (when (module.version $module) »
+    <p class="version">«=(h (module.version $module))»</p>
+    « ) »
   </div>
-  <div class="form-group">
-    <label for="confirm" class="col-sm-2 control-label">Supprimer</label>
-    <div class="col-sm-9">
-      <div class="checkbox">
-	<input type="checkbox" class="form-control" name="confirm"/>
-      Confirmer
-      </div>
-    </div>
-    <div class="col-sm-1">
-      <button type="submit" class="btn btn-danger form-control" title="Delete"
-	      name="_method"
-	      value="DELETE">
-	<i class="icon-trash"></i>
-      </button>
-    </div>
-  </div>
-</form>
-
-« (when $parents »
-<h2>Compétences mères</h2>
-<ul>
-  « (dolist (c $parents)
-      (destructuring-bind (id . name) c »
-  <li><a href="«=(h (uri-for `(/competence :name ,name)))»">«= name »</a></li>
-  « )) »
-</ul>
-« ) »
-
-<h2>Compétences constitutives</h2>
-<div class="mentats graph editor"
-     data-competence="«=(h (j $competence))»">
-  <div class="toolbar">
-    <button class="btn addElement" title="Ajouter"><i class="icon-plus"></i></button>
-    <button class="btn renameElement disabled" title="Renommer"><i class="icon-edit"></i></button>
-    <button class="btn btn-primary save" title="Sauvegarder"><i class="icon-ok"></i></button>
-  </div>
-  <div class="paper"></div>
 </div>
