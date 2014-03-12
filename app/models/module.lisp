@@ -9,4 +9,4 @@
   (uri-for `(/module ,(module.id module))))
 
 (defun module-image (module)
-  "module/default-cover.jpg")
+  "module/default-cover.png")

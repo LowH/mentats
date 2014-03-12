@@ -29,18 +29,28 @@ input.form-control {
 	height: 100%;
 }
 
+a.module.thumbnail:hover {
+	background-color: #f2f0f0;
+}
 .module.thumbnail {
 	display: inline-block;
 	margin: 10px;
 	width: 320px;
 	height: 365px;
 	overflow: hidden;
+	border: solid 1px #666;
+	box-shadow: 1px 2px 5px -2px #000;
+	background: url(/assets/module/default-cover.png) #fffdf0 0 0;
 
 	&, & a {
 		text-decoration: none;
 	}
 	.caption {
 		text-align: center;
+		opacity: 0.6;
+		* {
+			color: #000;
+		}
 		h1,h2,h3,h4,h5,h6,p {
 			margin: 20px;
 		}
@@ -50,8 +60,10 @@ input.form-control {
 		.badge {
 			font-size: inherit;
 			font-weight: inherit;
-			border-radius: 6px 6px 6px 6px;
+			border-radius: 8px 8px 8px 8px;
 			padding: 2px 5px;
+			background: transparent;
+			border: solid 1px #000;
 		}
 		.owner {
 			font-weight: bold;

@@ -1,4 +1,4 @@
-<a class="module thumbnail" href="«=(h (module-uri $module))»" style="background:url(«=(h (asset-url (module-image $module)))») no-repeat 0 0;">
+<a class="module thumbnail" href="«=(h (module-uri $module))»">
   <div class="caption">
     <h3>«=(h (module.discipline $module))» <span class="badge">«=(h (module.level $module))»</span></h3>
     « (when (module.version $module) »
