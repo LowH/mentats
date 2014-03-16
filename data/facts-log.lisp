@@ -181,3 +181,86 @@
 (LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
                                #(LOWH-FACTS.ANON::USER-0003 USER.PASSWORD-HASH
                                  "$2a$12$G3z.a2fekz1Z1WBIxmdCwelIz13oWTL9pGV.LF68Zg1a4cjP4AryC"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE :IS-A MODULE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE MODULE.ID
+                                 "PQZupHNWsbs."))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE MODULE.DISCIPLINE
+                                 "Mathématiques"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE MODULE.LEVEL "CE2"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE MODULE.OWNER
+                                 LOWH-FACTS.ANON::USER-0001))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 :IS-A MODULE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.ID
+                                 "Nj7z0vrcZ4g."))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.DISCIPLINE
+                                 "Maths"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.LEVEL
+                                 "CP"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.OWNER
+                                 LOWH-FACTS.ANON::USER))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0002 :IS-A MODULE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0002 MODULE.ID
+                                 "HonvKxPaxwg."))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0002 MODULE.DISCIPLINE
+                                 "Maths"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0002 MODULE.LEVEL
+                                 "CP"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0002 MODULE.OWNER
+                                 LOWH-FACTS.ANON::USER))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0003 :IS-A MODULE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0003 MODULE.ID
+                                 "ATisAj1th1U."))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0003 MODULE.DISCIPLINE
+                                 "Maths"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0003 MODULE.LEVEL
+                                 "CP"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0003 MODULE.OWNER
+                                 LOWH-FACTS.ANON::USER))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0004 :IS-A MODULE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0004 MODULE.ID
+                                 "CIRJ9Bx3yKA."))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0004 MODULE.DISCIPLINE
+                                 "Plop"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0004 MODULE.LEVEL
+                                 "Hop"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0004 MODULE.OWNER
+                                 LOWH-FACTS.ANON::USER-0001))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0005 :IS-A MODULE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0005 MODULE.ID
+                                 "GmiZug2baCc."))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0005 MODULE.DISCIPLINE
+                                 "Lecture Compréhension"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0005 MODULE.LEVEL
+                                 "CE1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0005 MODULE.OWNER
+                                 LOWH-FACTS.ANON::USER))
