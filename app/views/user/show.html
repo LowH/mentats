@@ -2,7 +2,7 @@
 
 <h3>Modules</h3>
 <div class="row">
-« (do-user.modules (module $user) »
+« (dolist (module $modules) »
 «   (template-let (module) »
 «     (render-view :module :thumbnail '.html) »
 «   ) »
