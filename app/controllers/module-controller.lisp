@@ -7,6 +7,8 @@
     (render-view :module :show '.html)))
 
 (defun /module#edit (module)
+  (unless (eq (session-user) (module.owner module))
+    (http-error "403 Forbidden" "Not authorized"))
   (template-let (module)
     (render-view :module :edit '.html)))
 
@@ -17,13 +19,15 @@
     (redirect-to (module-uri
 		  (add-module 'module.discipline discipline
 			      'module.level level
-			      'module.owner (session-user))))))
+			      'module.owner (session-user))
+		  :edit))))
 
 (defun /module#update (module)
   (unless (eq (session-user) (module.owner module))
     (http-error "403 Forbidden" "Not authorized"))
-  (with-form-data (discipline level)
-    (setf (module.discipline module) discipline
+  (with-form-data (description discipline level)
+    (setf (module.description module) description
+	  (module.discipline module) discipline
 	  (module.level module) level)
     (redirect-to (module-uri module))))
 

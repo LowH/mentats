@@ -477,8 +477,8 @@ $(function() {
     var graph = new mentats.graph.Graph();
     var paper = new mentats.graph.Editor({
       el: $editor.find('.paper')[0],
-      width: 900,
-      height: 600,
+      width: 736,
+      height: 420,
       model: graph,
       toolbar: $toolbar
     });

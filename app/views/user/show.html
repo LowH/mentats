@@ -14,11 +14,11 @@
 <form id="create-module" class="form-inline" role="form" action="«=(h (uri-for '(/module)))»" method="POST">
   <div class="form-group">
     <label for="discipline" class="sr-only">Discipline</label>
-    <input class="form-control" type="text" name="discipline" value="«=(h $discipline)»" placeholder="Discipline"/>
+    <input class="form-control" type="text" name="discipline" value="«=(h $discipline)»" placeholder="Discipline" required/>
   </div>
   <div class="form-group">
     <label for="level" class="sr-only">Niveau</label>
-    <input class="form-control" type="text" name="level" value="«=(h $level)»" placeholder="Niveau"/>
+    <input class="form-control" type="text" name="level" value="«=(h $level)»" placeholder="Niveau" required/>
   </div>
   <button class="btn btn-default" type="submit" name="_method" value="POST"><i class="icon-create"></i> Créer</button>
 </form>

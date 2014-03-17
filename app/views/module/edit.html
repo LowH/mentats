@@ -1,23 +1,54 @@
+<h2>Éditer un module</h2>
+<form role="form" class="form clearfix" action="«=(h (module-uri $module))»" method="POST">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+	<label for="discipline">Discipline</label>
+	<input class="form-control" type="text" name="discipline" value="«=(h (module.discipline $module))»" placeholder="Discipline" required/>
+      </div>
+      <div class="form-group">
+	<label for="level">Niveau</label>
+	<input class="form-control" type="text" name="level" value="«=(h (module.level $module))»" placeholder="Niveau" required/>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+	<label for="description">Description</label>
+	<textarea class="form-control" rows="8" name="description" placeholder="Décrivez le module en quelques lignes">«=(h (module.description $module))»</textarea>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <button type="submit" class="btn btn-primary form-control" name="_method" value="PUT"><i class="icon-ok"></i> Enregistrer</button>
+    </div>
+  </div>
+</form>
+
+<hr/>
+
+<h2>Graphe des domaines</h2>
+<div class="mentats domain graph editor">
+  <div class="toolbar">
+    <button class="btn addElement" title="Ajouter"><i class="icon-plus"></i></button>
+    <button class="btn renameElement disabled" title="Renommer"><i class="icon-edit"></i></button>
+    <button class="btn btn-primary save" title="Sauvegarder"><i class="icon-ok"></i></button>
+  </div>
+  <div class="paper"></div>
+</div>
+
+<hr/>
+
+<h2>Supprimer</h2>
 <div class="row">
   <div class="col-sm-5">
     <form role="form" class="form" action="«=(h (module-uri $module))»" method="POST">
       <div class="form-group">
-	<label for="discipline">Discipline</label>
-	<input class="form-control" type="text" name="discipline" value="«=(h $discipline)»" placeholder="Discipline"/>
+	<p>Attention, toute suppression est irréversible.</p>
+	<div class="checkbox">
+	  <input class="form-control" type="checkbox" name="delete" value="0" required/> Confirmer
+	</div>
       </div>
-      <div class="form-group">
-	<label for="level">Niveau</label>
-	<input class="form-control" type="text" name="level" value="«=(h $level)»" placeholder="Niveau"/>
-      </div>
-      
-      <button type="submit" class="btn btn-primary"><i class="icon-ok"></i> Enregistrer</button>
-    </form>
-    <form role="form" class="form" action="«=(h (module-uri $module))»" method="POST">
-      <label for="delete">Supprimer</label>
-      <div class="checkbox">
-	<input class="form-control" type="checkbox" name="delete" value="0" required/> Confirmer
-      </div>
-      <p>Attention, toute suppression est irréversible !</p>
       <button type="submit" class="btn btn-danger" name="_method" value="DELETE"><i class="icon-trash"></i> Supprimer</button>
     </form>
   </div>

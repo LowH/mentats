@@ -4,7 +4,8 @@
   (has-one level)
   (has-one version)
   (has-one owner :having user.modules)
-  (has-one deleted))
+  (has-one deleted)
+  (has-one description))
 
 (defun module-uri (module &key action)
   (let ((uri (uri-for `(/module ,(module.id module)))))
