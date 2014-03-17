@@ -264,3 +264,55 @@
 (LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
                                #(LOWH-FACTS.ANON::MODULE-0005 MODULE.OWNER
                                  LOWH-FACTS.ANON::USER))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0002 MODULE.DELETED T))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0003 MODULE.DELETED T))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0006 :IS-A MODULE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0006 MODULE.ID
+                                 "BpUbKE25pS0."))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0006 MODULE.DISCIPLINE
+                                 "Maths"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0006 MODULE.LEVEL
+                                 "CE1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0006 MODULE.OWNER
+                                 LOWH-FACTS.ANON::USER))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0007 :IS-A MODULE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0007 MODULE.ID
+                                 "CGdB_PLswSU."))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0007 MODULE.DISCIPLINE
+                                 "Maths"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0007 MODULE.LEVEL
+                                 "CE1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0007 MODULE.OWNER
+                                 LOWH-FACTS.ANON::USER))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0007 MODULE.DELETED T))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0006 MODULE.DELETED T))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0008 :IS-A MODULE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0008 MODULE.ID
+                                 "D6RmThb-pn8."))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0008 MODULE.DISCIPLINE
+                                 "EPS"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0008 MODULE.LEVEL
+                                 "Cycle 1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0008 MODULE.OWNER
+                                 LOWH-FACTS.ANON::USER))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0008 MODULE.DELETED T))
