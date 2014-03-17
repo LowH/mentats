@@ -11,10 +11,12 @@
     </div>
     « (when (eq (session-user) (module.owner $module)) »
     <div class="btn-toolbar">
-      <form class="inline-form" action="«=(h (module-uri $module))»" method="POST">
-	<button type="button" class="btn btn-default"><i class="icon-edit"></i> Éditer</button>
-	<button type="submit" class="btn btn-default" name="_method" value="DELETE"><i class="icon-trash"></i> Supprimer</button>
+      <a href="«=(h (module-uri $module :action :edit))»" class="edit btn btn-default">
+	<i class="icon-edit"></i> Éditer
+      </a>
     </div>
     « ) »
   </div>
 </div>
+
+<h3>Domaines</h3>

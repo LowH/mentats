@@ -17,6 +17,8 @@
 (define-route "/user/{login}" `(/user ,(uri-var 'login)))
 (define-route "/module" `(/module))
 (define-route "/module/{module}" `(/module ,(uri-var 'module)))
+(define-route "/module/{module}/{action}" `(/module ,(uri-var 'module)
+						    ,(uri-var 'action)))
 
 (define-route "/favicon.ico" (find-route "/assets/favicon.ico"))
 

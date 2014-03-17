@@ -1,13 +1,14 @@
 
-(defun module-uri (module)
-  (uri-for `(/module ,(module.id module))))
-
 (defun /module#index ()
   (render-view :module :index '.html))
 
 (defun /module#show (module)
   (template-let (module)
     (render-view :module :show '.html)))
+
+(defun /module#edit (module)
+  (template-let (module)
+    (render-view :module :edit '.html)))
 
 (defun /module#create ()
   (unless (session-user)
@@ -34,12 +35,19 @@
       (facts:add (module 'module.deleted t))))
   (redirect-to (user-uri (session-user))))
 
-(defun /module (&optional module.id)
+(defun /module (&optional module.id action)
   (let ((module (when module.id
 		  (or (find-module module.id)
-		      (http-error "404 Not found" "Module not found.")))))
+		      (http-error "404 Not found" "Module not found."))))
+	(action (when action
+		  (or (find (string-upcase action) '(:edit) :test #'string=)
+		      (http-error "404 Not found" "Action not found.")))))
     (case *method*
-      (:GET (if module (/module#show module) (/module#index)))
+      (:GET (if module
+		(ecase action
+		  ((nil) (/module#show module))
+		  ((:edit) (/module#edit module)))
+		(/module#index)))
       (:POST   (/module#create))
       (:PUT    (/module#update module))
       (:DELETE (/module#delete module)))))

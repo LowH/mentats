@@ -35,7 +35,7 @@
 ;;  Reset password
 
 (defun /account/reset-password (&optional hmac)
-  ())
+  (declare (ignore hmac)))
 
 ;;  Register
 

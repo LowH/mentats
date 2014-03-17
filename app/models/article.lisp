@@ -31,7 +31,7 @@
 	   (cl-ppcre:split "\\] *\\[" tags)))
     (cl-ppcre:register-groups-bind (date
 				    (#'parse-tags tags)
-				    name)
+				    )
 	("^(?:(-?[1-9][-0-9]+[ T]?[0-9:]*[0-9]) +)?(?:\\[([^\\]]+(?:\\]\\[[^\\]]+)+)\\] +)?([^.]+)\\s*$"
 	 filename)
       (let ((attributes))

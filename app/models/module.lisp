@@ -6,8 +6,11 @@
   (has-one owner :having user.modules)
   (has-one deleted))
 
-(defun module-uri (module)
-  (uri-for `(/module ,(module.id module))))
+(defun module-uri (module &key action)
+  (let ((uri (uri-for `(/module ,(module.id module)))))
+    (ecase action
+      ((:edit) (str uri "/edit"))
+      ((nil) uri))))
 
 (defun module-image (module)
   (declare (ignore module))
