@@ -360,3 +360,133 @@
 (LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
                                #(LOWH-FACTS.ANON::MODULE-000B MODULE.OWNER
                                  LOWH-FACTS.ANON::USER))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000B
+                                 MODULE.DESCRIPTION "perma ?"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000B MODULE.DISCIPLINE
+                                 "Equa diff"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000B MODULE.DISCIPLINE
+                                 "Equa diff"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000B MODULE.LEVEL
+                                 "'sup"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000B MODULE.LEVEL
+                                 "'sup"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000B
+                                 MODULE.DESCRIPTION "perma ?"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000B
+                                 MODULE.DESCRIPTION "perma ?
+perma, mais ne s'affiche pas"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000B MODULE.DISCIPLINE
+                                 "Equa diff"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000B MODULE.DISCIPLINE
+                                 "Equa diff"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000B MODULE.LEVEL
+                                 "'sup"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000B MODULE.LEVEL
+                                 "'sup"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000B
+                                 MODULE.DESCRIPTION "perma ?
+perma, mais ne s'affiche pas"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000B
+                                 MODULE.DESCRIPTION "perma ?
+perma, mais ne s'affiche pas"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000B MODULE.DISCIPLINE
+                                 "Equa diff"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000B MODULE.DISCIPLINE
+                                 "Equa diff"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000B MODULE.LEVEL
+                                 "'sup"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000B MODULE.LEVEL
+                                 "'sup"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001
+                                 MODULE.DESCRIPTION
+                                 "Les compétences de ce module sont inspirées des fichiers PEMF Numération-Opérations Cycle 2 Niveaux 2 et 3, qui peuvent servir de supports pour les évaluations individuelles.
+
+Des activités en classe entière influencées par les travaux de Caleb Gattegno sont également présentées et nécessiteront le matériel Cuisenaire.
+
+Il s'agit du premier module développé pour MENTATS."))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.DISCIPLINE
+                                 "Maths"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.DISCIPLINE
+                                 "Maths"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.LEVEL
+                                 "CP"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.LEVEL
+                                 "CP"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001
+                                 MODULE.DESCRIPTION
+                                 "Les compétences de ce module sont inspirées des fichiers PEMF Numération-Opérations Cycle 2 Niveaux 2 et 3, qui peuvent servir de supports pour les évaluations individuelles.
+
+Des activités en classe entière influencées par les travaux de Caleb Gattegno sont également présentées et nécessiteront le matériel Cuisenaire.
+
+Il s'agit du premier module développé pour MENTATS."))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001
+                                 MODULE.DESCRIPTION
+                                 "* Les compétences de ce module sont inspirées des fichiers PEMF Numération-Opérations Cycle 2 Niveaux 2 et 3, qui peuvent servir de supports pour les évaluations individuelles.
+
+* Des activités en classe entière influencées par les travaux de Caleb Gattegno sont également présentées et nécessiteront le matériel Cuisenaire.
+
+* Il s'agit du premier module développé pour MENTATS."))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.DISCIPLINE
+                                 "Maths"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.DISCIPLINE
+                                 "Maths"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.LEVEL
+                                 "CP"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.LEVEL
+                                 "CP"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001
+                                 MODULE.DESCRIPTION
+                                 "* Les compétences de ce module sont inspirées des fichiers PEMF Numération-Opérations Cycle 2 Niveaux 2 et 3, qui peuvent servir de supports pour les évaluations individuelles.
+
+* Des activités en classe entière influencées par les travaux de Caleb Gattegno sont également présentées et nécessiteront le matériel Cuisenaire.
+
+* Il s'agit du premier module développé pour MENTATS."))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001
+                                 MODULE.DESCRIPTION
+                                 "* Compétences inspirées des fichiers PEMF Numération-Opérations Cycle 2 Niveaux 2 et 3, qui peuvent servir de supports pour les évaluations individuelles.
+
+* Présentation d'activités en classe entière influencées par les travaux de Caleb Gattegno et nécessitant le matériel Cuisenaire.
+
+* Premier module développé pour MENTATS."))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.DISCIPLINE
+                                 "Maths"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.DISCIPLINE
+                                 "Maths"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.LEVEL
+                                 "CP"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.LEVEL
+                                 "CP"))
