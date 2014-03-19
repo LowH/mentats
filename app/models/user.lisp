@@ -27,8 +27,17 @@
 	       (check-password password ?hash))
       (return ?user))))
 
-(defmacro session-user ()
-  `(session-get :user))
+(defun session.user (&optional (session (session)))
+  (lowh-facts:first-bound ((session 'session.user ?))))
+
+(defsetf session.user (&optional (session '(session))) (user)
+  (let ((g!session (gensym "SESSION-")))
+    `(when-let ((,g!session ,session))
+       (lowh-facts:with-transaction
+	 (when (facts:bound-p ((,g!session 'session.user ?)))
+	   (error "Session user cannot be set twice."))
+	 (lowh-facts:add (,g!session 'session.user ,user))
+	 ,user))))
 
 #+nil
 (defun list-resource (type &key order-by start (limit 20))
