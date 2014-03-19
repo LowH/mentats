@@ -4,7 +4,7 @@
   <ul class="nav navbar-nav navbar-right">
     « (cond ((session-user) »
     <li><a href="«=(h (user-uri (session-user)))»">
-      <img class="avatar" src="«=(h (gravatar:image-url (user.email (session.user)) :size 32 :default :mm))»" alt=""/>
+      <img class="avatar" src="«=(h (gravatar:image-url (user.email (session-user)) :size 32 :default :mm))»" alt=""/>
       «=(h (user.name (session-user)))»
     </a></li>
     <li><a href="«=(h (uri-for `(/account/logout)))»">Déconnexion</a></li>
