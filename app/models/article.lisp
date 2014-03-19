@@ -6,6 +6,9 @@
 
 ;;  filename
 
+(defun article-slug (article)
+  (to-url (article.title article)))
+
 (defun article-filename (article)
   (with-output-to-string (out)
     (let ((date (article.date article))
@@ -24,7 +27,7 @@
 		   (write-char #\] out))
 	     tags)
 	(write-char #\Space out))
-      (write-string (blog-article-slug article) out))))
+      (write-string (article-slug article) out))))
 
 (defun article-filename-attributes (filename)
   (flet ((parse-tags (tags)
