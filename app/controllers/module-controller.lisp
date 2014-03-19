@@ -20,7 +20,7 @@
 		  (add-module 'module.discipline discipline
 			      'module.level level
 			      'module.owner (session-user))
-		  :edit))))
+		  :action :edit))))
 
 (defun /module#update (module)
   (unless (eq (session-user) (module.owner module))
