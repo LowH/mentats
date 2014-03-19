@@ -38,7 +38,7 @@
 					   :author (user.name (session-user))
 					   :date (get-universal-time)
 					   :body "")
-			 (http-error "404 Not found" "Wiki page not found."))))))
+			   (http-error "404 Not found" "Wiki page not found."))))))
     (ecase *method*
       ((:GET)    (/wiki#show article))
       ((:POST)   (/wiki#create))
