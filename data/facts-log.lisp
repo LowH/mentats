@@ -490,3 +490,31 @@ Il s'agit du premier module développé pour MENTATS."))
 (LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
                                #(LOWH-FACTS.ANON::MODULE-0001 MODULE.LEVEL
                                  "CP"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001
+                                 MODULE.DESCRIPTION
+                                 "* Compétences inspirées des fichiers PEMF Numération-Opérations Cycle 2 Niveaux 2 et 3, qui peuvent servir de supports pour les évaluations individuelles.
+
+* Présentation d'activités en classe entière influencées par les travaux de Caleb Gattegno et nécessitant le matériel Cuisenaire.
+
+* Premier module développé pour MENTATS."))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001
+                                 MODULE.DESCRIPTION
+                                 "* Compétences inspirées des fichiers PEMF Numération-Opérations Cycle 2 Niveaux 2 et 3, qui peuvent servir de supports pour les évaluations individuelles.
+
+* Présentation d'activités en classe entière influencées par les travaux de Caleb Gattegno et nécessitant le matériel Cuisenaire.
+
+* Premier module développé pour MENTATS."))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.DISCIPLINE
+                                 "Maths"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.DISCIPLINE
+                                 "Maths"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.LEVEL
+                                 "CP"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.LEVEL
+                                 "CP"))
