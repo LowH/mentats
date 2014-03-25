@@ -45,6 +45,14 @@
 (defsetf session-user () (user)
   `(setf (session.user (session)) ,user))
 
+(defun check-can (action &optional
+			   (object :all)
+			   (user (or (session-user) :anonymous)))
+  (unless (can:can action object user)
+    (http-error (case user
+		  ((:anonymous) "401 Unauthorized")
+		  (t "403 Forbidden"))
+		"~S cannot ~S ~S." user action object)))
 
 #+nil
 (defun list-resource (type &key order-by start (limit 20))
