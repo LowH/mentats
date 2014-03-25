@@ -1,5 +1,6 @@
 <h2>Connexion</h2>
 <form class="form" role="form" action="«=(h (uri-for `(/account/login)))»" method="POST">
+  <input type="hidden" name="redirect-to" value="«=(h (or $redirect-to *uri*))»"/>
   <div class="form-group">
     <label for="l">Adresse e-mail</label>
     <input class="form-control" type="text" name="l" value="«=(h $l)»"/>

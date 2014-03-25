@@ -7,15 +7,18 @@
 (defun /account/login#post ()
   (with-form-data (l p redirect-to)
     (let ((u (authenticate-user l p)))
-      (unless u
-	(http-error "403 Forbidden" "Account not found"))
-      (session-reset)
-      (setf (session-user) u)
-      (session)
-      (redirect-to (or (and redirect-to
-			    (char= #\/ (char redirect-to 0))
-			    redirect-to)
-		       "/")))))
+      (template-let ((alerts nil)
+		     redirect-to)
+	(unless u
+	  (alert :danger "Login et/ou mot de passe incorrect.")
+	  (http-error "401 Not authorized" "Account not found"))
+	(session-reset)
+	(setf (session-user) u)
+	(session)
+	(redirect-to (or (and redirect-to
+			      (char= #\/ (char redirect-to 0))
+			      redirect-to)
+			 "/"))))))
 
 (defun /account/login ()
   (ecase *method*

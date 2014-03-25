@@ -11,7 +11,7 @@
     « ) (t »
     <li>
       <form method="POST" action="«=(h (uri-for '(/account/login)))»" class="navbar-form navbar-left" role="login">
-	<input type="hidden" name="redirect-to" value="«=(h *uri*)»"/>
+	<input type="hidden" name="redirect-to" value="«=(h (or $redirect-to *uri*))»"/>
 	<div class="form-group">
 	  <input type="text" name="l" class="form-control input-sm" placeholder="Adresse e-mail"/>
 	</div>
