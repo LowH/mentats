@@ -14,3 +14,5 @@
 (use-package :cl-bcrypt)
 
 (require :gravatar)
+
+(require :can)
