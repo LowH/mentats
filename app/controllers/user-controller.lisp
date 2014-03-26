@@ -1,5 +1,6 @@
 
 (defun /user#show (user)
+  (check-can :view user)
   (template-let (user
 		 (modules nil))
     (do-user.modules (module user)

@@ -1,4 +1,5 @@
 (defun /> (&optional command &rest args)
+  (check-can :admin :>)
   (let ((available-commands '(load-app load-facts reload)))
     (when command
       (unless (setq command (find command available-commands

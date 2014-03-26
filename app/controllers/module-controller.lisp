@@ -1,18 +1,20 @@
 
 (defun /module#index ()
+  (check-can :list 'modules)
   (render-view :module :index '.html))
 
 (defun /module#show (module)
+  (check-can :view module)
   (template-let (module)
     (render-view :module :show '.html)))
 
 (defun /module#edit (module)
-  (unless (eq (session-user) (module.owner module))
-    (http-error "403 Forbidden" "Not authorized"))
+  (check-can :edit module)
   (template-let (module)
     (render-view :module :edit '.html)))
 
 (defun /module#create ()
+  (check-can :create 'modules)
   (unless (session-user)
     (http-error "403 Forbidden" "Not authorized"))
   (with-form-data (discipline level)
@@ -23,6 +25,7 @@
 		  :action :edit))))
 
 (defun /module#update (module)
+  (check-can :edit module)
   (unless (eq (session-user) (module.owner module))
     (http-error "403 Forbidden" "Not authorized"))
   (with-form-data (description discipline level)
@@ -32,6 +35,7 @@
     (redirect-to (module-uri module))))
 
 (defun /module#delete (module)
+  (check-can :delete module)
   (unless (eq (session-user) (module.owner module))
     (http-error "403 Forbidden" "Not authorized"))
   (facts:with-transaction

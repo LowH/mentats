@@ -1,20 +1,19 @@
 
 (defun /wiki#show (article)
+  (check-can :view article)
   (template-let (article
 		 (id (str "wiki_" (to-url (article.name article)))))
     (render-view :wiki (if (session-user) :show-editable :show) '.html)))
 
 (defun /wiki#create ()
-  (unless (session-user)
-    (http-error "403 Forbidden" "Access forbidden"))
+  (check-can :create :wiki-pages)
   (with-form-data (article)
     (let ((a (read-article (the string article))))
       (wiki-write-article a)
       (redirect-to (wiki-uri a)))))
 
 (defun /wiki#update (a)
-  (unless (session-user)
-    (http-error "403 Forbidden" "Access forbidden"))
+  (check-can :modify a)
   (with-form-data (article)
     (let ((new (read-article (the string article))))
       (wiki-delete-article a)
@@ -22,8 +21,7 @@
       (redirect-to (wiki-uri new)))))
 
 (defun /wiki#delete (a)
-  (unless (session-user)
-    (http-error "403 Forbidden" "Access forbidden"))
+  (check-can :delete a)
   (wiki-delete-article a)
   (redirect-to `(/wiki "index")))
 
