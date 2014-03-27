@@ -16,3 +16,5 @@
 (require :gravatar)
 
 (require :can)
+(import '(can:can))
+(export '(can))

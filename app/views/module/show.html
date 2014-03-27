@@ -9,7 +9,7 @@
 	« ) »
       </div>
     </div>
-    « (when (eq (session-user) (module.owner $module)) »
+    « (when (can :edit $module) »
     <div class="btn-toolbar">
       <a href="«=(h (module-uri $module :action :edit))»" class="edit btn btn-default">
 	<i class="icon-edit"></i> Éditer
