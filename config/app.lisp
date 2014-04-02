@@ -3,6 +3,9 @@
 (setf (debug-p :app) t)
 (setf (debug-p :assets) t)
 
+(define-template-var title
+    "Mentats")
+
 (define-template-var nav
     '("<li><a href=\"/competence\">Compétences</a></li>"
       "<li><a href=\"/blog\">Blog</a></li>"))
