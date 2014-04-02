@@ -4,8 +4,9 @@
  *= require bootstrap
  *= require joint.nojquery
  *= require joint.layout.DirectedGraph
- *= require graph
  *= require article
+ *= require mentats
+ *= require graph
  */
 
 $(function () {
