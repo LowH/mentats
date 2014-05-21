@@ -1,18 +1,22 @@
 /*
- *= require backbone/model/mentats.graph-element
- *= require backbone/model/mentats.graph-link
- *= require backbone/model/mentats.graph-cells
- *= require backbone/model/mentats.graph
- *= require backbone/view/mentats.graph-element-view
- *= require backbone/view/mentats.graph-link-view
- *= require backbone/view/mentats.graph-editor
+ *= require svg
+ *= require svgg
+ *= require backbone/model/svgg.graph
+ *= require backbone/model/svgg.node
+ *= require backbone/model/svgg.link
+ *= require backbone/view/svgg.paper
+ *= require backbone/view/svgg.node-view
  */
 
-////  TEST
-
-
 $(function() {
-  $('.mentats.graph.editor').each(function() {
+  $('.svgg').each(function() {
+    var graph = new SVGG.Graph();
+    new SVGG.Paper({model: graph, el: this, width: 900, height: 450});
+    graph.addNode(new SVGG.Node({ label: "Plop" }));
+  });
+});
+
+/*
     //console.log(this);
     var $editor = $(this);
     var $toolbar = $editor.find('.toolbar');
@@ -38,4 +42,4 @@ $(function() {
     });
     graph.fromJSON($editor.data('competence'));
   });
-});
+*/

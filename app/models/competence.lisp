@@ -2,7 +2,6 @@
 (define-resource competence
   (has-one name)
   (has-one parent :having children)
-  (has-one cells)
   (has-many requires))
 
 (defun find-competence-by-name (name)
