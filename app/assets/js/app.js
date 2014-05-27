@@ -4,7 +4,16 @@
  *= require bootstrap
  *= require backbone
  *= require article
- *= require graph
+ *= require svg
+ *= require svgg
+ *= require backbone/model/svgg.graph
+ *= require backbone/model/svgg.node
+ *= require backbone/model/svgg.link
+ *= require backbone/view/svgg.paper
+ *= require backbone/view/svgg.node-view
+ *= require mentats
+ *= require backbone/model/mentats.module
+ *= require mentats.module
  */
 
 $(function () {
