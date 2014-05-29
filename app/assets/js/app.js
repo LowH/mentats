@@ -9,10 +9,13 @@
  *= require backbone/model/svgg.graph
  *= require backbone/model/svgg.node
  *= require backbone/model/svgg.link
- *= require backbone/view/svgg.paper
  *= require backbone/view/svgg.node-view
+ *= require backbone/view/svgg.paper
+ *= require backbone/view/svgg.editor
  *= require mentats
+ *= require backbone/model/mentats.domain
  *= require backbone/model/mentats.module
+ *= require backbone/view/mentats.module-edit
  *= require mentats.module
  */
 
