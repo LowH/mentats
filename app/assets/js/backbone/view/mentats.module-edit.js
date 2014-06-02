@@ -13,8 +13,7 @@ Mentats.DomainGraphEditor = SVGG.Editor.extend({
       position: { x: 10, y: 10 }
     });
     node.promptName();
-    this.model.get('nodes').add(node);
-    //this.focus(node);
+    this.model.get('nodes').add(node, {focus: true});
     return node;
   },
 

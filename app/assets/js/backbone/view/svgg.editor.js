@@ -48,7 +48,7 @@ SVGG.Editor = SVGG.Paper.extend({
       this.focused.model.destroy();
   },
 
-  onAddNode: function(node) {
+  onAddNode: function(node, collection, options) {
     console.log('SVGG.Editor.onAddNode', arguments);
     var v = new SVGG.NodeView({
       svg: this.svg,
@@ -61,6 +61,8 @@ SVGG.Editor = SVGG.Paper.extend({
       dblclick: this.onNodeDblClick
     });
     this.nodeViews.push(v);
+    if (options.focus)
+      this.setFocus(v);
   },
 
   onRemoveNode: function(node) {
