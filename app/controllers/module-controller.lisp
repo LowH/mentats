@@ -5,8 +5,11 @@
 
 (defun /module#show (module)
   (check-can :view module)
-  (template-let (module)
-    (render-view :module :show '.html)))
+  (cond ((accept-p :application/json)
+	 (render-json (module-json module)))
+	(t
+	 (template-let (module)
+	   (render-view :module :show '.html)))))
 
 (defun /module#edit (module)
   (check-can :edit module)
@@ -43,12 +46,33 @@
       (facts:add (module 'module.deleted t))))
   (redirect-to (user-uri (session-user))))
 
+(defun /module#update-domains (module)
+  (check-can :edit module)
+  (with-form-data (nodes links)
+    (map nil (lambda (node)
+	       (facts:with-transaction
+		 (cond ((slot-boundp node :id)
+			(let ((domain (find-domain (slot-value node :id))))
+			  (unless (and domain (eq module (domain.module domain)))
+			    (http-error "404 Not found" "Domain not found"))
+			  (check-can :edit domain)
+			  (setf (domain.name domain) (slot-value node :name)
+				(domain.position domain) (slot-value node :position))))
+		       (t
+			(let ((domain (add-domain
+					'domain.module module
+					'domain.name (slot-value node :name)
+					'domain.position (slot-value node :position))))
+			  (setf (slot-value node :id) (domain.id domain)))))))
+	 nodes)
+    (render-json `((nodes . ,nodes) (links . ,links)))))
+
 (defun /module (&optional module.id action)
   (let ((module (when module.id
 		  (or (find-module module.id)
 		      (http-error "404 Not found" "Module not found."))))
 	(action (when action
-		  (or (find (string-upcase action) '(:edit) :test #'string=)
+		  (or (find (string-upcase action) '(:edit :domains) :test #'string=)
 		      (http-error "404 Not found" "Action not found.")))))
     (case *method*
       (:GET (if module
@@ -56,6 +80,9 @@
 		  ((nil) (/module#show module))
 		  ((:edit) (/module#edit module)))
 		(/module#index)))
-      (:POST   (/module#create))
+      (:POST   (cond ((and module (eq action :domains))
+		      (/module#update-domains module))
+		     (t
+		      (/module#create))))
       (:PUT    (/module#update module))
       (:DELETE (/module#delete module)))))

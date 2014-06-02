@@ -7,6 +7,12 @@
 		  'domain.module module
 		  'domain.required-domains required-domains)))))
 
+(defun /domain#delete (domain)
+  (check-can :delete domain)
+  (facts:rm ((?domain 'domain.required-domains domain)))
+  (setf (domain.deleted domain) t)
+  (render-json {"success": true}))
+
 (defun /domain (&optional id)
   (let ((domain (when id
 		  (or (find-domain id)

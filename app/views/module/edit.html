@@ -28,10 +28,11 @@
 <hr/>
 
 <h2>Graphe des domaines</h2>
-<div id="module-graph-editor" data-url="«=(h (module-uri $module))»">
+<div id="module-graph-editor" data-id="«=(h (module.id $module))»">
   <div class="toolbar">
     <button class="btn spawnNode" title="Ajouter"><i class="icon-plus"></i></button>
     <button class="btn renameNode disabled" title="Renommer"><i class="icon-edit"></i></button>
+    <button class="btn btn-danger removeNode disabled" title="Supprimer"><i class="icon-trash"></i></button>
     <button class="btn btn-primary save" title="Sauvegarder"><i class="icon-ok"></i></button>
   </div>
   <div class="paper"></div>

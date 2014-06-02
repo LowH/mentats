@@ -3,7 +3,7 @@ Mentats.DomainGraphEditor = SVGG.Editor.extend({
 
   initialize: function(options) {
     SVGG.Editor.prototype.initialize.apply(this, arguments);
-    _.bindAll(this, 'spawnNode');
+    _.bindAll(this, 'spawnNode', 'save');
   },
 
   spawnNode: function() {
@@ -16,6 +16,11 @@ Mentats.DomainGraphEditor = SVGG.Editor.extend({
     this.model.get('nodes').add(node);
     //this.focus(node);
     return node;
+  },
+
+  save: function() {
+    console.log('Mentats.DomainGraphEditor.save', this);
+    this.model.save();
   }
 
 });
@@ -32,6 +37,7 @@ Mentats.ModuleEditor = Backbone.View.extend({
       width: 900,
       height: 450
     });
+
   },
 
 });

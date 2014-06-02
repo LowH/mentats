@@ -16,3 +16,30 @@
 (defun module-image (module)
   (declare (ignore module))
   "module/default-cover.png")
+
+(defun module-domains (module)
+  (remove-if #'domain.deleted (module.domains module)))
+
+(defun module-domains-json (module)
+  (let ((domains (module-domains module)))
+    (json:make-object
+     `((nodes . ,(mapcar #'domain-json domains))
+       (links . ,(mapcan (lambda (domain)
+			   (mapcar (lambda (req)
+				     `((source . ,req)
+				       (target . ,domain)))
+				   (domain.required-domains domain)))
+			 domains)))
+     nil)))
+
+(defun module-json (module)
+  (facts:with-transaction
+    (json:make-object
+     `((id . ,(module.id module))
+       (discipline . ,(module.discipline module))
+       (level . ,(module.level module))
+       (version . ,(module.version module))
+       (owner . ,(user.id (module.owner module)))
+       (description . ,(module.description module))
+       (domains . ,(module-domains-json module)))
+     nil)))

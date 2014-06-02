@@ -3,6 +3,8 @@ SVGG.Editor = SVGG.Paper.extend({
 
   events: {
     'click .spawnNode': 'spawnNode',
+    'click .renameNode': 'renameNode',
+    'click .removeNode': 'removeNode',
     'click .save': 'save',
     'mousedown svg': 'onMouseDown',
     'mousemove svg': 'onMouseMove',
@@ -11,18 +13,39 @@ SVGG.Editor = SVGG.Paper.extend({
 
   initialize: function() {
     SVGG.Paper.prototype.initialize.apply(this, arguments);
-    _.bindAll(this, 'onAddNode', 'onAddLink', 'stopMoving', 'onNodeMouseDown', 'onNodeMouseUp', 'onNodeClick', 'onNodeDblClick', 'onMouseDown', 'onMouseUp', 'onMouseMove', 'onClick');
-    this.model.get('nodes').each(this.onAddNode);
-    this.model.get('links').each(this.onAddLink);
-    this.listenTo(this.model.get('nodes'), 'add', this.onAddNode);
-    this.listenTo(this.model.get('links'), 'add', this.onAddLink);
+    _.bindAll(this, 'renameNode', 'onAddNode', 'onAddLink', 'stopMoving', 'onNodeMouseDown', 'onNodeMouseUp', 'onNodeClick', 'onNodeDblClick', 'onMouseDown', 'onMouseUp', 'onMouseMove', 'onClick');
+
+    var nodes = this.model.get('nodes');
+    this.nodeViews = [];
+    nodes.each(this.onAddNode);
+    this.listenTo(nodes, 'add', this.onAddNode);
+    this.listenTo(nodes, 'remove', this.onRemoveNode);
+    this.listenTo(nodes, 'reset', this.onResetNodes);
+
+    var links = this.model.get('links');
+    this.linkViews = [];
+    links.each(this.onAddLink);
+    this.listenTo(links, 'add', this.onAddLink);
+    this.listenTo(links, 'remove', this.onRemoveLink);
+    this.listenTo(links, 'reset', this.onResetLinks);
+
     this.focus = this.svg.rect(40, 30)
       .radius(10)
       .move(-2, -2)
-      .stroke({color:'#ADF', width:3})
+      .stroke({color:'#ADF', width:4})
       .fill('none')
       .hide();
     this.focused = null;
+  },
+
+  renameNode: function () {
+    if (this.focused)
+      this.focused.model.promptName();
+  },
+
+  removeNode: function () {
+    if (this.focused)
+      this.focused.model.destroy();
   },
 
   onAddNode: function(node) {
@@ -31,10 +54,31 @@ SVGG.Editor = SVGG.Paper.extend({
       svg: this.svg,
       model: node
     });
-    v.on('mousedown', this.onNodeMouseDown);
-    v.on('mouseup', this.onNodeMouseUp);
-    v.on('click', this.onNodeClick);
-    v.on('dblclick', this.onNodeDblClick);
+    v.on({
+      mousedown: this.onNodeMouseDown,
+      mouseup: this.onNodeMouseUp,
+      click: this.onNodeClick,
+      dblclick: this.onNodeDblClick
+    });
+    this.nodeViews.push(v);
+  },
+
+  onRemoveNode: function(node) {
+    console.log('SVGG.Editor.onRemoveNode', arguments);
+    if (node == this.focused.model)
+      this.setFocus(null);
+    var v = _.find(this.nodeViews, {model: node});
+    v.remove();
+    _.remove(this.nodeViews, v);
+  },
+
+  onResetNodes: function(nodes) {
+    console.log('SVGG.Editor.onResetNodes', arguments);
+    _.each(this.nodeViews, function(v) {
+      v.remove();
+    });
+    this.nodeViews = [];
+    nodes.each(this.onAddNode);
   },
 
   onAddLink: function(link) {
@@ -43,6 +87,22 @@ SVGG.Editor = SVGG.Paper.extend({
       svg: this.svg,
       model: link
     });
+    this.linkViews.push(v);
+  },
+
+  onRemoveLink: function(link) {
+    console.log('SVGG.Editor.onRemoveLink', arguments);
+    var v = _.find(this.linkViews, {model: link});
+    v.remove();
+    _.remove(this.linkViews, v);
+  },
+
+  onResetLinks: function(links) {
+    _.each(this.linkViews, function(v) {
+      v.remove();
+    });
+    this.linkViews = [];
+    _.each(links, this.onAddLink);
   },
 
   stopMoving: function(evt) {
@@ -61,6 +121,7 @@ SVGG.Editor = SVGG.Paper.extend({
       clientY: position.y - evt.clientY
     };
     $(window).on('mouseup', this.stopMoving);
+    this.setFocus(nodeView);
     evt.preventDefault();
   },
 
@@ -90,18 +151,21 @@ SVGG.Editor = SVGG.Paper.extend({
 	  .addTo(node.group)
 	  .back()
 	  .show();
+	this.$('.btn.renameNode').removeClass('disabled');
+	this.$('.btn.removeNode').removeClass('disabled');
       }
       else {
 	this.focus
 	  .addTo(this.svg)
 	  .hide();
+	this.$('.btn.renameNode').addClass('disabled');
+	this.$('.btn.removeNode').addClass('disabled');
       }
     }
   },
 
   onNodeClick: function(node, evt) {
     console.log('onNodeClick', node, evt);
-    this.setFocus(node);
     evt.preventDefault();
     evt.stopPropagation();
   },

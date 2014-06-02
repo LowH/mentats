@@ -16,7 +16,7 @@ SVGG.NodeView = Backbone.View.extend({
     this.setElement(this.group.node);
     this.rect = this.group.rect(20, 20)
       .radius(8)
-      .fill('none')
+      .fill('#ffffff')
       .stroke('#000000');
     this.label = this.group.plain('')
       .move(12, 0);
