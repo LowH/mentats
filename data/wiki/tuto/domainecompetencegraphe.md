@@ -1,5 +1,6 @@
 Name: tuto/domainecompetencegraphe
 Date: 2014-02-01 14:42:52
+Author: Olivier THOMAS
 Title: Domaines, compétences, graphes
 
 [<-- Les modules](/tuto/module)
@@ -15,10 +16,6 @@ En cliquant sur un domaine on accède aux compétences, elles aussi organisées 
 {insert graphe des compétences}
 
 Ces graphes rendent compte de précédences chronologiques dans la progression des compétences. 
-
-Ils sont supports de l'évaluation des élèves et font apparaître les compétences acquises, en cours d'acquisition, et à aborder, pour le groupe classe et pour chaque élève.
-
-{insert graphes coloriés}
 
 En cliquant sur une compétence, on accède à ses ressources.
 
