@@ -8,12 +8,13 @@ SVGG.Editor = SVGG.Paper.extend({
     'click .save': 'save',
     'mousedown svg': 'onMouseDown',
     'mousemove svg': 'onMouseMove',
-    'click svg': 'onClick'
+    'click svg': 'onClick',
+    'click .toolbar': 'onToolbarClick'
   },
 
   initialize: function() {
     SVGG.Paper.prototype.initialize.apply(this, arguments);
-    _.bindAll(this, 'renameNode', 'onAddNode', 'onAddLink', 'stopMoving', 'onNodeMouseDown', 'onNodeMouseUp', 'onNodeClick', 'onNodeDblClick', 'onMouseDown', 'onMouseUp', 'onMouseMove', 'onClick');
+    _.bindAll(this, 'renameNode', 'onAddNode', 'onAddLink', 'stopMoving', 'onNodeMouseDown', 'onNodeMouseUp', 'onNodeClick', 'onNodeDblClick', 'onMouseDown', 'onMouseUp', 'onMouseMove', 'onClick', 'onToolbarClick', 'onWindowClick');
 
     var nodes = this.model.get('nodes');
     this.nodeViews = [];
@@ -36,11 +37,16 @@ SVGG.Editor = SVGG.Paper.extend({
       .fill('none')
       .hide();
     this.focused = null;
+
+    $(window).on('click', this.onWindowClick);
   },
 
-  renameNode: function () {
-    if (this.focused)
+  renameNode: function (evt) {
+    if (this.focused) {
       this.focused.model.promptName();
+      if (evt && evt.stopPropagation)
+	evt.stopPropagation();
+    }
   },
 
   removeNode: function () {
@@ -211,8 +217,21 @@ SVGG.Editor = SVGG.Paper.extend({
     }
   },
 
+  onToolbarClick: function (evt) {
+    console.log('onToolbarClick', evt);
+    if (evt && evt.stopPropagation)
+      evt.stopPropagation();
+  },
+
   onClick: function (evt) {
     console.log('onClick', evt);
+    this.setFocus(null);
+    if (evt && evt.stopPropagation)
+      evt.stopPropagation();
+  },
+
+  onWindowClick: function (evt) {
+    console.log('onWindowClick', evt);
     this.setFocus(null);
   }
 
