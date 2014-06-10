@@ -1,5 +1,6 @@
 (setf *port* 4207)
 (setf *layout* :main)
+(setf *session-timeout* (* 3600 24 7))
 (setf (debug-p :app) t)
 (setf (debug-p :assets) t)
 
