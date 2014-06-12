@@ -14,8 +14,9 @@ SVGG.NodeView = Backbone.View.extend({
 
     this.group = options.svg.group();
     this.setElement(this.group.node);
+    this.radius = options.radius;
     this.rect = this.group.rect(20, 20)
-      .radius(8)
+      .radius(this.radius)
       .fill('#ffffff')
       .stroke('#000000');
     this.label = this.group.plain('')
@@ -49,18 +50,22 @@ SVGG.NodeView = Backbone.View.extend({
 
   onMove: function() {
     var position = this.model.get('position');
-    this.group.move(position.x, position.y);
+    if (this.x != position.x || this.y != position.y) {
+      this.x = position.x;
+      this.y = position.y;
+      this.group.move(this.x, this.y);
+      this.trigger('move', this);
+    }
   },
 
   resize: function() {
     var bbox = this.label.bbox();
-    var w = Math.floor((bbox.width + 24) / 2) * 2;
-    var h = Math.floor((bbox.height + 16) / 2) * 2;
-    this.rect.size(w, h);
-    this.trigger('resize', w, h);
-		   
+    this.width = Math.floor((bbox.width + 24) / 2) * 2;
+    this.height = Math.floor((bbox.height + 16) / 2) * 2;
+    this.rect.size(this.width, this.height);
+    this.trigger('resize', this.width, this.height);
   },
-    
+
   onChangeLabel: function() {
     this.label.text(this.model.get('name'));
     this.resize();
@@ -70,6 +75,27 @@ SVGG.NodeView = Backbone.View.extend({
     this.rect
       .fill(this.model.get('background'))
       .stroke(this.model.get('border'));
-  }
+  },
+
+  intersect: function(x, y) {
+    var cx = this.x + this.width / 2;
+    var cy = this.y + this.height / 2;
+    x -= cx;
+    y -= cy;
+    var s = x > 0 ? 1 : -1;
+    var a = Math.abs(x) < Number.MIN_VALUE ? Number.MAX_VALUE : y / x;
+    var a1 = this.height / (this.width - 2 * this.radius);
+    var a2 = (this.height - 2 * this.radius) / this.width;
+    if (a > a1)
+      return {x:(cx + s * this.height / 2 / a), y:(cy + s * this.height / 2)};
+    else if (a > a2)
+      return {x: 0, y: 0};
+    else if (a > -a2)
+      return {x:(cx + s * this.width / 2), y:(cy + s * this.width / 2 * a)};
+    else if (a > -a1)
+      return {x: 0, y: 0};
+    else
+      return {x:(cx - s * this.height / 2 / a), y:(cy - s * this.height / 2)};
+  },
 
 });

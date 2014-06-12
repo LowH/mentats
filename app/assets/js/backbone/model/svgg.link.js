@@ -7,3 +7,7 @@ SVGG.Link = Backbone.Model.extend({
   }
 
 });
+
+SVGG.LinksCollection = Backbone.Collection.extend({
+  model: SVGG.Link
+});

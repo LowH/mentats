@@ -8,11 +8,12 @@ SVGG.Editor = SVGG.Paper.extend({
     'click .save': 'save',
     'mousedown svg': 'onMouseDown',
     'mousemove svg': 'onMouseMove',
+    'mouseup svg': 'onMouseUp',
     'click svg': 'onClick',
     'click .toolbar': 'onToolbarClick'
   },
 
-  initialize: function() {
+  initialize: function (options) {
     SVGG.Paper.prototype.initialize.apply(this, arguments);
     _.bindAll(this, 'renameNode', 'onAddNode', 'onAddLink', 'stopMoving', 'onNodeMouseDown', 'onNodeMouseUp', 'onNodeClick', 'onNodeDblClick', 'onMouseDown', 'onMouseUp', 'onMouseMove', 'onClick', 'onToolbarClick', 'onWindowClick');
 
@@ -31,7 +32,6 @@ SVGG.Editor = SVGG.Paper.extend({
     this.listenTo(links, 'reset', this.onResetLinks);
 
     this.focus = this.svg.rect(40, 30)
-      .radius(10)
       .move(-2, -2)
       .stroke({color:'#ADF', width:4})
       .fill('none')
@@ -57,8 +57,9 @@ SVGG.Editor = SVGG.Paper.extend({
   onAddNode: function(node, collection, options) {
     console.log('SVGG.Editor.onAddNode', arguments);
     var v = new SVGG.NodeView({
-      svg: this.svg,
-      model: node
+      svg: this.svgNodes,
+      model: node,
+      radius: this.nodeRadius
     });
     v.on({
       mousedown: this.onNodeMouseDown,
@@ -89,12 +90,21 @@ SVGG.Editor = SVGG.Paper.extend({
     nodes.each(this.onAddNode);
   },
 
-  onAddLink: function(link) {
-    console.log('paper onAddLink');    
-    var v = new SVGG.LinkView({
-      svg: this.svg,
-      model: link
+  getNodeView: function(id) {
+    return _.find(this.nodeViews, function(v) {
+      return v.model.get('id') == id;
     });
+  },
+
+  onAddLink: function(link) {
+    console.log('SVGG.Paper.onAddLink', arguments);
+    var v = new SVGG.LinkView({
+      svg: this.svgLinks,
+      model: link,
+      source: this.getNodeView(link.get('source')),
+      target: this.getNodeView(link.get('target')),
+    });
+    console.log(v);
     this.linkViews.push(v);
   },
 
@@ -106,11 +116,12 @@ SVGG.Editor = SVGG.Paper.extend({
   },
 
   onResetLinks: function(links) {
+    console.log('SVGG.Paper.onResetLinks', arguments);
     _.each(this.linkViews, function(v) {
       v.remove();
     });
     this.linkViews = [];
-    _.each(links, this.onAddLink);
+    links.each(this.onAddLink);
   },
 
   stopMoving: function(evt) {
@@ -122,22 +133,41 @@ SVGG.Editor = SVGG.Paper.extend({
 
   onNodeMouseDown: function(nodeView, evt) {
     console.log('onNodeMouseDown', nodeView, evt);
-    var position = nodeView.model.get('position');
-    this.moving = {
-      nodeView: nodeView,
-      clientX: position.x - evt.clientX,
-      clientY: position.y - evt.clientY
-    };
-    $(window).on('mouseup', this.stopMoving);
-    this.setFocus(nodeView);
+    if (evt.ctrlKey) {
+      var p = this.mousePosition(evt);
+      this.newLink = new SVGG.LinkView({
+	svg: this.svgLinks,
+	source: nodeView,
+	target: { x: p.x, y: p.y, width: 0, height: 0 }
+      });
+    }
+    else {
+      var position = nodeView.model.get('position');
+      this.moving = {
+	nodeView: nodeView,
+	pageX: position.x - evt.pageX,
+	pageY: position.y - evt.pageY
+      };
+      $(window).on('mouseup', this.stopMoving);
+      this.setFocus(nodeView);
+    }
     evt.preventDefault();
   },
 
   onNodeMouseUp: function(node, evt) {
     console.log('onNodeMouseUp', node, evt);
     if (this.moving) {
-      this.stopMoving(evt);
       evt.stopPropagation();
+      evt.preventDefault();
+      this.stopMoving(evt);
+    }
+    else if (this.newLink) {
+      evt.stopPropagation();
+      evt.preventDefault();
+      var link = this.newLink;
+      this.newLink = null;
+      link.remove();
+      this.model.link(link.source.model, node.model);
     }
   },
 
@@ -157,6 +187,7 @@ SVGG.Editor = SVGG.Paper.extend({
 	this.resizeFocus(node.rect.width(), node.rect.height());
 	this.focus
 	  .addTo(node.group)
+	  .radius(node.radius + 2)
 	  .back()
 	  .show();
 	this.$('.btn.renameNode').removeClass('disabled');
@@ -188,31 +219,58 @@ SVGG.Editor = SVGG.Paper.extend({
   },
 
   onMouseUp: function(evt) {
-    console.log('Paper.onMouseUp', evt);
+    console.log('SVGG.Editor.onMouseUp', evt);
     this.moving = null;
+    if (this.newLink) {
+      this.newLink.remove();
+      this.newLink = null;
+    }
     evt.preventDefault();
   },
 
+  mousePosition: function (evt) {
+    var p = {
+      x: evt.pageX - this.paperDiv.offset.left,
+      y: evt.pageY - this.paperDiv.offset.top,
+    };
+    p.x = Math.round(p.x / this.grid) * this.grid;
+    p.y = Math.round(p.y / this.grid) * this.grid;
+    if (p.x > this.svg.width() - this.grid)
+      p.x = (Math.floor((this.svg.width()) / this.grid) - 1) * this.grid;
+    if (p.y > this.svg.height() - this.grid)
+      p.y = (Math.floor((this.svg.height()) / this.grid) - 1) * this.grid;
+    if (p.x < this.grid) p.x = this.grid;
+    if (p.y < this.grid) p.y = this.grid;
+    return p;
+  },
+  
   onMouseMove: function(evt) {
     if (this.moving) {
       //console.log(this.moving);
       var p = {
-	x: evt.clientX + this.moving.clientX,
-	y: evt.clientY + this.moving.clientY
+	x: evt.pageX + this.moving.pageX,
+	y: evt.pageY + this.moving.pageY
       };
       p.x = Math.round(p.x / this.grid) * this.grid;
       p.y = Math.round(p.y / this.grid) * this.grid;
-      if (p.x < this.grid) p.x = this.grid;
-      if (p.y < this.grid) p.y = this.grid;
       var w = this.moving.nodeView.rect.width();
       var h = this.moving.nodeView.rect.height();
       if (p.x + w > this.svg.width() - this.grid)
 	p.x = (Math.floor((this.svg.width() - w) / this.grid) - 1) * this.grid;
       if (p.y + h > this.svg.height() - this.grid)
 	p.y = (Math.floor((this.svg.height() - h) / this.grid) - 1) * this.grid;
+      if (p.x < this.grid) p.x = this.grid;
+      if (p.y < this.grid) p.y = this.grid;
       this.moving.nodeView.model.set({
 	position: p
       });
+      evt.preventDefault();
+    }
+    else if (this.newLink) {
+      var p = this.mousePosition(evt);
+      this.newLink.target.x = p.x;
+      this.newLink.target.y = p.y;
+      this.newLink.onMove();
       evt.preventDefault();
     }
   },

@@ -49,23 +49,39 @@
 (defun /module#update-domains (module)
   (check-can :edit module)
   (with-form-data (nodes links)
-    (map nil (lambda (node)
-	       (facts:with-transaction
-		 (cond ((slot-boundp node :id)
-			(let ((domain (find-domain (slot-value node :id))))
-			  (unless (and domain (eq module (domain.module domain)))
-			    (http-error "404 Not found" "Domain not found"))
-			  (check-can :edit domain)
-			  (setf (domain.name domain) (slot-value node :name)
-				(domain.position domain) (slot-value node :position))))
-		       (t
-			(let ((domain (add-domain
-					'domain.module module
-					'domain.name (slot-value node :name)
-					'domain.position (slot-value node :position))))
-			  (setf (slot-value node :id) (domain.id domain)))))))
-	 nodes)
-    (render-json `((nodes . ,nodes) (links . ,links)))))
+    (facts:with-transaction
+      (let ((old-domains (facts:collect ((?d 'domain.module module)) ?d)))
+	(map nil (lambda (node)
+		   (cond ((slot-boundp node :id)
+			  (let ((domain (find-domain (slot-value node :id))))
+			    (unless (and domain (eq module (domain.module domain)))
+			      (http-error "404 Not found" "Domain not found"))
+			    (check-can :edit domain)
+			    (setf (domain.name domain) (slot-value node :name)
+				  (domain.position domain) (slot-value node :position))
+			    (removef old-domains domain)))
+			 (t
+			  (let ((domain (add-domain
+					  'domain.module module
+					  'domain.name (slot-value node :name)
+					  'domain.position (slot-value node :position))))
+			    (setf (slot-value node :id) (domain.id domain))))))
+	     nodes)
+	(dolist (d old-domains)
+	  (format t "~&FIXME: REMOVE ~S~%" d))
+	(facts:with ((?domain 'domain.module module))
+	  (facts:rm ((?domain 'domain.required-domains ?))))
+	(map nil (lambda (link)
+		   (let ((source (find-domain (slot-value link :source)))
+			 (target (find-domain (slot-value link :target))))
+		     (unless (and source (eq module (domain.module source))
+				  target (eq module (domain.module target)))
+		       (http-error "404 Not found" "Domain not found"))
+		     (check-can :edit target)
+		     (unless (facts:bound-p ((target 'domain.required-domains source)))
+		       (facts:add (target 'domain.required-domains source)))))
+	     links)
+	(render-json `((nodes . ,nodes) (links . ,links)))))))
 
 (defun /module (&optional module.id action)
   (let ((module (when module.id

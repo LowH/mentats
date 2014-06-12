@@ -20,10 +20,16 @@ SVGG.Graph = Backbone.Model.extend({
   
   link: function(source, target) {
     var links = this.get('links');
-    if (links.where({source: source.id, target: target.id}))
-      console.log('already linked:', source, target);
-    else
-      links.add(new SVGG.Link({source: source.id, target: target.id}));
+    var linked = links.where({source: source.id, target: target.id})[0];
+    if (linked) {
+      console.log('already linked:', linked);
+      return null;
+    }
+    else {
+      var link = new SVGG.Link({source: source.id, target: target.id});
+      links.add(link);
+      return link;
+    }
   },
 
 });
