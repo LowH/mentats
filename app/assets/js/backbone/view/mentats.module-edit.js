@@ -6,7 +6,7 @@ Mentats.DomainGraphEditor = SVGG.Editor.extend({
     _.bindAll(this, 'spawnNode', 'save');
   },
 
-  nodeRadius: 8,
+  nodeRadius: 3,
 
   spawnNode: function(evt) {
     console.log('module spawn node');
