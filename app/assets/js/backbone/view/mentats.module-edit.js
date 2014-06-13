@@ -6,6 +6,8 @@ Mentats.DomainGraphEditor = SVGG.Editor.extend({
     _.bindAll(this, 'spawnNode', 'save');
   },
 
+  nodeRadius: 8,
+
   spawnNode: function(evt) {
     console.log('module spawn node');
     var node = new Mentats.Domain({
@@ -36,7 +38,8 @@ Mentats.ModuleEditor = Backbone.View.extend({
       model: this.model.get('domains'),
       el: '#module-graph-editor',
       width: 900,
-      height: 602
+      height: 602,
+      radius: 8,
     });
 
   },

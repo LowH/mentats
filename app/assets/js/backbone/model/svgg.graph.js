@@ -17,7 +17,7 @@ SVGG.Graph = Backbone.Model.extend({
   add: function (node) {
     this.get('nodes').add(node);
   },
-  
+
   link: function(source, target) {
     var links = this.get('links');
     var linked = links.where({source: source.id, target: target.id})[0];

@@ -89,13 +89,25 @@ SVGG.NodeView = Backbone.View.extend({
     if (a > a1)
       return {x:(cx + s * this.height / 2 / a), y:(cy + s * this.height / 2)};
     else if (a > a2)
-      return {x: 0, y: 0};
+      return this.intersectRound(x, y, cx, cy);
     else if (a > -a2)
       return {x:(cx + s * this.width / 2), y:(cy + s * this.width / 2 * a)};
     else if (a > -a1)
-      return {x: 0, y: 0};
+      return this.intersectRound(x, y, cx, cy);
     else
       return {x:(cx - s * this.height / 2 / a), y:(cy - s * this.height / 2)};
+  },
+
+  intersectRound: function (xd, yd, Cx, Cy) {
+    var xc = (xd > 0 ? 1 : -1) * (this.width / 2.0 - this.radius);
+    var yc = (yd > 0 ? 1 : -1) * (this.height / 2.0 - this.radius);
+    var a = xd * xd + yd * yd;
+    var b = 2.0 * (xd * xc + yd * yc);
+    var c = xc * xc + yc * yc - this.radius * this.radius;
+    var d = b * b - 4 * a * c;
+    var t = (b + (b > 0 ? 1 : -1) * Math.sqrt(d)) / (2.0 * a);
+    var r = { x: Cx + t * xd, y: Cy + t * yd };
+    return r;
   },
 
 });

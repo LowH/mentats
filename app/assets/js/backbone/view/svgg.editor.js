@@ -41,6 +41,8 @@ SVGG.Editor = SVGG.Paper.extend({
     $(window).on('click', this.onWindowClick);
   },
 
+  nodeRadius: 8,
+
   renameNode: function (evt) {
     if (this.focused) {
       this.focused.model.promptName();
