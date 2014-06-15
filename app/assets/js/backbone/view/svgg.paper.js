@@ -74,7 +74,6 @@ SVGG.Paper = Backbone.View.extend({
       model: node,
       radius: this.nodeRadius
     });
-    console.log(this.nodeEvents);
     v.on(this.nodeEvents);
     this.nodeViews.push(v);
     if (options.focus)
