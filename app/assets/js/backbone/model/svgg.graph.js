@@ -8,10 +8,13 @@ SVGG.Graph = Backbone.Model.extend({
 
   initialize: function() {
     _.bindAll(this, 'link');
+    var nodes = new Backbone.Collection(this.get('nodes'));
+    var links = new Backbone.Collection(this.get('links'));
     this.set({
-      nodes: new Backbone.Collection(this.get('nodes')),
-      links: new Backbone.Collection(this.get('links'))
+      nodes: nodes,
+      links: links
     });
+    this.listenTo(nodes, 'remove', this.onRemove);
   },
 
   add: function (node) {
@@ -30,6 +33,14 @@ SVGG.Graph = Backbone.Model.extend({
       links.add(link);
       return link;
     }
+  },
+
+  onRemove: function (node) {
+    var links = this.get('links');
+    links.where({source: node.id})
+      .each(links.remove);
+    links.where({target: node.id})
+      .each(links.remove);
   },
 
 });
