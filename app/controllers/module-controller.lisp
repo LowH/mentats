@@ -42,8 +42,7 @@
   (unless (eq (session-user) (module.owner module))
     (http-error "403 Forbidden" "Not authorized"))
   (facts:with-transaction
-    (unless (module.deleted module)
-      (facts:add (module 'module.deleted t))))
+    (setf (module.deleted module) t))
   (redirect-to (user-uri (session-user))))
 
 (defun /module#update-domains (module)
@@ -68,9 +67,7 @@
 			    (setf (slot-value node :id) (domain.id domain))))))
 	     nodes)
 	(dolist (d old-domains)
-	  (format t "~&FIXME: REMOVE ~S~%" d))
-	(facts:with ((?domain 'domain.module module))
-	  (facts:rm ((?domain 'domain.required-domains ?))))
+	  (setf (domain.deleted d) t))
 	(map nil (lambda (link)
 		   (let ((source (find-domain (slot-value link :source)))
 			 (target (find-domain (slot-value link :target))))
@@ -81,7 +78,7 @@
 		     (unless (facts:bound-p ((target 'domain.required-domains source)))
 		       (facts:add (target 'domain.required-domains source)))))
 	     links)
-	(render-json `((nodes . ,nodes) (links . ,links)))))))
+	(render-json (module-domains-json module))))))
 
 (defun /module (&optional module.id action)
   (let ((module (when module.id
