@@ -38,6 +38,45 @@ SVGG.Editor = SVGG.Paper.extend({
     $(window).on('click', this.onWindowClick);
   },
 
+  moveFocus: function (direction) {
+    var o = this.focused;
+    var m;
+    switch (direction) {
+    case 0: m = function (c) { return {a:(o.y - c.y), b:(c.x - o.x)}}; break;
+    case 1: m = function (c) { return {a:(c.x - o.x), b:(c.y - o.y)}}; break;
+    case 2: m = function (c) { return {a:(c.y - o.y), b:(c.x - o.x)}}; break;
+    case 3: m = function (c) { return {a:(o.x - c.x), b:(c.y - o.y)}}; break;
+    }
+    var s = null;
+    var sd = Number.MAX_VALUE;
+    _.each(this.nodeViews, function (nodeView) {
+      if (nodeView != this.focused) {
+	var d = m(nodeView);
+	if (d.a > 0 &&
+	    Math.abs(d.b)/4 <= d.a &&
+	    d.a * d.a + d.b * d.b < sd) {
+	  s = nodeView;
+	  sd = d.a * d.a + d.b * d.b;
+	}
+      }
+    });
+    if (s)
+      this.setFocus(s);
+  },
+
+  moveFocused: function (direction) {
+    if (this.focused) {
+      var p = this.focused.model.get('position');
+      switch (direction) {
+      case 0: p.y = p.y - this.grid; break;
+      case 1: p.x = p.x + this.grid; break;
+      case 2: p.y = p.y + this.grid; break;
+      case 3: p.x = p.x - this.grid; break;
+      }
+      this.focused.model.set({position: p});
+    }
+  },
+
   onArrowMouseDown: function (linkView, evt) {
     console.log('SVGG.Editor.onArrowMouseDown', evt);
     if (evt.button == 1) {
@@ -57,6 +96,63 @@ SVGG.Editor = SVGG.Paper.extend({
       this.setFocus(null);
       if (evt && evt.stopPropagation)
 	evt.stopPropagation();
+    }
+  },
+
+  onKey: function(evt) {
+    console.log('SVGG.Editor.onKey', evt);
+    switch (evt.keyCode || String.fromCharCode(evt.charCode)) {
+    case 13: // Enter
+      if (this.focused) {
+	evt.preventDefault();
+	this.focused.model.promptName();
+      }
+      break;
+    case 'h': case 37: // ←
+      if (this.focused) {
+	evt.preventDefault();
+	var d = 3;
+	if (evt.ctrlKey) {
+	  this.spawnLinked(3);
+	} else {
+	  if (evt.shiftKey) {
+	    this.moveFocused(3);
+	  } else {
+	    this.moveFocus(3);
+	  }
+	}
+      }
+      break;
+    case 'j': case 40: // ↓
+      if (this.focused) {
+	evt.preventDefault();
+	if      (evt.ctrlKey)  { this.spawnLinked(2); }
+	else if (evt.shiftKey) { this.moveFocused(2); }
+	else                   { this.moveFocus(2); }
+      }
+      break;
+    case 'k': case 38: // ↑
+      if (this.focused) {
+	evt.preventDefault();
+	if      (evt.ctrlKey)  { this.spawnLinked(0); }
+	else if (evt.shiftKey) { this.moveFocused(0); }
+	else                   { this.moveFocus(0); }
+      }
+      break;
+    case 'l': case 39: // →
+      if (this.focused) {
+	evt.preventDefault();
+	if      (evt.ctrlKey)  { this.spawnLinked(1); }
+	else if (evt.shiftKey) { this.moveFocused(1); }
+	else                   { this.moveFocus(1); }
+      }
+      break;
+    case 'd': case 46: // delete
+      if (this.focused) {
+	evt.preventDefault();
+	this.removeFocused();
+      }
+      break;
     }
   },
 
@@ -224,6 +320,21 @@ SVGG.Editor = SVGG.Paper.extend({
 	this.$('.btn.removeNode').addClass('disabled');
       }
     }
+  },
+
+  spawnLinked: function (direction) {
+    var s = this.focused.model;
+    var e = this.spawnNode();
+    var v = this.getNodeView(e);
+    var p = s.get('position');
+    switch (direction) {
+    case 0: p.y = p.y - this.grid * 4 - e.get('size').height; break;
+    case 1: p.x = p.x + this.grid * 4 + s.get('size').width; break;
+    case 2: p.y = p.y + this.grid * 4 + s.get('size').height; break;
+    case 3: p.x = p.x - this.grid * 4 - e.get('size').width; break;
+    }
+    e.set({position: p});
+    this.model.link(s, e);
   },
 
   stopMoving: function(evt) {
