@@ -59,6 +59,10 @@ SVGG.Graph = Backbone.Model.extend({
     return attr;
   },
 
+  remove: function (node) {
+    this.get('nodes').remove(node);
+  },
+
   toJSON: function() {
     var nodes = this.get('nodes').models;
     var json = _.mapValues(this.attributes, function(x) {

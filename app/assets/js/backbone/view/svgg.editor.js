@@ -165,7 +165,7 @@ SVGG.Editor = SVGG.Paper.extend({
 
   removeNode: function () {
     if (this.focused)
-      this.focused.model.destroy();
+      this.model.remove(this.focused.model);
   },
 
   renameNode: function (evt) {
