@@ -23,16 +23,18 @@ SVGG.Graph = Backbone.Model.extend({
 
   link: function(source, target) {
     var links = this.get('links');
-    var linked = links.where({source: source.cid, target: target.cid})[0];
-    if (linked) {
-      console.log('already linked:', linked);
+    if (links.findWhere({source: source.cid, target: target.cid})) {
+      console.log('already linked');
       return null;
     }
-    else {
-      var link = new SVGG.Link({source: source.cid, target: target.cid});
-      links.add(link);
-      return link;
+    var link = links.findWhere({source: target.cid, target: source.cid});
+    if (link) {
+      console.log('reverse link');
+      links.remove(link);
     }
+    link = new SVGG.Link({source: source.cid, target: target.cid});
+    links.add(link);
+    return link;
   },
 
   onRemove: function (node) {

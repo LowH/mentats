@@ -15,7 +15,7 @@ SVGG.Editor = SVGG.Paper.extend({
 
   initialize: function (options) {
     SVGG.Paper.prototype.initialize.apply(this, arguments);
-    _.bindAll(this, 'renameNode', 'stopMoving', 'onNodeMouseDown', 'onNodeMouseUp', 'onNodeClick', 'onNodeDblClick', 'onMouseDown', 'onMouseUp', 'onMouseMove', 'onClick', 'onToolbarClick', 'onWindowClick');
+    _.bindAll(this, 'onArrowMouseDown', 'renameNode', 'stopMoving', 'onNodeMouseDown', 'onNodeMouseUp', 'onNodeClick', 'onNodeDblClick', 'onMouseDown', 'onMouseUp', 'onMouseMove', 'onClick', 'onToolbarClick', 'onWindowClick');
 
     this.focus = this.svg.rect(40, 30)
       .move(-2, -2)
@@ -31,7 +31,22 @@ SVGG.Editor = SVGG.Paper.extend({
       dblclick: this.onNodeDblClick
     },
 
+    this.linkEvents = {
+      arrowmousedown: this.onArrowMouseDown,
+    };
+
     $(window).on('click', this.onWindowClick);
+  },
+
+  onArrowMouseDown: function (linkView, evt) {
+    console.log('SVGG.Editor.onArrowMouseDown', evt);
+    var p = this.mousePosition(evt);
+    this.newLink = new SVGG.LinkView({
+      svg: this.svgLinks,
+      source: linkView.source,
+      target: { x: p.x, y: p.y, width: 0, height: 0 }
+    });
+    this.model.get('links').remove(linkView.model);
   },
 
   onClick: function (evt) {

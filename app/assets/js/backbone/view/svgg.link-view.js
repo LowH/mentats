@@ -1,6 +1,10 @@
 
 SVGG.LinkView = Backbone.View.extend({
 
+  events: {
+    'mousedown polygon': 'onArrowMouseDown',
+  },
+
   initialize: function(options) {
     Backbone.View.prototype.initialize.apply(this, arguments);
     //_.bindAll(this, 'onMouseDown', 'onMouseUp', 'onClick', 'onDblClick', 'onMove', 'onChangeLabel', 'onChangeStyle');
@@ -22,6 +26,10 @@ SVGG.LinkView = Backbone.View.extend({
     if (this.target.cid)
       this.listenTo(this.target, 'move', this.onMove);
     this.onMove();
+  },
+
+  onArrowMouseDown: function(evt) {
+    this.trigger('arrowmousedown', this, evt);
   },
 
   onMove: function() {

@@ -28,6 +28,8 @@ SVGG.Paper = Backbone.View.extend({
     this.listenTo(links, 'reset', this.onResetLinks);
   },
 
+  linkEvents: {},
+
   mousePosition: function (evt) {
     var offset = this.$paper.offset();
     var p = {
@@ -63,6 +65,7 @@ SVGG.Paper = Backbone.View.extend({
       source: this.getNodeView(link.get('source')),
       target: this.getNodeView(link.get('target')),
     });
+    v.on(this.linkEvents);
     console.log(v);
     this.linkViews.push(v);
   },
