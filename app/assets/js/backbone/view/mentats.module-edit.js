@@ -28,7 +28,6 @@ Mentats.DomainGraphEditor = SVGG.Editor.extend({
 
 });
 
-
 Mentats.ModuleEditor = Backbone.View.extend({
 
   initialize: function(options) {
@@ -39,9 +38,7 @@ Mentats.ModuleEditor = Backbone.View.extend({
       el: '#module-graph-editor',
       width: 900,
       height: 602,
-      radius: 8,
     });
-
   },
 
 });

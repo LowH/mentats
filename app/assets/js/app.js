@@ -17,6 +17,7 @@
  *= require backbone/model/mentats.domain
  *= require backbone/model/mentats.module
  *= require backbone/view/mentats.module-edit
+ *= require backbone/view/mentats.module-view
  *= require mentats.module
  */
 

@@ -6,8 +6,6 @@ $('body.module.module--edit').each(function() {
   module.fetch();
 
   console.log('module', module);
-  //module.get('domains').add(new Mentats.Domain({ name: "Plop" }));
-  console.log('module domains', module.get('domains'));
 
   var moduleEditor = new Mentats.ModuleEditor({
     model: module,
@@ -16,4 +14,19 @@ $('body.module.module--edit').each(function() {
 
   // test
   console.log(moduleEditor);
+});
+
+$('body.module.module--show').each(function() {
+  var module = new Mentats.Module({id: $(this).find('#module-graph-view').data('id')});
+  module.fetch();
+
+  console.log('module', module);
+
+  var moduleView = new Mentats.ModuleView({
+    model: module,
+    el: 'body'
+  });
+
+  // test
+  console.log(moduleView);
 });
