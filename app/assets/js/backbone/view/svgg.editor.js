@@ -40,20 +40,24 @@ SVGG.Editor = SVGG.Paper.extend({
 
   onArrowMouseDown: function (linkView, evt) {
     console.log('SVGG.Editor.onArrowMouseDown', evt);
-    var p = this.mousePosition(evt);
-    this.newLink = new SVGG.LinkView({
-      svg: this.svgLinks,
-      source: linkView.source,
-      target: { x: p.x, y: p.y, width: 0, height: 0 }
-    });
-    this.model.get('links').remove(linkView.model);
+    if (evt.button == 1) {
+      var p = this.mousePosition(evt);
+      this.newLink = new SVGG.LinkView({
+	svg: this.svgLinks,
+	source: linkView.source,
+	target: { x: p.x, y: p.y, width: 0, height: 0 }
+      });
+      this.model.get('links').remove(linkView.model);
+    }
   },
 
   onClick: function (evt) {
     console.log('onClick', evt);
-    this.setFocus(null);
-    if (evt && evt.stopPropagation)
-      evt.stopPropagation();
+    if (evt.button == 1) {
+      this.setFocus(null);
+      if (evt && evt.stopPropagation)
+	evt.stopPropagation();
+    }
   },
 
   onMouseDown: function() {
@@ -93,74 +97,88 @@ SVGG.Editor = SVGG.Paper.extend({
 
   onMouseUp: function(evt) {
     console.log('SVGG.Editor.onMouseUp', evt);
-    this.moving = null;
-    if (this.newLink) {
-      this.newLink.remove();
-      this.newLink = null;
+    if (evt.button == 1) {
+      this.moving = null;
+      if (this.newLink) {
+	this.newLink.remove();
+	this.newLink = null;
+      }
+      evt.preventDefault();
     }
-    evt.preventDefault();
   },
 
   onNodeClick: function(node, evt) {
     console.log('onNodeClick', node, evt);
-    evt.preventDefault();
-    evt.stopPropagation();
+    if (evt.button == 1) {
+      evt.preventDefault();
+      evt.stopPropagation();
+    }
   },
 
   onNodeDblClick: function(node, evt) {
     console.log('onNodeDblClick', node, evt);
-    node.model.promptName();
+    if (evt.button == 1) {
+      node.model.promptName();
+    }
   },
 
   onNodeMouseDown: function(nodeView, evt) {
     console.log('onNodeMouseDown', nodeView, evt);
-    if (evt.ctrlKey) {
-      var p = this.mousePosition(evt);
-      this.newLink = new SVGG.LinkView({
-	svg: this.svgLinks,
-	source: nodeView,
-	target: { x: p.x, y: p.y, width: 0, height: 0 }
-      });
+    if (evt.button == 1) {
+      if (evt.ctrlKey) {
+	var p = this.mousePosition(evt);
+	this.newLink = new SVGG.LinkView({
+	  svg: this.svgLinks,
+	  source: nodeView,
+	  target: { x: p.x, y: p.y, width: 0, height: 0 }
+	});
+      }
+      else {
+	var position = nodeView.model.get('position');
+	this.moving = {
+	  nodeView: nodeView,
+	  pageX: position.x - evt.pageX,
+	  pageY: position.y - evt.pageY
+	};
+	$(window).on('mouseup', this.stopMoving);
+	this.setFocus(nodeView);
+      }
+      evt.preventDefault();
     }
-    else {
-      var position = nodeView.model.get('position');
-      this.moving = {
-	nodeView: nodeView,
-	pageX: position.x - evt.pageX,
-	pageY: position.y - evt.pageY
-      };
-      $(window).on('mouseup', this.stopMoving);
-      this.setFocus(nodeView);
-    }
-    evt.preventDefault();
   },
 
   onNodeMouseUp: function(node, evt) {
     console.log('onNodeMouseUp', node, evt);
-    if (this.moving) {
-      evt.stopPropagation();
-      evt.preventDefault();
-      this.stopMoving(evt);
-    }
-    else if (this.newLink) {
-      evt.stopPropagation();
-      evt.preventDefault();
-      var link = this.newLink;
-      this.newLink = null;
-      link.remove();
-      this.model.link(link.source.model, node.model);
+    if (evt.button == 1) {
+      if (this.moving) {
+	evt.stopPropagation();
+	evt.preventDefault();
+	this.stopMoving(evt);
+      }
+      else if (this.newLink) {
+	evt.stopPropagation();
+	evt.preventDefault();
+	var link = this.newLink;
+	this.newLink = null;
+	link.remove();
+	this.model.link(link.source.model, node.model);
+      }
     }
   },
 
   onToolbarClick: function (evt) {
     console.log('onToolbarClick', evt);
-    if (evt && evt.stopPropagation)
-      evt.stopPropagation();
+    if (evt.button == 1) {
+      if (evt && evt.stopPropagation)
+	evt.stopPropagation();
+    }
   },
 
   onWindowClick: function (evt) {
     console.log('onWindowClick', evt);
-    this.setFocus(null);
+    if (evt.button == 1) {
+      this.setFocus(null);
+    }
   },
 
   removeNode: function () {
