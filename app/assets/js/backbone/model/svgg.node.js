@@ -10,6 +10,6 @@ SVGG.Node = Backbone.Model.extend({
     var n = prompt("Nouveau nom :", this.get('name'));
     if (n)
       this.set({name: n});
-  }
+  },
 
 });

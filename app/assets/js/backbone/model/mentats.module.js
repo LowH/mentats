@@ -15,14 +15,6 @@ Mentats.DomainsGraph = SVGG.Graph.extend({
     });
   },
 
-  parse: function(attr, options) {
-    console.log('DomainsGraph.parse', attr, options);
-    this.get('nodes').reset(attr.nodes);
-    this.get('links').reset(attr.links);
-    return {};
-  },
-
-
 });
 
 Mentats.Module = Backbone.Model.extend({

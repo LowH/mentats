@@ -49,9 +49,9 @@ SVGG.Paper = Backbone.View.extend({
 
   nodeRadius: 8,
 
-  getNodeView: function(id) {
+  getNodeView: function(cid) {
     return _.find(this.nodeViews, function(v) {
-      return v.model.get('id') == id;
+      return v.model.cid == cid;
     });
   },
 
