@@ -16,6 +16,15 @@
   (template-let (domain)
     (render-view :domain :edit '.html)))
 
+(defun /domain#update (domain)
+  (check-can :edit domain)
+  (unless (eq (session-user) (module.owner (domain.module domain)))
+    (http-error "403 Forbidden" "Not authorized"))
+  (with-form-data (description name)
+    (setf (domain.description domain) description
+	  (domain.name domain) name)
+    (redirect-to (domain-uri domain))))
+
 (defun parse-competence-json (node domain)
   (cond ((slot-boundp node :id)
 	 (let ((competence (find-competence (slot-value node :id))))

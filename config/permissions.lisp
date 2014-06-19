@@ -10,6 +10,11 @@
   (?module :is-a 'module
 	   'module.owner ?user))
 
+(can:define-permission (?user :can :edit ?domain)
+  (?user :is-a 'user)
+  (?domain 'domain.module ?module)
+  (?module 'module.owner ?user))
+
 (can:define-permission (?user :can :admin :all)
   (?user :is-a 'user
 	 'user.email "thomas@lowh.net"))
