@@ -34,9 +34,11 @@
   (let ((g!session (gensym "SESSION-")))
     `(when-let ((,g!session ,session))
        (lowh-facts:with-transaction
-	 (when (facts:bound-p ((,g!session 'session.user ?)))
-	   (error "Session user cannot be set twice."))
-	 (lowh-facts:add (,g!session 'session.user ,user))
+	 (cond
+	   ((null ,user) (lowh-facts:rm ((,g!session 'session.user ?))))
+	   (t (when (facts:bound-p ((,g!session 'session.user ?)))
+		(error "Session user cannot be set twice."))
+	      (lowh-facts:add (,g!session 'session.user ,user))))
 	 ,user))))
 
 (defun session-user ()
