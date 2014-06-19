@@ -1,9 +1,0 @@
-<a class="module thumbnail" href="«=(h (module-uri $module))»">
-  <div class="caption">
-    <h3>«=(h (module.discipline $module))» <span class="badge">«=(h (module.level $module))»</span></h3>
-    « (when (module.version $module) »
-    <p class="version">«=(h (module.version $module))»</p>
-    « ) »
-    <p class="owner">«=(h (user.name (module.owner $module)))»</p>
-  </div>
-</a>

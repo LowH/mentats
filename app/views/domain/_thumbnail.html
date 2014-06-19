@@ -1,0 +1,10 @@
+<div class="domain thumbnail">
+  <div class="caption">
+    <h1><a href="«=(h (domain-uri $domain))»">«=(h (domain.name $domain))»</a></h1>
+  </div>
+  « (when (can :edit $domain) »
+  <div class="btn-toolbar">
+    <a href="«=(h (domain-uri $domain :action :edit))»" class="edit btn btn-default" title="Éditer"><i class="icon-edit"></i></a>
+  </div>
+  « ) »
+</div>

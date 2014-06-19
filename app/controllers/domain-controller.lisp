@@ -8,7 +8,8 @@
   (cond ((accept-p :application/json)
 	 (render-json (domain-json domain)))
 	(t
-	 (template-let (domain)
+	 (template-let (domain
+			(module (domain.module domain)))
 	   (render-view :domain :show '.html)))))
 
 (defun /domain#edit (domain)
@@ -20,10 +21,11 @@
   (check-can :edit domain)
   (unless (eq (session-user) (module.owner (domain.module domain)))
     (http-error "403 Forbidden" "Not authorized"))
-  (with-form-data (description name)
-    (setf (domain.description domain) description
-	  (domain.name domain) name)
-    (redirect-to (domain-uri domain))))
+  (facts:with-transaction
+    (with-form-data (description name)
+      (setf (domain.description domain) description
+	    (domain.name domain) name)
+      (redirect-to (domain-uri domain)))))
 
 (defun parse-competence-json (node domain)
   (cond ((slot-boundp node :id)

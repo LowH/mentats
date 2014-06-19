@@ -6,7 +6,7 @@ Mentats.CompetenceGraphEditor = SVGG.Editor.extend({
     _.bindAll(this, 'spawnNode', 'save');
   },
 
-  nodeRadius: 15,
+  nodeRadius: Mentats.competenceRadius,
 
   spawnNode: function(evt) {
     console.log('domain spawn node');

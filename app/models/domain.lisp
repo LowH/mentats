@@ -7,8 +7,11 @@
   (has-one position)
   (has-many required-domains))
 
-(defun domain-uri (domain)
-  (uri-for `(/domain ,(domain.id domain))))
+(defun domain-uri (domain &key action)
+  (let ((uri (uri-for `(/domain ,(domain.id domain)))))
+    (ecase action
+      ((:edit) (str uri "/edit"))
+      ((nil) uri))))
 
 (defun domain-required-domains (domain)
   (remove-if #'domain.deleted (domain.required-domains domain)))
