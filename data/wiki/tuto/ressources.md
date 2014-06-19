@@ -15,4 +15,4 @@ Les enseignants peuvent filtrer, par contributeur ou par étiquettes (tags), les
 
 Les graphes permettent non seulement l'organisation des ressources pédagogiques, mais également l'évaluation des élèves.
 
-[<button class="btn btn-primary pull-right" type="button"> L'évaluation &nbsp;<i class="icon-arrow-left"></i></button>](/tuto/evaluation)
+[<button class="btn btn-primary pull-right" type="button"> L'évaluation &nbsp;<i class="icon-arrow-right"></i></button>](/tuto/evaluation)

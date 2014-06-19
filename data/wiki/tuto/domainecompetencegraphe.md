@@ -19,4 +19,4 @@ Ces graphes rendent compte de précédences chronologiques dans la progression d
 
 En cliquant sur une compétence, on accède à ses ressources.
 
-[<button class="btn btn-primary pull-right" type="button">Les ressources &nbsp;<i class="icon-arrow-left"></i></button>](/tuto/ressources)
+[<button class="btn btn-primary pull-right" type="button">Les ressources &nbsp;<i class="icon-arrow-right"></i></button>](/tuto/ressources)

@@ -16,4 +16,4 @@ Il peut également modifier pour un élève donné la liste des compétences ma�
 [insert pic]
  
 
-[<button class="btn btn-primary pull-right" type="button"> Contribuer &nbsp;<i class="icon-arrow-left"></i></button>](/tuto/contribuer)
+[<button class="btn btn-primary pull-right" type="button"> Contribuer &nbsp;<i class="icon-arrow-right"></i></button>](/tuto/contribuer)

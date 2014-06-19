@@ -17,4 +17,4 @@ Après inscription, les utilisateurs de MENTATS peuvent :
 
 Les contributeurs conservent la propriété intellectuelle des graphes et ressources qu'ils produisent.  
 
-[<button class="btn btn-primary pull-right" type="button"> S'inscrire &nbsp;<i class="icon-arrow-left"></i></button>](/account/register)
+[<button class="btn btn-primary pull-right" type="button"> S'inscrire &nbsp;<i class="icon-arrow-right"></i></button>](/account/register)

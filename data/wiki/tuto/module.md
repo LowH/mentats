@@ -22,5 +22,5 @@ Les modules sont présentés avec les identifiants de leurs *propriétaires* : l
 
 Pour la suite de cette présentation, nous utiliserons le *module* : CP - Nombres et Opérations
 
-[<button class="btn btn-primary pull-right" type="button"> Domaines, Compétences, Graphes &nbsp;<i class="icon-arrow-left"></i></button>](/tuto/domainecompetencegraphe)
+[<button class="btn btn-primary pull-right" type="button"> Domaines, Compétences, Graphes &nbsp;<i class="icon-arrow-right"></i></button>](/tuto/domainecompetencegraphe)
 

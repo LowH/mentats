@@ -15,10 +15,10 @@ Bienvenue sur MENTATS
 MENTATS est un outil qui assiste les enseignants dans leurs choix pédagogiques et réduit leurs temps de préparation.
 [développer sur les ambitions de l'outil]
 
-[<button class="btn btn-primary pull-left" type="button"> Suivre la présentation &nbsp;<i class="icon-arrow-left"></i></button>](/tuto/module)
+[<button class="btn btn-primary pull-left" type="button"> Suivre la présentation &nbsp;<i class="icon-arrow-right"></i></button>](/tuto/module)
 
 
-[<button class="btn btn-primary pull-right" type="button">S'inscrire &nbsp;<i class="icon-arrow-left"></i></button>](/account/register)
+[<button class="btn btn-primary pull-right" type="button">S'inscrire &nbsp;<i class="icon-arrow-right"></i></button>](/account/register)
 
   </div>
  </div>
