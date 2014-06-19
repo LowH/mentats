@@ -1,16 +1,16 @@
 
 var Mentats = {
 
-  editModule: function(id) {
-    document.location = '/module/' + id + '/edit';
+  editCompetence: function(id) {
+    document.location = '/competence/' + id + '/edit';
   },
 
   editDomain: function(id) {
     document.location = '/domaine/' + id + '/edit';
   },
 
-  editCompetence: function(id) {
-    document.location = '/competence/' + id + '/edit';
+  editModule: function(id) {
+    document.location = '/module/' + id + '/edit';
   },
 
 };
