@@ -10,12 +10,12 @@ SVGG.Editor = SVGG.Paper.extend({
     'mousemove svg': 'onMouseMove',
     'mouseup svg': 'onMouseUp',
     'click svg': 'onClick',
-    'click .toolbar': 'onToolbarClick'
+    'click .toolbar': 'onToolbarClick',
   },
 
   initialize: function (options) {
     SVGG.Paper.prototype.initialize.apply(this, arguments);
-    _.bindAll(this, 'onArrowMouseDown', 'renameNode', 'stopMoving', 'onNodeMouseDown', 'onNodeMouseUp', 'onNodeClick', 'onNodeDblClick', 'onMouseDown', 'onMouseUp', 'onMouseMove', 'onClick', 'onToolbarClick', 'onWindowClick');
+    _.bindAll(this, 'nodePosition', 'onArrowMouseDown', 'onKey', 'renameNode', 'stopMoving', 'onNodeMouseDown', 'onNodeMouseUp', 'onNodeClick', 'onNodeDblClick', 'onMouseDown', 'onMouseUp', 'onMouseMove', 'onClick', 'onToolbarClick', 'onWindowClick');
 
     this.focus = this.svg.rect(40, 30)
       .move(-2, -2)
@@ -35,7 +35,10 @@ SVGG.Editor = SVGG.Paper.extend({
       arrowmousedown: this.onArrowMouseDown,
     };
 
-    $(window).on('click', this.onWindowClick);
+    $(window).on({
+      click: this.onWindowClick,
+      keydown: this.onKey,
+    });
   },
 
   moveFocus: function (direction) {
@@ -77,9 +80,27 @@ SVGG.Editor = SVGG.Paper.extend({
     }
   },
 
+  toGrid: function (x) {
+    return Math.round(x / this.grid) * this.grid;
+  },
+
+  nodePosition: function (x, y, w, h) {
+    x = this.toGrid(x);
+    y = this.toGrid(y);
+    if (w || h) {
+      if (x + w > this.width - this.grid)
+	x = this.toGrid(this.width - w) - this.grid;
+      if (y + h > this.height - this.grid)
+	y = this.toGrid(this.height - h) - this.grid;
+      if (x < this.grid) x = this.grid;
+      if (y < this.grid) y = this.grid;
+    }
+    return {x: x, y: y};
+  },
+
   onArrowMouseDown: function (linkView, evt) {
     console.log('SVGG.Editor.onArrowMouseDown', evt);
-    if (evt.button == 1) {
+    if (evt.button == 0) {
       var p = this.mousePosition(evt);
       this.newLink = new SVGG.LinkView({
 	svg: this.svgLinks,
@@ -92,7 +113,7 @@ SVGG.Editor = SVGG.Paper.extend({
 
   onClick: function (evt) {
     console.log('onClick', evt);
-    if (evt.button == 1) {
+    if (evt.button == 0) {
       this.setFocus(null);
       if (evt && evt.stopPropagation)
 	evt.stopPropagation();
@@ -100,8 +121,9 @@ SVGG.Editor = SVGG.Paper.extend({
   },
 
   onKey: function(evt) {
-    console.log('SVGG.Editor.onKey', evt);
-    switch (evt.keyCode || String.fromCharCode(evt.charCode)) {
+    var k = evt.charCode ? String.fromCharCode(evt.charCode) : evt.keyCode;
+    console.log('SVGG.Editor.onKey', k, evt);
+    switch (k) {
     case 13: // Enter
       if (this.focused) {
 	evt.preventDefault();
@@ -163,20 +185,10 @@ SVGG.Editor = SVGG.Paper.extend({
   onMouseMove: function(evt) {
     if (this.moving) {
       //console.log(this.moving);
-      var p = {
-	x: evt.pageX + this.moving.pageX,
-	y: evt.pageY + this.moving.pageY
-      };
-      p.x = Math.round(p.x / this.grid) * this.grid;
-      p.y = Math.round(p.y / this.grid) * this.grid;
-      var w = this.moving.nodeView.rect.width();
-      var h = this.moving.nodeView.rect.height();
-      if (p.x + w > this.svg.width() - this.grid)
-	p.x = (Math.floor((this.svg.width() - w) / this.grid) - 1) * this.grid;
-      if (p.y + h > this.svg.height() - this.grid)
-	p.y = (Math.floor((this.svg.height() - h) / this.grid) - 1) * this.grid;
-      if (p.x < this.grid) p.x = this.grid;
-      if (p.y < this.grid) p.y = this.grid;
+      var p = this.nodePosition(evt.pageX + this.moving.pageX,
+				evt.pageY + this.moving.pageY,
+				this.moving.nodeView.width,
+				this.moving.nodeView.height);
       this.moving.nodeView.model.set({
 	position: p
       });
@@ -193,7 +205,7 @@ SVGG.Editor = SVGG.Paper.extend({
 
   onMouseUp: function(evt) {
     console.log('SVGG.Editor.onMouseUp', evt);
-    if (evt.button == 1) {
+    if (evt.button == 0) {
       this.moving = null;
       if (this.newLink) {
 	this.newLink.remove();
@@ -205,7 +217,7 @@ SVGG.Editor = SVGG.Paper.extend({
 
   onNodeClick: function(node, evt) {
     console.log('onNodeClick', node, evt);
-    if (evt.button == 1) {
+    if (evt.button == 0) {
       evt.preventDefault();
       evt.stopPropagation();
     }
@@ -213,14 +225,14 @@ SVGG.Editor = SVGG.Paper.extend({
 
   onNodeDblClick: function(node, evt) {
     console.log('onNodeDblClick', node, evt);
-    if (evt.button == 1) {
+    if (evt.button == 0) {
       node.model.promptName();
     }
   },
 
   onNodeMouseDown: function(nodeView, evt) {
     console.log('onNodeMouseDown', nodeView, evt);
-    if (evt.button == 1) {
+    if (evt.button == 0) {
       if (evt.ctrlKey) {
 	var p = this.mousePosition(evt);
 	this.newLink = new SVGG.LinkView({
@@ -245,7 +257,7 @@ SVGG.Editor = SVGG.Paper.extend({
 
   onNodeMouseUp: function(node, evt) {
     console.log('onNodeMouseUp', node, evt);
-    if (evt.button == 1) {
+    if (evt.button == 0) {
       if (this.moving) {
 	evt.stopPropagation();
 	evt.preventDefault();
@@ -264,7 +276,7 @@ SVGG.Editor = SVGG.Paper.extend({
 
   onToolbarClick: function (evt) {
     console.log('onToolbarClick', evt);
-    if (evt.button == 1) {
+    if (evt.button == 0) {
       if (evt && evt.stopPropagation)
 	evt.stopPropagation();
     }
@@ -272,7 +284,7 @@ SVGG.Editor = SVGG.Paper.extend({
 
   onWindowClick: function (evt) {
     console.log('onWindowClick', evt);
-    if (evt.button == 1) {
+    if (evt.button == 0) {
       this.setFocus(null);
     }
   },
@@ -323,18 +335,19 @@ SVGG.Editor = SVGG.Paper.extend({
   },
 
   spawnLinked: function (direction) {
-    var s = this.focused.model;
-    var e = this.spawnNode();
-    var v = this.getNodeView(e);
-    var p = s.get('position');
+    var source = this.focused.model;
+    var target = this.spawnNode();
+    var targetView = this.onAddNode(target);
+    var p = source.get('position');
     switch (direction) {
-    case 0: p.y = p.y - this.grid * 4 - e.get('size').height; break;
-    case 1: p.x = p.x + this.grid * 4 + s.get('size').width; break;
-    case 2: p.y = p.y + this.grid * 4 + s.get('size').height; break;
-    case 3: p.x = p.x - this.grid * 4 - e.get('size').width; break;
+    case 0: p.y = p.y - this.grid * 4 - targetView.height; break;
+    case 1: p.x = p.x + this.grid * 4 + this.focused.width; break;
+    case 2: p.y = p.y + this.grid * 4 + this.focused.height; break;
+    case 3: p.x = p.x - this.grid * 4 - targetView.width; break;
     }
-    e.set({position: p});
-    this.model.link(s, e);
+    p = this.nodePosition(p.x, p.y);
+    target.set({position: p});
+    this.model.link(source, target);
   },
 
   stopMoving: function(evt) {
