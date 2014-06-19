@@ -1,6 +1,4 @@
 
-Mentats.modules = new Mentats.ModulesCollection();
-
 $('body.module.module--edit').each(function() {
   var module = new Mentats.Module({id: $(this).find('#module-graph-editor').data('id')});
   module.fetch();

@@ -10,13 +10,29 @@
 (defun domain-uri (domain)
   (uri-for `(/domain ,(domain.id domain))))
 
+(defun domain-required-domains (domain)
+  (remove-if #'domain.deleted (domain.required-domains domain)))
+
+(defun domain-competences (domain)
+  (remove-if #'competence.deleted (domain.competences domain)))
+
+(defun domain-competences-json (domain)
+  (let ((competences (domain-competences domain)))
+    (json:make-object
+     `((nodes . ,(mapcar #'competence-json competences))
+       (links . ,(mapcan (lambda (competence)
+			   (mapcan (lambda (req)
+				     `(((source . ,(competence.id req))
+					(target . ,(competence.id competence)))))
+				   (competence-required-competences competence)))
+			 competences)))
+     nil)))
+
 (defun domain-json (domain)
   (facts:with-transaction
     (json:make-object
      `((id . ,(domain.id domain))
        (name . ,(domain.name domain))
-       (position . ,(domain.position domain)))
+       (position . ,(domain.position domain))
+       (competences . ,(domain-competences-json domain)))
      nil)))
-
-(defun domain-required-domains (domain)
-  (remove-if #'domain.deleted (domain.required-domains domain)))

@@ -1,16 +1,16 @@
 
-Mentats.DomainGraphEditor = SVGG.Editor.extend({
+Mentats.CompetenceGraphEditor = SVGG.Editor.extend({
 
   initialize: function(options) {
     SVGG.Editor.prototype.initialize.apply(this, arguments);
     _.bindAll(this, 'spawnNode', 'save');
   },
 
-  nodeRadius: 2,
+  nodeRadius: 15,
 
   spawnNode: function(evt) {
-    console.log('module spawn node');
-    var node = new Mentats.Domain({
+    console.log('domain spawn node');
+    var node = new Mentats.Competence({
       name: "",
       position: { x: 10, y: 10 }
     });
@@ -22,20 +22,20 @@ Mentats.DomainGraphEditor = SVGG.Editor.extend({
   },
 
   save: function() {
-    console.log('Mentats.DomainGraphEditor.save', this);
+    console.log('Mentats.CompetenceGraphEditor.save', this);
     this.model.save();
   }
 
 });
 
-Mentats.ModuleEditor = Backbone.View.extend({
+Mentats.DomainEditor = Backbone.View.extend({
 
   initialize: function(options) {
     Backbone.View.prototype.initialize.apply(this, arguments);
-    console.log('new Mentats.ModuleEditor', this);
-    this.domainGraphEditor = new Mentats.DomainGraphEditor({
-      model: this.model.get('domains'),
-      el: '#module-graph-editor',
+    console.log('new Mentats.DomainEditor', this);
+    this.competenceGraphEditor = new Mentats.CompetenceGraphEditor({
+      model: this.model.get('competences'),
+      el: '#domain-graph-editor',
       width: 900,
       height: 602,
     });
