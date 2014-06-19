@@ -20,7 +20,10 @@
 (define-route "/module/{module}/{action}" `(/module ,(uri-var 'module)
 						    ,(uri-var 'action)))
 
-(define-route "/domain/{domain}" `(/domain ,(uri-var 'domain)))
+(define-route "/domaine" `(/module))
+(define-route "/domaine/{domain}" `(/domain ,(uri-var 'domain)))
+(define-route "/domaine/{domain}/{action}" `(/domain ,(uri-var 'domain)
+						     ,(uri-var 'action)))
 
 (define-route "/favicon.ico" (find-route "/assets/favicon.ico"))
 

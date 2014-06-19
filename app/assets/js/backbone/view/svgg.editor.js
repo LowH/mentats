@@ -226,7 +226,9 @@ SVGG.Editor = SVGG.Paper.extend({
   onNodeDblClick: function(node, evt) {
     console.log('onNodeDblClick', node, evt);
     if (evt.button == 0) {
-      node.model.promptName();
+      if (node.model.edit) {
+	node.model.edit();
+      }
     }
   },
 

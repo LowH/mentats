@@ -1,8 +1,9 @@
 
 (define-resource domain
   (has-one deleted)
-  (has-one name)
+  (has-one description)
   (has-one module :having module.domains)
+  (has-one name)
   (has-one position)
   (has-many required-domains))
 

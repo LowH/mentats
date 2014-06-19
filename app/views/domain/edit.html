@@ -1,0 +1,52 @@
+<h2>Éditer un domaine</h2>
+<form role="form" class="form clearfix" action="«=(h (domain-uri $domain))»" method="POST">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+	<label for="discipline">Nom</label>
+	<input class="form-control" type="text" name="name" value="«=(h (domain.name $domain))»" placeholder="Nom" required/>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+	<label for="description">Description</label>
+	<textarea class="form-control" rows="8" name="description" placeholder="Décrivez le domaine en quelques lignes">«=(h (domain.description $domain))»</textarea>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <button type="submit" class="btn btn-primary form-control" name="_method" value="PUT"><i class="icon-ok"></i> Enregistrer</button>
+    </div>
+  </div>
+</form>
+
+<hr/>
+
+<h2>Graphe des compétences</h2>
+<div id="domain-graph-editor" data-id="«=(h (domain.id $domain))»">
+  <div class="toolbar">
+    <button class="btn spawnNode" title="Ajouter"><i class="icon-plus"></i></button>
+    <button class="btn renameNode disabled" title="Renommer"><i class="icon-edit"></i></button>
+    <button class="btn btn-danger removeNode disabled" title="Supprimer"><i class="icon-trash"></i></button>
+    <button class="btn btn-primary save" title="Sauvegarder"><i class="icon-ok"></i></button>
+  </div>
+  <div class="paper"></div>
+</div>
+
+<hr/>
+
+<h2>Supprimer</h2>
+<div class="row">
+  <div class="col-sm-5">
+    <form role="form" class="form" action="«=(h (domain-uri $domain))»" method="POST">
+      <div class="form-group">
+	<p>Attention, toute suppression est irréversible.</p>
+	<div class="checkbox">
+	  <input class="form-control" type="checkbox" name="delete" value="0" required/> Confirmer
+	</div>
+      </div>
+      <button type="submit" class="btn btn-danger" name="_method" value="DELETE"><i class="icon-trash"></i> Supprimer</button>
+    </form>
+  </div>
+</div>
