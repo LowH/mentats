@@ -67,13 +67,13 @@ On veut pouvoir :
         +   Visualiser les statistiques de la *classe* pour chaque *module* → 4h
         +   **DONE** Passer en *mode édition* → 2h
             +   **DONE** Ajouter/enlever un *domaine* à un *module* → 6h
-            +   Ajouter un *domaine* aux prérequis d'un autre *domaine* → 6h
+            +   **DONE** Ajouter un *domaine* aux prérequis d'un autre *domaine* → 6h
             +   **DONE** Sortir du *mode édition*
-        +   Choisir un *domaine*
-            +   Passer en *mode édition*
-                +   Ajouter une *compétence* à un *domaine*.
-                +   Enlever une *compétence* à un *domaine*.
-                +   Ajouter une *compétence* aux prérequis d'une autre *compétence*.
+        +   **DONE** Choisir un *domaine*
+            +   **DONE** Passer en *mode édition*
+                +   **DONE** Ajouter une *compétence* à un *domaine*.
+                +   **DONE** Enlever une *compétence* à un *domaine*.
+                +   **DONE** Ajouter une *compétence* aux prérequis d'une autre *compétence*.
                 +   Sortir du *mode édition*.
             +   Choisir une *compétence*.
                 +   Passer en *mode édition*.
