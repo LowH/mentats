@@ -5,6 +5,9 @@ SVGG.Paper = Backbone.View.extend({
     Backbone.View.prototype.initialize.apply(this, arguments);
     _.bindAll(this, 'onAddNode', 'onAddLink');
 
+    this.width = options.width;
+    this.height = options.height;
+
     this.grid = options.grid || 8;
     this.$paper = this.$el.find('.paper');
     this.svg = SVG(this.$paper[0])
@@ -72,15 +75,18 @@ SVGG.Paper = Backbone.View.extend({
 
   onAddNode: function(node, collection, options) {
     console.log('SVGG.Paper.onAddNode', arguments);
-    var v = new SVGG.NodeView({
-      svg: this.svgNodes,
-      model: node,
-      radius: this.nodeRadius
-    });
-    v.on(this.nodeEvents);
-    this.nodeViews.push(v);
-    if (options.focus)
-      this.setFocus(v);
+    var v = this.getNodeView(node);
+    if (!v) {
+      v = new SVGG.NodeView({
+	svg: this.svgNodes,
+	model: node,
+	radius: this.nodeRadius
+      });
+      v.on(this.nodeEvents);
+      this.nodeViews.push(v);
+      if (options && options.focus)
+	this.setFocus(v);
+    }
     return v;
   },
 
