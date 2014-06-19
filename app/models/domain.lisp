@@ -16,3 +16,6 @@
        (name . ,(domain.name domain))
        (position . ,(domain.position domain)))
      nil)))
+
+(defun domain-required-domains (domain)
+  (remove-if #'domain.deleted (domain.required-domains domain)))
