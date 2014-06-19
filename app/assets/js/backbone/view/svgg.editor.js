@@ -337,17 +337,18 @@ SVGG.Editor = SVGG.Paper.extend({
   },
 
   spawnLinked: function (direction) {
-    var source = this.focused.model;
+    var sourceView = this.focused;
+    var source = sourceView.model;
     var target = this.spawnNode();
     var targetView = this.onAddNode(target);
-    var p = source.get('position');
+    var p = _.clone(source.get('position'));
     switch (direction) {
     case 0: p.y = p.y - this.grid * 4 - targetView.height; break;
-    case 1: p.x = p.x + this.grid * 4 + this.focused.width; break;
-    case 2: p.y = p.y + this.grid * 4 + this.focused.height; break;
+    case 1: p.x = p.x + this.grid * 4 + sourceView.width; break;
+    case 2: p.y = p.y + this.grid * 4 + sourceView.height; break;
     case 3: p.x = p.x - this.grid * 4 - targetView.width; break;
     }
-    p = this.nodePosition(p.x, p.y);
+    p = this.nodePosition(p.x, p.y, targetView.width, targetView.height);
     target.set({position: p});
     this.model.link(source, target);
   },
