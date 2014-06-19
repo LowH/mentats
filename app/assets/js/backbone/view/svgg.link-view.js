@@ -37,25 +37,27 @@ SVGG.LinkView = Backbone.View.extend({
     var y1 = this.source.y + (this.source.height || 0) / 2;
     var x2 = this.target.x + (this.target.width  || 0) / 2;
     var y2 = this.target.y + (this.target.height || 0) / 2;
-    this.line.plot(x1, y1, x2, y2);
     var dx = x2 - x1;
     var dy = y2 - y1;
     var n = Math.sqrt(dx * dx + dy * dy);
-    // FIXME: n == 0 ?
     var m = {
-      a: - dy / n,
-      b: dx / n,
-      c: - dx / n,
-      d: - dy / n,
-      e: x2,
-      f: y2
+      a: 1,  b: 0,
+      c: 0,  d: 1,
+      e: x2, f: y2
     };
-    if (this.target.intersect) {
-      var i = this.target.intersect(x1, y1);
-      m.e = i.x;
-      m.f = i.y;
+    if (n > Number.MIN_VALUE) {
+      m.a = - dy / n;
+      m.b =   dx / n;
+      m.c = - dx / n;
+      m.d = - dy / n;
+      if (this.target.intersect) {
+	var i = this.target.intersect(x1, y1);
+	m.e = i.x;
+	m.f = i.y;
+      }
     }
     this.arrow.transform(m);
+    this.line.plot(x1, y1, m.e, m.f);
   },
 
   setTarget: function (nodeView) {

@@ -22,8 +22,8 @@ SVGG.NodeView = Backbone.View.extend({
     this.label = this.group.plain('')
       .move(12, 0);
 
-    this.model.on('change:position', this.onMove);
-    this.model.on('change:name', this.onChangeLabel);
+    this.listenTo(this.model, 'change:position', this.onMove);
+    this.listenTo(this.model, 'change:name', this.onChangeLabel);
     //this.model.on('change:border', this.onChangeStyle);
     //this.model.on('change:background', this.onChangeStyle);
 
@@ -82,8 +82,10 @@ SVGG.NodeView = Backbone.View.extend({
     var cy = this.y + this.height / 2;
     x -= cx;
     y -= cy;
+    if (Math.abs(x) < Number.MIN_VALUE)
+      return {x: cx, y:(cy + (y > 0 ? 1 : -1) * this.height / 2)};
     var s = x > 0 ? 1 : -1;
-    var a = Math.abs(x) < Number.MIN_VALUE ? Number.MAX_VALUE : y / x;
+    var a = y / x;
     var a1 = this.height / (this.width - 2 * this.radius);
     var a2 = (this.height - 2 * this.radius) / this.width;
     if (a > a1)
@@ -109,5 +111,9 @@ SVGG.NodeView = Backbone.View.extend({
     var r = { x: Cx + t * xd, y: Cy + t * yd };
     return r;
   },
+
+  x: 0,
+
+  y: 0,
 
 });
