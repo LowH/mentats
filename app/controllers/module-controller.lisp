@@ -1,7 +1,12 @@
 
 (defun /module#index ()
   (check-can :list 'modules)
-  (render-view :module :index '.html))
+  (let ((modules))
+    (facts:with ((?m :is-a 'module))
+      (unless (module.deleted ?m)
+	(push ?m modules)))
+    (template-let (modules)
+      (render-view :module :index '.html))))
 
 (defun /module#show (module)
   (check-can :view module)
