@@ -15,15 +15,27 @@
 (define-route "/account/reset-password" '(/account/reset-password))
 
 (define-route "/user/{login}" `(/user ,(uri-var 'login)))
+(define-route "/j/user/{login}" `(/user ,(uri-var 'login) "json"))
+
 (define-route "/module" `(/module))
 (define-route "/module/{module}" `(/module ,(uri-var 'module)))
 (define-route "/module/{module}/{action}" `(/module ,(uri-var 'module)
 						    ,(uri-var 'action)))
+(define-route "/j/module/{module}" `(/module ,(uri-var 'module) "json"))
+(define-route "/j/module/{module}/{action}" `(/module ,(uri-var 'module)
+						      ,(uri-var 'action)))
 
 (define-route "/domaine" `(/module))
 (define-route "/domaine/{domain}" `(/domain ,(uri-var 'domain)))
 (define-route "/domaine/{domain}/{action}" `(/domain ,(uri-var 'domain)
 						     ,(uri-var 'action)))
+(define-route "/j/domaine/{domain}" `(/domain ,(uri-var 'domain) "json"))
+(define-route "/j/domaine/{domain}/{action}" `(/domain ,(uri-var 'domain)
+						       ,(uri-var 'action)))
+
+(define-route "/competence" `(/competence))
+(define-route "/competence/{competence}" `(/competence ,(uri-var 'competence)))
+(define-route "/j/competence/{competence}" `(/competence ,(uri-var 'competence) "json"))
 
 (define-route "/favicon.ico" (find-route "/assets/favicon.ico"))
 

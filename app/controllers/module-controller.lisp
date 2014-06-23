@@ -5,11 +5,12 @@
 
 (defun /module#show (module)
   (check-can :view module)
-  (cond ((accept-p :application/json)
-	 (render-json (module-json module)))
-	(t
-	 (template-let (module)
-	   (render-view :module :show '.html)))))
+  (template-let (module)
+    (render-view :module :show '.html)))
+
+(defun /module#json (module)
+  (check-can :view module)
+  (render-json (module-json module)))
 
 (defun /module#edit (module)
   (check-can :edit module)
@@ -96,13 +97,14 @@
 		  (or (find-module module.id)
 		      (http-error "404 Not found" "Module not found."))))
 	(action (when action
-		  (or (find (string-upcase action) '(:edit :domains) :test #'string=)
+		  (or (find (string-upcase action) '(:edit :domains :json) :test #'string=)
 		      (http-error "404 Not found" "Action not found.")))))
     (case *method*
       (:GET (if module
 		(ecase action
 		  ((nil) (/module#show module))
-		  ((:edit) (/module#edit module)))
+		  ((:edit) (/module#edit module))
+		  ((:json) (/module#json module)))
 		(/module#index)))
       (:POST   (cond ((and module (eq action :domains))
 		      (/module#update-domains module))
