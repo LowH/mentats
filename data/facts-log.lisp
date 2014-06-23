@@ -11892,3 +11892,10893 @@ perma, mais ne s'affiche pas"))
                                #(LOWH-FACTS.ANON::SESSION-003E
                                  LOWH.TRIANGLE.SERVER::SESSION.ATIME
                                  3612177514))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612177214))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612178383))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0035
+                                 DOMAIN.DESCRIPTION "L'élève apprend ..."))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0035 DOMAIN.NAME
+                                 "la phrase"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0035 DOMAIN.NAME
+                                 "la phrase"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612178383))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612178383))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612178383))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612178390))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612178390))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612178391))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612178391))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612178394))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0035
+                                 DOMAIN.DESCRIPTION "L'élève apprend ..."))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0035
+                                 DOMAIN.DESCRIPTION "L'élève apprend ..."))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0035 DOMAIN.NAME
+                                 "la phrase"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0035 DOMAIN.NAME
+                                 "la phrase"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612178394))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612178394))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612178394))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612180140))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612180140))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612180141))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612180141))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612180172))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0035
+                                 DOMAIN.DESCRIPTION "L'élève apprend ..."))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0035
+                                 DOMAIN.DESCRIPTION
+                                 "À l'issue du Cycle 2, les élèves sauront :
+* écrire une phrase, syntaxiquement et sémantiquement cohérente, en utilisant le point et la majuscule."))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0035 DOMAIN.NAME
+                                 "la phrase"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0035 DOMAIN.NAME
+                                 "la phrase"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612180172))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612180172))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612177514))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184049))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612180172))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184070))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184070))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184075))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184075))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184078))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184078))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184079))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184079))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184098))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184098))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184099))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184099))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184110))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184110))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184111))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184111))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184116))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184116))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184117))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184117))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184142))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184142))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184143))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184143))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184154))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184154))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003D
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184155))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0033
+                                 LOWH.TRIANGLE.SERVER::SESSION.USER-AGENT
+                                 "Mozilla/5.0 (X11; OpenBSD amd64; rv:18.0) Gecko/20100101 Firefox/18.0"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0033
+                                 LOWH.TRIANGLE.SERVER::SESSION.REMOTE-ADDR
+                                 "82.67.155.88"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0033
+                                 LOWH.TRIANGLE.SERVER::SESSION.KEY
+                                 "dvODzBu6WV4nBscChciuwifRV-2EwUnG"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0033
+                                 LOWH.TRIANGLE.SERVER::SESSION.ID
+                                 "jgqPJ_we7GLj1rUrZTxfHwonV3-rtPWm"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0033
+                                 LOWH.TRIANGLE.SERVER::SESSION.CTIME
+                                 3611567022))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0033
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3611573250))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0033 :IS-A SESSION))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0033 SESSION.USER
+                                 LOWH-FACTS.ANON::USER))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003F :IS-A SESSION))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003F
+                                 LOWH.TRIANGLE.SERVER::SESSION.ID
+                                 "kve1nzH9g85nM5i2kjybkLJ3jmapu8Sn"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003F
+                                 LOWH.TRIANGLE.SERVER::SESSION.CTIME
+                                 3612202210))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003F
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612202210))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003F
+                                 LOWH.TRIANGLE.SERVER::SESSION.KEY
+                                 "gIUaMd_SJ_ig6DivzWWwQHnvwtd0oemg"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003F
+                                 LOWH.TRIANGLE.SERVER::SESSION.REMOTE-ADDR
+                                 "80.215.194.61"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003F
+                                 LOWH.TRIANGLE.SERVER::SESSION.USER-AGENT
+                                 "Mozilla/5.0 (Linux; Android 4.1.1; BS471 Build/JRO03C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.141 Mobile Safari/537.36"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040 :IS-A SESSION))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040
+                                 LOWH.TRIANGLE.SERVER::SESSION.ID
+                                 "pNVCEfmQAO7q-o6GbvRo9fB4jmVctaj8"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040
+                                 LOWH.TRIANGLE.SERVER::SESSION.CTIME
+                                 3612202291))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612202291))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040
+                                 LOWH.TRIANGLE.SERVER::SESSION.KEY
+                                 "iB-EomvzNOf7qUEjj_Jbm-vfEf7dQy00"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040
+                                 LOWH.TRIANGLE.SERVER::SESSION.REMOTE-ADDR
+                                 "80.12.55.229"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040
+                                 LOWH.TRIANGLE.SERVER::SESSION.USER-AGENT
+                                 "Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D201 Safari/9537.53"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0041 :IS-A SESSION))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0041
+                                 LOWH.TRIANGLE.SERVER::SESSION.ID
+                                 "CIQvvms5eryw8AawJaPfPzSo5wEr3Z1-"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0041
+                                 LOWH.TRIANGLE.SERVER::SESSION.CTIME
+                                 3612202333))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0041
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612202333))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0041
+                                 LOWH.TRIANGLE.SERVER::SESSION.KEY
+                                 "H3GXaDcVe5hnKt-PzRBMENbafntiEABE"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0041
+                                 LOWH.TRIANGLE.SERVER::SESSION.REMOTE-ADDR
+                                 "80.215.194.61"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0041
+                                 LOWH.TRIANGLE.SERVER::SESSION.USER-AGENT
+                                 "Mozilla/5.0 (Linux; U; Android 4.1.1; fr-fr; BS471 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.1 Mobile Safari/534.30"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612202291))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612202366))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040 SESSION.USER
+                                 LOWH-FACTS.ANON::USER))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612202366))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612202368))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612202368))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612202393))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612202393))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612202426))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612202426))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612202427))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612202427))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612202458))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612202458))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612202459))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612202459))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612202553))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612202553))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612202554))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612202554))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0040
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612202615))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612184049))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612251796))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612251796))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612251821))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612251821))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612251822))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612251822))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612251921))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0004
+                                 MODULE.DESCRIPTION
+                                 "Introduction au Common Lisp"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0004 MODULE.DISCIPLINE
+                                 "Plop"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0004 MODULE.DISCIPLINE
+                                 "Common Lisp"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0004 MODULE.LEVEL
+                                 "Hop"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0004 MODULE.LEVEL "1"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612251921))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612251921))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612251921))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612251923))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612251923))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612251929))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612251929))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612251933))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612251933))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612252449))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004A :IS-A DOMAIN))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004A DOMAIN.ID
+                                 "FlhkLf"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004A DOMAIN.MODULE
+                                 LOWH-FACTS.ANON::MODULE-0004))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004A DOMAIN.NAME
+                                 "La boucle REPL"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004A DOMAIN.POSITION
+                                 {"x":216,"y":192}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004B :IS-A DOMAIN))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004B DOMAIN.ID
+                                 "BhJ3MK"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004B DOMAIN.MODULE
+                                 LOWH-FACTS.ANON::MODULE-0004))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004B DOMAIN.NAME
+                                 "Les macro fonctions"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004B DOMAIN.POSITION
+                                 {"x":8,"y":248}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004C :IS-A DOMAIN))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004C DOMAIN.ID
+                                 "l8PLMD"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004C DOMAIN.MODULE
+                                 LOWH-FACTS.ANON::MODULE-0004))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004C DOMAIN.NAME
+                                 "L'évaluation (EVAL)"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004C DOMAIN.POSITION
+                                 {"x":208,"y":104}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004D :IS-A DOMAIN))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004D DOMAIN.ID
+                                 "iLogfy"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004D DOMAIN.MODULE
+                                 LOWH-FACTS.ANON::MODULE-0004))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004D DOMAIN.NAME
+                                 "Le reader (READ)"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004D DOMAIN.POSITION
+                                 {"x":24,"y":104}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004E :IS-A DOMAIN))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004E DOMAIN.ID
+                                 "5YtKE7"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004E DOMAIN.MODULE
+                                 LOWH-FACTS.ANON::MODULE-0004))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004E DOMAIN.NAME
+                                 "Le printer (PRINT)"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004E DOMAIN.POSITION
+                                 {"x":384,"y":104}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004F :IS-A DOMAIN))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004F DOMAIN.ID
+                                 "Ax3fNh"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004F DOMAIN.MODULE
+                                 LOWH-FACTS.ANON::MODULE-0004))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004F DOMAIN.NAME
+                                 "La compilation"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004F DOMAIN.POSITION
+                                 {"x":280,"y":240}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0050 :IS-A DOMAIN))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0050 DOMAIN.ID
+                                 "_VLYl6"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0050 DOMAIN.MODULE
+                                 LOWH-FACTS.ANON::MODULE-0004))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0050 DOMAIN.NAME
+                                 "Les symboles"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0050 DOMAIN.POSITION
+                                 {"x":24,"y":24}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004A
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-004D))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004A
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-004C))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-004A
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-004E))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0041
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612202333))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0041
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612259381))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0034
+                                 LOWH.TRIANGLE.SERVER::SESSION.USER-AGENT
+                                 "Mozilla/5.0 (X11; OpenBSD amd64; rv:18.0) Gecko/20100101 Firefox/18.0"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0034
+                                 LOWH.TRIANGLE.SERVER::SESSION.REMOTE-ADDR
+                                 "109.10.199.46"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0034
+                                 LOWH.TRIANGLE.SERVER::SESSION.KEY
+                                 "SIuqZroHKau-lSZmSlmsQpCC5yV5d6ZW"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0034
+                                 LOWH.TRIANGLE.SERVER::SESSION.ID
+                                 "-cPn02mseVGwMBFhoOVvwo5HxgQ9AV0b"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0034
+                                 LOWH.TRIANGLE.SERVER::SESSION.CTIME
+                                 3611580938))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0034
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3611641630))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0034 :IS-A SESSION))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0035
+                                 LOWH.TRIANGLE.SERVER::SESSION.USER-AGENT
+                                 "Mozilla/5.0 (X11; OpenBSD amd64; rv:18.0) Gecko/20100101 Firefox/18.0"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0035
+                                 LOWH.TRIANGLE.SERVER::SESSION.REMOTE-ADDR
+                                 "37.162.172.55"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0035
+                                 LOWH.TRIANGLE.SERVER::SESSION.KEY
+                                 "5OV-48yg17oNIreXMSZQu_zf8ziw8CYM"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0035
+                                 LOWH.TRIANGLE.SERVER::SESSION.ID
+                                 "crsGoY8gUlWAax4xu0dcyc8aeRrfTlPn"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0035
+                                 LOWH.TRIANGLE.SERVER::SESSION.CTIME
+                                 3611651900))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0035
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3611651900))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0035 :IS-A SESSION))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042 :IS-A SESSION))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ID
+                                 "kMn1LTPBF5exXR7zSmXvAC89gF4Tvl1x"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.CTIME
+                                 3612277529))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612277529))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.KEY
+                                 "gcB_SXhSLZUWTuZTBQQb7va2oOlP7SOd"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.REMOTE-ADDR
+                                 "78.204.148.28"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.USER-AGENT
+                                 "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:30.0) Gecko/20100101 Firefox/30.0"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612277529))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612278076))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612278076))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612288183))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612288183))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297008))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297008))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297021))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297021))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297035))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042 SESSION.USER
+                                 LOWH-FACTS.ANON::USER))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297035))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297035))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297035))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297040))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297040))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297042))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297042))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297042))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297042))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297095))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297095))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297095))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297095))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297095))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297095))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297103))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297103))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297103))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297103))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297105))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297105))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297106))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297106))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297108))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297108))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297108))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297108))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297121))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297121))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297122))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297122))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297151))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297151))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297151))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297151))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297160))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297160))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297160))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297160))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297198))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297198))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297198))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297198))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297198))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297198))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297200))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297200))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297200))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297200))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297202))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297202))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297202))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297202))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297208))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297208))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297208))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297208))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297280))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297280))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297289))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297289))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297289))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297289))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297291))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297291))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297291))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297291))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297293))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297293))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297294))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612297294))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0042
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612298983))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0007
+                                 COMPETENCE.NAME "zerr"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0007
+                                 COMPETENCE.NAME "Poney"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0007
+                                 COMPETENCE.POSITION {"x":328,"y":80}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0007
+                                 COMPETENCE.POSITION {"x":360,"y":32}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0000
+                                 COMPETENCE.NAME "ezrezr"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0000
+                                 COMPETENCE.NAME "ezrezr"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0000
+                                 COMPETENCE.POSITION {"x":10,"y":10}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0000
+                                 COMPETENCE.POSITION {"x":128,"y":40}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0008 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0008 COMPETENCE.ID
+                                 "oI5UYu"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0008
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0035))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0008
+                                 COMPETENCE.NAME "DonkeyDong"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0008
+                                 COMPETENCE.POSITION {"x":704,"y":48}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0009 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0009 COMPETENCE.ID
+                                 "YBhlVi"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0009
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0035))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0009
+                                 COMPETENCE.NAME "Yeah"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0009
+                                 COMPETENCE.POSITION {"x":96,"y":128}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000A :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000A COMPETENCE.ID
+                                 "OVfKG0"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000A
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0035))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000A
+                                 COMPETENCE.NAME "kjgh"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000A
+                                 COMPETENCE.POSITION {"x":136,"y":512}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000B :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000B COMPETENCE.ID
+                                 "whqUWr"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000B
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0035))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000B
+                                 COMPETENCE.NAME "lmkhnjklh"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000B
+                                 COMPETENCE.POSITION {"x":472,"y":344}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000C :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000C COMPETENCE.ID
+                                 "GhqFdI"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000C
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0035))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000C
+                                 COMPETENCE.NAME "oihoih"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000C
+                                 COMPETENCE.POSITION {"x":520,"y":64}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000D :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000D COMPETENCE.ID
+                                 "Q9hyZF"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000D
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0035))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000D
+                                 COMPETENCE.NAME "klhklh"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000D
+                                 COMPETENCE.POSITION {"x":792,"y":224}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000E :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000E COMPETENCE.ID
+                                 "7-d_Uh"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000E
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0035))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000E
+                                 COMPETENCE.NAME "klmjkl"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000E
+                                 COMPETENCE.POSITION {"x":512,"y":112}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000F :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000F COMPETENCE.ID
+                                 "8AmInX"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000F
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0035))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000F
+                                 COMPETENCE.NAME "kjok"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000F
+                                 COMPETENCE.POSITION {"x":208,"y":360}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0010 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0010 COMPETENCE.ID
+                                 "JXciCS"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0010
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0035))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0010
+                                 COMPETENCE.NAME "kljlk"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0010
+                                 COMPETENCE.POSITION {"x":296,"y":520}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0011 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0011 COMPETENCE.ID
+                                 "jF0SYd"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0011
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0035))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0011
+                                 COMPETENCE.NAME "prout"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0011
+                                 COMPETENCE.POSITION {"x":832,"y":560}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0008
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0007))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0009
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0008))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0007
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0009))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000A
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0009))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000B
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-000A))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000C
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-000B))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000D
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-000C))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000E
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-000D))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000F
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-000E))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0010
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-000F))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000E
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0010))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000D
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0010))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000B
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-000D))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0009
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-000B))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000C
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0008))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000D
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-000A))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-000E
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-000A))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0007
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-000A))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0011
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0010))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0043 :IS-A SESSION))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0043
+                                 LOWH.TRIANGLE.SERVER::SESSION.ID
+                                 "2AlXsFCBY2_7JBn8qx4I4yNQTzn1GJPg"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0043
+                                 LOWH.TRIANGLE.SERVER::SESSION.CTIME
+                                 3612330342))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0043
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612330342))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0043
+                                 LOWH.TRIANGLE.SERVER::SESSION.KEY
+                                 "kq6-AdaeBOWjUjj2QHK6x2uKQdq35AZq"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0043
+                                 LOWH.TRIANGLE.SERVER::SESSION.REMOTE-ADDR
+                                 "82.247.11.75"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0043
+                                 LOWH.TRIANGLE.SERVER::SESSION.USER-AGENT
+                                 "Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D201 Safari/9537.53"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0044 :IS-A SESSION))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0044
+                                 LOWH.TRIANGLE.SERVER::SESSION.ID
+                                 "cz1t1ZuNWVarTiTjnUfxKktQSgPjax3_"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0044
+                                 LOWH.TRIANGLE.SERVER::SESSION.CTIME
+                                 3612348286))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0044
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612348286))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0044
+                                 LOWH.TRIANGLE.SERVER::SESSION.KEY
+                                 "AfihsTdc_6FR0W-aS48a-fi9Hc0fu1w9"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0044
+                                 LOWH.TRIANGLE.SERVER::SESSION.REMOTE-ADDR
+                                 "109.10.208.114"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0044
+                                 LOWH.TRIANGLE.SERVER::SESSION.USER-AGENT
+                                 "Mozilla/5.0 (Windows NT 5.1; rv:30.0) Gecko/20100101 Firefox/30.0"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0045 :IS-A SESSION))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0045
+                                 LOWH.TRIANGLE.SERVER::SESSION.ID
+                                 "zSGU_mDYR4y_QwdvY49qpSMMtgyB3won"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0045
+                                 LOWH.TRIANGLE.SERVER::SESSION.CTIME
+                                 3612348289))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0045
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612348289))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0045
+                                 LOWH.TRIANGLE.SERVER::SESSION.KEY
+                                 "6qwdBSTESpw1gZtH_neOaTOibgTyNahO"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0045
+                                 LOWH.TRIANGLE.SERVER::SESSION.REMOTE-ADDR
+                                 "109.10.208.114"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0045
+                                 LOWH.TRIANGLE.SERVER::SESSION.USER-AGENT
+                                 "Mozilla/5.0 (Windows NT 5.1; rv:30.0) Gecko/20100101 Firefox/30.0"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046 :IS-A SESSION))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ID
+                                 "PCYIKjX3ofINzCYiLetC6clRDez8-c09"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.CTIME
+                                 3612462387))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462387))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.KEY
+                                 "-soVNSQEx923fuIzJZp5-byii69bLgV_"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.REMOTE-ADDR
+                                 "109.213.145.93"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.USER-AGENT
+                                 "Mozilla/5.0 (X11; OpenBSD amd64; rv:18.0) Gecko/20100101 Firefox/18.0"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462387))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462397))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046 SESSION.USER
+                                 LOWH-FACTS.ANON::USER))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462397))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462397))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462397))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462446))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462446))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462456))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462456))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462457))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462457))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462461))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462461))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462463))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462463))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462470))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462470))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462472))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462472))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462488))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0004
+                                 DOMAIN.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0004 DOMAIN.NAME
+                                 "Les nombres de 1 à 5"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0004 DOMAIN.NAME
+                                 "Les nombres à 1 chiffre"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462488))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462488))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462488))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462490))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462490))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462494))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462494))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462496))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462496))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462585))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462585))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462588))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462588))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462605))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462605))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462655))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462655))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462655))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612462655))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612463019))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000C DOMAIN.NAME
+                                 "les signes < et >"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000C DOMAIN.NAME
+                                 "Additions de nombres de 2 chiffres"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000C DOMAIN.POSITION
+                                 {"x":232,"y":288}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000C DOMAIN.POSITION
+                                 {"x":368,"y":248}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000B DOMAIN.NAME
+                                 "comparaisons d'écritures additives"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000B DOMAIN.NAME
+                                 "Les compléments"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000B DOMAIN.POSITION
+                                 {"x":328,"y":152}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000B DOMAIN.POSITION
+                                 {"x":704,"y":184}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000A DOMAIN.NAME
+                                 "écritures additives"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000A DOMAIN.NAME
+                                 "Additions de nombres de 1 chiffre"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000A DOMAIN.POSITION
+                                 {"x":264,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000A DOMAIN.POSITION
+                                 {"x":304,"y":104}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0009 DOMAIN.NAME
+                                 "encadrements"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0009 DOMAIN.NAME
+                                 "Encadrements"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0009 DOMAIN.POSITION
+                                 {"x":392,"y":248}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0009 DOMAIN.POSITION
+                                 {"x":8,"y":264}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0008 DOMAIN.NAME
+                                 "égal, différent"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0008 DOMAIN.NAME
+                                 "Égalité de quantités"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0008 DOMAIN.POSITION
+                                 {"x":16,"y":216}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0008 DOMAIN.POSITION
+                                 {"x":128,"y":40}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0006 DOMAIN.NAME
+                                 "Le plus petit, le plus grand"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0006 DOMAIN.NAME
+                                 "Comparaison d'écritures additives"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0006 DOMAIN.POSITION
+                                 {"x":8,"y":328}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0006 DOMAIN.POSITION
+                                 {"x":80,"y":192}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0005 DOMAIN.NAME
+                                 "Les nombres de 6 à 10"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0005 DOMAIN.NAME
+                                 "Le nombre 10"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0005 DOMAIN.POSITION
+                                 {"x":240,"y":16}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0005 DOMAIN.POSITION
+                                 {"x":632,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0004 DOMAIN.NAME
+                                 "Les nombres à 1 chiffre"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0004 DOMAIN.NAME
+                                 "Les nombres de 1 chiffre"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0004 DOMAIN.POSITION
+                                 {"x":8,"y":16}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0004 DOMAIN.POSITION
+                                 {"x":448,"y":24}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051 :IS-A DOMAIN))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051 DOMAIN.ID
+                                 "-DaTcS"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051 DOMAIN.MODULE
+                                 LOWH-FACTS.ANON::MODULE-0001))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051 DOMAIN.NAME
+                                 "L'opérateur -(+)->"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051 DOMAIN.POSITION
+                                 {"x":424,"y":312}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0052 :IS-A DOMAIN))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0052 DOMAIN.ID
+                                 "D9Tboz"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0052 DOMAIN.MODULE
+                                 LOWH-FACTS.ANON::MODULE-0001))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0052 DOMAIN.NAME
+                                 "Les nombres à deux chiffres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0052 DOMAIN.POSITION
+                                 {"x":392,"y":192}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0053 :IS-A DOMAIN))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0053 DOMAIN.ID
+                                 "uBf2tx"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0053 DOMAIN.MODULE
+                                 LOWH-FACTS.ANON::MODULE-0001))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0053 DOMAIN.NAME
+                                 "Inégalités"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0053 DOMAIN.POSITION
+                                 {"x":24,"y":40}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0007 DOMAIN.DELETED T))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0007 DOMAIN.DELETED T))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000B
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-000A))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000B
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-0005))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0052
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-000A))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0052
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-0005))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000C
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-0052))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0006
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-000A))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0006
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-0008))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0006
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-0053))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-000C))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0009
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-0053))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612463019))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612463022))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0053 DOMAIN.NAME
+                                 "Inégalités"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0053 DOMAIN.NAME
+                                 "Inégalités"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0053 DOMAIN.POSITION
+                                 {"x":24,"y":40}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0053 DOMAIN.POSITION
+                                 {"x":24,"y":40}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0052 DOMAIN.NAME
+                                 "Les nombres à deux chiffres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0052 DOMAIN.NAME
+                                 "Les nombres à deux chiffres"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0052 DOMAIN.POSITION
+                                 {"x":392,"y":192}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0052 DOMAIN.POSITION
+                                 {"x":392,"y":192}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051 DOMAIN.NAME
+                                 "L'opérateur -(+)->"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051 DOMAIN.NAME
+                                 "L'opérateur -(+)->"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051 DOMAIN.POSITION
+                                 {"x":424,"y":312}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051 DOMAIN.POSITION
+                                 {"x":424,"y":312}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000C DOMAIN.NAME
+                                 "Additions de nombres de 2 chiffres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000C DOMAIN.NAME
+                                 "Additions de nombres de 2 chiffres"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000C DOMAIN.POSITION
+                                 {"x":368,"y":248}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000C DOMAIN.POSITION
+                                 {"x":368,"y":248}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000B DOMAIN.NAME
+                                 "Les compléments"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000B DOMAIN.NAME
+                                 "Les compléments"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000B DOMAIN.POSITION
+                                 {"x":704,"y":184}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000B DOMAIN.POSITION
+                                 {"x":704,"y":184}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000A DOMAIN.NAME
+                                 "Additions de nombres de 1 chiffre"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000A DOMAIN.NAME
+                                 "Additions de nombres de 1 chiffre"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000A DOMAIN.POSITION
+                                 {"x":304,"y":104}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000A DOMAIN.POSITION
+                                 {"x":304,"y":104}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0009 DOMAIN.NAME
+                                 "Encadrements"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0009 DOMAIN.NAME
+                                 "Encadrements"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0009 DOMAIN.POSITION
+                                 {"x":8,"y":264}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0009 DOMAIN.POSITION
+                                 {"x":8,"y":264}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0008 DOMAIN.NAME
+                                 "Égalité de quantités"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0008 DOMAIN.NAME
+                                 "Égalité de quantités"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0008 DOMAIN.POSITION
+                                 {"x":128,"y":40}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0008 DOMAIN.POSITION
+                                 {"x":128,"y":40}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0006 DOMAIN.NAME
+                                 "Comparaison d'écritures additives"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0006 DOMAIN.NAME
+                                 "Comparaison d'écritures additives"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0006 DOMAIN.POSITION
+                                 {"x":80,"y":192}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0006 DOMAIN.POSITION
+                                 {"x":80,"y":192}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0005 DOMAIN.NAME
+                                 "Le nombre 10"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0005 DOMAIN.NAME
+                                 "Le nombre 10"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0005 DOMAIN.POSITION
+                                 {"x":632,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0005 DOMAIN.POSITION
+                                 {"x":632,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0004 DOMAIN.NAME
+                                 "Les nombres de 1 chiffre"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0004 DOMAIN.NAME
+                                 "Les nombres de 1 chiffre"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0004 DOMAIN.POSITION
+                                 {"x":448,"y":24}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0004 DOMAIN.POSITION
+                                 {"x":448,"y":24}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0007 DOMAIN.DELETED T))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0007 DOMAIN.DELETED T))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612463022))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612463023))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001
+                                 MODULE.DESCRIPTION
+                                 "* Compétences inspirées des fichiers PEMF Numération-Opérations Cycle 2 Niveaux 2 et 3, qui peuvent servir de supports pour les évaluations individuelles.
+
+* Présentation d'activités en classe entière influencées par les travaux de Caleb Gattegno et nécessitant le matériel Cuisenaire.
+
+* Premier module développé pour MENTATS."))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001
+                                 MODULE.DESCRIPTION
+                                 "* Compétences inspirées des fichiers PEMF Numération-Opérations Cycle 2 Niveaux 2 et 3, qui peuvent servir de supports pour les évaluations individuelles.
+
+* Présentation d'activités en classe entière influencées par les travaux de Caleb Gattegno et nécessitant le matériel Cuisenaire.
+
+* Premier module développé pour MENTATS."))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.DISCIPLINE
+                                 "Maths"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.DISCIPLINE
+                                 "Maths"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.LEVEL
+                                 "CP"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.LEVEL
+                                 "CP"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612463023))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612463023))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612463023))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612463025))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612463025))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612463030))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612463030))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612463035))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612463035))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612463051))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000D :IS-A MODULE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000D MODULE.ID
+                                 "WW--wn"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000D MODULE.DISCIPLINE
+                                 "Maths"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000D MODULE.LEVEL
+                                 "CE1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000D MODULE.OWNER
+                                 LOWH-FACTS.ANON::USER))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612463051))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612463051))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612463051))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612463053))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612463053))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612463391))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612463391))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612463393))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612463393))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464022))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464022))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464029))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464029))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464209))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464209))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464213))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464213))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464215))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464215))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464220))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464220))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464222))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464222))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464225))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464225))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464230))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464230))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464232))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464232))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464246))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464246))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464248))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464248))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464300))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0053 DOMAIN.NAME
+                                 "Inégalités"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0053 DOMAIN.NAME
+                                 "Inégalités"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0053 DOMAIN.POSITION
+                                 {"x":24,"y":40}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0053 DOMAIN.POSITION
+                                 {"x":24,"y":24}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0052 DOMAIN.NAME
+                                 "Les nombres à deux chiffres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0052 DOMAIN.NAME
+                                 "Les nombres à deux chiffres"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0052 DOMAIN.POSITION
+                                 {"x":392,"y":192}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0052 DOMAIN.POSITION
+                                 {"x":440,"y":184}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051 DOMAIN.NAME
+                                 "L'opérateur -(+)->"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051 DOMAIN.NAME
+                                 "L'opérateur -(+)->"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051 DOMAIN.POSITION
+                                 {"x":424,"y":312}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051 DOMAIN.POSITION
+                                 {"x":472,"y":312}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000C DOMAIN.NAME
+                                 "Additions de nombres de 2 chiffres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000C DOMAIN.NAME
+                                 "Additions de nombres de 2 chiffres"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000C DOMAIN.POSITION
+                                 {"x":368,"y":248}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000C DOMAIN.POSITION
+                                 {"x":416,"y":248}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000B DOMAIN.NAME
+                                 "Les compléments"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000B DOMAIN.NAME
+                                 "Les compléments"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000B DOMAIN.POSITION
+                                 {"x":704,"y":184}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000B DOMAIN.POSITION
+                                 {"x":704,"y":184}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000A DOMAIN.NAME
+                                 "Additions de nombres de 1 chiffre"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000A DOMAIN.NAME
+                                 "Additions de nombres de 1 chiffre"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000A DOMAIN.POSITION
+                                 {"x":304,"y":104}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000A DOMAIN.POSITION
+                                 {"x":304,"y":104}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0009 DOMAIN.NAME
+                                 "Encadrements"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0009 DOMAIN.NAME
+                                 "Encadrements"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0009 DOMAIN.POSITION
+                                 {"x":8,"y":264}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0009 DOMAIN.POSITION
+                                 {"x":8,"y":184}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0008 DOMAIN.NAME
+                                 "Égalité de quantités"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0008 DOMAIN.NAME
+                                 "Égalité de quantités"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0008 DOMAIN.POSITION
+                                 {"x":128,"y":40}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0008 DOMAIN.POSITION
+                                 {"x":208,"y":24}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0006 DOMAIN.NAME
+                                 "Comparaison d'écritures additives"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0006 DOMAIN.NAME
+                                 "Comparaison d'écritures additives"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0006 DOMAIN.POSITION
+                                 {"x":80,"y":192}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0006 DOMAIN.POSITION
+                                 {"x":152,"y":184}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0005 DOMAIN.NAME
+                                 "Le nombre 10"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0005 DOMAIN.NAME
+                                 "Le nombre 10"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0005 DOMAIN.POSITION
+                                 {"x":632,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0005 DOMAIN.POSITION
+                                 {"x":616,"y":104}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0004 DOMAIN.NAME
+                                 "Les nombres de 1 chiffre"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0004 DOMAIN.NAME
+                                 "Les nombres de 1 chiffre"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0004 DOMAIN.POSITION
+                                 {"x":448,"y":24}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0004 DOMAIN.POSITION
+                                 {"x":480,"y":24}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0007 DOMAIN.DELETED T))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0007 DOMAIN.DELETED T))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464300))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464301))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0053 DOMAIN.NAME
+                                 "Inégalités"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0053 DOMAIN.NAME
+                                 "Inégalités"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0053 DOMAIN.POSITION
+                                 {"x":24,"y":24}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0053 DOMAIN.POSITION
+                                 {"x":24,"y":24}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0052 DOMAIN.NAME
+                                 "Les nombres à deux chiffres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0052 DOMAIN.NAME
+                                 "Les nombres à deux chiffres"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0052 DOMAIN.POSITION
+                                 {"x":440,"y":184}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0052 DOMAIN.POSITION
+                                 {"x":440,"y":184}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051 DOMAIN.NAME
+                                 "L'opérateur -(+)->"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051 DOMAIN.NAME
+                                 "L'opérateur -(+)->"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051 DOMAIN.POSITION
+                                 {"x":472,"y":312}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051 DOMAIN.POSITION
+                                 {"x":472,"y":312}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000C DOMAIN.NAME
+                                 "Additions de nombres de 2 chiffres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000C DOMAIN.NAME
+                                 "Additions de nombres de 2 chiffres"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000C DOMAIN.POSITION
+                                 {"x":416,"y":248}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000C DOMAIN.POSITION
+                                 {"x":416,"y":248}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000B DOMAIN.NAME
+                                 "Les compléments"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000B DOMAIN.NAME
+                                 "Les compléments"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000B DOMAIN.POSITION
+                                 {"x":704,"y":184}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000B DOMAIN.POSITION
+                                 {"x":704,"y":184}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000A DOMAIN.NAME
+                                 "Additions de nombres de 1 chiffre"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000A DOMAIN.NAME
+                                 "Additions de nombres de 1 chiffre"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000A DOMAIN.POSITION
+                                 {"x":304,"y":104}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000A DOMAIN.POSITION
+                                 {"x":304,"y":104}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0009 DOMAIN.NAME
+                                 "Encadrements"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0009 DOMAIN.NAME
+                                 "Encadrements"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0009 DOMAIN.POSITION
+                                 {"x":8,"y":184}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0009 DOMAIN.POSITION
+                                 {"x":8,"y":184}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0008 DOMAIN.NAME
+                                 "Égalité de quantités"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0008 DOMAIN.NAME
+                                 "Égalité de quantités"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0008 DOMAIN.POSITION
+                                 {"x":208,"y":24}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0008 DOMAIN.POSITION
+                                 {"x":208,"y":24}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0006 DOMAIN.NAME
+                                 "Comparaison d'écritures additives"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0006 DOMAIN.NAME
+                                 "Comparaison d'écritures additives"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0006 DOMAIN.POSITION
+                                 {"x":152,"y":184}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0006 DOMAIN.POSITION
+                                 {"x":152,"y":184}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0005 DOMAIN.NAME
+                                 "Le nombre 10"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0005 DOMAIN.NAME
+                                 "Le nombre 10"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0005 DOMAIN.POSITION
+                                 {"x":616,"y":104}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0005 DOMAIN.POSITION
+                                 {"x":616,"y":104}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0004 DOMAIN.NAME
+                                 "Les nombres de 1 chiffre"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0004 DOMAIN.NAME
+                                 "Les nombres de 1 chiffre"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0004 DOMAIN.POSITION
+                                 {"x":480,"y":24}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0004 DOMAIN.POSITION
+                                 {"x":480,"y":24}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0007 DOMAIN.DELETED T))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0007 DOMAIN.DELETED T))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464301))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464303))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001
+                                 MODULE.DESCRIPTION
+                                 "* Compétences inspirées des fichiers PEMF Numération-Opérations Cycle 2 Niveaux 2 et 3, qui peuvent servir de supports pour les évaluations individuelles.
+
+* Présentation d'activités en classe entière influencées par les travaux de Caleb Gattegno et nécessitant le matériel Cuisenaire.
+
+* Premier module développé pour MENTATS."))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001
+                                 MODULE.DESCRIPTION
+                                 "* Compétences inspirées des fichiers PEMF Numération-Opérations Cycle 2 Niveaux 2 et 3, qui peuvent servir de supports pour les évaluations individuelles.
+
+* Présentation d'activités en classe entière influencées par les travaux de Caleb Gattegno et nécessitant le matériel Cuisenaire.
+
+* Premier module développé pour MENTATS."))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.DISCIPLINE
+                                 "Maths"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.DISCIPLINE
+                                 "Maths"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.LEVEL
+                                 "CP"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-0001 MODULE.LEVEL
+                                 "CP"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464303))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464304))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464304))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464306))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464306))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464308))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464308))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464311))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464311))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464314))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464314))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464322))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464322))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464324))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464324))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464340))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464340))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464386))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464386))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464386))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612464386))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465018))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465018))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465020))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465020))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465023))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465023))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465025))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465025))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465052))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000D
+                                 MODULE.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000D MODULE.DISCIPLINE
+                                 "Maths"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000D MODULE.DISCIPLINE
+                                 "Maths"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000D MODULE.LEVEL
+                                 "CE1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000D MODULE.LEVEL
+                                 "CE1"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465052))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465063))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465063))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465233))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 :IS-A DOMAIN))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.ID
+                                 "rcAJIn"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.MODULE
+                                 LOWH-FACTS.ANON::MODULE-000D))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.NAME
+                                 "Les nombres de 0 à 99"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.POSITION
+                                 {"x":344,"y":24}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 :IS-A DOMAIN))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.ID
+                                 "lsKCfk"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.MODULE
+                                 LOWH-FACTS.ANON::MODULE-000D))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.NAME
+                                 "Le nombre 100"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.POSITION
+                                 {"x":688,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 :IS-A DOMAIN))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.ID
+                                 "zQJ-Zz"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.MODULE
+                                 LOWH-FACTS.ANON::MODULE-000D))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.NAME
+                                 "Les unités de mesure"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.POSITION
+                                 {"x":664,"y":208}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 :IS-A DOMAIN))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.ID
+                                 "zz4QlN"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.MODULE
+                                 LOWH-FACTS.ANON::MODULE-000D))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.NAME
+                                 "Les nombres de 0 à 999"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.POSITION
+                                 {"x":56,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 :IS-A DOMAIN))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.ID
+                                 "XW0PES"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.MODULE
+                                 LOWH-FACTS.ANON::MODULE-000D))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.NAME
+                                 "Addition niveau 1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.POSITION
+                                 {"x":360,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 :IS-A DOMAIN))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.ID
+                                 "_SPmzS"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.MODULE
+                                 LOWH-FACTS.ANON::MODULE-000D))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.NAME
+                                 "Addition niveau 2"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.POSITION
+                                 {"x":80,"y":208}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A :IS-A DOMAIN))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.ID
+                                 "EqYMAq"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.MODULE
+                                 LOWH-FACTS.ANON::MODULE-000D))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.NAME
+                                 "Expressions numériques"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.POSITION
+                                 {"x":328,"y":432}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B :IS-A DOMAIN))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.ID
+                                 "cl0UQw"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.MODULE
+                                 LOWH-FACTS.ANON::MODULE-000D))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.NAME
+                                 "Soustraction niveau 1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.POSITION
+                                 {"x":344,"y":208}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C :IS-A DOMAIN))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.ID
+                                 "Ha60Jn"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.MODULE
+                                 LOWH-FACTS.ANON::MODULE-000D))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.NAME
+                                 "Soustraction niveau 2"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.POSITION
+                                 {"x":344,"y":296}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D :IS-A DOMAIN))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.ID
+                                 "rTBQl7"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.MODULE
+                                 LOWH-FACTS.ANON::MODULE-000D))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.NAME
+                                 "Multiplication niveau 1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.POSITION
+                                 {"x":584,"y":296}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E :IS-A DOMAIN))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.ID
+                                 "2igq1v"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.MODULE
+                                 LOWH-FACTS.ANON::MODULE-000D))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.NAME
+                                 "Multiplication niveau 2"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.POSITION
+                                 {"x":584,"y":432}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F :IS-A DOMAIN))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.ID
+                                 "_ESkGO"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.MODULE
+                                 LOWH-FACTS.ANON::MODULE-000D))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.NAME
+                                 "Les opérateurs"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.POSITION
+                                 {"x":88,"y":304}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-0054))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-0055))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-0054))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-0054))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-0058))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-0059))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-0058))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-005B))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-0058))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-005D))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-0057))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-005C))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-005B))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-0059))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A
+                                 DOMAIN.REQUIRED-DOMAINS
+                                 LOWH-FACTS.ANON::DOMAIN-005D))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465233))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465233))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.NAME
+                                 "Les opérateurs"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.NAME
+                                 "Les opérateurs"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.POSITION
+                                 {"x":88,"y":304}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.POSITION
+                                 {"x":88,"y":304}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.NAME
+                                 "Multiplication niveau 2"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.NAME
+                                 "Multiplication niveau 2"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.POSITION
+                                 {"x":584,"y":432}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.POSITION
+                                 {"x":584,"y":432}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.NAME
+                                 "Multiplication niveau 1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.NAME
+                                 "Multiplication niveau 1"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.POSITION
+                                 {"x":584,"y":296}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.POSITION
+                                 {"x":584,"y":296}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.NAME
+                                 "Soustraction niveau 2"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.NAME
+                                 "Soustraction niveau 2"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.POSITION
+                                 {"x":344,"y":296}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.POSITION
+                                 {"x":344,"y":296}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.NAME
+                                 "Soustraction niveau 1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.NAME
+                                 "Soustraction niveau 1"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.POSITION
+                                 {"x":344,"y":208}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.POSITION
+                                 {"x":344,"y":208}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.NAME
+                                 "Expressions numériques"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.NAME
+                                 "Expressions numériques"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.POSITION
+                                 {"x":328,"y":432}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.POSITION
+                                 {"x":328,"y":432}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.NAME
+                                 "Addition niveau 2"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.NAME
+                                 "Addition niveau 2"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.POSITION
+                                 {"x":80,"y":208}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.POSITION
+                                 {"x":80,"y":208}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.NAME
+                                 "Addition niveau 1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.NAME
+                                 "Addition niveau 1"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.POSITION
+                                 {"x":360,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.POSITION
+                                 {"x":360,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.NAME
+                                 "Les nombres de 0 à 999"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.NAME
+                                 "Les nombres de 0 à 999"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.POSITION
+                                 {"x":56,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.POSITION
+                                 {"x":56,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.NAME
+                                 "Les unités de mesure"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.NAME
+                                 "Les unités de mesure"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.POSITION
+                                 {"x":664,"y":208}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.POSITION
+                                 {"x":664,"y":208}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.NAME
+                                 "Le nombre 100"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.NAME
+                                 "Le nombre 100"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.POSITION
+                                 {"x":688,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.POSITION
+                                 {"x":688,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.NAME
+                                 "Les nombres de 0 à 99"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.NAME
+                                 "Les nombres de 0 à 99"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.POSITION
+                                 {"x":344,"y":24}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.POSITION
+                                 {"x":344,"y":24}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465233))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465234))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.NAME
+                                 "Les opérateurs"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.NAME
+                                 "Les opérateurs"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.POSITION
+                                 {"x":88,"y":304}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.POSITION
+                                 {"x":88,"y":304}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.NAME
+                                 "Multiplication niveau 2"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.NAME
+                                 "Multiplication niveau 2"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.POSITION
+                                 {"x":584,"y":432}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.POSITION
+                                 {"x":584,"y":432}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.NAME
+                                 "Multiplication niveau 1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.NAME
+                                 "Multiplication niveau 1"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.POSITION
+                                 {"x":584,"y":296}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.POSITION
+                                 {"x":584,"y":296}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.NAME
+                                 "Soustraction niveau 2"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.NAME
+                                 "Soustraction niveau 2"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.POSITION
+                                 {"x":344,"y":296}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.POSITION
+                                 {"x":344,"y":296}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.NAME
+                                 "Soustraction niveau 1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.NAME
+                                 "Soustraction niveau 1"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.POSITION
+                                 {"x":344,"y":208}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.POSITION
+                                 {"x":344,"y":208}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.NAME
+                                 "Expressions numériques"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.NAME
+                                 "Expressions numériques"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.POSITION
+                                 {"x":328,"y":432}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.POSITION
+                                 {"x":328,"y":432}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.NAME
+                                 "Addition niveau 2"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.NAME
+                                 "Addition niveau 2"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.POSITION
+                                 {"x":80,"y":208}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.POSITION
+                                 {"x":80,"y":208}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.NAME
+                                 "Addition niveau 1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.NAME
+                                 "Addition niveau 1"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.POSITION
+                                 {"x":360,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.POSITION
+                                 {"x":360,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.NAME
+                                 "Les nombres de 0 à 999"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.NAME
+                                 "Les nombres de 0 à 999"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.POSITION
+                                 {"x":56,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.POSITION
+                                 {"x":56,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.NAME
+                                 "Les unités de mesure"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.NAME
+                                 "Les unités de mesure"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.POSITION
+                                 {"x":664,"y":208}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.POSITION
+                                 {"x":664,"y":208}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.NAME
+                                 "Le nombre 100"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.NAME
+                                 "Le nombre 100"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.POSITION
+                                 {"x":688,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.POSITION
+                                 {"x":688,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.NAME
+                                 "Les nombres de 0 à 99"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.NAME
+                                 "Les nombres de 0 à 99"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.POSITION
+                                 {"x":344,"y":24}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.POSITION
+                                 {"x":344,"y":24}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465234))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465234))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.NAME
+                                 "Les opérateurs"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.NAME
+                                 "Les opérateurs"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.POSITION
+                                 {"x":88,"y":304}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.POSITION
+                                 {"x":88,"y":304}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.NAME
+                                 "Multiplication niveau 2"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.NAME
+                                 "Multiplication niveau 2"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.POSITION
+                                 {"x":584,"y":432}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.POSITION
+                                 {"x":584,"y":432}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.NAME
+                                 "Multiplication niveau 1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.NAME
+                                 "Multiplication niveau 1"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.POSITION
+                                 {"x":584,"y":296}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.POSITION
+                                 {"x":584,"y":296}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.NAME
+                                 "Soustraction niveau 2"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.NAME
+                                 "Soustraction niveau 2"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.POSITION
+                                 {"x":344,"y":296}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.POSITION
+                                 {"x":344,"y":296}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.NAME
+                                 "Soustraction niveau 1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.NAME
+                                 "Soustraction niveau 1"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.POSITION
+                                 {"x":344,"y":208}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.POSITION
+                                 {"x":344,"y":208}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.NAME
+                                 "Expressions numériques"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.NAME
+                                 "Expressions numériques"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.POSITION
+                                 {"x":328,"y":432}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.POSITION
+                                 {"x":328,"y":432}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.NAME
+                                 "Addition niveau 2"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.NAME
+                                 "Addition niveau 2"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.POSITION
+                                 {"x":80,"y":208}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.POSITION
+                                 {"x":80,"y":208}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.NAME
+                                 "Addition niveau 1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.NAME
+                                 "Addition niveau 1"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.POSITION
+                                 {"x":360,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.POSITION
+                                 {"x":360,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.NAME
+                                 "Les nombres de 0 à 999"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.NAME
+                                 "Les nombres de 0 à 999"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.POSITION
+                                 {"x":56,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.POSITION
+                                 {"x":56,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.NAME
+                                 "Les unités de mesure"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.NAME
+                                 "Les unités de mesure"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.POSITION
+                                 {"x":664,"y":208}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.POSITION
+                                 {"x":664,"y":208}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.NAME
+                                 "Le nombre 100"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.NAME
+                                 "Le nombre 100"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.POSITION
+                                 {"x":688,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.POSITION
+                                 {"x":688,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.NAME
+                                 "Les nombres de 0 à 99"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.NAME
+                                 "Les nombres de 0 à 99"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.POSITION
+                                 {"x":344,"y":24}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.POSITION
+                                 {"x":344,"y":24}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465234))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465234))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.NAME
+                                 "Les opérateurs"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.NAME
+                                 "Les opérateurs"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.POSITION
+                                 {"x":88,"y":304}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.POSITION
+                                 {"x":88,"y":304}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.NAME
+                                 "Multiplication niveau 2"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.NAME
+                                 "Multiplication niveau 2"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.POSITION
+                                 {"x":584,"y":432}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.POSITION
+                                 {"x":584,"y":432}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.NAME
+                                 "Multiplication niveau 1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.NAME
+                                 "Multiplication niveau 1"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.POSITION
+                                 {"x":584,"y":296}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.POSITION
+                                 {"x":584,"y":296}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.NAME
+                                 "Soustraction niveau 2"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.NAME
+                                 "Soustraction niveau 2"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.POSITION
+                                 {"x":344,"y":296}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.POSITION
+                                 {"x":344,"y":296}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.NAME
+                                 "Soustraction niveau 1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.NAME
+                                 "Soustraction niveau 1"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.POSITION
+                                 {"x":344,"y":208}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.POSITION
+                                 {"x":344,"y":208}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.NAME
+                                 "Expressions numériques"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.NAME
+                                 "Expressions numériques"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.POSITION
+                                 {"x":328,"y":432}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.POSITION
+                                 {"x":328,"y":432}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.NAME
+                                 "Addition niveau 2"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.NAME
+                                 "Addition niveau 2"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.POSITION
+                                 {"x":80,"y":208}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.POSITION
+                                 {"x":80,"y":208}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.NAME
+                                 "Addition niveau 1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.NAME
+                                 "Addition niveau 1"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.POSITION
+                                 {"x":360,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.POSITION
+                                 {"x":360,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.NAME
+                                 "Les nombres de 0 à 999"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.NAME
+                                 "Les nombres de 0 à 999"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.POSITION
+                                 {"x":56,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.POSITION
+                                 {"x":56,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.NAME
+                                 "Les unités de mesure"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.NAME
+                                 "Les unités de mesure"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.POSITION
+                                 {"x":664,"y":208}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.POSITION
+                                 {"x":664,"y":208}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.NAME
+                                 "Le nombre 100"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.NAME
+                                 "Le nombre 100"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.POSITION
+                                 {"x":688,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.POSITION
+                                 {"x":688,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.NAME
+                                 "Les nombres de 0 à 99"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.NAME
+                                 "Les nombres de 0 à 99"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.POSITION
+                                 {"x":344,"y":24}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.POSITION
+                                 {"x":344,"y":24}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465234))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465234))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.NAME
+                                 "Les opérateurs"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.NAME
+                                 "Les opérateurs"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.POSITION
+                                 {"x":88,"y":304}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.POSITION
+                                 {"x":88,"y":304}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.NAME
+                                 "Multiplication niveau 2"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.NAME
+                                 "Multiplication niveau 2"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.POSITION
+                                 {"x":584,"y":432}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.POSITION
+                                 {"x":584,"y":432}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.NAME
+                                 "Multiplication niveau 1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.NAME
+                                 "Multiplication niveau 1"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.POSITION
+                                 {"x":584,"y":296}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.POSITION
+                                 {"x":584,"y":296}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.NAME
+                                 "Soustraction niveau 2"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.NAME
+                                 "Soustraction niveau 2"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.POSITION
+                                 {"x":344,"y":296}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.POSITION
+                                 {"x":344,"y":296}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.NAME
+                                 "Soustraction niveau 1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.NAME
+                                 "Soustraction niveau 1"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.POSITION
+                                 {"x":344,"y":208}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.POSITION
+                                 {"x":344,"y":208}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.NAME
+                                 "Expressions numériques"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.NAME
+                                 "Expressions numériques"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.POSITION
+                                 {"x":328,"y":432}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.POSITION
+                                 {"x":328,"y":432}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.NAME
+                                 "Addition niveau 2"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.NAME
+                                 "Addition niveau 2"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.POSITION
+                                 {"x":80,"y":208}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.POSITION
+                                 {"x":80,"y":208}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.NAME
+                                 "Addition niveau 1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.NAME
+                                 "Addition niveau 1"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.POSITION
+                                 {"x":360,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.POSITION
+                                 {"x":360,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.NAME
+                                 "Les nombres de 0 à 999"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.NAME
+                                 "Les nombres de 0 à 999"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.POSITION
+                                 {"x":56,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.POSITION
+                                 {"x":56,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.NAME
+                                 "Les unités de mesure"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.NAME
+                                 "Les unités de mesure"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.POSITION
+                                 {"x":664,"y":208}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.POSITION
+                                 {"x":664,"y":208}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.NAME
+                                 "Le nombre 100"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.NAME
+                                 "Le nombre 100"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.POSITION
+                                 {"x":688,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.POSITION
+                                 {"x":688,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.NAME
+                                 "Les nombres de 0 à 99"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.NAME
+                                 "Les nombres de 0 à 99"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.POSITION
+                                 {"x":344,"y":24}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.POSITION
+                                 {"x":344,"y":24}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465234))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465235))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.NAME
+                                 "Les opérateurs"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.NAME
+                                 "Les opérateurs"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.POSITION
+                                 {"x":88,"y":304}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.POSITION
+                                 {"x":88,"y":304}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.NAME
+                                 "Multiplication niveau 2"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.NAME
+                                 "Multiplication niveau 2"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.POSITION
+                                 {"x":584,"y":432}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.POSITION
+                                 {"x":584,"y":432}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.NAME
+                                 "Multiplication niveau 1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.NAME
+                                 "Multiplication niveau 1"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.POSITION
+                                 {"x":584,"y":296}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.POSITION
+                                 {"x":584,"y":296}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.NAME
+                                 "Soustraction niveau 2"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.NAME
+                                 "Soustraction niveau 2"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.POSITION
+                                 {"x":344,"y":296}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.POSITION
+                                 {"x":344,"y":296}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.NAME
+                                 "Soustraction niveau 1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.NAME
+                                 "Soustraction niveau 1"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.POSITION
+                                 {"x":344,"y":208}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.POSITION
+                                 {"x":344,"y":208}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.NAME
+                                 "Expressions numériques"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.NAME
+                                 "Expressions numériques"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.POSITION
+                                 {"x":328,"y":432}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005A DOMAIN.POSITION
+                                 {"x":328,"y":432}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.NAME
+                                 "Addition niveau 2"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.NAME
+                                 "Addition niveau 2"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.POSITION
+                                 {"x":80,"y":208}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.POSITION
+                                 {"x":80,"y":208}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.NAME
+                                 "Addition niveau 1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.NAME
+                                 "Addition niveau 1"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.POSITION
+                                 {"x":360,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.POSITION
+                                 {"x":360,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.NAME
+                                 "Les nombres de 0 à 999"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.NAME
+                                 "Les nombres de 0 à 999"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.POSITION
+                                 {"x":56,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.POSITION
+                                 {"x":56,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.NAME
+                                 "Les unités de mesure"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.NAME
+                                 "Les unités de mesure"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.POSITION
+                                 {"x":664,"y":208}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.POSITION
+                                 {"x":664,"y":208}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.NAME
+                                 "Le nombre 100"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.NAME
+                                 "Le nombre 100"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.POSITION
+                                 {"x":688,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.POSITION
+                                 {"x":688,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.NAME
+                                 "Les nombres de 0 à 99"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.NAME
+                                 "Les nombres de 0 à 99"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.POSITION
+                                 {"x":344,"y":24}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.POSITION
+                                 {"x":344,"y":24}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465235))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465237))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465237))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465237))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000D
+                                 MODULE.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000D
+                                 MODULE.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000D MODULE.DISCIPLINE
+                                 "Maths"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000D MODULE.DISCIPLINE
+                                 "Maths"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000D MODULE.LEVEL
+                                 "CE1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::MODULE-000D MODULE.LEVEL
+                                 "CE1"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465237))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465237))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465237))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465239))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465239))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465245))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465245))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465246))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465246))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465251))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465251))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465252))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465252))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465255))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465255))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465273))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465273))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465275))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465275))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465276))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465276))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465281))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465281))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465281))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465281))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465283))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465283))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465284))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465284))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465379))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0012 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0012 COMPETENCE.ID
+                                 "QG4vfT"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0012
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-000C))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0012
+                                 COMPETENCE.NAME
+                                 "Associer la réunion de collections de dizaines et d'unités à la somme de 2 nombres de 2 chiffres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0012
+                                 COMPETENCE.POSITION {"x":10,"y":10}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0013 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0013 COMPETENCE.ID
+                                 "74GUdT"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0013
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-000C))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0013
+                                 COMPETENCE.NAME
+                                 "Associer la somme de 2 nombres de 2 chiffres à son résultat"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0013
+                                 COMPETENCE.POSITION {"x":144,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0014 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0014 COMPETENCE.ID
+                                 "BwvS38"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0014
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-000C))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0014
+                                 COMPETENCE.NAME
+                                 "Utiliser le tableau des dizaines et des unités pour calculer"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0014
+                                 COMPETENCE.POSITION {"x":152,"y":200}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0013
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0012))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0014
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0013))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465379))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465380))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000C
+                                 DOMAIN.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000C DOMAIN.NAME
+                                 "Additions de nombres de 2 chiffres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000C DOMAIN.NAME
+                                 "Additions de nombres de 2 chiffres"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465380))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465380))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465380))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465381))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465381))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465405))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465405))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465406))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465406))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465426))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465426))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465427))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465427))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465428))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465428))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465429))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465429))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465506))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465506))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465567))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465567))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465646))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465646))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465646))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612465646))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466094))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051
+                                 DOMAIN.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051 DOMAIN.NAME
+                                 "L'opérateur -(+)->"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051 DOMAIN.NAME
+                                 "L'opérateur -(+)→"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466094))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466094))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466094))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466097))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466097))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466099))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466099))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466102))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466102))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466167))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466167))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466168))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466168))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466170))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466170))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466171))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466171))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466180))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466180))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466181))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466181))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466182))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466182))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466184))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466184))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466196))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466196))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466197))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466197))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466198))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466198))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466199))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466199))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466399))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051
+                                 DOMAIN.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051
+                                 DOMAIN.DESCRIPTION "NIL"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051 DOMAIN.NAME
+                                 "L'opérateur -(+)→"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051 DOMAIN.NAME
+                                 "L'opérateur -(+)→"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466399))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466399))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466399))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466400))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466400))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466426))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466426))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466426))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466426))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466468))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466468))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466468))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466468))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466586))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015 COMPETENCE.ID
+                                 "l8PZF_"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0051))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016 COMPETENCE.ID
+                                 "p0x36R"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0051))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017 COMPETENCE.ID
+                                 "SvOswk"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0051))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018 COMPETENCE.ID
+                                 "a2C_YV"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0051))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0015))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0015))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0015))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466586))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466586))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466586))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466587))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466587))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466587))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466587))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466608))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466608))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466609))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466609))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466609))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466609))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466609))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466609))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466609))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466609))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466609))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466609))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466610))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466610))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466610))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466610))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466610))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466610))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466610))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466610))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466610))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466610))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466611))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466611))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466611))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.NAME
+                                 "Appliquer un même opérateur à des nombres différends"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0018
+                                 COMPETENCE.POSITION {"x":8,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.NAME
+                                 "Utiliser des opérateurs en cascade"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0017
+                                 COMPETENCE.POSITION {"x":328,"y":160}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.NAME
+                                 "Compléter un triangle État initial - Opérateur - État final"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0016
+                                 COMPETENCE.POSITION {"x":464,"y":88}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.NAME
+                                 "Associer écriture avec opérateur et transformation"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0015
+                                 COMPETENCE.POSITION {"x":224,"y":8}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466611))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466612))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051
+                                 DOMAIN.DESCRIPTION "NIL"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051
+                                 DOMAIN.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051 DOMAIN.NAME
+                                 "L'opérateur -(+)→"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051 DOMAIN.NAME
+                                 "L'opérateur -(+)→"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466612))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466612))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466612))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466613))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466613))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466626))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466626))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466627))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466627))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466632))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466632))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466633))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466633))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466691))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466691))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466691))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466691))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466695))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051
+                                 DOMAIN.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051
+                                 DOMAIN.DESCRIPTION "NIL"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051 DOMAIN.NAME
+                                 "L'opérateur -(+)→"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0051 DOMAIN.NAME
+                                 "L'opérateur -(+)→"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466695))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466695))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466695))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466696))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466696))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466699))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466699))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466699))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466699))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466705))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466705))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466706))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466706))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466708))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466708))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466709))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466709))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466714))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466714))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466715))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466715))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466721))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466721))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466722))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466722))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466724))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466724))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466725))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466725))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466728))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466728))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466729))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466729))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466733))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466733))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466734))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466734))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466742))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466742))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466743))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466743))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466745))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466745))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466746))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466746))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466755))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466755))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466756))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466756))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466763))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466763))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466764))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466764))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466777))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466777))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466777))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612466777))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467171))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0019 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0019 COMPETENCE.ID
+                                 "V2UnKd"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0019
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0052))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0019
+                                 COMPETENCE.NAME
+                                 "Exprimer des quantirés sous la forme 10 + 10 + 10 +3"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0019
+                                 COMPETENCE.POSITION {"x":184,"y":24}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001A :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001A COMPETENCE.ID
+                                 "410-Ak"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001A
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0052))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001A
+                                 COMPETENCE.NAME
+                                 "Placer des nombres dans un tableau dizaines / unités"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001A
+                                 COMPETENCE.POSITION {"x":192,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001B :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001B COMPETENCE.ID
+                                 "WPXyJ5"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001B
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0052))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001B
+                                 COMPETENCE.NAME
+                                 "Utiliser le 0 pour matérialiser une absence"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001B
+                                 COMPETENCE.POSITION {"x":440,"y":176}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001C :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001C COMPETENCE.ID
+                                 "hhNnuI"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001C
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0052))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001C
+                                 COMPETENCE.NAME
+                                 "Utiliser les colonnes du cahier"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001C
+                                 COMPETENCE.POSITION {"x":600,"y":296}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001D :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001D COMPETENCE.ID
+                                 "qxOy3G"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001D
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0052))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001D
+                                 COMPETENCE.NAME
+                                 "Comparer des nombres de 2 chiffres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001D
+                                 COMPETENCE.POSITION {"x":56,"y":176}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001E :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001E COMPETENCE.ID
+                                 "JUJAQu"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001E
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0052))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001E
+                                 COMPETENCE.NAME
+                                 "Ranger des nombres de 2 chiffres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001E
+                                 COMPETENCE.POSITION {"x":16,"y":296}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001F :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001F COMPETENCE.ID
+                                 "xN8EXs"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001F
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0052))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001F
+                                 COMPETENCE.NAME "Encadrements et estimations"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001F
+                                 COMPETENCE.POSITION {"x":328,"y":296}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0020 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0020 COMPETENCE.ID
+                                 "hAL8px"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0020
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0052))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0020
+                                 COMPETENCE.NAME "Écrire les mots-nombres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0020
+                                 COMPETENCE.POSITION {"x":8,"y":432}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0021 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0021 COMPETENCE.ID
+                                 "vw3s4R"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0021
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0052))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0021
+                                 COMPETENCE.NAME
+                                 "Associer écriture en mots et en chiffres pour les nombres inférieurs à 70"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0021
+                                 COMPETENCE.POSITION {"x":64,"y":488}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0022 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0022 COMPETENCE.ID
+                                 "qpsEaq"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0022
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0052))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0022
+                                 COMPETENCE.NAME
+                                 "Associer écriture en mots et en chiffres pour les nombres inférieurs à 100"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0022
+                                 COMPETENCE.POSITION {"x":328,"y":560}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001A
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0019))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001B
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-001A))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001C
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-001B))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001D
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-001A))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001E
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-001D))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001F
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-001D))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0021
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0020))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0022
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0021))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467171))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467177))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0022
+                                 COMPETENCE.NAME
+                                 "Associer écriture en mots et en chiffres pour les nombres inférieurs à 100"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0022
+                                 COMPETENCE.NAME
+                                 "Associer écriture en mots et en chiffres pour les nombres inférieurs à 100"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0022
+                                 COMPETENCE.POSITION {"x":328,"y":560}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0022
+                                 COMPETENCE.POSITION {"x":328,"y":560}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0021
+                                 COMPETENCE.NAME
+                                 "Associer écriture en mots et en chiffres pour les nombres inférieurs à 70"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0021
+                                 COMPETENCE.NAME
+                                 "Associer écriture en mots et en chiffres pour les nombres inférieurs à 70"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0021
+                                 COMPETENCE.POSITION {"x":64,"y":488}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0021
+                                 COMPETENCE.POSITION {"x":64,"y":488}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0020
+                                 COMPETENCE.NAME "Écrire les mots-nombres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0020
+                                 COMPETENCE.NAME "Écrire les mots-nombres"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0020
+                                 COMPETENCE.POSITION {"x":8,"y":432}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0020
+                                 COMPETENCE.POSITION {"x":8,"y":432}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001F
+                                 COMPETENCE.NAME "Encadrements et estimations"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001F
+                                 COMPETENCE.NAME "Encadrements et estimations"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001F
+                                 COMPETENCE.POSITION {"x":328,"y":296}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001F
+                                 COMPETENCE.POSITION {"x":328,"y":296}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001E
+                                 COMPETENCE.NAME
+                                 "Ranger des nombres de 2 chiffres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001E
+                                 COMPETENCE.NAME
+                                 "Ranger des nombres de 2 chiffres"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001E
+                                 COMPETENCE.POSITION {"x":16,"y":296}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001E
+                                 COMPETENCE.POSITION {"x":16,"y":296}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001D
+                                 COMPETENCE.NAME
+                                 "Comparer des nombres de 2 chiffres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001D
+                                 COMPETENCE.NAME
+                                 "Comparer des nombres de 2 chiffres"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001D
+                                 COMPETENCE.POSITION {"x":56,"y":176}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001D
+                                 COMPETENCE.POSITION {"x":56,"y":176}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001C
+                                 COMPETENCE.NAME
+                                 "Utiliser les colonnes du cahier"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001C
+                                 COMPETENCE.NAME
+                                 "Utiliser les colonnes du cahier"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001C
+                                 COMPETENCE.POSITION {"x":600,"y":296}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001C
+                                 COMPETENCE.POSITION {"x":600,"y":296}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001B
+                                 COMPETENCE.NAME
+                                 "Utiliser le 0 pour matérialiser une absence"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001B
+                                 COMPETENCE.NAME
+                                 "Utiliser le 0 pour matérialiser une absence"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001B
+                                 COMPETENCE.POSITION {"x":440,"y":176}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001B
+                                 COMPETENCE.POSITION {"x":440,"y":176}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001A
+                                 COMPETENCE.NAME
+                                 "Placer des nombres dans un tableau dizaines / unités"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001A
+                                 COMPETENCE.NAME
+                                 "Placer des nombres dans un tableau dizaines / unités"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001A
+                                 COMPETENCE.POSITION {"x":192,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-001A
+                                 COMPETENCE.POSITION {"x":192,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0019
+                                 COMPETENCE.NAME
+                                 "Exprimer des quantirés sous la forme 10 + 10 + 10 +3"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0019
+                                 COMPETENCE.NAME
+                                 "Exprimer des quantirés sous la forme 10 + 10 + 10 +3"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0019
+                                 COMPETENCE.POSITION {"x":184,"y":24}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0019
+                                 COMPETENCE.POSITION {"x":184,"y":24}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467177))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467181))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0052
+                                 DOMAIN.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0052 DOMAIN.NAME
+                                 "Les nombres à deux chiffres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0052 DOMAIN.NAME
+                                 "Les nombres à deux chiffres"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467181))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467181))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467181))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467181))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467181))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467182))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467182))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467183))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467183))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467189))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467189))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467190))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467190))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467288))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467288))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467289))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467289))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467292))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467292))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467293))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467293))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467591))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0023 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0023 COMPETENCE.ID
+                                 "yQSTB9"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0023
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0058))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0023
+                                 COMPETENCE.NAME
+                                 "Exprimer le cardinal de réunions de collections regroupées par dizaines"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0023
+                                 COMPETENCE.POSITION {"x":8,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0024 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0024 COMPETENCE.ID
+                                 "OoHzNu"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0024
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0058))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0024
+                                 COMPETENCE.NAME
+                                 "Utiliser des chaines pour calculer des sommes avec passage de dizaine"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0024
+                                 COMPETENCE.POSITION {"x":8,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0025 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0025 COMPETENCE.ID
+                                 "FWDieQ"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0025
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0058))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0025
+                                 COMPETENCE.NAME
+                                 "Associer écriture en mots et en sommes des nombres de 70 à 99"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0025
+                                 COMPETENCE.POSITION {"x":144,"y":168}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0026 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0026 COMPETENCE.ID
+                                 "niLK6c"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0026
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0058))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0026
+                                 COMPETENCE.NAME
+                                 "Calculer la somme de 2 nombres de 2 chiffres en utilisant des arbres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0026
+                                 COMPETENCE.POSITION {"x":328,"y":232}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0024
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0023))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0025
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0023))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0026
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0023))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467591))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467592))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0026
+                                 COMPETENCE.NAME
+                                 "Calculer la somme de 2 nombres de 2 chiffres en utilisant des arbres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0026
+                                 COMPETENCE.NAME
+                                 "Calculer la somme de 2 nombres de 2 chiffres en utilisant des arbres"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0026
+                                 COMPETENCE.POSITION {"x":328,"y":232}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0026
+                                 COMPETENCE.POSITION {"x":328,"y":232}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0025
+                                 COMPETENCE.NAME
+                                 "Associer écriture en mots et en sommes des nombres de 70 à 99"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0025
+                                 COMPETENCE.NAME
+                                 "Associer écriture en mots et en sommes des nombres de 70 à 99"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0025
+                                 COMPETENCE.POSITION {"x":144,"y":168}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0025
+                                 COMPETENCE.POSITION {"x":144,"y":168}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0024
+                                 COMPETENCE.NAME
+                                 "Utiliser des chaines pour calculer des sommes avec passage de dizaine"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0024
+                                 COMPETENCE.NAME
+                                 "Utiliser des chaines pour calculer des sommes avec passage de dizaine"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0024
+                                 COMPETENCE.POSITION {"x":8,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0024
+                                 COMPETENCE.POSITION {"x":8,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0023
+                                 COMPETENCE.NAME
+                                 "Exprimer le cardinal de réunions de collections regroupées par dizaines"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0023
+                                 COMPETENCE.NAME
+                                 "Exprimer le cardinal de réunions de collections regroupées par dizaines"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0023
+                                 COMPETENCE.POSITION {"x":8,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0023
+                                 COMPETENCE.POSITION {"x":8,"y":8}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467592))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467592))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0026
+                                 COMPETENCE.NAME
+                                 "Calculer la somme de 2 nombres de 2 chiffres en utilisant des arbres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0026
+                                 COMPETENCE.NAME
+                                 "Calculer la somme de 2 nombres de 2 chiffres en utilisant des arbres"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0026
+                                 COMPETENCE.POSITION {"x":328,"y":232}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0026
+                                 COMPETENCE.POSITION {"x":328,"y":232}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0025
+                                 COMPETENCE.NAME
+                                 "Associer écriture en mots et en sommes des nombres de 70 à 99"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0025
+                                 COMPETENCE.NAME
+                                 "Associer écriture en mots et en sommes des nombres de 70 à 99"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0025
+                                 COMPETENCE.POSITION {"x":144,"y":168}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0025
+                                 COMPETENCE.POSITION {"x":144,"y":168}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0024
+                                 COMPETENCE.NAME
+                                 "Utiliser des chaines pour calculer des sommes avec passage de dizaine"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0024
+                                 COMPETENCE.NAME
+                                 "Utiliser des chaines pour calculer des sommes avec passage de dizaine"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0024
+                                 COMPETENCE.POSITION {"x":8,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0024
+                                 COMPETENCE.POSITION {"x":8,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0023
+                                 COMPETENCE.NAME
+                                 "Exprimer le cardinal de réunions de collections regroupées par dizaines"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0023
+                                 COMPETENCE.NAME
+                                 "Exprimer le cardinal de réunions de collections regroupées par dizaines"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0023
+                                 COMPETENCE.POSITION {"x":8,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0023
+                                 COMPETENCE.POSITION {"x":8,"y":8}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467592))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467592))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0026
+                                 COMPETENCE.NAME
+                                 "Calculer la somme de 2 nombres de 2 chiffres en utilisant des arbres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0026
+                                 COMPETENCE.NAME
+                                 "Calculer la somme de 2 nombres de 2 chiffres en utilisant des arbres"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0026
+                                 COMPETENCE.POSITION {"x":328,"y":232}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0026
+                                 COMPETENCE.POSITION {"x":328,"y":232}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0025
+                                 COMPETENCE.NAME
+                                 "Associer écriture en mots et en sommes des nombres de 70 à 99"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0025
+                                 COMPETENCE.NAME
+                                 "Associer écriture en mots et en sommes des nombres de 70 à 99"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0025
+                                 COMPETENCE.POSITION {"x":144,"y":168}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0025
+                                 COMPETENCE.POSITION {"x":144,"y":168}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0024
+                                 COMPETENCE.NAME
+                                 "Utiliser des chaines pour calculer des sommes avec passage de dizaine"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0024
+                                 COMPETENCE.NAME
+                                 "Utiliser des chaines pour calculer des sommes avec passage de dizaine"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0024
+                                 COMPETENCE.POSITION {"x":8,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0024
+                                 COMPETENCE.POSITION {"x":8,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0023
+                                 COMPETENCE.NAME
+                                 "Exprimer le cardinal de réunions de collections regroupées par dizaines"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0023
+                                 COMPETENCE.NAME
+                                 "Exprimer le cardinal de réunions de collections regroupées par dizaines"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0023
+                                 COMPETENCE.POSITION {"x":8,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0023
+                                 COMPETENCE.POSITION {"x":8,"y":8}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467592))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467592))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0026
+                                 COMPETENCE.NAME
+                                 "Calculer la somme de 2 nombres de 2 chiffres en utilisant des arbres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0026
+                                 COMPETENCE.NAME
+                                 "Calculer la somme de 2 nombres de 2 chiffres en utilisant des arbres"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0026
+                                 COMPETENCE.POSITION {"x":328,"y":232}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0026
+                                 COMPETENCE.POSITION {"x":328,"y":232}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0025
+                                 COMPETENCE.NAME
+                                 "Associer écriture en mots et en sommes des nombres de 70 à 99"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0025
+                                 COMPETENCE.NAME
+                                 "Associer écriture en mots et en sommes des nombres de 70 à 99"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0025
+                                 COMPETENCE.POSITION {"x":144,"y":168}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0025
+                                 COMPETENCE.POSITION {"x":144,"y":168}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0024
+                                 COMPETENCE.NAME
+                                 "Utiliser des chaines pour calculer des sommes avec passage de dizaine"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0024
+                                 COMPETENCE.NAME
+                                 "Utiliser des chaines pour calculer des sommes avec passage de dizaine"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0024
+                                 COMPETENCE.POSITION {"x":8,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0024
+                                 COMPETENCE.POSITION {"x":8,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0023
+                                 COMPETENCE.NAME
+                                 "Exprimer le cardinal de réunions de collections regroupées par dizaines"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0023
+                                 COMPETENCE.NAME
+                                 "Exprimer le cardinal de réunions de collections regroupées par dizaines"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0023
+                                 COMPETENCE.POSITION {"x":8,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0023
+                                 COMPETENCE.POSITION {"x":8,"y":8}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467592))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467594))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058
+                                 DOMAIN.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.NAME
+                                 "Addition niveau 1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0058 DOMAIN.NAME
+                                 "Addition niveau 1"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467594))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467594))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467594))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467595))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467595))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467596))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467596))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467596))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467596))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467598))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467598))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467600))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467600))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467603))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467603))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467604))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467604))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467607))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467607))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467608))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467608))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467610))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467610))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467611))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467611))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467853))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0027 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0027 COMPETENCE.ID
+                                 "OuDV61"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0027
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0059))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0027
+                                 COMPETENCE.NAME
+                                 "Additionner des unités et des dizaines, des unités et des centaines, des dizaines et des centaines"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0027
+                                 COMPETENCE.POSITION {"x":10,"y":10}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0028 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0028 COMPETENCE.ID
+                                 "XefBc6"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0028
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0059))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0028
+                                 COMPETENCE.NAME
+                                 "Additionner nombres de 1 chiffre et nombres de 3 chiffres avec passage de dizaine"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0028
+                                 COMPETENCE.POSITION {"x":8,"y":72}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0029 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0029 COMPETENCE.ID
+                                 "SgE3wW"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0029
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0059))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0029
+                                 COMPETENCE.NAME
+                                 "Additionner 2 nombres de 3 chiffres en représentant le calcul par une collection matérielle"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0029
+                                 COMPETENCE.POSITION {"x":8,"y":128}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002A :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002A COMPETENCE.ID
+                                 "yDARP4"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002A
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0059))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002A
+                                 COMPETENCE.NAME
+                                 "Additionner 2 nombres de 3 chiffres en décomposant les centaines, dizaines et unités dans des arbres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002A
+                                 COMPETENCE.POSITION {"x":8,"y":192}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002B :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002B COMPETENCE.ID
+                                 "G0RaV9"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002B
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0059))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002B
+                                 COMPETENCE.NAME
+                                 "Additionner 2 nombres de 3 chiffres avec un tableau de numération"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002B
+                                 COMPETENCE.POSITION {"x":8,"y":256}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002C :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002C COMPETENCE.ID
+                                 "7S28fg"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002C
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0059))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002C
+                                 COMPETENCE.NAME
+                                 "Additionner 2 nombres de 3 chiffres en colonne"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002C
+                                 COMPETENCE.POSITION {"x":8,"y":320}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002A
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0029))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002B
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-002A))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002C
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-002B))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467853))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467855))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059
+                                 DOMAIN.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.NAME
+                                 "Addition niveau 2"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0059 DOMAIN.NAME
+                                 "Addition niveau 2"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467855))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467855))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467855))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467856))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467856))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467858))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467858))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467859))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467859))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467862))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467862))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467863))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467863))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467864))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467864))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467865))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612467865))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468060))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002D :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002D COMPETENCE.ID
+                                 "xpCLyR"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002D
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005B))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002D
+                                 COMPETENCE.NAME
+                                 "Soustraire 1, soustraire 10, soustraire 100"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002D
+                                 COMPETENCE.POSITION {"x":10,"y":10}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002E :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002E COMPETENCE.ID
+                                 "-h0C01"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002E
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005B))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002E
+                                 COMPETENCE.NAME
+                                 "Exprimer une situation de retrait avec une soustraction"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002E
+                                 COMPETENCE.POSITION {"x":8,"y":80}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002F :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002F COMPETENCE.ID
+                                 "yO2AuH"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002F
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005B))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002F
+                                 COMPETENCE.NAME
+                                 "Associer l'opérateur -(-n)→ à une situation de retrait"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002F
+                                 COMPETENCE.POSITION {"x":408,"y":24}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0030 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0030 COMPETENCE.ID
+                                 "cKoYyN"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0030
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005B))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0030
+                                 COMPETENCE.NAME
+                                 "Identifier des soustractions impossibles"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0030
+                                 COMPETENCE.POSITION {"x":560,"y":104}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0031 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0031 COMPETENCE.ID
+                                 "KytsHw"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0031
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005B))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0031
+                                 COMPETENCE.NAME
+                                 "Identifier parmi des énoncés de problèmes ceux qui relèvent de la soustraction"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0031
+                                 COMPETENCE.POSITION {"x":8,"y":152}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0032 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0032 COMPETENCE.ID
+                                 "3pf5rZ"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0032
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005B))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0032
+                                 COMPETENCE.NAME
+                                 "Exprimer une situation de partition avec 2 soustractions"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0032
+                                 COMPETENCE.POSITION {"x":400,"y":232}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468060))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468063))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0032
+                                 COMPETENCE.NAME
+                                 "Exprimer une situation de partition avec 2 soustractions"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0032
+                                 COMPETENCE.NAME
+                                 "Exprimer une situation de partition avec 2 soustractions"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0032
+                                 COMPETENCE.POSITION {"x":400,"y":232}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0032
+                                 COMPETENCE.POSITION {"x":400,"y":232}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0031
+                                 COMPETENCE.NAME
+                                 "Identifier parmi des énoncés de problèmes ceux qui relèvent de la soustraction"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0031
+                                 COMPETENCE.NAME
+                                 "Identifier parmi des énoncés de problèmes ceux qui relèvent de la soustraction"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0031
+                                 COMPETENCE.POSITION {"x":8,"y":152}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0031
+                                 COMPETENCE.POSITION {"x":8,"y":152}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0030
+                                 COMPETENCE.NAME
+                                 "Identifier des soustractions impossibles"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0030
+                                 COMPETENCE.NAME
+                                 "Identifier des soustractions impossibles"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0030
+                                 COMPETENCE.POSITION {"x":560,"y":104}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0030
+                                 COMPETENCE.POSITION {"x":560,"y":104}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002F
+                                 COMPETENCE.NAME
+                                 "Associer l'opérateur -(-n)→ à une situation de retrait"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002F
+                                 COMPETENCE.NAME
+                                 "Associer l'opérateur -(-n)→ à une situation de retrait"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002F
+                                 COMPETENCE.POSITION {"x":408,"y":24}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002F
+                                 COMPETENCE.POSITION {"x":408,"y":24}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002E
+                                 COMPETENCE.NAME
+                                 "Exprimer une situation de retrait avec une soustraction"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002E
+                                 COMPETENCE.NAME
+                                 "Exprimer une situation de retrait avec une soustraction"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002E
+                                 COMPETENCE.POSITION {"x":8,"y":80}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002E
+                                 COMPETENCE.POSITION {"x":8,"y":80}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002D
+                                 COMPETENCE.NAME
+                                 "Soustraire 1, soustraire 10, soustraire 100"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002D
+                                 COMPETENCE.NAME
+                                 "Soustraire 1, soustraire 10, soustraire 100"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002D
+                                 COMPETENCE.POSITION {"x":10,"y":10}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002D
+                                 COMPETENCE.POSITION {"x":10,"y":10}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468063))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468115))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0032
+                                 COMPETENCE.NAME
+                                 "Exprimer une situation de partition avec 2 soustractions"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0032
+                                 COMPETENCE.NAME
+                                 "Exprimer une situation de partition avec 2 soustractions"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0032
+                                 COMPETENCE.POSITION {"x":400,"y":232}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0032
+                                 COMPETENCE.POSITION {"x":456,"y":160}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0031
+                                 COMPETENCE.NAME
+                                 "Identifier parmi des énoncés de problèmes ceux qui relèvent de la soustraction"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0031
+                                 COMPETENCE.NAME
+                                 "Identifier parmi des énoncés de problèmes ceux qui relèvent de la soustraction"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0031
+                                 COMPETENCE.POSITION {"x":8,"y":152}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0031
+                                 COMPETENCE.POSITION {"x":144,"y":224}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0030
+                                 COMPETENCE.NAME
+                                 "Identifier des soustractions impossibles"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0030
+                                 COMPETENCE.NAME
+                                 "Identifier des soustractions impossibles"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0030
+                                 COMPETENCE.POSITION {"x":560,"y":104}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0030
+                                 COMPETENCE.POSITION {"x":448,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002F
+                                 COMPETENCE.NAME
+                                 "Associer l'opérateur -(-n)→ à une situation de retrait"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002F
+                                 COMPETENCE.NAME
+                                 "Associer l'opérateur -(-n)→ à une situation de retrait"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002F
+                                 COMPETENCE.POSITION {"x":408,"y":24}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002F
+                                 COMPETENCE.POSITION {"x":8,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002E
+                                 COMPETENCE.NAME
+                                 "Exprimer une situation de retrait avec une soustraction"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002E
+                                 COMPETENCE.NAME
+                                 "Exprimer une situation de retrait avec une soustraction"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002E
+                                 COMPETENCE.POSITION {"x":8,"y":80}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002E
+                                 COMPETENCE.POSITION {"x":8,"y":160}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002D
+                                 COMPETENCE.NAME
+                                 "Soustraire 1, soustraire 10, soustraire 100"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002D
+                                 COMPETENCE.NAME
+                                 "Soustraire 1, soustraire 10, soustraire 100"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002D
+                                 COMPETENCE.POSITION {"x":10,"y":10}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002D
+                                 COMPETENCE.POSITION {"x":248,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0031
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-002E))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0031
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0032))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468115))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468116))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0032
+                                 COMPETENCE.NAME
+                                 "Exprimer une situation de partition avec 2 soustractions"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0032
+                                 COMPETENCE.NAME
+                                 "Exprimer une situation de partition avec 2 soustractions"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0032
+                                 COMPETENCE.POSITION {"x":456,"y":160}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0032
+                                 COMPETENCE.POSITION {"x":456,"y":160}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0031
+                                 COMPETENCE.NAME
+                                 "Identifier parmi des énoncés de problèmes ceux qui relèvent de la soustraction"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0031
+                                 COMPETENCE.NAME
+                                 "Identifier parmi des énoncés de problèmes ceux qui relèvent de la soustraction"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0031
+                                 COMPETENCE.POSITION {"x":144,"y":224}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0031
+                                 COMPETENCE.POSITION {"x":144,"y":224}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0030
+                                 COMPETENCE.NAME
+                                 "Identifier des soustractions impossibles"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0030
+                                 COMPETENCE.NAME
+                                 "Identifier des soustractions impossibles"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0030
+                                 COMPETENCE.POSITION {"x":448,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0030
+                                 COMPETENCE.POSITION {"x":448,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002F
+                                 COMPETENCE.NAME
+                                 "Associer l'opérateur -(-n)→ à une situation de retrait"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002F
+                                 COMPETENCE.NAME
+                                 "Associer l'opérateur -(-n)→ à une situation de retrait"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002F
+                                 COMPETENCE.POSITION {"x":8,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002F
+                                 COMPETENCE.POSITION {"x":8,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002E
+                                 COMPETENCE.NAME
+                                 "Exprimer une situation de retrait avec une soustraction"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002E
+                                 COMPETENCE.NAME
+                                 "Exprimer une situation de retrait avec une soustraction"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002E
+                                 COMPETENCE.POSITION {"x":8,"y":160}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002E
+                                 COMPETENCE.POSITION {"x":8,"y":160}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002D
+                                 COMPETENCE.NAME
+                                 "Soustraire 1, soustraire 10, soustraire 100"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002D
+                                 COMPETENCE.NAME
+                                 "Soustraire 1, soustraire 10, soustraire 100"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002D
+                                 COMPETENCE.POSITION {"x":248,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-002D
+                                 COMPETENCE.POSITION {"x":248,"y":8}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468116))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468117))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B
+                                 DOMAIN.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.NAME
+                                 "Soustraction niveau 1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005B DOMAIN.NAME
+                                 "Soustraction niveau 1"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468117))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468117))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468117))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468118))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468118))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468126))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468126))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468127))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468127))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468130))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468130))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468131))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468131))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468132))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468132))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468133))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468133))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468273))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0033 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0033 COMPETENCE.ID
+                                 "YvoVdq"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0033
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005C))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0033
+                                 COMPETENCE.NAME
+                                 "Utiliser un tableau pour effectuer des soustractions sans retenue"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0033
+                                 COMPETENCE.POSITION {"x":16,"y":16}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0034 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0034 COMPETENCE.ID
+                                 "aHVoAD"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0034
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005C))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0034
+                                 COMPETENCE.NAME
+                                 "Associer une écriture additive équivalente à une écriture soustractive"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0034
+                                 COMPETENCE.POSITION {"x":352,"y":72}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0035 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0035 COMPETENCE.ID
+                                 "hONfIi"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0035
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005C))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0035
+                                 COMPETENCE.NAME
+                                 "Effectuer une soustraction avec retenue \"à la Russe\""))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0035
+                                 COMPETENCE.POSITION {"x":8,"y":128}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0036 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0036 COMPETENCE.ID
+                                 "dHuPWR"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0036
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005C))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0036
+                                 COMPETENCE.NAME
+                                 "Poser une soustraction avec retenue en colonne et la résoudre"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0036
+                                 COMPETENCE.POSITION {"x":360,"y":184}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468273))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468275))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0036
+                                 COMPETENCE.NAME
+                                 "Poser une soustraction avec retenue en colonne et la résoudre"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0036
+                                 COMPETENCE.NAME
+                                 "Poser une soustraction avec retenue en colonne et la résoudre"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0036
+                                 COMPETENCE.POSITION {"x":360,"y":184}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0036
+                                 COMPETENCE.POSITION {"x":360,"y":184}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0035
+                                 COMPETENCE.NAME
+                                 "Effectuer une soustraction avec retenue \"à la Russe\""))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0035
+                                 COMPETENCE.NAME
+                                 "Effectuer une soustraction avec retenue \"à la Russe\""))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0035
+                                 COMPETENCE.POSITION {"x":8,"y":128}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0035
+                                 COMPETENCE.POSITION {"x":8,"y":128}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0034
+                                 COMPETENCE.NAME
+                                 "Associer une écriture additive équivalente à une écriture soustractive"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0034
+                                 COMPETENCE.NAME
+                                 "Associer une écriture additive équivalente à une écriture soustractive"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0034
+                                 COMPETENCE.POSITION {"x":352,"y":72}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0034
+                                 COMPETENCE.POSITION {"x":352,"y":72}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0033
+                                 COMPETENCE.NAME
+                                 "Utiliser un tableau pour effectuer des soustractions sans retenue"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0033
+                                 COMPETENCE.NAME
+                                 "Utiliser un tableau pour effectuer des soustractions sans retenue"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0033
+                                 COMPETENCE.POSITION {"x":16,"y":16}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0033
+                                 COMPETENCE.POSITION {"x":16,"y":16}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468275))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468276))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C
+                                 DOMAIN.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.NAME
+                                 "Soustraction niveau 2"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005C DOMAIN.NAME
+                                 "Soustraction niveau 2"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468276))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468276))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468276))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468278))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468278))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468279))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468279))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468280))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468280))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468286))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468286))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468287))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468287))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468289))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468289))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468290))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468290))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468579))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0037 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0037 COMPETENCE.ID
+                                 "me2zjW"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0037
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005F))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0037
+                                 COMPETENCE.NAME
+                                 "Appliquer les opérateurs -(+n)→ et  -(-n)→ à des tableaux à 2 colonnes"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0037
+                                 COMPETENCE.POSITION {"x":8,"y":24}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0038 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0038 COMPETENCE.ID
+                                 "j9LfCW"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0038
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005F))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0038
+                                 COMPETENCE.NAME
+                                 "Compléter une boucle d'opérateurs / états"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0038
+                                 COMPETENCE.POSITION {"x":8,"y":72}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0039 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0039 COMPETENCE.ID
+                                 "mct5LW"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0039
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005F))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0039
+                                 COMPETENCE.NAME
+                                 "Décomposer un opérateur  -(+n)→ en plusieurs opérateurs \"raccourcis\" pour des passages de dizaine ou de centaine"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0039
+                                 COMPETENCE.POSITION {"x":8,"y":120}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003A :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003A COMPETENCE.ID
+                                 "7RYGJh"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003A
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005F))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003A
+                                 COMPETENCE.NAME
+                                 "Décomposer un opérateur  -(-n)→ en plusieurs opérateurs \"raccourcis\" pour des passages de dizaine ou de centaine"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003A
+                                 COMPETENCE.POSITION {"x":8,"y":168}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003B :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003B COMPETENCE.ID
+                                 "SDN9jx"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003B
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005F))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003B
+                                 COMPETENCE.NAME
+                                 "Utiliser indifférement -(+n)→ et ←(-n)-, -(-n)→ et ←(+n)-"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003B
+                                 COMPETENCE.POSITION {"x":8,"y":216}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003C :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003C COMPETENCE.ID
+                                 "Y3lNxn"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003C
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005F))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003C
+                                 COMPETENCE.NAME
+                                 "Utiliser le sens de la flèche d'un opérateur pour comparer"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003C
+                                 COMPETENCE.POSITION {"x":8,"y":256}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468579))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468580))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F
+                                 DOMAIN.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.NAME
+                                 "Les opérateurs"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005F DOMAIN.NAME
+                                 "Les opérateurs"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468580))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468580))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468580))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468581))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468581))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468583))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468583))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468584))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468584))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468585))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468585))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468586))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468586))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468589))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468589))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468591))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468591))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468592))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468592))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468608))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468608))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468608))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468608))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468609))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468609))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468609))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468609))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468610))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468610))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468856))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003D :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003D COMPETENCE.ID
+                                 "dIWzRR"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003D
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0054))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003D
+                                 COMPETENCE.NAME
+                                 "Associer nombre de 2 chiffre et collections groupées"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003D
+                                 COMPETENCE.POSITION {"x":112,"y":16}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003E :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003E COMPETENCE.ID
+                                 "Eq6rfY"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003E
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0054))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003E
+                                 COMPETENCE.NAME
+                                 "Associer écriture en chiffres et en mots de 0 à 69"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003E
+                                 COMPETENCE.POSITION {"x":464,"y":72}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003F :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003F COMPETENCE.ID
+                                 "yXoNhC"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003F
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0054))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003F
+                                 COMPETENCE.NAME
+                                 "Associer écriture en chiffres et en mots de 70 à 79"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003F
+                                 COMPETENCE.POSITION {"x":456,"y":152}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0040 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0040 COMPETENCE.ID
+                                 "Bu-df1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0040
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0054))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0040
+                                 COMPETENCE.NAME
+                                 "Associer écriture en chiffres et en mots de 80 à 89"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0040
+                                 COMPETENCE.POSITION {"x":456,"y":232}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0041 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0041 COMPETENCE.ID
+                                 "uVvQGT"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0041
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0054))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0041
+                                 COMPETENCE.NAME
+                                 "Associer écriture en chiffres et en mots de 90 à 99"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0041
+                                 COMPETENCE.POSITION {"x":456,"y":320}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0042 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0042 COMPETENCE.ID
+                                 "NtY5Xz"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0042
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0054))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0042
+                                 COMPETENCE.NAME
+                                 "Placer les nombres de 2 chiffres sur une droite graduée"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0042
+                                 COMPETENCE.POSITION {"x":32,"y":80}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0043 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0043 COMPETENCE.ID
+                                 "YF3vTZ"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0043
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0054))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0043
+                                 COMPETENCE.NAME "Écrire les mots nombres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0043
+                                 COMPETENCE.POSITION {"x":552,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0044 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0044 COMPETENCE.ID
+                                 "nGpEBM"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0044
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0054))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0044
+                                 COMPETENCE.NAME "Comparaisons"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0044
+                                 COMPETENCE.POSITION {"x":160,"y":160}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0045 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0045 COMPETENCE.ID
+                                 "qQcofJ"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0045
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0054))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0045
+                                 COMPETENCE.NAME "Rangements"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0045
+                                 COMPETENCE.POSITION {"x":192,"y":224}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0046 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0046 COMPETENCE.ID
+                                 "9li_RD"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0046
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0054))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0046
+                                 COMPETENCE.NAME "Encadrements"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0046
+                                 COMPETENCE.POSITION {"x":48,"y":224}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0047 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0047 COMPETENCE.ID
+                                 "Z7d8Cp"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0047
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0054))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0047
+                                 COMPETENCE.NAME "Estimations"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0047
+                                 COMPETENCE.POSITION {"x":320,"y":224}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003E
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-003D))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003F
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-003E))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0040
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-003F))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0041
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0040))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0042
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-003D))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-003E
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0043))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0045
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0044))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0046
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0044))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0047
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0044))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468856))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468857))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054
+                                 DOMAIN.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.NAME
+                                 "Les nombres de 0 à 99"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0054 DOMAIN.NAME
+                                 "Les nombres de 0 à 99"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468857))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468857))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468857))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468858))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468858))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468860))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468860))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468862))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468862))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468865))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468865))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468865))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468865))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468866))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468866))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468868))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468868))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468870))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468870))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468875))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468875))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468876))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468876))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468881))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468881))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468882))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468882))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468883))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468883))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468884))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612468884))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469103))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0048 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0048 COMPETENCE.ID
+                                 "HFMDqM"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0048
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005D))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0048
+                                 COMPETENCE.NAME
+                                 "Compter de 3 en 3, 4 en 4, de 5 en 5, de 6 en 6"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0048
+                                 COMPETENCE.POSITION {"x":10,"y":10}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0049 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0049 COMPETENCE.ID
+                                 "1invb9"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0049
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005D))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0049
+                                 COMPETENCE.NAME
+                                 "Dénombrer des quantités organisées en rectangle par 2 sommes"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0049
+                                 COMPETENCE.POSITION {"x":8,"y":56}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004A :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004A COMPETENCE.ID
+                                 "aEYyXM"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004A
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005D))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004A
+                                 COMPETENCE.NAME
+                                 "Produire des collections ordonnées représentant un multiplicateur et un multiplicande donnés"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004A
+                                 COMPETENCE.POSITION {"x":8,"y":104}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004B :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004B COMPETENCE.ID
+                                 "yirQD0"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004B
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005D))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004B
+                                 COMPETENCE.NAME
+                                 "Dénombrer les casses d'un rectangle quadrillé"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004B
+                                 COMPETENCE.POSITION {"x":8,"y":152}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004C :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004C COMPETENCE.ID
+                                 "qLkwwE"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004C
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005D))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004C
+                                 COMPETENCE.NAME
+                                 "Identifier parmi des énoncés de problème ceux qui relèvent de la multiplication"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004C
+                                 COMPETENCE.POSITION {"x":8,"y":200}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004D :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004D COMPETENCE.ID
+                                 "cPTL3h"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004D
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005D))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004D
+                                 COMPETENCE.NAME
+                                 "Utiliser les termes double et moitié"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004D
+                                 COMPETENCE.POSITION {"x":8,"y":248}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469103))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469103))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D
+                                 DOMAIN.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.NAME
+                                 "Multiplication niveau 1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.NAME
+                                 "Multiplication niveau 1"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469103))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469104))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469104))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469104))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469104))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469106))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469106))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469106))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469106))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469112))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469112))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469113))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469113))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469117))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469117))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469118))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469118))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469369))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004E :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004E COMPETENCE.ID
+                                 "mUqaht"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004E
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005E))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004E
+                                 COMPETENCE.NAME
+                                 "Associer quantité organisée en ligne et colonnes et 2 écritures multiplicatives"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004E
+                                 COMPETENCE.POSITION {"x":8,"y":16}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004F :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004F COMPETENCE.ID
+                                 "COI040"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004F
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005E))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004F
+                                 COMPETENCE.NAME
+                                 "Effectuer une multiplication avec du matériel base 10 et tableau de numération"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004F
+                                 COMPETENCE.POSITION {"x":8,"y":64}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0050 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0050 COMPETENCE.ID
+                                 "Rmrsme"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0050
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005E))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0050
+                                 COMPETENCE.NAME
+                                 "Identifier les multiples d'un nombre parmi une liste"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0050
+                                 COMPETENCE.POSITION {"x":8,"y":112}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0051 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0051 COMPETENCE.ID
+                                 "-3ZQcX"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0051
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005E))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0051
+                                 COMPETENCE.NAME
+                                 "Utiliser la parité et les mots pair et impair"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0051
+                                 COMPETENCE.POSITION {"x":8,"y":160}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0052 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0052 COMPETENCE.ID
+                                 "EBK8Fa"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0052
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005E))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0052
+                                 COMPETENCE.NAME
+                                 "Effectuer une multiplication comme addition réitérée en colonne"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0052
+                                 COMPETENCE.POSITION {"x":8,"y":208}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0053 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0053 COMPETENCE.ID
+                                 "Ddnzs0"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0053
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005E))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0053
+                                 COMPETENCE.NAME
+                                 "Trouver l'opérateur -(x n)→ qui permet de passer d'un état initial à un état final"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0053
+                                 COMPETENCE.POSITION {"x":8,"y":256}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0054 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0054 COMPETENCE.ID
+                                 "QoEyt2"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0054
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-005E))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0054
+                                 COMPETENCE.NAME
+                                 "Factoriser des nombres de 2 chiffres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0054
+                                 COMPETENCE.POSITION {"x":8,"y":304}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469369))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469371))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0054
+                                 COMPETENCE.NAME
+                                 "Factoriser des nombres de 2 chiffres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0054
+                                 COMPETENCE.NAME
+                                 "Factoriser des nombres de 2 chiffres"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0054
+                                 COMPETENCE.POSITION {"x":8,"y":304}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0054
+                                 COMPETENCE.POSITION {"x":8,"y":304}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0053
+                                 COMPETENCE.NAME
+                                 "Trouver l'opérateur -(x n)→ qui permet de passer d'un état initial à un état final"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0053
+                                 COMPETENCE.NAME
+                                 "Trouver l'opérateur -(x n)→ qui permet de passer d'un état initial à un état final"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0053
+                                 COMPETENCE.POSITION {"x":8,"y":256}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0053
+                                 COMPETENCE.POSITION {"x":8,"y":256}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0052
+                                 COMPETENCE.NAME
+                                 "Effectuer une multiplication comme addition réitérée en colonne"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0052
+                                 COMPETENCE.NAME
+                                 "Effectuer une multiplication comme addition réitérée en colonne"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0052
+                                 COMPETENCE.POSITION {"x":8,"y":208}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0052
+                                 COMPETENCE.POSITION {"x":8,"y":208}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0051
+                                 COMPETENCE.NAME
+                                 "Utiliser la parité et les mots pair et impair"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0051
+                                 COMPETENCE.NAME
+                                 "Utiliser la parité et les mots pair et impair"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0051
+                                 COMPETENCE.POSITION {"x":8,"y":160}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0051
+                                 COMPETENCE.POSITION {"x":8,"y":160}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0050
+                                 COMPETENCE.NAME
+                                 "Identifier les multiples d'un nombre parmi une liste"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0050
+                                 COMPETENCE.NAME
+                                 "Identifier les multiples d'un nombre parmi une liste"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0050
+                                 COMPETENCE.POSITION {"x":8,"y":112}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0050
+                                 COMPETENCE.POSITION {"x":8,"y":112}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004F
+                                 COMPETENCE.NAME
+                                 "Effectuer une multiplication avec du matériel base 10 et tableau de numération"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004F
+                                 COMPETENCE.NAME
+                                 "Effectuer une multiplication avec du matériel base 10 et tableau de numération"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004F
+                                 COMPETENCE.POSITION {"x":8,"y":64}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004F
+                                 COMPETENCE.POSITION {"x":8,"y":64}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004E
+                                 COMPETENCE.NAME
+                                 "Associer quantité organisée en ligne et colonnes et 2 écritures multiplicatives"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004E
+                                 COMPETENCE.NAME
+                                 "Associer quantité organisée en ligne et colonnes et 2 écritures multiplicatives"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004E
+                                 COMPETENCE.POSITION {"x":8,"y":16}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004E
+                                 COMPETENCE.POSITION {"x":8,"y":16}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469371))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469371))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0054
+                                 COMPETENCE.NAME
+                                 "Factoriser des nombres de 2 chiffres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0054
+                                 COMPETENCE.NAME
+                                 "Factoriser des nombres de 2 chiffres"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0054
+                                 COMPETENCE.POSITION {"x":8,"y":304}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0054
+                                 COMPETENCE.POSITION {"x":8,"y":304}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0053
+                                 COMPETENCE.NAME
+                                 "Trouver l'opérateur -(x n)→ qui permet de passer d'un état initial à un état final"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0053
+                                 COMPETENCE.NAME
+                                 "Trouver l'opérateur -(x n)→ qui permet de passer d'un état initial à un état final"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0053
+                                 COMPETENCE.POSITION {"x":8,"y":256}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0053
+                                 COMPETENCE.POSITION {"x":8,"y":256}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0052
+                                 COMPETENCE.NAME
+                                 "Effectuer une multiplication comme addition réitérée en colonne"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0052
+                                 COMPETENCE.NAME
+                                 "Effectuer une multiplication comme addition réitérée en colonne"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0052
+                                 COMPETENCE.POSITION {"x":8,"y":208}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0052
+                                 COMPETENCE.POSITION {"x":8,"y":208}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0051
+                                 COMPETENCE.NAME
+                                 "Utiliser la parité et les mots pair et impair"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0051
+                                 COMPETENCE.NAME
+                                 "Utiliser la parité et les mots pair et impair"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0051
+                                 COMPETENCE.POSITION {"x":8,"y":160}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0051
+                                 COMPETENCE.POSITION {"x":8,"y":160}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0050
+                                 COMPETENCE.NAME
+                                 "Identifier les multiples d'un nombre parmi une liste"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0050
+                                 COMPETENCE.NAME
+                                 "Identifier les multiples d'un nombre parmi une liste"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0050
+                                 COMPETENCE.POSITION {"x":8,"y":112}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0050
+                                 COMPETENCE.POSITION {"x":8,"y":112}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004F
+                                 COMPETENCE.NAME
+                                 "Effectuer une multiplication avec du matériel base 10 et tableau de numération"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004F
+                                 COMPETENCE.NAME
+                                 "Effectuer une multiplication avec du matériel base 10 et tableau de numération"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004F
+                                 COMPETENCE.POSITION {"x":8,"y":64}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004F
+                                 COMPETENCE.POSITION {"x":8,"y":64}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004E
+                                 COMPETENCE.NAME
+                                 "Associer quantité organisée en ligne et colonnes et 2 écritures multiplicatives"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004E
+                                 COMPETENCE.NAME
+                                 "Associer quantité organisée en ligne et colonnes et 2 écritures multiplicatives"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004E
+                                 COMPETENCE.POSITION {"x":8,"y":16}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-004E
+                                 COMPETENCE.POSITION {"x":8,"y":16}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469371))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469372))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E
+                                 DOMAIN.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.NAME
+                                 "Multiplication niveau 2"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005E DOMAIN.NAME
+                                 "Multiplication niveau 2"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469372))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469372))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469372))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469373))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469373))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469384))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469384))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469385))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469385))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469389))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469389))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469390))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469390))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469393))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469393))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469395))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469395))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469583))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0055 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0055 COMPETENCE.ID
+                                 "gXj49m"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0055
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0057))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0055
+                                 COMPETENCE.NAME
+                                 "Associer écriture en chiffres, en mots, et décompositions en centaines / dizaines / unités"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0055
+                                 COMPETENCE.POSITION {"x":8,"y":72}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0056 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0056 COMPETENCE.ID
+                                 "TE6qGw"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0056
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0057))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0056
+                                 COMPETENCE.NAME "Comparer, ranger, encadrer"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0056
+                                 COMPETENCE.POSITION {"x":16,"y":136}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0057 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0057 COMPETENCE.ID
+                                 "HewdX-"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0057
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0057))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0057
+                                 COMPETENCE.NAME "Estimer"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0057
+                                 COMPETENCE.POSITION {"x":296,"y":136}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0058 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0058 COMPETENCE.ID
+                                 "D3U8bF"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0058
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0057))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0058
+                                 COMPETENCE.NAME
+                                 "Placer sur une droite graduée"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0058
+                                 COMPETENCE.POSITION {"x":432,"y":136}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0059 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0059 COMPETENCE.ID
+                                 "NlTXBz"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0059
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0057))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0059
+                                 COMPETENCE.NAME
+                                 "Associer tableau de numération, décomposition en c/d/u, collection de matériel base 10"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0059
+                                 COMPETENCE.POSITION {"x":10,"y":10}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005A :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005A COMPETENCE.ID
+                                 "rKSK6e"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005A
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0057))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005A
+                                 COMPETENCE.NAME
+                                 "Compter de 1 en 1, de 2 en 2, de 3 en 3, de 10 en 10 de 100 en 100 de n'importe où sur [0-100]"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005A
+                                 COMPETENCE.POSITION {"x":8,"y":192}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0057
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0056))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0058
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0057))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0055
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0059))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469583))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469587))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005A
+                                 COMPETENCE.NAME
+                                 "Compter de 1 en 1, de 2 en 2, de 3 en 3, de 10 en 10 de 100 en 100 de n'importe où sur [0-100]"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005A
+                                 COMPETENCE.NAME
+                                 "Compter de 1 en 1, de 2 en 2, de 3 en 3, de 10 en 10 de 100 en 100 de n'importe où sur [0-100]"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005A
+                                 COMPETENCE.POSITION {"x":8,"y":192}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005A
+                                 COMPETENCE.POSITION {"x":8,"y":192}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0059
+                                 COMPETENCE.NAME
+                                 "Associer tableau de numération, décomposition en c/d/u, collection de matériel base 10"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0059
+                                 COMPETENCE.NAME
+                                 "Associer tableau de numération, décomposition en c/d/u, collection de matériel base 10"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0059
+                                 COMPETENCE.POSITION {"x":10,"y":10}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0059
+                                 COMPETENCE.POSITION {"x":10,"y":10}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0058
+                                 COMPETENCE.NAME
+                                 "Placer sur une droite graduée"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0058
+                                 COMPETENCE.NAME
+                                 "Placer sur une droite graduée"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0058
+                                 COMPETENCE.POSITION {"x":432,"y":136}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0058
+                                 COMPETENCE.POSITION {"x":432,"y":136}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0057
+                                 COMPETENCE.NAME "Estimer"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0057
+                                 COMPETENCE.NAME "Estimer"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0057
+                                 COMPETENCE.POSITION {"x":296,"y":136}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0057
+                                 COMPETENCE.POSITION {"x":296,"y":136}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0056
+                                 COMPETENCE.NAME "Comparer, ranger, encadrer"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0056
+                                 COMPETENCE.NAME "Comparer, ranger, encadrer"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0056
+                                 COMPETENCE.POSITION {"x":16,"y":136}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0056
+                                 COMPETENCE.POSITION {"x":16,"y":136}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0055
+                                 COMPETENCE.NAME
+                                 "Associer écriture en chiffres, en mots, et décompositions en centaines / dizaines / unités"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0055
+                                 COMPETENCE.NAME
+                                 "Associer écriture en chiffres, en mots, et décompositions en centaines / dizaines / unités"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0055
+                                 COMPETENCE.POSITION {"x":8,"y":72}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0055
+                                 COMPETENCE.POSITION {"x":8,"y":72}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469587))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469587))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057
+                                 DOMAIN.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.NAME
+                                 "Les nombres de 0 à 999"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0057 DOMAIN.NAME
+                                 "Les nombres de 0 à 999"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469587))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469587))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469587))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469589))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469589))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469598))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469598))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469598))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469598))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469599))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469599))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469601))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469601))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469602))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469602))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469603))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469603))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469649))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469649))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469649))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469649))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469667))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D
+                                 DOMAIN.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D
+                                 DOMAIN.DESCRIPTION "NIL"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.NAME
+                                 "Multiplication niveau 1"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-005D DOMAIN.NAME
+                                 "Multiplication niveau 1"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469667))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469667))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469667))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469667))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469667))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469669))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469669))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469670))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469670))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469673))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469673))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469674))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469674))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469675))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469675))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469676))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469676))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469770))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005B :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005B COMPETENCE.ID
+                                 "td6eiM"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005B
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0055))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005B
+                                 COMPETENCE.NAME
+                                 "Exprimer les décompositions de 100 en sommes d'un même nombre"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005B
+                                 COMPETENCE.POSITION {"x":8,"y":56}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005C :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005C COMPETENCE.ID
+                                 "RUFMW6"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005C
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0055))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005C
+                                 COMPETENCE.NAME "Comparer des sommes à 100"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005C
+                                 COMPETENCE.POSITION {"x":8,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005D :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005D COMPETENCE.ID
+                                 "zlHHvE"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005D
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0055))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005D
+                                 COMPETENCE.NAME
+                                 "Trouver les compléments à 100 des multiples de 10"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005D
+                                 COMPETENCE.POSITION {"x":8,"y":112}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005E :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005E COMPETENCE.ID
+                                 "CHy3si"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005E
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0055))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005E
+                                 COMPETENCE.NAME
+                                 "Trouver les compléments à 100 des nombres de 2 chiffres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005E
+                                 COMPETENCE.POSITION {"x":448,"y":112}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005E
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-005D))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469770))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469772))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055
+                                 DOMAIN.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.NAME
+                                 "Le nombre 100"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0055 DOMAIN.NAME
+                                 "Le nombre 100"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469772))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469772))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469772))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469772))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469772))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469775))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469775))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469776))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469776))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469798))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469798))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469799))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469799))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469802))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469802))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469803))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469803))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469901))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005F :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005F COMPETENCE.ID
+                                 "3AudxA"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005F
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0056))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005F
+                                 COMPETENCE.NAME
+                                 "Utiliser les correspondances 100 cm = 1 m, 100 c = 1 €, 60 mn = 1h pour résoudre des problèmes"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-005F
+                                 COMPETENCE.POSITION {"x":10,"y":10}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469901))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469902))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056
+                                 DOMAIN.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.NAME
+                                 "Les unités de mesure"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0056 DOMAIN.NAME
+                                 "Les unités de mesure"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469902))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469902))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469902))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469903))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469903))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469903))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469903))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469905))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469905))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469906))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469906))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469908))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469908))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469909))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469909))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469910))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469910))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469911))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469911))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469956))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0060 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0060 COMPETENCE.ID
+                                 "-j4rWo"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0060
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0005))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0060
+                                 COMPETENCE.NAME
+                                 "Associer les décompositions visuelles de 10 à leurs sommes"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0060
+                                 COMPETENCE.POSITION {"x":10,"y":10}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0061 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0061 COMPETENCE.ID
+                                 "Rmcylg"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0061
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0005))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0061
+                                 COMPETENCE.NAME
+                                 "Grouper des quantités par 10"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0061
+                                 COMPETENCE.POSITION {"x":504,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0062 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0062 COMPETENCE.ID
+                                 "s2dy3D"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0062
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0005))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0062
+                                 COMPETENCE.NAME "Comparer des sommes à 10"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0062
+                                 COMPETENCE.POSITION {"x":288,"y":80}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0061
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0060))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469956))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469957))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0005
+                                 DOMAIN.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0005 DOMAIN.NAME
+                                 "Le nombre 10"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0005 DOMAIN.NAME
+                                 "Le nombre 10"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469957))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469957))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469957))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469958))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469958))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469962))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469962))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469963))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469963))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469968))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469968))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469969))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469969))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469971))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469971))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469972))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612469972))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470018))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0063 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0063 COMPETENCE.ID
+                                 "MgOT0p"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0063
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-000B))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0063
+                                 COMPETENCE.NAME
+                                 "Trouver le complément d'une partie d'une collection"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0063
+                                 COMPETENCE.POSITION {"x":192,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0064 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0064 COMPETENCE.ID
+                                 "iZRSDk"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0064
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-000B))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0064
+                                 COMPETENCE.NAME
+                                 "Compléter des arbres de calcul"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0064
+                                 COMPETENCE.POSITION {"x":480,"y":72}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0065 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0065 COMPETENCE.ID
+                                 "8KO7c7"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0065
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-000B))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0065
+                                 COMPETENCE.NAME
+                                 "Connaitre les compléments à 10"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0065
+                                 COMPETENCE.POSITION {"x":72,"y":72}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0064
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0063))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0065
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0063))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470018))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470019))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000B
+                                 DOMAIN.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000B DOMAIN.NAME
+                                 "Les compléments"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000B DOMAIN.NAME
+                                 "Les compléments"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470019))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470019))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470019))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470020))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470020))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470028))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470028))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470028))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470028))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470030))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470030))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470030))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470030))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470031))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470031))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470033))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470033))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470034))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470034))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470141))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0066 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0066 COMPETENCE.ID
+                                 "TRy1c_"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0066
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0004))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0066
+                                 COMPETENCE.NAME
+                                 "Associer nombre de 1 chiffre à une quantité"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0066
+                                 COMPETENCE.POSITION {"x":10,"y":10}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0067 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0067 COMPETENCE.ID
+                                 "WJI5Jo"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0067
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0004))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0067
+                                 COMPETENCE.NAME
+                                 "Produire des collections d'un nombre donné"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0067
+                                 COMPETENCE.POSITION {"x":440,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0068 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0068 COMPETENCE.ID
+                                 "YJkr_f"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0068
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0004))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0068
+                                 COMPETENCE.NAME
+                                 "Associer écriture en chiffre et en lettres des nombres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0068
+                                 COMPETENCE.POSITION {"x":40,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0069 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0069 COMPETENCE.ID
+                                 "kU1Un4"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0069
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0004))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0069
+                                 COMPETENCE.NAME
+                                 "Grouper les éléments d'une collection par un nombre donné"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0069
+                                 COMPETENCE.POSITION {"x":432,"y":160}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0068
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0067))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0068
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0066))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0069
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0067))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470141))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470156))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0069
+                                 COMPETENCE.NAME
+                                 "Grouper les éléments d'une collection par un nombre donné"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0069
+                                 COMPETENCE.NAME
+                                 "Grouper les éléments d'une collection par un nombre donné"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0069
+                                 COMPETENCE.POSITION {"x":432,"y":160}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0069
+                                 COMPETENCE.POSITION {"x":432,"y":160}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0068
+                                 COMPETENCE.NAME
+                                 "Associer écriture en chiffre et en lettres des nombres"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0068
+                                 COMPETENCE.NAME
+                                 "Associer écriture en chiffre et en lettres des nombres"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0068
+                                 COMPETENCE.POSITION {"x":40,"y":96}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0068
+                                 COMPETENCE.POSITION {"x":40,"y":96}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0067
+                                 COMPETENCE.NAME
+                                 "Produire des collections d'un nombre donné"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0067
+                                 COMPETENCE.NAME
+                                 "Produire des collections d'un nombre donné"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0067
+                                 COMPETENCE.POSITION {"x":440,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0067
+                                 COMPETENCE.POSITION {"x":440,"y":8}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0066
+                                 COMPETENCE.NAME
+                                 "Associer nombre de 1 chiffre à une quantité"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0066
+                                 COMPETENCE.NAME
+                                 "Associer nombre de 1 chiffre à une quantité"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0066
+                                 COMPETENCE.POSITION {"x":10,"y":10}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0066
+                                 COMPETENCE.POSITION {"x":10,"y":10}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470156))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470157))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0004
+                                 DOMAIN.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0004
+                                 DOMAIN.DESCRIPTION "NIL"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0004 DOMAIN.NAME
+                                 "Les nombres de 1 chiffre"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0004 DOMAIN.NAME
+                                 "Les nombres de 1 chiffre"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470157))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470157))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470157))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470159))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470159))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470161))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470161))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470162))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470162))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470163))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470163))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470164))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470164))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470172))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470172))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470174))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470174))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470226))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006A :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006A COMPETENCE.ID
+                                 "l9mVyH"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006A
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0006))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006A
+                                 COMPETENCE.NAME
+                                 "Comparer 2 réunions de 2 collections"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006A
+                                 COMPETENCE.POSITION {"x":10,"y":10}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006B :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006B COMPETENCE.ID
+                                 "NfISOJ"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006B
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0006))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006B
+                                 COMPETENCE.NAME
+                                 "Comparer 2 réunions de plusieurs collections"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006B
+                                 COMPETENCE.POSITION {"x":8,"y":72}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006C :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006C COMPETENCE.ID
+                                 "HhK7dj"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006C
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0006))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006C
+                                 COMPETENCE.NAME
+                                 "Comparer des écritures additives"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006C
+                                 COMPETENCE.POSITION {"x":8,"y":136}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006B
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-006A))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006C
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-006B))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470226))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470227))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0006
+                                 DOMAIN.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0006 DOMAIN.NAME
+                                 "Comparaison d'écritures additives"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0006 DOMAIN.NAME
+                                 "Comparaison d'écritures additives"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470227))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470227))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470227))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470228))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470228))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470230))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470230))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470231))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470231))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470246))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470246))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470247))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470247))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470252))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470252))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470252))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470252))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470480))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006D :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006D COMPETENCE.ID
+                                 "W9KnQp"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006D
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-000A))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006D
+                                 COMPETENCE.NAME
+                                 "Utiliser \"et\" pour exprimer la réunion de 2 collections"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006D
+                                 COMPETENCE.POSITION {"x":10,"y":10}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006E :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006E COMPETENCE.ID
+                                 "CTqsZ9"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006E
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-000A))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006E
+                                 COMPETENCE.NAME
+                                 "Utiliser + pour exprimer la réunion de 2 collections"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006E
+                                 COMPETENCE.POSITION {"x":8,"y":72}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006F :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006F COMPETENCE.ID
+                                 "0PM3h4"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006F
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-000A))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006F
+                                 COMPETENCE.NAME
+                                 "Utiliser + pour exprimer la réunion de plusieurs collections"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006F
+                                 COMPETENCE.POSITION {"x":8,"y":136}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0070 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0070 COMPETENCE.ID
+                                 "AvWkdc"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0070
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-000A))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0070
+                                 COMPETENCE.NAME
+                                 "Utiliser des arbres pour calculer des sommes"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0070
+                                 COMPETENCE.POSITION {"x":8,"y":200}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0071 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0071 COMPETENCE.ID
+                                 "ZJM5yJ"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0071
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-000A))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0071
+                                 COMPETENCE.NAME
+                                 "Décrire une quantité par une somme"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0071
+                                 COMPETENCE.POSITION {"x":496,"y":136}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0072 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0072 COMPETENCE.ID
+                                 "XefdZg"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0072
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-000A))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0072
+                                 COMPETENCE.NAME
+                                 "Connaitre les tables d'additions de nombres à 1 chiffre"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0072
+                                 COMPETENCE.POSITION {"x":432,"y":72}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0073 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0073 COMPETENCE.ID
+                                 "vBl1RA"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0073
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-000A))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0073
+                                 COMPETENCE.NAME
+                                 "Trouver les sommes d'une valeur donnée"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0073
+                                 COMPETENCE.POSITION {"x":456,"y":200}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006E
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-006D))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-006F
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-006E))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0070
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-006F))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0071
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-006F))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0072
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-006E))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470480))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470482))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000A
+                                 DOMAIN.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000A DOMAIN.NAME
+                                 "Additions de nombres de 1 chiffre"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-000A DOMAIN.NAME
+                                 "Additions de nombres de 1 chiffre"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470482))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470482))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470482))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470483))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470483))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470486))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470486))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470487))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470487))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470489))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470489))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470490))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470490))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470490))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470490))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470492))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470492))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470493))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470493))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470760))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0074 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0074 COMPETENCE.ID
+                                 "V-bq6h"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0074
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0008))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0074
+                                 COMPETENCE.NAME
+                                 "Associer des collections de même cardinal"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0074
+                                 COMPETENCE.POSITION {"x":10,"y":10}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0075 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0075 COMPETENCE.ID
+                                 "dJMrNt"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0075
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0008))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0075
+                                 COMPETENCE.NAME "Le signe ="))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0075
+                                 COMPETENCE.POSITION {"x":336,"y":64}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0076 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0076 COMPETENCE.ID
+                                 "iUOGKW"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0076
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0008))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0076
+                                 COMPETENCE.NAME "Le signe !="))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0076
+                                 COMPETENCE.POSITION {"x":336,"y":144}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0077 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0077 COMPETENCE.ID
+                                 "NHKiYo"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0077
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0008))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0077
+                                 COMPETENCE.NAME
+                                 "Produire une collection de même cardinal qu'une collection témoin"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0077
+                                 COMPETENCE.POSITION {"x":384,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0075
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0074))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0076
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0075))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0075
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0077))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470760))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470761))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0008
+                                 DOMAIN.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0008 DOMAIN.NAME
+                                 "Égalité de quantités"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0008 DOMAIN.NAME
+                                 "Égalité de quantités"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470761))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470761))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470761))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470762))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470762))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470767))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470767))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470768))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470768))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470769))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470769))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470771))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470771))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470773))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470773))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470774))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470774))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470841))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0078 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0078 COMPETENCE.ID
+                                 "FqblkU"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0078
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0053))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0078
+                                 COMPETENCE.NAME
+                                 "Identifier la collection la plus grande"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0078
+                                 COMPETENCE.POSITION {"x":8,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0079 :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0079 COMPETENCE.ID
+                                 "xzNlrJ"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0079
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0053))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0079
+                                 COMPETENCE.NAME
+                                 "Identifier la collection la plus petite"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-0079
+                                 COMPETENCE.POSITION {"x":384,"y":8}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-007A :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-007A COMPETENCE.ID
+                                 "w86y_p"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-007A
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0053))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-007A
+                                 COMPETENCE.NAME "Utiliser les signes < et >"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-007A
+                                 COMPETENCE.POSITION {"x":256,"y":112}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-007A
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0079))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-007A
+                                 COMPETENCE.REQUIRED-COMPETENCES
+                                 LOWH-FACTS.ANON::COMPETENCE-0078))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470841))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470842))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0053
+                                 DOMAIN.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0053 DOMAIN.NAME
+                                 "Inégalités"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0053 DOMAIN.NAME
+                                 "Inégalités"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470842))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470843))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470843))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470843))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470843))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470845))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470845))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470846))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470846))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470849))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470849))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470850))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470850))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470851))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470851))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470853))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470853))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470882))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-007B :IS-A
+                                 COMPETENCE))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-007B COMPETENCE.ID
+                                 "3_JvGh"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-007B
+                                 COMPETENCE.DOMAIN
+                                 LOWH-FACTS.ANON::DOMAIN-0009))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-007B
+                                 COMPETENCE.NAME "(...encadrer...)"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-007B
+                                 COMPETENCE.POSITION {"x":10,"y":10}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470882))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470888))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-007B
+                                 COMPETENCE.NAME "(...encadrer...)"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-007B
+                                 COMPETENCE.NAME "(...encadrer...)"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-007B
+                                 COMPETENCE.POSITION {"x":10,"y":10}))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::COMPETENCE-007B
+                                 COMPETENCE.POSITION {"x":10,"y":10}))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470888))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470890))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0009
+                                 DOMAIN.DESCRIPTION ""))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0009 DOMAIN.NAME
+                                 "Encadrements"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::DOMAIN-0009 DOMAIN.NAME
+                                 "Encadrements"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470890))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470890))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470890))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470891))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470891))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470892))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470892))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470893))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470893))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470898))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470898))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470899))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470899))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470900))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470900))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470901))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612470901))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612471238))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612471238))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612471239))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0047 :IS-A SESSION))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0047
+                                 LOWH.TRIANGLE.SERVER::SESSION.ID
+                                 "HptArmh_T3MfsUzNdRD482pkuoDkjvWW"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0047
+                                 LOWH.TRIANGLE.SERVER::SESSION.CTIME
+                                 3612500025))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0047
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612500025))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0047
+                                 LOWH.TRIANGLE.SERVER::SESSION.KEY
+                                 "0cUgsifOG0AlUIVKa2tR14qsIvpclpUv"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0047
+                                 LOWH.TRIANGLE.SERVER::SESSION.REMOTE-ADDR
+                                 "82.67.155.88"))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0047
+                                 LOWH.TRIANGLE.SERVER::SESSION.USER-AGENT
+                                 "Mozilla/5.0 (Linux; U; Android 4.1.1; fr-fr; BS471 Build/JRO03C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.1 Mobile Safari/534.30"))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612252449))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612500070))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612500070))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612500719))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612500719))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612500719))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612500719))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612500830))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612500830))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612500831))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612471239))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-0046
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612503549))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612500831))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612507280))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612507280))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612507281))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612507281))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612507322))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612507322))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612507325))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612507325))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612509235))
+(LOWH-FACTS::DB-INDEXES-DELETE LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612509235))
+(LOWH-FACTS::DB-INDEXES-INSERT LOWH-FACTS:*DB*
+                               #(LOWH-FACTS.ANON::SESSION-003E
+                                 LOWH.TRIANGLE.SERVER::SESSION.ATIME
+                                 3612509240))
