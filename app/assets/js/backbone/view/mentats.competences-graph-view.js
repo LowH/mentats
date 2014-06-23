@@ -1,4 +1,5 @@
-Mentats.CompetenceGraphView = SVGG.Paper.extend({
+
+Mentats.CompetencesGraphView = SVGG.Paper.extend({
 
   nodeRadius: Mentats.competenceRadius,
 
