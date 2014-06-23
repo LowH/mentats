@@ -1,21 +1,4 @@
 
-Mentats.DomainsCollection = Backbone.Collection.extend({
-  model: Mentats.Domain,
-  url: '/domain'
-});
-
-Mentats.DomainsGraph = SVGG.Graph.extend({
-
-  initialize: function() {
-    Backbone.Model.prototype.initialize.apply(this, arguments);
-    this.set({
-      nodes: new Mentats.DomainsCollection(this.get('nodes')),
-      links: new SVGG.LinksCollection(this.get('links'))
-    });
-  },
-
-});
-
 Mentats.Module = Backbone.Model.extend({
 
   defaults: {
@@ -29,7 +12,7 @@ Mentats.Module = Backbone.Model.extend({
 
   initialize: function() {
     Backbone.Model.prototype.initialize.apply(this, arguments);
-    this.url = '/module/' + this.id;
+    this.url = '/j/module/' + this.id;
     this.set('domains', new Mentats.DomainsGraph(this.get('domains')));
     this.get('domains').url = this.url + '/domains';
   },
@@ -46,5 +29,17 @@ Mentats.Module = Backbone.Model.extend({
 
 Mentats.ModulesCollection = Backbone.Collection.extend({
   model: Mentats.Module,
-  url: '/module'
+  url: '/j/module'
 });
+
+Mentats.modules = new Mentats.ModulesCollection;
+
+Mentats.getModule = function (id) {
+  var m = Mentats.modules.get(id);
+  if (m)
+    return m;
+  m = new Mentats.Module({id: id});
+  m.fetch();
+  Mentats.modules.add(m);
+  return m;
+};

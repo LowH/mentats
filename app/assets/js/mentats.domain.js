@@ -13,18 +13,3 @@ $('body.domain.domain--edit').each(function() {
   // test
   console.log(domainEditor);
 });
-
-$('body.domain.domain--show').each(function() {
-  var domain = new Mentats.Domain({id: $(this).find('#domain-graph-view').data('id')});
-  domain.fetch();
-
-  console.log('domain', domain);
-
-  var domainView = new Mentats.DomainView({
-    model: domain,
-    el: 'body'
-  });
-
-  // test
-  console.log(domainView);
-});

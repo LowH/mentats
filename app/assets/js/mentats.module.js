@@ -1,30 +1,19 @@
 
-$('body.module.module--edit').each(function() {
-  var module = new Mentats.Module({id: $(this).find('#module-graph-editor').data('id')});
-  module.fetch();
+$(function() {
 
-  console.log('module', module);
+  $('body.module.module--edit').each(function() {
+    var module = new Mentats.Module({id: $(this).find('#module-graph-editor').data('id')});
+    module.fetch();
 
-  var moduleEditor = new Mentats.ModuleEditor({
-    model: module,
-    el: 'body'
+    console.log('module', module);
+
+    var moduleEditor = new Mentats.ModuleEditor({
+      model: module,
+      el: 'body'
+    });
+
+    // test
+    console.log(moduleEditor);
   });
 
-  // test
-  console.log(moduleEditor);
-});
-
-$('body.module.module--show').each(function() {
-  var module = new Mentats.Module({id: $(this).find('#module-graph-view').data('id')});
-  module.fetch();
-
-  console.log('module', module);
-
-  var moduleView = new Mentats.ModuleView({
-    model: module,
-    el: 'body'
-  });
-
-  // test
-  console.log(moduleView);
 });

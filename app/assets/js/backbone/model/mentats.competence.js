@@ -6,3 +6,20 @@ Mentats.Competence = SVGG.Node.extend({
   },
 
 });
+
+Mentats.CompetencesCollection = Backbone.Collection.extend({
+  model: Mentats.Competence,
+  url: '/j/competence'
+});
+
+Mentats.CompetencesGraph = SVGG.Graph.extend({
+
+  initialize: function() {
+    Backbone.Model.prototype.initialize.apply(this, arguments);
+    this.set({
+      nodes: new Mentats.CompetencesCollection(this.get('nodes')),
+      links: new SVGG.LinksCollection(this.get('links'))
+    });
+  },
+
+});
