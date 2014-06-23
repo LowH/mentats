@@ -10,6 +10,8 @@ SVGG.Paper = Backbone.View.extend({
 
     this.grid = options.grid || 8;
     this.$paper = this.$el.find('.paper');
+    if (!this.$paper.length)
+      this.$paper = $('<div class="paper"></div>').appendTo(this.$el);
     this.svg = SVG(this.$paper[0])
       .fixSubPixelOffset()
       .size(options.width, options.height);
