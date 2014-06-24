@@ -2,6 +2,7 @@
 Mentats.Competence = SVGG.Node.extend({
 
   edit: function () {
+    console.log('Mentats.Competence.edit', this);
     Mentats.editCompetence(this.get('id'));
   },
 

@@ -10,7 +10,8 @@ Mentats.CompetencesGraphView = SVGG.Paper.extend({
     };
   },
 
-  onNodeClick: function (evt, node) {
+  onNodeClick: function (node, evt) {
+    console.log('Mentats.CompetencesGraphView.onNodeClick', evt, node);
     if (evt.button == 0) {
       Mentats.viewCompetence(node.model.get('id'));
       evt.stopPropagation();
