@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-sm-3">
+    <a href="«=(h (user-uri (resource.owner $resource)))»">
+      <img class="avatar" src="«=(h (gravatar:image-url (user.email (resource.owner $resource)) :size 32 :default :mm))»" alt=""/>
+      «=(h (user.name (resource.owner $resource)))»
+    </a>
+  </div>
+  <div class="col-sm-9">
+    «=(h (resource.text $resource))»
+  </div>
+</div>

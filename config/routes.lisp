@@ -36,6 +36,10 @@
 (define-route "/competence/{competence}" `(/competence ,(uri-var 'competence)))
 (define-route "/j/competence/{competence}" `(/competence ,(uri-var 'competence) "json"))
 
+(define-route "/resource" `(/resource))
+(define-route "/resource/{resource}" `(/resource ,(uri-var 'resource)))
+(define-route "/j/resource/{resource}" `(/resource ,(uri-var 'resource) "json"))
+
 (define-route "/favicon.ico" (find-route "/assets/favicon.ico"))
 
 (define-route "/" `(/wiki "index"))
