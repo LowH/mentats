@@ -1,11 +1,23 @@
-<div class="row">
-  <div class="col-sm-3">
+<div class="mentats-resource panel panel-default">
+  <div class="panel-heading">
     <a href="«=(h (user-uri (resource.owner $resource)))»">
       <img class="avatar" src="«=(h (gravatar:image-url (user.email (resource.owner $resource)) :size 32 :default :mm))»" alt=""/>
-      «=(h (user.name (resource.owner $resource)))»
+      <b>«=(h (user.name (resource.owner $resource)))»</b>
     </a>
+    <span class="small">
+      «=(h (rw-ut:write-time-string (resource.date $resource) "DD/MM/YYYY"))»
+    </span>
+    <div class="btn-group pull-right">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+	<span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu">
+	<li><a href="#" class="edit" onclick="Mentats.editResource(this)"><i class="icon-edit"></i> Éditer</a></li>
+	<li><a href="#" class="trash" onclick="Mentats.trashResource(this)"><i class="icon-trash"></i> Supprimer</a></li>
+      </ul>
+    </div>
   </div>
-  <div class="col-sm-9">
-    «=(h (resource.text $resource))»
+  <div class="panel-body">
+    « (print-markdown (resource.text $resource)) »
   </div>
 </div>
