@@ -5,10 +5,6 @@ var Mentats = {
 
   domainRadius: 4,
 
-  editCompetence: function(id) {
-    document.location = '/competence/' + id + '/edit';
-  },
-
   editDomain: function(id) {
     document.location = '/domaine/' + id + '/edit';
   },
