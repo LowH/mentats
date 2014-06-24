@@ -91,6 +91,6 @@
       (:POST   (cond ((and domain (eq action :competences))
 		      (/domain#update-competences domain))
 		     (t
-		      (/domain#create))))
+		      (http-error "404 Not found" "Action not found."))))
       (:PUT    (/domain#update domain))
       (:DELETE (/domain#delete domain)))))
