@@ -1,13 +1,14 @@
 Name: tuto/domainecompetencegraphe
 Date: 2014-02-01 14:42:52
-Author: Olivier THOMAS
 Title: Domaines, compétences, graphes
+Author: Olivier THOMAS
 
 [<-- Les modules](/tuto/module)
 
 Un module porte sur un ensemble de domaines organisé par un graphe de précédence.
 
-{insert graphe des domaines}
+<div class="domains-graph" data-module="Nj7z0vrcZ4g."></div>
+
 
 Un domaine regroupe plusieurs compétences concernant une même notion.
 
