@@ -6,6 +6,12 @@
   (has-one position)
   (has-many required-competences))
 
+(defun competence-owner (c)
+  (domain-owner (competence.domain c)))
+
+(defun competence-uri (competence)
+  (uri-for `(/competence ,(competence.id competence))))
+
 (defun find-competence-by-name (name)
   (facts:first-bound ((?c :is-a 'competence
 			  'competence.name name))))

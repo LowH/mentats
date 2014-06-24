@@ -1,21 +1,13 @@
 
-(defun /competence#index ()
-  (template-let ((title "Compétences")
-		 (competences nil))
-    (facts:with ((?c :is-a 'competence))
-      (print ?c)
-      (unless (facts:bound-p ((?c 'competence.parent ?)))
-	(push (competence-as-cons ?c) competences)))
-    (render-view :competence :index '.html)))
-
-(defun /competence#show (c)
-  (let ((id (competence.id c))
-	(name (competence.name c)))
-    (template-let ((id id)
-		   (name name)
-		   (title name)
-		   (competence (competence.json c))
-		   (parent (competence.parent c)))
+(defun /competence#show (competence)
+  (check-can :view competence)
+  (facts:with-transaction
+    (template-let (competence
+		   (resources nil))
+      (facts:with ((?r :is-a 'resource
+		       'resource.competence competence))
+	(unless (resource.deleted ?r)
+	  (push ?r resources)))
       (render-view :competence :show '.html))))
 
 (defun /competence#create ()
@@ -54,15 +46,12 @@
   (facts:rm ((?s ?p c)))
   (redirect-to `(/competence)))
 
-(defun /competence (&key name id)
-  (let ((c (cond (id (or (find-competence id)
-			 (http-error "404 Not found" "No competence with ID ~S" id)))
-		 (name (or (find-competence-by-name name) ; FIXME
-			   (http-error "404 Not found" "No competence named ~S" name))))))
-    (format t "COMPETENCE ~S" c)
-    (template-let ((title "Mentats"))
-      (ecase *method*
-	((:GET)    (if c (/competence#show c) (/competence#index)))
-	((:POST)   (/competence#create))
-	((:PUT)    (/competence#update c))
-	((:DELETE) (/competence#delete c))))))
+(defun /competence (&optional id)
+  (let ((c (when id
+	     (or (find-competence id)
+		 (http-error "404 Not found" "No competence with ID ~S" id)))))
+    (ecase *method*
+      ((:GET)    (if c (/competence#show c) (/competence#index)))
+      ((:POST)   (/competence#create))
+      ((:PUT)    (/competence#update c))
+      ((:DELETE) (/competence#delete c)))))
