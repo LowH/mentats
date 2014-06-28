@@ -42,5 +42,8 @@
 
 (define-route "/favicon.ico" (find-route "/assets/favicon.ico"))
 
+(define-route "/pemf"        `(/file "public/pemf/"))
+(define-route "/pemf{/dir*}" `(/file "public/pemf/" ,(uri-var 'dir)))
+
 (define-route "/" `(/wiki "index"))
 (define-route "{/slug}" `(/wiki ,(uri-var 'slug)))
