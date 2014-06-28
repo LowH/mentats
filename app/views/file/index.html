@@ -1,0 +1,22 @@
+<h1>
+  « (loop for d in (cons (subseq (uri-for `(/file ,$base)) 1) $path-dirs)
+          for uri = d then (str uri "/" d)
+	  do
+ »<a href="/«=(h uri)»">/«=(h d)»</a>« ) »
+</h1>
+
+« (dolist (d $dirs) »
+<div class="row">
+  <div class="">
+    <a href="«=(h (str *uri* "/" d))»">«=(h d)»</a>
+  </div>
+</div>
+« ) »
+
+« (dolist (f $files) »
+<div class="row">
+  <div class="">
+    <a href="«=(h (str *uri* "/" f))»">«=(h f)»</a>
+  </div>
+</div>
+« ) »
