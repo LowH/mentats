@@ -12,14 +12,14 @@
 	(redirect-to (competence-uri c))))))
 
 (defun /resource#update (r)
-  (check-can :update 'resource)
+  (check-can :update r)
   (facts:with-transaction
       (with-form-data (text)
 	(setf (resource.text r) text))
     (redirect-to (competence-uri (resource.competence r)))))
 
 (defun /resource#delete (r)
-  (check-can :delete 'resource)
+  (check-can :delete r)
   (facts:with-transaction
     (let ((c (resource.competence r)))
       (setf (resource.deleted r) t)

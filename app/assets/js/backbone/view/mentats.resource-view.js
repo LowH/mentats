@@ -9,6 +9,7 @@ Mentats.ResourceView = Backbone.View.extend({
     this.$el.find('a.edit').click(this.edit);
     this.$el.find('a.trash').click(this.trash);
     this.$el.find('div.edit button.close').click(this.editClose);
+    this.listenTo(this.model, 'destroy', this.remove);
   },
 
   edit: function () {
@@ -22,9 +23,8 @@ Mentats.ResourceView = Backbone.View.extend({
 
   trash: function () {
     console.log('Mentats.ResourceView.trash', this);
-    if (alert('Supprimer définitivement cette resource ?')) {
-      this.model.destroy();
-      this.remove();
+    if (confirm('Supprimer définitivement cette resource ?')) {
+      this.model.destroy({wait: true});
     }
   },
 
@@ -34,6 +34,7 @@ $(function () {
   $('.mentats-resource').each(function () {
     var $this = $(this);
     var resource = new Mentats.Resource({
+      id: $this.data('id'),
       competence: $this.data('competence'),
       date: $this.data('date'),
       owner: $this.data('owner'),
