@@ -1,1 +1,1 @@
-(setq *base-url-for-tests* "http://mentats.local/")
+(defparameter *base-url-for-tests* "http://mentats.local/")
