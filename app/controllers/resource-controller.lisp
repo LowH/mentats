@@ -11,6 +11,20 @@
 		      'resource.text text)
 	(redirect-to (competence-uri c))))))
 
+(defun /resource#update (r)
+  (check-can :update 'resource)
+  (facts:with-transaction
+      (with-form-data (text)
+	(setf (resource.text r) text))
+    (redirect-to (competence-uri (resource.competence r)))))
+
+(defun /resource#delete (r)
+  (check-can :delete 'resource)
+  (facts:with-transaction
+    (let ((c (resource.competence r)))
+      (setf (resource.deleted r) t)
+      (redirect-to (competence-uri c)))))
+
 (defun /resource (&optional id)
   (let ((r (when id (or (find-resource id)
 			(http-error "404 Not found" "Resource not found.")))))

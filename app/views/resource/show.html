@@ -1,4 +1,4 @@
-<div class="mentats-resource panel panel-default">
+<div class="mentats-resource panel panel-default" data-owner="«=(h (user.id (resource.owner $resource)))»" data-competence="«=(h (competence.id (resource.competence $resource)))»" data-date="«=(h (resource.date $resource))»">
   <div class="panel-heading">
     <a href="«=(h (user-uri (resource.owner $resource)))»">
       <img class="avatar" src="«=(h (gravatar:image-url (user.email (resource.owner $resource)) :size 32 :default :mm))»" alt=""/>
@@ -12,12 +12,20 @@
 	<span class="caret"></span>
       </button>
       <ul class="dropdown-menu" role="menu">
-	<li><a href="#" class="edit" onclick="Mentats.editResource(this)"><i class="icon-edit"></i> Éditer</a></li>
-	<li><a href="#" class="trash" onclick="Mentats.trashResource(this)"><i class="icon-trash"></i> Supprimer</a></li>
+	<li><a href="#" class="edit"><i class="icon-edit"></i> Éditer</a></li>
+	<li><a href="#" class="trash"><i class="icon-trash"></i> Supprimer</a></li>
       </ul>
     </div>
   </div>
-  <div class="panel-body">
+  <div class="panel-body show">
     « (print-markdown (resource.text $resource)) »
+  </div>
+  <div class="panel-footer edit">
+    <button class="close pull-right"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    <b>Éditer</b>
+    <form role="form" class="form" action="«=(h (resource-uri $resource))»" method="POST">
+      <textarea name="text" class="form-control" rows="10">«=(h (resource.text $resource))»</textarea>
+      <button type="submit" class="btn btn-primary form-control" name="_method" value="PUT"><i class="icon-ok"></i></button>
+    </form>
   </div>
 </div>

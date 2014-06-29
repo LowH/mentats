@@ -8,7 +8,7 @@
 
 (defun resource-uri (&optional resource)
   (uri-for (if resource
-	       `(/resource ,(resource-id resource))
+	       `(/resource ,(resource.id resource))
 	       `(/resource))))
 
 (defun resource-json (r)
