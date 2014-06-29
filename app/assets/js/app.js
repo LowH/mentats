@@ -23,7 +23,7 @@
  *= require backbone/view/mentats.domains-graph-view
  *= require backbone/view/mentats.module-edit
  *= require backbone/view/mentats.module-view
- *= require backbone/view/mentats.resource
+ *= require backbone/view/mentats.resource-view
  *= require mentats.domain
  *= require mentats.module
  */
