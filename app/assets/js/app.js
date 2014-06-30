@@ -19,6 +19,7 @@
  *= require backbone/model/mentats.module
  *= require backbone/model/mentats.resource
  *= require backbone/view/mentats.competences-graph-view
+ *= require backbone/view/mentats.competence-view
  *= require backbone/view/mentats.domain-edit
  *= require backbone/view/mentats.domains-graph-view
  *= require backbone/view/mentats.module-edit

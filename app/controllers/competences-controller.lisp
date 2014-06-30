@@ -10,6 +10,10 @@
 	  (push ?r resources)))
       (render-view :competence :show '.html))))
 
+(defun /competence#json (competence)
+  (check-can :view competence)
+  (render-json (competence-json competence)))
+
 (defun /competence#create ()
   (with-form-data (competence.name)
     (cond ((emptyp competence.name) (redirect-to `(/competence)))
@@ -46,12 +50,17 @@
   (facts:rm ((?s ?p c)))
   (redirect-to `(/competence)))
 
-(defun /competence (&optional id)
+(defun /competence (&optional id action)
   (let ((c (when id
 	     (or (find-competence id)
-		 (http-error "404 Not found" "No competence with ID ~S" id)))))
+		 (http-error "404 Not found" "No competence with ID ~S" id))))
+	(action (when action
+		  (or (find (string-upcase action) '(:json) :test #'string=)
+		      (http-error "404 Not found" "Action not found.")))))
     (ecase *method*
-      ((:GET)    (if c (/competence#show c) (/competence#index)))
+      ((:GET)    (cond ((null c) (/competence#index))
+		       ((null action) (/competence#show c))
+		       ((eq :json action) (/competence#json c))))
       ((:POST)   (/competence#create))
       ((:PUT)    (/competence#update c))
       ((:DELETE) (/competence#delete c)))))

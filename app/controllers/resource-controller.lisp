@@ -14,22 +14,28 @@
 (defun /resource#update (r)
   (check-can :update r)
   (facts:with-transaction
-      (with-form-data (text)
-	(setf (resource.text r) text))
-    (redirect-to (competence-uri (resource.competence r)))))
+    (with-form-data (text)
+      (setf (resource.text r) text))
+    (cond ((accept-p :application/json) (render-json r))
+	  (t (redirect-to (competence-uri (resource.competence r)))))))
 
 (defun /resource#delete (r)
   (check-can :delete r)
   (facts:with-transaction
     (let ((c (resource.competence r)))
       (setf (resource.deleted r) t)
-      (redirect-to (competence-uri c)))))
+      (cond ((accept-p :application/json) (render-json {}))
+	    (t (redirect-to (competence-uri c)))))))
 
-(defun /resource (&optional id)
+(defun /resource (&optional id action)
   (let ((r (when id (or (find-resource id)
-			(http-error "404 Not found" "Resource not found.")))))
+			(http-error "404 Not found" "Resource not found."))))
+	(action (when action
+		  (or (find (string-upcase action) '(:json) :test #'string=)
+		      (http-error "404 Not found" "Action not found.")))))
     (ecase *method*
-      ((:GET)    (when r (/resource#show r)))
+      ((:GET)    (cond ((null action) (/resource#show c))
+		       ((eq :json action) (/competence#json c))))
       ((:POST)   (/resource#create))
       ((:PUT)    (/resource#update r))
       ((:DELETE) (/resource#delete r)))))

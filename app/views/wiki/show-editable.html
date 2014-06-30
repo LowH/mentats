@@ -18,7 +18,7 @@
     <div style="position:relative">
       <div class="edit">
 	<label class="sr-only" for="article">Éditer</label>
-	<textarea name="article" class="form-control" rows="15">«=(h (write-article nil $article))»</textarea>
+	<textarea name="article" class="form-control markdown-editor" rows="15">«=(h (write-article nil $article))»</textarea>
 	<button type="submit" class="btn btn-success form-control"
 		title="Valider" name="_method" value="PUT">
 	  <i class="icon-ok"></i>

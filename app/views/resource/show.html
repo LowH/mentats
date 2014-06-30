@@ -4,7 +4,7 @@
       <img class="avatar" src="«=(h (gravatar:image-url (user.email (resource.owner $resource)) :size 32 :default :mm))»" alt=""/>
       <b>«=(h (user.name (resource.owner $resource)))»</b>
     </a>
-    <span class="small">
+    <span class="small date">
       «=(h (rw-ut:write-time-string (resource.date $resource) "DD/MM/YYYY"))»
     </span>
     <div class="btn-group pull-right">
@@ -24,7 +24,7 @@
     <button class="close pull-right"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
     <b>Éditer</b>
     <form role="form" class="form" action="«=(h (resource-uri $resource))»" method="POST">
-      <textarea name="text" class="form-control" rows="10">«=(h (resource.text $resource))»</textarea>
+      <textarea name="text" class="form-control markdown-editor" rows="10">«=(h (resource.text $resource))»</textarea>
       <button type="submit" class="btn btn-primary form-control" name="_method" value="PUT"><i class="icon-ok"></i></button>
     </form>
   </div>

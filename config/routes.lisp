@@ -38,7 +38,7 @@
 
 (define-route "/resource" `(/resource))
 (define-route "/resource/{resource}" `(/resource ,(uri-var 'resource)))
-(define-route "/j/resource/{resource}" `(/resource ,(uri-var 'resource)))
+(define-route "/j/resource/{resource}" `(/resource ,(uri-var 'resource) "json"))
 
 (define-route "/favicon.ico" (find-route "/assets/favicon.ico"))
 

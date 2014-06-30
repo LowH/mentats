@@ -12,20 +12,26 @@ Mentats.ResourceView = Backbone.View.extend({
     this.listenTo(this.model, 'destroy', this.remove);
   },
 
-  edit: function () {
-    console.log('Mentats.ResourceView.edit', this);
+  edit: function (evt) {
+    console.log('Mentats.ResourceView.edit', this, evt);
     this.editDiv.show();
+    if (evt)
+      evt.preventDefault();
   },
 
-  editClose: function () {
+  editClose: function (evt) {
     this.editDiv.hide();
+    if (evt)
+      evt.preventDefault();
   },
 
-  trash: function () {
-    console.log('Mentats.ResourceView.trash', this);
+  trash: function (evt) {
+    console.log('Mentats.ResourceView.trash', this, evt);
     if (confirm('Supprimer définitivement cette resource ?')) {
       this.model.destroy({wait: true});
     }
+    if (evt)
+      evt.preventDefault();
   },
 
 });
