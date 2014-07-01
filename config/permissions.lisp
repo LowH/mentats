@@ -4,6 +4,7 @@
 (can:define-permission (:everyone :can :admin :all))
 (can:define-permission (:anonymous :cannot :admin :all))
 (can:define-permission (:anonymous :can :view :all))
+(can:define-permission (:anonymous :can :list 'modules))
 
 (can:define-permission (?user :can :edit ?module)
   (?user :is-a 'user)
