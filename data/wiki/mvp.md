@@ -75,9 +75,10 @@ On veut pouvoir :
                 +   **DONE** Enlever une *compétence* à un *domaine*.
                 +   **DONE** Ajouter une *compétence* aux prérequis d'une autre *compétence*.
                 +   Sortir du *mode édition*.
-            +   Choisir une *compétence*.
-                +   Passer en *mode édition*.
-                    +   Ajouter une *ressource* à une *compétence*.
+            +   **DONE** Choisir une *compétence*.
+                +   **DONE** Passer en *mode édition*.
+                    +   **DONE** Ajouter une *ressource* à une *compétence*.
+                    +   **DONE** Editer une *ressource*.
                     +   Enlever une *ressource* à une *compétence*.
                     +   Sortir du *mode édition*.
                 +   Passer en *mode évaluation*.
@@ -91,6 +92,7 @@ On veut pouvoir :
         +   Retourner à la *classe* d'un *élève*.
     +   Administrer une *classe*.
     +   Administrer des *modules* → [Admin modules](https://www.pivotaltracker.com/story/show/65252638) 2h
++  **DONE** Logout
 
 
 ROOK BUMPed on 27012014

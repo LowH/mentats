@@ -12,6 +12,9 @@ Bienvenue sur MENTATS
 
 [insert logo]
 
+
+<div class="competences-graph" data-domain="9cN5s1"></div>
+
 MENTATS est un outil qui assiste les enseignants dans leurs choix pédagogiques et réduit leurs temps de préparation.
 [développer sur les ambitions de l'outil]
 
