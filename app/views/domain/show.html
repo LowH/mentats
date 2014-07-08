@@ -1,9 +1,9 @@
 <div class="row">
-  <div class="col-sm-8" style="whitespace:none">
+  <div class="col-sm-12 col-md-9 col-lg-8" style="whitespace:none">
     « (render-view :module :_thumbnail '.html)
       (render-view :domain :_thumbnail '.html) »
   </div>
-  <div class="col-sm-4">
+  <div class="col-sm-12 col-md-3 col-lg-4">
     <div class="description">
       « (print-markdown (domain.description $domain)) »
     </div>
