@@ -56,6 +56,11 @@
 		  (t "403 Forbidden"))
 		"~S cannot ~S ~S." user action object)))
 
+(defun can (action &optional
+		     (object :all)
+		     (user (or (session-user) :anonymous)))
+  (can:can action object user))
+
 #+nil
 (defun list-resource (type &key order-by start (limit 20))
   (let* ((resources (cons nil nil))
