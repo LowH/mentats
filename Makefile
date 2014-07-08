@@ -5,6 +5,7 @@ APP = mentats
 
 ##  Production settings, override in config/local.mk
 
+MEM = 512
 APP_USER = mentats
 APP_GROUP = mentats
 WEB_USER = mentats
