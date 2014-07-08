@@ -1,6 +1,7 @@
 
 (define-resource competence
   (has-one deleted)
+  (has-one description)
   (has-one domain :having domain.competences)
   (has-one name)
   (has-one position)
