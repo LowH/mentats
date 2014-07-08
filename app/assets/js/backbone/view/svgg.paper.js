@@ -7,6 +7,7 @@ SVGG.Paper = Backbone.View.extend({
 
     this.width = options.width;
     this.height = options.height;
+    this.autocrop = options.autocrop;
 
     this.grid = options.grid || 8;
     this.$paper = this.$el.find('.paper');
@@ -14,8 +15,9 @@ SVGG.Paper = Backbone.View.extend({
       this.$paper = $('<div class="paper"></div>').appendTo(this.$el);
     console.log(this.$paper);
     this.svg = SVG(this.$paper[0])
-      .fixSubPixelOffset()
-      .size(options.width, options.height);
+      .fixSubPixelOffset();
+    if (options.width && options.height)
+      this.svg.size(options.width, options.height);
     this.svgLinks = this.svg.group();
     this.svgNodes = this.svg.group().front();
 
@@ -125,6 +127,14 @@ SVGG.Paper = Backbone.View.extend({
     });
     this.nodeViews = [];
     nodes.each(this.onAddNode);
+    if (this.autocrop) {
+      var r = this.svg.bbox();
+      r.x -= 1;
+      r.y -= 1;
+      r.width += 2;
+      r.height += 2;
+      this.svg.width(r.width).height(r.height).viewbox(r.x, r.y, r.width, r.height);
+    }
   },
 
 });

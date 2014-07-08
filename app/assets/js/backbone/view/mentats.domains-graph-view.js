@@ -26,8 +26,7 @@ Mentats.domainsGraph = function () {
   var view = new Mentats.DomainsGraphView({
     model: module.get('domains'),
     el: this,
-    width: 900,
-    height: 602,
+    autocrop: true,
   });
   console.log(view);
 };

@@ -26,8 +26,7 @@ Mentats.competencesGraph = function () {
   var view = new Mentats.CompetencesGraphView({
     model: domain.get('competences'),
     el: this,
-    width: 900,
-    height: 602,
+    autocrop: true,
   });
   console.log(view);
 };
