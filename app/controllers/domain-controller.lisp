@@ -20,8 +20,6 @@
 
 (defun /domain#update (domain)
   (check-can :edit domain)
-  (unless (eq (session-user) (module.owner (domain.module domain)))
-    (http-error "403 Forbidden" "Not authorized"))
   (facts:with-transaction
     (with-form-data (description name)
       (setf (domain.description domain) description

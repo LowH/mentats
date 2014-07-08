@@ -24,8 +24,6 @@
 
 (defun /module#create ()
   (check-can :create 'modules)
-  (unless (session-user)
-    (http-error "403 Forbidden" "Not authorized"))
   (with-form-data (discipline level)
     (redirect-to (module-uri
 		  (add-module 'module.discipline discipline
@@ -35,8 +33,6 @@
 
 (defun /module#update (module)
   (check-can :edit module)
-  (unless (eq (session-user) (module.owner module))
-    (http-error "403 Forbidden" "Not authorized"))
   (with-form-data (description discipline level)
     (setf (module.description module) description
 	  (module.discipline module) discipline
@@ -45,8 +41,6 @@
 
 (defun /module#delete (module)
   (check-can :delete module)
-  (unless (eq (session-user) (module.owner module))
-    (http-error "403 Forbidden" "Not authorized"))
   (facts:with-transaction
     (setf (module.deleted module) t))
   (redirect-to (user-uri (session-user))))
