@@ -25,7 +25,7 @@
 	</button>
       </div>
       <div class="display">
-	<div class="body">« (print-markdown (article.body $article)) »</div>
+	<div class="body">« (print-markdown (urls-to-links (article.body $article))) »</div>
       </div>
     </div>
   </form>

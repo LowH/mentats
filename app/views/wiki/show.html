@@ -3,7 +3,7 @@
   <div style="position:relative">
     <div class="display">
       <div class="body">
-      « (when-let ((body (article.body $article))) (print-markdown body)) »
+      « (when-let ((body (article.body $article))) (print-markdown (urls-to-links body))) »
       </div>
     </div>
   </div>
