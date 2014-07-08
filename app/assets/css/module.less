@@ -1,3 +1,6 @@
+@module-radius: 3px;
+@domain-radius: 15px;
+
 .module.thumbnail, .domain.thumbnail {
 	display: inline-block;
 	vertical-align: top;
@@ -7,7 +10,6 @@
 	border: solid 1px #666;
 	box-shadow: 1px 2px 5px -2px #000;
 	position: relative;
-
 	&, & a {
 		text-decoration: none;
 	}
@@ -26,6 +28,7 @@
 	}
 }
 .module.thumbnail {
+	border-radius: @module-radius;
 	background: url(/assets/module/default-cover.png) #fffdf0 0 0;
 	.caption {
 		opacity: 0.6;
@@ -50,6 +53,7 @@
 	}
 }
 .domain.thumbnail {
+	border-radius: @domain-radius;
 	.caption {
 		h1,h2,h3,h4,h5,h6,p {
 			margin: 5px;
@@ -59,13 +63,13 @@
 		}
 	}
 }
-body.domain {
+body.domain, body.competence {
 	.module.thumbnail {
-		border-radius: 4px 0 0 4px;
+		border-radius: @module-radius 0 0 @module-radius;
 		border-right: solid 1px #aaa;
 	}
 	.domain.thumbnail {
-		border-radius: 0 4px 4px 0;
+		border-radius: 0 @domain-radius @domain-radius 0;
 		border-left: 0;
 	}
 }
@@ -75,4 +79,10 @@ a.module.thumbnail:hover {
 div.module.thumbnail {
 	margin-left: 0;
 	margin-top: 0;
+}
+body.competence {
+	h1 {
+		margin: 0 0 0.5em;
+		font-size: 30px;
+	}
 }
