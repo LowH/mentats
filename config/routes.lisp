@@ -40,6 +40,11 @@
 (define-route "/resource/{resource}" `(/resource ,(uri-var 'resource)))
 (define-route "/j/resource/{resource}" `(/resource ,(uri-var 'resource) "json"))
 
+(define-route "/classroom" `(/classroom))
+(define-route "/classroom/{classroom}" `(/classroom ,(uri-var 'classroom)))
+(define-route "/classroom/{classroom}/{action}" `(/classroom ,(uri-var 'classroom)
+							     ,(uri-var 'action)))
+
 (define-route "/favicon.ico" (find-route "/assets/favicon.ico"))
 
 (define-route "/pemf"        `(/file "public/pemf/"))

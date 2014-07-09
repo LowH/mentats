@@ -1,5 +1,29 @@
 <h1>«=(h (user.name $user))»</h1>
 
+<h3>Classes</h3>
+<div class="row">
+« (dolist (classroom $classrooms) »
+«   (template-let (classroom) »
+«     (render-view :classroom :_thumbnail '.html) »
+«   ) »
+« ) »
+</div>
+
+« (when (can :create 'classrooms) »
+<h3>Créer une classe</h3>
+<form id="create-classroom" class="form-inline" role="form" action="«=(h (uri-for '(/classroom)))»" method="POST">
+  <div class="form-group">
+    <label for="name" class="sr-only">Nom</label>
+    <input class="form-control" type="text" name="name" placeholder="Nom" required/>
+  </div>
+  <div class="form-group">
+    <label for="level" class="sr-only">Niveau</label>
+    <input class="form-control" type="text" name="level" placeholder="Niveau" required/>
+  </div>
+  <button class="btn btn-default" type="submit" name="_method" value="POST"><i class="icon-create"></i> Créer</button>
+</form>
+« ) »
+
 <h3>Modules</h3>
 <div class="row">
 « (dolist (module $modules) »
@@ -9,19 +33,20 @@
 « ) »
 </div>
 
-« (when (eq (session-user) $user) »
+« (when (can :create 'modules) »
 <h3>Créer un module</h3>
 <form id="create-module" class="form-inline" role="form" action="«=(h (uri-for '(/module)))»" method="POST">
   <div class="form-group">
     <label for="discipline" class="sr-only">Discipline</label>
-    <input class="form-control" type="text" name="discipline" value="«=(h $discipline)»" placeholder="Discipline" required/>
+    <input class="form-control" type="text" name="discipline" placeholder="Discipline" required/>
   </div>
   <div class="form-group">
     <label for="level" class="sr-only">Niveau</label>
-    <input class="form-control" type="text" name="level" value="«=(h $level)»" placeholder="Niveau" required/>
+    <input class="form-control" type="text" name="level" placeholder="Niveau" required/>
   </div>
   <button class="btn btn-default" type="submit" name="_method" value="POST"><i class="icon-create"></i> Créer</button>
 </form>
-<br/>
-<br/>
 « ) »
+
+<br/>
+<br/>

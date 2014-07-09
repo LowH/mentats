@@ -2,10 +2,14 @@
 (defun /user#show (user)
   (check-can :view user)
   (template-let (user
-		 (modules nil))
+		 (modules nil)
+		 (classrooms nil))
     (do-user.modules (module user)
       (unless (module.deleted module)
 	(push module modules)))
+    (do-user.classrooms (c user)
+      (unless (classroom.deleted c)
+	(push c classrooms)))
     (render-view :user :show '.html)))
 
 (defun /user (user.id)
