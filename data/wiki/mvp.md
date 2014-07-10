@@ -79,7 +79,7 @@ On veut pouvoir :
                 +   **DONE** Passer en *mode édition*.
                     +   **DONE** Ajouter une *ressource* à une *compétence*.
                     +   **DONE** Editer une *ressource*.
-                    +   Enlever une *ressource* à une *compétence*.
+                    +   **DONE** Enlever une *ressource* à une *compétence*.
                     +   Sortir du *mode édition*.
                 +   Passer en *mode évaluation*.
                     +   Sélectionner les *élèves* pour qui la *compétence* est *validée*.
