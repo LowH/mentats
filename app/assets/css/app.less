@@ -8,11 +8,14 @@
 @import "cousine";
 @import "frutiger-next";
 @import "markdown";
+
+@import "classroom";
 @import "graph";
 @import "tutorial";
 @import "register";
 @import "module";
 @import "resource";
+@import "user";
 
 a:hover, a:focus {
 	text-decoration: none;
@@ -36,4 +39,20 @@ textarea.markdown-editor {
 	top: 0;
 	width: 100%;
 	height: 100%;
+}
+.level {
+	font-size: inherit;
+	font-weight: inherit;
+	border-radius: 8px 8px 8px 8px;
+	padding: 2px 5px;
+	background: transparent;
+	border: solid 1px #000;
+}
+a .level {
+	border-color: @link-color;
+}
+a:focus, a:hover {
+	.level {
+		border-color: @link-hover-color;
+	}
 }

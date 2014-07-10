@@ -1,9 +1,7 @@
 <div class="mentats-resource panel panel-default" data-id="«=(h (resource.id $resource))»" data-owner="«=(h (user.id (resource.owner $resource)))»" data-competence="«=(h (competence.id (resource.competence $resource)))»" data-date="«=(h (resource.date $resource))»">
   <div class="panel-heading">
-    <a href="«=(h (user-uri (resource.owner $resource)))»">
-      <img class="avatar" src="«=(h (gravatar:image-url (user.email (resource.owner $resource)) :size 32 :default :mm))»" alt=""/>
-      <b>«=(h (user.name (resource.owner $resource)))»</b>
-    </a>
+    « (template-let ((user (resource.owner $resource)))
+        (render-view :user :_thumbnail '.html)) »
     <span class="small date">
       «=(h (rw-ut:write-time-string (resource.date $resource) "DD/MM/YYYY"))»
     </span>

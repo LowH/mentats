@@ -1,0 +1,6 @@
+<div class="user">
+  <a href="«=(h (user-uri $user))»">
+    <img class="avatar" src="«=(h (gravatar:image-url (user.email $user) :size 32 :default :mm))»" alt=""/>
+    <b>«=(h (user.name $user))»</b>
+  </a>
+</div>

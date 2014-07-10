@@ -1,0 +1,48 @@
+
+<h1><a href="«=(h (classroom-uri $classroom))»">«=(h (classroom.name $classroom))» <span class="level">«=(h (classroom.level $classroom))»</span></a></h1>
+
+<div class="row">
+  <div class="left-column col-sm-3">
+    <div class="students panel panel-default">
+      <div class="panel-heading">
+	<h4>Élèves</h4>
+      </div>
+      <div class="panel-body">
+	« (dolist (student (classroom.students $classroom)) »
+	<div class="student">«=(h student)»</div>
+	« ) »
+      </div>
+    </div>
+    <div class="modules panel panel-default">
+      <div class="panel-heading">
+	<h4>Modules</h4>
+      </div>
+      <div class="panel-body">
+	« (dolist (m (classroom.modules $classroom)) »
+	<div class="module">
+          «=(h (module.name m))»
+          <span class="level">«=(h (module.level m))»</span>
+	</div>
+	« ) »
+      </div>
+    </div>
+    <div class="teachers panel panel-default">
+      <div class="panel-heading">
+	<h4>Enseignants</h4>
+      </div>
+      <div class="panel-body">
+	« (dolist (user (classroom.teachers $classroom)) »
+	«   (template-let (user) »
+	«     (render-view :user :_thumbnail '.html) »
+	«   ) »
+	« ) »
+      </div>
+    </div>
+    <div class="actions">
+      « (when (can :edit $classroom) »
+      <a href="«=(h (classroom-uri $classroom :action "edit"))»" class="btn btn-default"><i class="icon-edit"></i></a>
+      « ) »
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,14 @@
+
+<h1><a href="«=(h (classroom-uri $classroom))»">«=(h (classroom.name $classroom))» <span class="level">«=(h (classroom.level $classroom))»</span></a></h1>
+
+<form id="edit-classroom" class="form-inline" role="form" action="«=(h (classroom-uri $classroom))»" method="POST">
+  <div class="form-group">
+    <label for="name" class="sr-only">Nom</label>
+    <input class="form-control" type="text" name="name" value="«=(h (classroom.name $classroom))»" placeholder="Nom" required/>
+  </div>
+  <div class="form-group">
+    <label for="level" class="sr-only">Niveau</label>
+    <input class="form-control" type="text" name="level" value="«=(h (classroom.level $classroom))»" placeholder="Niveau" required/>
+  </div>
+  <button class="btn btn-default" type="submit" name="_method" value="PUT"><i class="icon-ok"></i> Sauvegarder</button>
+</form>
