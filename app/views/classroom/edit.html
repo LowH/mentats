@@ -12,3 +12,35 @@
   </div>
   <button class="btn btn-default" type="submit" name="_method" value="PUT"><i class="icon-ok"></i> Sauvegarder</button>
 </form>
+
+<h2>Élèves</h2>
+« (dolist (student (classroom.students $classroom)) »
+<div class="student">«=(h student)»</div>
+« ) »
+
+<form id="add-student" class="form-inline" role="form" action="«=(h (classroom-uri $classroom))»" method="POST">
+  <div class="form-group">
+    <label>Ajouter un élève</label>
+  </div>
+  <div class="form-group">
+    <label for="name" class="sr-only">Nom</label>
+    <input class="form-control" type="text" name="name" placeholder="Nom" required/>
+  </div>
+  <button class="btn btn-default" type="submit" name="_method" value="PUT" title="Ajouter"><i class="icon-add"></i></button>
+</form>
+
+
+<h2>Modules</h2>
+« (dolist (m (classroom.modules $classroom)) »
+<div class="module">
+  «=(h (module.name m))»
+  <span class="level">«=(h (module.level m))»</span>
+</div>
+« ) »
+
+<h2>Enseignants</h2>
+« (dolist (user (classroom.teachers $classroom)) »
+«   (template-let (user) »
+«     (render-view :user :_thumbnail '.html) »
+«   ) »
+« ) »
