@@ -27,7 +27,7 @@
 		   write-date))
 	   (status "304 not modified"))
 	  (t (header :last-modified (rfc1123-date-time write-date))
-	     (header :content-type (mime-type asset) "; charset=utf-8")
+	     (header :content-type (mime-type path) "; charset=utf-8")
 	     (with-input-from-file (s path)
 	       (header :content-length (file-length s))
 	       (copy-stream s *reply-stream*))))))
