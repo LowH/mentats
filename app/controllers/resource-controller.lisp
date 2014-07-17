@@ -34,8 +34,9 @@
 		  (or (find (string-upcase action) '(:json) :test #'string=)
 		      (http-error "404 Not found" "Action not found.")))))
     (ecase *method*
-      ((:GET)    (cond ((null action) (/resource#show c))
-		       ((eq :json action) (/competence#json c))))
+      ((:GET)    (cond #+nil((null action) (/resource#show r))
+		       #+nil((eq :json action) (/resource#json r))
+		       (t (http-error "404 Not found" "Action not found."))))
       ((:POST)   (/resource#create))
       ((:PUT)    (/resource#update r))
       ((:DELETE) (/resource#delete r)))))
