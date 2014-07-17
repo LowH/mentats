@@ -27,21 +27,22 @@
       (redirect-to (domain-uri domain)))))
 
 (defun parse-competence-json (node domain)
-  (cond ((slot-boundp node :id)
-	 (let ((competence (find-competence (slot-value node :id))))
-	   (unless (and competence (eq domain (competence.domain competence)))
-	     (http-error "404 Not found" "Competence not found"))
-	   (check-can :edit competence)
-	   (setf (competence.name competence) (slot-value node :name)
-		 (competence.position competence) (slot-value node :position))
-	   competence))
-	(t
-	 (let ((competence (add-competence
-			     'competence.domain domain
-			     'competence.name (slot-value node :name)
-			     'competence.position (slot-value node :position))))
-	   (setf (slot-value node :id) (competence.id competence))
-	   competence))))
+  (with-json-accessors (id name position) node
+    (cond (id
+	   (let ((competence (find-competence id)))
+	     (unless (and competence (eq domain (competence.domain competence)))
+	       (http-error "404 Not found" "Competence not found"))
+	     (check-can :edit competence)
+	     (setf (competence.name competence) name
+		   (competence.position competence) position)
+	     competence))
+	  (t
+	   (let ((competence (add-competence
+			       'competence.domain domain
+			       'competence.name name
+			       'competence.position position)))
+	     (setf id (competence.id competence))
+	     competence)))))
 
 (defun /domain#update-competences (domain)
   (check-can :edit domain)
@@ -52,8 +53,8 @@
 			       nodes))
 	     (requires (map 'vector
 			    (lambda (link)
-			      (cons (elt competences (slot-value link :source))
-				    (elt competences (slot-value link :target))))
+			      (cons (elt competences (json-slot link source))
+				    (elt competences (json-slot link target))))
 			    links)))
 	(facts:with ((?d 'competence.domain domain))
 	  (if (find ?d competences)
@@ -91,4 +92,4 @@
 		     (t
 		      (http-error "404 Not found" "Action not found."))))
       (:PUT    (/domain#update domain))
-      (:DELETE (/domain#delete domain)))))
+      #+nil(:DELETE (/domain#delete domain)))))

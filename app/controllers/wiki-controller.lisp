@@ -28,15 +28,16 @@
 (defun /wiki (&optional (slug (when (eq *method* :GET) "index")))
   (let ((article (when slug
 		   (or (wiki-read-article slug)
-		       (if (session-user)
-			   (set-attributes {}
-					   :name slug
-					   :title (cl-ppcre:scan-to-strings
-						   "[^/]+$" slug)
-					   :author (user.name (session-user))
-					   :date (get-universal-time)
-					   :body "")
-			   (http-error "404 Not found" "Wiki page not found."))))))
+		       (unless (session-user)
+			 (http-error "404 Not found" "Wiki page not found."))
+		       (set-json-attributes
+			{}
+			:name slug
+			:title (cl-ppcre:scan-to-strings
+				"[^/]+$" slug)
+			:author (user.name (session-user))
+			:date (get-universal-time)
+			:body "")))))
     (ecase *method*
       ((:GET)    (/wiki#show article))
       ((:POST)   (/wiki#create))

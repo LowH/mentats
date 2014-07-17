@@ -46,21 +46,22 @@
   (redirect-to (user-uri (session-user))))
 
 (defun parse-domain-json (node module)
-  (cond ((slot-boundp node :id)
-	 (let ((domain (find-domain (slot-value node :id))))
-	   (unless (and domain (eq module (domain.module domain)))
-	     (http-error "404 Not found" "Domain not found"))
-	   (check-can :edit domain)
-	   (setf (domain.name domain) (slot-value node :name)
-		 (domain.position domain) (slot-value node :position))
-	   domain))
-	(t
-	 (let ((domain (add-domain
-			 'domain.module module
-			 'domain.name (slot-value node :name)
-			 'domain.position (slot-value node :position))))
-	   (setf (slot-value node :id) (domain.id domain))
-	   domain))))
+  (with-json-accessors (id name position) node
+    (cond (id
+	   (let ((domain (find-domain id)))
+	     (unless (and domain (eq module (domain.module domain)))
+	       (http-error "404 Not found" "Domain not found"))
+	     (check-can :edit domain)
+	     (setf (domain.name domain) name
+		   (domain.position domain) position)
+	     domain))
+	  (t
+	   (let ((domain (add-domain
+			   'domain.module module
+			   'domain.name name
+			   'domain.position position)))
+	     (setf id (domain.id domain))
+	     domain)))))
 
 (defun /module#update-domains (module)
   (check-can :edit module)
@@ -71,8 +72,8 @@
 			   nodes))
 	     (requires (map 'vector
 			    (lambda (link)
-			      (cons (elt domains (slot-value link :source))
-				    (elt domains (slot-value link :target))))
+			      (cons (elt domains (json-slot link 'source))
+				    (elt domains (json-slot link 'target))))
 			    links)))
 	(facts:with ((?d 'domain.module module))
 	  (if (find ?d domains)

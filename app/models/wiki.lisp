@@ -18,7 +18,7 @@
   (let ((path (the pathname (wiki-path name))))
     (when (probe-file path)
       (when-let ((article (read-article path)))
-	(set-attributes article :name name)))))
+	(set-json-attributes article 'name name)))))
 
 (defun wiki-write-article (article)
   (write-article (the pathname (wiki-path article)) article))
