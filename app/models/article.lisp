@@ -2,7 +2,7 @@
 ;;  Article
 
 (define-json-accessors article
-  author body date name tags title)
+  author body date date-string name tags title)
 
 ;;  filename
 
@@ -65,10 +65,9 @@
 					    (read-into-string stream)))
 		       (t (cl-ppcre:register-groups-bind (name val)
 			      ("^([A-Za-z0-9]+):\\s+(.*\\S)\\s*$" line)
-			    (when-let ((name (find-symbol (string-upcase name)
-							  :json.symbols)))
+			    (let ((name (json:json-intern (string-upcase name))))
 			      (when (eq 'json.symbols::date name)
-				(setf (article.date obj) val)
+				(setf (article.date-string obj) val)
 				(setq val (rw-ut:read-time-string val)))
 			      (setf (slot-value obj name) val)))
 			  (eat))))))
@@ -90,10 +89,12 @@
 
 (defmethod write-article ((output stream) (article json:fluid-object))
   (dolist (slot (bound-slots article))
+    (print (cons slot (slot-value article slot)))
     (when-let ((value (case slot
-			(('json.symbols::body 'json.symbols::date-string)
+			((json.symbols::body
+			  json.symbols::date-string)
 			 nil)
-			(('json.symbols::date)
+			((json.symbols::date)
 			 (rw-ut:write-time-string
 			  (slot-value article slot)
 			  "YYYY-MM-DD? hh:mm?:ss"))
