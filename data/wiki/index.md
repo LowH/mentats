@@ -2,7 +2,6 @@ Name: index
 Date: 2014-01-01
 Author: Olivier THOMAS
 
-
 <div class="col-md-10 col-md-offset-1">
  <div class="panel panel-info">
   <div class="panel-heading"><h1>
@@ -18,12 +17,11 @@ Bienvenue sur MENTATS
 MENTATS est un outil qui assiste les enseignants dans leurs choix pédagogiques et réduit leurs temps de préparation.
 [développer sur les ambitions de l'outil]
 
-
-[<button class="btn btn-primary pull-left" type="button"> Suivre la présentation &nbsp;<i class="icon-arrow-right"></i></button>](/tuto/module)
-
-
-[<button class="btn btn-primary pull-right" type="button">S'inscrire &nbsp;<i class="icon-arrow-right"></i></button>](/account/register)
-
+   <p></p>
+   <div class="clearfix">
+    <a href="/tuto/module" class="btn btn-primary pull-left" type="button"> Suivre la présentation &nbsp;<i class="icon-arrow-right"></i></a>
+    <a href="/account/register" class="btn btn-primary pull-right" type="button">S'inscrire &nbsp;<i class="icon-arrow-right"></i></a>
+   </div>
   </div>
  </div>
 </div>
