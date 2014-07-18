@@ -17,7 +17,7 @@
 	  </div>
 	  <div class="panel-body">
 	    « (dolist (student (classroom.students $classroom)) »
-	    <div class="student">«=(h student)»</div>
+	    <div class="student">«=(h (student.name student))»</div>
 	    « ) »
 	  </div>
 	</div>

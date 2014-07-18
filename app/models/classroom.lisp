@@ -10,3 +10,10 @@
 (defun classroom-uri (classroom &key action)
   (uri-for `(/classroom ,(classroom.id classroom)
 			,@(when action `(,action)))))
+
+(defun classroom-students (c)
+  (sort (remove-if #'student.deleted
+		   (classroom.students c))
+	#'string<
+	:key (lambda (s) (string-upcase
+			  (student.name s)))))

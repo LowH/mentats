@@ -16,12 +16,12 @@
 (defun /student#create ()
   (check-can :create 'students)
   (with-form-data (classroom name redirect)
-    (let ((classroom (or (find-classroom classroom)
-			 (http-error "404 Not found" "Classroom not found"))))
+    (let* ((classroom (or (find-classroom classroom)
+			  (http-error "404 Not found" "Classroom not found")))
+	   (student (add-student 'student.name name)))
+      (facts:add (classroom 'classroom.students student))
       (redirect-to (or redirect
-		       (student-uri
-			(add-student 'student.classrooms classroom
-				     'student.name name)))))))
+		       (student-uri student))))))
 
 (defun /student#update (student)
   (check-can :edit student)
@@ -50,5 +50,9 @@
 		  ((:json) (/student#json student)))
 		(http-error "404 Not found" "Action not found.")))
       (:POST   (/student#create))
-      (:PUT    (/student#update student))
-      (:DELETE (/student#delete student)))))
+      (:PUT    (if student
+		   (/student#update student)
+		   (http-error "404 Not found" "Action not found."))))
+      (:DELETE (if student
+		   (/student#delete student)
+		   (http-error "404 Not found" "Action not found.")))))
