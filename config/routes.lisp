@@ -45,6 +45,9 @@
 (define-route "/classroom/{classroom}/{action}" `(/classroom ,(uri-var 'classroom)
 							     ,(uri-var 'action)))
 
+(define-route "/student" `(/student))
+(define-route "/student/{id}" `(/student ,(uri-var 'id)))
+
 (define-route "/favicon.ico" (find-route "/assets/favicon.ico"))
 
 (define-route "/pemf"        `(/file "public/pemf/"))
