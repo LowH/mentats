@@ -1,7 +1,7 @@
 <h1>«=(h (user.name $user))»</h1>
 
 <h3>Classes</h3>
-<div class="row">
+<div>
 « (dolist (classroom $classrooms) »
 «   (template-let (classroom) »
 «     (render-view :classroom :_thumbnail '.html) »
@@ -10,7 +10,7 @@
 </div>
 
 « (when (can :create 'classrooms) »
-<h3>Créer une classe</h3>
+<h4>Créer une classe</h4>
 <form id="create-classroom" class="form-inline" role="form" action="«=(h (uri-for '(/classroom)))»" method="POST">
   <div class="form-group">
     <label for="name" class="sr-only">Nom</label>
@@ -25,7 +25,7 @@
 « ) »
 
 <h3>Modules</h3>
-<div class="row">
+<div>
 « (dolist (module $modules) »
 «   (template-let (module) »
 «     (render-view :module :_thumbnail '.html) »
@@ -34,7 +34,7 @@
 </div>
 
 « (when (can :create 'modules) »
-<h3>Créer un module</h3>
+<h4>Créer un module</h4>
 <form id="create-module" class="form-inline" role="form" action="«=(h (uri-for '(/module)))»" method="POST">
   <div class="form-group">
     <label for="discipline" class="sr-only">Discipline</label>
