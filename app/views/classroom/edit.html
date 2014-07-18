@@ -15,20 +15,18 @@
 
 <h2>Élèves</h2>
 « (dolist (student (classroom.students $classroom)) »
-<div class="student">«=(h student)»</div>
+<form class="student form-inline" role="form" action="«=(h (classroom-uri $classroom :action "student"))»" method="POST">«=(h student)»</div>
 « ) »
 
-<form id="add-student" class="form-inline" role="form" action="«=(h (classroom-uri $classroom))»" method="POST">
-  <div class="form-group">
-    <label>Ajouter un élève</label>
-  </div>
+<form id="add-student" class="form-inline" role="form" action="«=(h (student-uri))»" method="POST">
+  <input type="hidden" name="classroom" value="«=(h (classroom.id $classroom))»"/>
+  <input type="hidden" name="redirect" value="«=(h (classroom-uri $classroom :action "edit"))»"/>
   <div class="form-group">
     <label for="name" class="sr-only">Nom</label>
     <input class="form-control" type="text" name="name" placeholder="Nom" required/>
   </div>
-  <button class="btn btn-default" type="submit" name="_method" value="PUT" title="Ajouter"><i class="icon-add"></i></button>
+  <button class="btn btn-default" type="submit" name="_method" value="PUT" title="Ajouter"><i class="icon-plus"></i> Ajouter</button>
 </form>
-
 
 <h2>Modules</h2>
 « (dolist (m (classroom.modules $classroom)) »

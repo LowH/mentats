@@ -4,7 +4,7 @@
   (has-one level)
   (has-many modules)
   (has-one name)
-  (has-many students)
+  (has-many students :having student.classrooms)
   (has-many teachers :having user.classrooms))
 
 (defun classroom-uri (classroom &key action)
