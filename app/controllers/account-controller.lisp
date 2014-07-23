@@ -12,9 +12,10 @@
 	(unless u
 	  (alert :danger "Login et/ou mot de passe incorrect.")
 	  (http-error "401 Not authorized" "Account not found"))
-	(session-reset)
-	(setf (session-user) u)
-	(session)
+	(unless (eq (session-user) u)
+	  (session-reset)
+	  (setf (session-user) u)
+	  (session))
 	(redirect-to (or (and redirect-to
 			      (char= #\/ (char redirect-to 0))
 			      redirect-to)
