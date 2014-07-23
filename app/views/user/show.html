@@ -9,7 +9,8 @@
 « ) »
 </div>
 
-« (when (can :create 'classrooms) »
+« (when (and (can :create 'classrooms)
+             (eq $user (session-user))) »
 <h4>Créer une classe</h4>
 <form id="create-classroom" class="form-inline" role="form" action="«=(h (uri-for '(/classroom)))»" method="POST">
   <div class="form-group">
@@ -33,7 +34,8 @@
 « ) »
 </div>
 
-« (when (can :create 'modules) »
+« (when (and (can :create 'modules)
+             (eq $user (session-user))) »
 <h4>Créer un module</h4>
 <form id="create-module" class="form-inline" role="form" action="«=(h (uri-for '(/module)))»" method="POST">
   <div class="form-group">
