@@ -37,6 +37,8 @@
 </div>
 « ) »
 
+<a href="/module/?level=«=(h (classroom.level $classroom))»" class="btn btn-primary"><i class="icon-plus"></i> Ajouter des modules</a>
+
 <h2>Enseignants</h2>
 « (dolist (user (classroom.teachers $classroom)) »
 «   (template-let (user) »
