@@ -63,10 +63,12 @@
 		 (redirect-to `(/account/register/ok)))))))
 
 (defun /account/register ()
-  (template-let ((alerts nil))
-    (ecase *method*
-      ((:GET)  (/account/register#form))
-      ((:POST) (/account/register#submit)))))
+  (if (session-user)
+      (redirect-to "/")
+      (template-let ((alerts nil))
+		    (ecase *method*
+		      ((:GET)  (/account/register#form))
+		      ((:POST) (/account/register#submit))))))
 
 (defun /account/register/ok ()
   (template-let ((alerts nil))
