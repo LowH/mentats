@@ -28,10 +28,10 @@
 	  </div>
 	  <div class="panel-body">
 	    « (dolist (m (classroom.modules $classroom)) »
-	    <div class="module">
-	      «=(h (module.name m))»
+	    <a class="module" href="«=(h (module-uri m))»">
+	      «=(h (module.discipline m))»
 	      <span class="level">«=(h (module.level m))»</span>
-	    </div>
+	    </a>
 	    « ) »
 	  </div>
 	</div>

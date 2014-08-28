@@ -31,13 +31,15 @@
 
 <h2>Modules</h2>
 « (dolist (m (classroom.modules $classroom)) »
-<div class="module">
-  «=(h (module.name m))»
+<a class="module" href="«=(h (module-uri m))»">
+  «=(h (module.discipline m))»
   <span class="level">«=(h (module.level m))»</span>
-</div>
+</a>
 « ) »
 
-<a href="/module/?level=«=(h (classroom.level $classroom))»" class="btn btn-primary"><i class="icon-plus"></i> Ajouter des modules</a>
+<div>
+  <a href="/module/?level=«=(h (classroom.level $classroom))»" class="btn btn-primary"><i class="icon-plus"></i> Ajouter des modules</a>
+</div>
 
 <h2>Enseignants</h2>
 « (dolist (user (classroom.teachers $classroom)) »
