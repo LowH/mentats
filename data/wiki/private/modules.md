@@ -1,6 +1,6 @@
-Name: modules
-Title: Modules
+Name: private/modules
 Date: 2014-01-20 16:26:22
+Title: Modules
 
 Un module indique un niveau et une discipline.
 
