@@ -1,4 +1,4 @@
-<div class="module thumbnail" style="background-image: url(«=(h (asset-url (module-image $module)))»);">
+<div class="module thumbnail" style="background-image: url(«=(h (asset-url (module-image $module)))»);" data-module="«=(h (module.id $module))»">
   <div class="caption">
     <h1><a href="«=(h (module-uri $module))»">«=(h (module.discipline $module))» <span class="level">«=(h (module.level $module))»</span></a></h1>
     <p class="owner"><a href="«=(h (user-uri (module.owner $module)))»">«=(h (user.name (module.owner $module)))»</a></p>
@@ -6,9 +6,14 @@
     <p class="version">«=(h (module.version $module))»</p>
     « ) »
   </div>
-  « (when (can :edit $module) »
   <div class="btn-toolbar">
-    <a href="«=(h (module-uri $module :action :edit))»" class="edit btn btn-default" title="Éditer"><i class="icon-edit"></i></a>
+    <button type="button" class="toggle-library btn btn-default">
+      <i class="icon-plus"></i> <span class="toggle">Ajouter à</span> ma bibliothèque
+    </button>
+    « (when (can :edit $module) »
+    <a class="btn btn-default" href="«=(h (module-uri $module :edit))»">
+      <i class="icon-edit"></i> Éditer
+    </a>
+    « ) »
   </div>
-  « ) »
 </div>

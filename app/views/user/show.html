@@ -25,6 +25,15 @@
 </form>
 « ) »
 
+<h3>Bibliotheque</h3>
+<div>
+« (dolist (module (user.library-modules $user)) »
+«   (template-let (module) »
+«     (render-view :module :_thumbnail '.html) »
+«   ) »
+« ) »
+</div>
+
 <h3>Modules</h3>
 <div>
 « (dolist (module $modules) »

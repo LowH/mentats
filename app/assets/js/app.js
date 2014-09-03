@@ -14,16 +14,19 @@
  *= require backbone/view/svgg.paper
  *= require backbone/view/svgg.editor
  *= require mentats
+ *= require backbone/model/mentats.classroom
  *= require backbone/model/mentats.competence
  *= require backbone/model/mentats.domain
  *= require backbone/model/mentats.module
  *= require backbone/model/mentats.resource
+ *= require backbone/model/mentats.user
  *= require backbone/view/mentats.competences-graph-view
  *= require backbone/view/mentats.competence-view
  *= require backbone/view/mentats.domain-edit
  *= require backbone/view/mentats.domains-graph-view
  *= require backbone/view/mentats.module-edit
  *= require backbone/view/mentats.module-view
+ *= require backbone/view/mentats.module-thumbnail-view
  *= require backbone/view/mentats.resource-view
  *= require mentats.domain
  *= require mentats.module
@@ -64,6 +67,19 @@ $(function () {
     else {
       console.log('confirmation for', forId, 'not found.', this);
     }
+  });
+
+  $('a[data-method]').click(function (evt) {
+    var $this = $(this);
+    console.log('click', $this.attr('href'), $this.data('method'), evt);
+    $.ajax($this.attr('href'), {
+      type: $this.data('method'),
+      success: function (xhr) {
+	console.log('success', xhr);
+      },
+    });
+    evt.preventDefault();
+    return true;
   });
 
 });

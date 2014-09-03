@@ -2,7 +2,7 @@
 (define-resource classroom
   (has-one deleted)
   (has-one level)
-  (has-many modules)
+  (has-many modules :having module.classrooms)
   (has-one name)
   (has-many students :having student.classrooms)
   (has-many teachers :having user.classrooms))

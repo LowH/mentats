@@ -29,20 +29,36 @@
 		  (add-module 'module.discipline discipline
 			      'module.level level
 			      'module.owner (session-user))
-		  :action :edit))))
+		  :edit))))
 
 (defun /module#update (module)
   (check-can :edit module)
-  (with-form-data (description discipline level)
-    (setf (module.description module) description
-	  (module.discipline module) discipline
-	  (module.level module) level)
-    (redirect-to (module-uri module))))
+  (facts:with-transaction
+    (with-form-data (description discipline level in-library in-classrooms)
+      (when description
+	(setf (module.description module) description))
+      (when discipline
+	(setf (module.discipline module) discipline))
+      (when level
+	(setf (module.level module) level))
+      (if in-library
+	  (facts:add ((session-user) 'user.library-modules module))
+	  (facts:rm (((session-user) 'user.library-modules module))))
+      (cond ((accept-p :application/json)
+	     (render-json (module-json module)))
+	    (t
+	     (redirect-to (module-uri module)))))))
 
 (defun /module#delete (module)
   (check-can :delete module)
   (facts:with-transaction
     (setf (module.deleted module) t))
+  (redirect-to (user-uri (session-user))))
+
+(defun /module#add-to-library (module)
+  (check-can :use module)
+  (facts:with-transaction
+    (facts:add ((session-user) 'user.library-modules module)))
   (redirect-to (user-uri (session-user))))
 
 (defun parse-domain-json (node module)
@@ -92,23 +108,44 @@
 	     requires)))
     (render-json (module-domains-json module))))
 
-(defun /module (&optional module.id action)
+(defun /module#update-classrooms (module)
+  (check-can :use module)
+  (facts:with-transaction
+    (let ((classrooms (map 'list #'find-classroom (form-data))))
+      (facts:with ((?c 'classroom.modules module))
+	(unless (find ?c classrooms)
+	  (facts:rm ((?c 'classroom.modules module)))))
+      (dolist (c classrooms)
+	(unless (facts:bound-p ((c 'classroom.modules module)))
+	  (facts:add (c 'classroom.modules module))))
+      (render-json (facts:collect ((?c 'classroom.modules module))
+		     (classroom.id ?c))))))
+
+(defun /module (&optional module.id action arg)
   (let ((module (when module.id
 		  (or (find-module module.id)
 		      (http-error "404 Not found" "Module not found."))))
 	(action (when action
-		  (or (find (string-upcase action) '(:edit :domains :json) :test #'string=)
+		  (or (find (string-upcase action) '(:edit :domains :json
+						     :classrooms)
+			    :test #'string=)
 		      (http-error "404 Not found" "Action not found.")))))
     (case *method*
       (:GET (if module
-		(ecase action
+		(case action
 		  ((nil) (/module#show module))
 		  ((:edit) (/module#edit module))
-		  ((:json) (/module#json module)))
+		  ((:json) (/module#json module))
+		  (t (http-error "404 Not found" "Action not found")))
 		(/module#index)))
-      (:POST   (cond ((and module (eq action :domains))
-		      (/module#update-domains module))
-		     (t
-		      (/module#create))))
-      (:PUT    (/module#update module))
+      (:POST   (if module
+		   (case action
+		     ((:domains) (/module#update-domains module))
+		     (t (http-error "404 Not found" "Action not found")))
+		   (/module#create)))
+      (:PUT    (unless module
+		 (http-error "404 Not found" "Module not found"))
+	       (case action
+		 ((:classrooms) (/module#update-classrooms module))
+		 (t (/module#update module))))
       (:DELETE (/module#delete module)))))

@@ -12,8 +12,18 @@
 	(push c classrooms)))
     (render-view :user :show '.html)))
 
-(defun /user (user.id)
+(defun /user#json (user)
+  (check-can :view user)
+  (render-json (user-json user)))
+
+(defun /user (user.id &optional action)
   (let ((user (or (find-user user.id)
-		  (http-error "404 Not found" "User not found."))))
+		  (http-error "404 Not found" "User not found.")))
+	(action (when action
+		  (or (find (string-upcase action) '(:json)
+			    :test #'string=)
+		      (http-error "404 Not found" "Action not found.")))))
     (case *method*
-      (:GET (/user#show user)))))
+      (:GET (if (eq action :json)
+		(/user#json user)
+		(/user#show user))))))
