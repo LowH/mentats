@@ -23,7 +23,7 @@
     « ) »
     « (print-asset-tag "app.css") »
   </head>
-  <body class="«=(h $controller)» «=(h $controller)»--«=(h $action)»">
+  <body class="«=(h $controller)» «=(h $controller)»--«=(h $action)»" data-session-user="«=(h (user.id (session-user)))»">
 
     <nav class="navbar navbar-default" role="navigation">
       <div class="navbar-header">
