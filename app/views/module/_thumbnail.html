@@ -7,13 +7,14 @@
     « ) »
   </div>
   <div class="btn-toolbar">
-    <button type="button" class="toggle-library btn btn-default">
-      <i class="icon-plus"></i> <span class="toggle">Ajouter à</span> ma bibliothèque
-    </button>
     « (when (can :edit $module) »
-    <a class="btn btn-default" href="«=(h (module-uri $module :edit))»">
-      <i class="icon-edit"></i> Éditer
+    <a class="btn btn-default" href="«=(h (module-uri $module :edit))»" title="Éditer">
+      <i class="icon-edit"></i>
     </a>
     « ) »
+    <button type="button" class="toggle-library btn btn-default"
+	    title="«=(h (if (module-in-library-p $module) "Ajouter à" "Enlever de"))» ma bibliothèque">
+      <i class="icon-star«=(h (unless (module-in-library-p $module) "-empty"))»"></i>
+    </button>
   </div>
 </div>

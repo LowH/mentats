@@ -20,12 +20,12 @@ Mentats.ModuleThumbnailView = Backbone.View.extend({
   onLibraryChange: function () {
     console.log('Mentats.ModuleThumbnailView.onLibraryChange', arguments);
     if (this.model.get('inLibrary')) {
-      this.$('.toggle-library i').attr('class', 'icon-minus');
-      this.$('.toggle-library span.toggle').text('Enlever de');
+      this.$('.toggle-library i').attr('class', 'icon-star');
+      this.$('.toggle-library').attr('title', 'Enlever de ma bibliothèque');
     }
     else {
-      this.$('.toggle-library i').attr('class', 'icon-plus');
-      this.$('.toggle-library span.toggle').text('Ajouter à');
+      this.$('.toggle-library i').attr('class', 'icon-star-empty');
+      this.$('.toggle-library').attr('title', 'Ajouter à ma bibliothèque');
     }
   },
 
