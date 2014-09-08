@@ -2,6 +2,8 @@
 Mentats.Module = Backbone.Model.extend({
 
   defaults: {
+    backgroundImage: "\/assets\/module\/default-cover.png",
+    can: {},
     discipline: "",
     level: "",
     version: 0,
@@ -9,7 +11,7 @@ Mentats.Module = Backbone.Model.extend({
     description: "",
     domains: {nodes: [], links: []},
     inLibrary: false,
-    inClassrooms: [],
+    inClassrooms: []
   },
 
   initialize: function() {
@@ -19,6 +21,11 @@ Mentats.Module = Backbone.Model.extend({
     this.get('domains').url = this.url + '/domains';
     this.set('inClassrooms', new Mentats.ClassroomsCollection(this.get('inClassrooms')));
     this.get('inClassrooms').url = this.url + '/classrooms';
+    var owner = Mentats.getUser(this.get('owner'));
+    if (owner) {
+      this.set('owner', owner);
+      this.listenTo(owner, 'change', function () { this.trigger('change'); });
+    }
   },
 
   parse: function(attr, options) {
@@ -28,6 +35,8 @@ Mentats.Module = Backbone.Model.extend({
     delete attr.domains;
     this.get('inClassrooms').set(attr.inClassrooms, options);
     delete attr.inClassrooms;
+    if ((attr.owner = Mentats.getUser(attr.owner)))
+      this.listenTo(attr.owner, 'change', function () { this.trigger('change'); });
     return attr;
   },
 
@@ -45,12 +54,12 @@ Mentats.ModulesCollection = Backbone.Collection.extend({
 
 Mentats.modules = new Mentats.ModulesCollection;
 
-Mentats.getModule = function (id) {
+Mentats.getModule = function (id, callback) {
   var m = Mentats.modules.get(id);
-  if (m)
-    return m;
-  m = new Mentats.Module({id: id});
-  m.fetch();
-  Mentats.modules.add(m);
+  if (!m) {
+    m = new Mentats.Module({id: id});
+    m.fetch();
+    Mentats.modules.add(m);
+  }
   return m;
 };

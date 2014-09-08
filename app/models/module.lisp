@@ -34,15 +34,16 @@
 
 (defun module-json (module)
   (facts:with-transaction
-    (json:make-object
+    (to-json
      `((id . ,(module.id module))
        (discipline . ,(module.discipline module))
        (level . ,(module.level module))
        (version . ,(module.version module))
        (owner . ,(user.id (module.owner module)))
        (description . ,(module.description module))
-       (image . ,(asset-url (module-image module)))
+       (background-image . ,(asset-url (module-image module)))
        (in-library . ,(module-in-library-p module))
        (in-classrooms . ,(mapcar #'module.id (module.classrooms module)))
-       (domains . ,(module-domains-json module)))
-     nil)))
+       (domains . ,(module-domains-json module))
+       (can . ((use . ,(can :use module))
+	       (edit . ,(can :edit module))))))))
