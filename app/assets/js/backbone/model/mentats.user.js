@@ -17,20 +17,8 @@ Mentats.UsersCollection = Backbone.Collection.extend({
   url: '/j/user'
 });
 
-Mentats.users = new Mentats.UsersCollection;
-
-Mentats.getUser = function (id) {
-  if (!id)
-    return null;
-  var u = Mentats.users.get(id);
-  if (u)
-    return u;
-  u = new Mentats.User({id: id});
-  u.fetch();
-  Mentats.users.add(u);
-  return u;
-};
+Backbone.createCache(Mentats.User, Mentats.UsersCollection);
 
 $(function () {
-  Mentats.sessionUser = Mentats.getUser($('body').data('session-user'));
+  Mentats.sessionUser = Mentats.User.find($('body').data('session-user'));
 });

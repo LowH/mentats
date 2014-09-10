@@ -21,7 +21,7 @@ Mentats.Module = Backbone.Model.extend({
     this.get('domains').url = this.url + '/domains';
     this.set('inClassrooms', new Mentats.ClassroomsCollection(this.get('inClassrooms')));
     this.get('inClassrooms').url = this.url + '/classrooms';
-    var owner = Mentats.getUser(this.get('owner'));
+    var owner = Mentats.User.find(this.get('owner'));
     if (owner) {
       this.set('owner', owner);
       this.listenTo(owner, 'change', function () { this.trigger('change'); });
@@ -33,7 +33,7 @@ Mentats.Module = Backbone.Model.extend({
     var domains = this.get('domains') || new Mentats.DomainsGraph(this.get('domains'));
     domains.set(domains.parse(attr.domains, options));
     delete attr.domains;
-    if ((attr.owner = Mentats.getUser(attr.owner)))
+    if ((attr.owner = Mentats.User.find(attr.owner)))
       this.listenTo(attr.owner, 'change', function () { this.trigger('change'); });
     return attr;
   }

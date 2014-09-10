@@ -46,7 +46,7 @@ Mentats.ClassroomEditView = Backbone.View.extend({
 
 $(function () {
   $('body.classroom--edit').each(function () {
-    var c = Mentats.getClassroom($('#edit-classroom').data('classroom'));
+    var c = Mentats.Classroom.find($('#edit-classroom').data('classroom'));
     var v = new Mentats.ClassroomEditView({
       el: $('body'),
       model: c

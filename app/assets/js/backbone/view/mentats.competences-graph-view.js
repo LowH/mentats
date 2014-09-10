@@ -22,7 +22,7 @@ Mentats.CompetencesGraphView = SVGG.Paper.extend({
 
 Mentats.competencesGraph = function () {
   var $this = $(this);
-  var domain = Mentats.getDomain($this.data('domain'));
+  var domain = Mentats.Domain.find($this.data('domain'));
   var view = new Mentats.CompetencesGraphView({
     model: domain.get('competences'),
     el: this,

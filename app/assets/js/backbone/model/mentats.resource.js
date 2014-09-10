@@ -20,14 +20,4 @@ Mentats.ResourcesCollection = Backbone.Collection.extend({
   url: '/j/resource'
 });
 
-Mentats.resources = new Mentats.ResourcesCollection;
-
-Mentats.getResource = function (id) {
-  var d = Mentats.resources.get(id);
-  if (d)
-    return d;
-  d = new Mentats.Resource({id: id});
-  d.fetch();
-  Mentats.resources.add(d);
-  return d;
-};
+Backbone.createCache(Mentats.Resource, Mentats.ResourcesCollection);

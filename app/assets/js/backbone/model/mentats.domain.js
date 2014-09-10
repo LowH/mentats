@@ -30,17 +30,7 @@ Mentats.DomainsCollection = Backbone.Collection.extend({
   url: '/j/domaine'
 });
 
-Mentats.domains = new Mentats.DomainsCollection;
-
-Mentats.getDomain = function (id) {
-  var d = Mentats.domains.get(id);
-  if (d)
-    return d;
-  d = new Mentats.Domain({id: id});
-  d.fetch();
-  Mentats.domains.add(d);
-  return d;
-};
+Backbone.createCache(Mentats.Domain, Mentats.DomainsCollection);
 
 Mentats.DomainsGraph = SVGG.Graph.extend({
 
