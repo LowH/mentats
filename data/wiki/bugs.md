@@ -8,3 +8,5 @@ bugs a l'ajout de modules a une classe, au lieu d'ajouter un module, on part ver
 Selectioner des couleurs pour les images de modules
 
 http://mentats.lowh.net/module -> bouton pour sort par alphabetical du blaze du module / blaze du niveau
+
+Pas de suppression de classe possible ?
