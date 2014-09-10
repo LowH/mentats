@@ -24,10 +24,19 @@
 
 (defun /classroom#update (classroom)
   (check-can :edit classroom)
-  (with-form-data (name level)
+  (with-form-data (name level modules)
     (setf (classroom.name classroom) name
 	  (classroom.level classroom) level)
-    (redirect-to (classroom-uri classroom))))
+    (facts:with ((classroom 'classroom.modules ?m))
+      (unless (find (module.id ?m) modules :test #'string=)
+	(facts:rm ((classroom 'classroom.modules ?m)))))
+    (loop for i across modules
+          for m = (or (find-module i)
+		      (http-error "404 Not found" "Module not found"))
+       do (facts:add (classroom 'classroom.modules m)))
+    (cond ((accept-p :application/json)
+	   (render-json (classroom-json classroom)))
+	  (:otherwise (redirect-to (classroom-uri classroom))))))
 
 (defun /classroom#delete (classroom)
   (check-can :delete classroom)

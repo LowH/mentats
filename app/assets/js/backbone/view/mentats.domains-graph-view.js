@@ -22,7 +22,7 @@ Mentats.DomainsGraphView = SVGG.Paper.extend({
 
 Mentats.domainsGraph = function () {
   var $this = $(this);
-  var module = Mentats.getModule($this.data('module'));
+  var module = Mentats.Module.find($this.data('module'));
   var view = new Mentats.DomainsGraphView({
     model: module.get('domains'),
     el: this,

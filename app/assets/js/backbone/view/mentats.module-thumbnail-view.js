@@ -11,6 +11,8 @@ Mentats.ModuleThumbnailView = Backbone.View.extend({
 	      'onClassroomClick', 'onClassroomRemove', 'render');
     Backbone.View.prototype.initialize.apply(this, arguments);
     console.log('new Mentats.ModuleThumbnailView', this);
+    this.$el.addClass('module thumbnail')
+      .attr('data-module', this.model.id);
     this.listenTo(this.model, 'change', this.render);
     //this.listenTo(this.model, 'change:inLibrary', this.onLibraryChange);
     //var classrooms = this.model.get('inClassrooms');
@@ -80,7 +82,7 @@ Mentats.ModuleThumbnailView = Backbone.View.extend({
 
 $(function () {
   $('div.module.thumbnail').each(function () {
-    var m = Mentats.getModule($(this).data('module'));
+    var m = Mentats.Module.find($(this).data('module'));
     var v = new Mentats.ModuleThumbnailView({
       el: this,
       model: m

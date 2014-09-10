@@ -93,3 +93,28 @@ body.competence {
 		font-size: 30px;
 	}
 }
+
+.modules-selector {
+	.modal-body {
+		padding: 0;
+	}
+	.list-group-item {
+		border-left: 0;
+		border-right: 0;
+		&:first-child {
+			border-top: 0;
+			.border-top-radius(0);
+		}
+		&:last-child {
+			border-bottom: 0;
+			.border-bottom-radius(0);
+		}
+	}
+	.module.thumbnail {
+		float: left;
+		margin-bottom: 0;
+		.btn-toolbar {
+			display: none;
+		}
+	}
+}

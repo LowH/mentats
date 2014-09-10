@@ -30,15 +30,13 @@ Mentats.Module = Backbone.Model.extend({
 
   parse: function(attr, options) {
     console.log('Module.parse', attr, options);
-    var domains = this.get('domains');
+    var domains = this.get('domains') || new Mentats.DomainsGraph(this.get('domains'));
     domains.set(domains.parse(attr.domains, options));
     delete attr.domains;
-    this.get('inClassrooms').set(attr.inClassrooms, options);
-    delete attr.inClassrooms;
     if ((attr.owner = Mentats.getUser(attr.owner)))
       this.listenTo(attr.owner, 'change', function () { this.trigger('change'); });
     return attr;
-  },
+  }
 
 });
 
@@ -48,18 +46,8 @@ Mentats.ModulesCollection = Backbone.Collection.extend({
 
   toJSON: function () {
     return this.pluck('id');
-  },
+  }
 
 });
 
-Mentats.modules = new Mentats.ModulesCollection;
-
-Mentats.getModule = function (id, callback) {
-  var m = Mentats.modules.get(id);
-  if (!m) {
-    m = new Mentats.Module({id: id});
-    m.fetch();
-    Mentats.modules.add(m);
-  }
-  return m;
-};
+Backbone.createCache(Mentats.Module, Mentats.ModulesCollection);

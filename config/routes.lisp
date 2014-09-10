@@ -21,6 +21,10 @@
 (define-route "/module/{module}" `(/module ,(uri-var 'module)))
 (define-route "/module/{module}/{action}" `(/module ,(uri-var 'module)
 						    ,(uri-var 'action)))
+(define-route "/module/{module}/{action}/{arg}" `(/module ,(uri-var 'module)
+							  ,(uri-var 'action)
+							  ,(uri-var 'arg)))
+(define-route "/j/module" `(/module))
 (define-route "/j/module/{module}" `(/module ,(uri-var 'module) "json"))
 (define-route "/j/module/{module}/{action}" `(/module ,(uri-var 'module)
 						      ,(uri-var 'action)))
@@ -44,6 +48,7 @@
 (define-route "/classroom/{classroom}" `(/classroom ,(uri-var 'classroom)))
 (define-route "/classroom/{classroom}/{action}" `(/classroom ,(uri-var 'classroom)
 							     ,(uri-var 'action)))
+(define-route "/j/classroom/{classroom}" `(/classroom ,(uri-var 'classroom) "json"))
 
 (define-route "/student" `(/student))
 (define-route "/student/{id}" `(/student ,(uri-var 'id)))

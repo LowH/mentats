@@ -74,7 +74,7 @@
       <% if (can) { %>
 	<div class="btn-toolbar">
 	  <% if (can.edit) { %>
-	    <a class="btn btn-default" href="{%- Mentats.uri.module(id, 'edit') %}" title="Éditer">
+	    <a class="btn btn-default" href="<%- Mentats.uri.module(id, 'edit') %>" title="Éditer">
 	      <i class="icon-edit"></i>
 	    </a>
 	  <% } %>
@@ -86,6 +86,10 @@
 	  <% } %>
 	</div>
       <% } %>
+    </script>
+
+    <script type="text/template" id="modules-selector-template">
+      <li class="list-group-item clearfix" data-module="<%- id %>"><p><%- description %></p></li>
     </script>
 
     « (print-asset-tag "app.js") »

@@ -6,6 +6,7 @@
  *= require article
  *= require svg
  *= require svgg
+ *= require backbone/create-cache
  *= require backbone/model/svgg.graph
  *= require backbone/model/svgg.node
  *= require backbone/model/svgg.link
@@ -20,6 +21,7 @@
  *= require backbone/model/mentats.module
  *= require backbone/model/mentats.resource
  *= require backbone/model/mentats.user
+ *= require backbone/view/mentats.classroom-edit-view
  *= require backbone/view/mentats.competences-graph-view
  *= require backbone/view/mentats.competence-view
  *= require backbone/view/mentats.domain-edit
@@ -27,6 +29,7 @@
  *= require backbone/view/mentats.module-edit
  *= require backbone/view/mentats.module-view
  *= require backbone/view/mentats.module-thumbnail-view
+ *= require backbone/view/mentats.modules-selector-view
  *= require backbone/view/mentats.resource-view
  *= require mentats.domain
  *= require mentats.module
