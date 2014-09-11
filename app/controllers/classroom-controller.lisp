@@ -63,4 +63,6 @@
 		     (t
 		      (/classroom#create))))
       (:PUT    (/classroom#update classroom))
-      (:DELETE (/classroom#delete classroom)))))
+      (:DELETE (if classroom
+		   (/classroom#delete classroom)
+		   (http-error "404 Not found" "Classroom not found."))))))
