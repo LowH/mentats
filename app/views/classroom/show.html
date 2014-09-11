@@ -26,12 +26,12 @@
 	  <div class="panel-heading">
 	    <h4>Modules</h4>
 	  </div>
-	  <div class="panel-body">
+	  <div class="panel-body list-group">
 	    « (dolist (m (classroom.modules $classroom)) »
-	    <a class="module" href="«=(h (module-uri m))»">
+	    <div class="list-group-item module" data-module="«=(h (module.id m))»">
 	      «=(h (module.discipline m))»
 	      <span class="level">«=(h (module.level m))»</span>
-	    </a>
+	    </div>
 	    « ) »
 	  </div>
 	</div>
