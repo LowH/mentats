@@ -92,6 +92,7 @@ SVGG.Paper = Backbone.View.extend({
       if (options && options.focus)
 	this.setFocus(v);
     }
+    this.refreshAutocrop();
     return v;
   },
 
@@ -109,6 +110,7 @@ SVGG.Paper = Backbone.View.extend({
     var v = _.find(this.nodeViews, {model: node});
     v.remove();
     _.remove(this.nodeViews, v);
+    this.refreshAutocrop();
   },
 
   onResetLinks: function(links) {
@@ -127,6 +129,10 @@ SVGG.Paper = Backbone.View.extend({
     });
     this.nodeViews = [];
     nodes.each(this.onAddNode);
+    this.refreshAutocrop();
+  },
+
+  refreshAutocrop: function () {
     if (this.autocrop) {
       var r = this.svg.bbox();
       r.x -= 1;
@@ -135,6 +141,6 @@ SVGG.Paper = Backbone.View.extend({
       r.height += 2;
       this.svg.width(r.width).height(r.height).viewbox(r.x, r.y, r.width, r.height);
     }
-  },
+  }
 
 });

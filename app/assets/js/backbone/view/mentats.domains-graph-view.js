@@ -5,6 +5,7 @@ Mentats.DomainsGraphView = SVGG.Paper.extend({
 
   initialize: function (options) {
     SVGG.Paper.prototype.initialize.apply(this, arguments);
+    this.$el.addClass('domains-graph').attr('data-module', options.module.id);
     this.nodeEvents = {
       click: this.onNodeClick,
     };
@@ -25,6 +26,7 @@ Mentats.domainsGraph = function () {
   var module = Mentats.Module.find($this.data('module'));
   var view = new Mentats.DomainsGraphView({
     model: module.get('domains'),
+    module: module,
     el: this,
     autocrop: true,
   });

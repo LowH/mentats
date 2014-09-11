@@ -22,6 +22,7 @@
  *= require backbone/model/mentats.resource
  *= require backbone/model/mentats.user
  *= require backbone/view/mentats.classroom-edit-view
+ *= require backbone/view/mentats.classroom-view
  *= require backbone/view/mentats.competences-graph-view
  *= require backbone/view/mentats.competence-view
  *= require backbone/view/mentats.domain-edit
