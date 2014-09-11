@@ -46,9 +46,11 @@
     <form role="form" class="form" action="«=(h (module-uri $module))»" method="POST">
       <div class="form-group">
 	<p>Attention, toute suppression est irréversible.</p>
-	<div class="checkbox">
+      </div>
+      <div class="checkbox">
+	<label>
 	  <input class="form-control" type="checkbox" name="delete" value="0" required/> Confirmer
-	</div>
+	</label>
       </div>
       <button type="submit" class="btn btn-danger" name="_method" value="DELETE"><i class="icon-trash"></i> Supprimer</button>
     </form>
