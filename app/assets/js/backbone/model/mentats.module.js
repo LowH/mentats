@@ -11,7 +11,7 @@ Mentats.Module = Backbone.Model.extend({
     description: "",
     domains: {nodes: [], links: []},
     inLibrary: false,
-    inClassrooms: []
+    classrooms: []
   },
 
   initialize: function() {
@@ -19,8 +19,7 @@ Mentats.Module = Backbone.Model.extend({
     this.url = '/j/module/' + this.id;
     this.set('domains', new Mentats.DomainsGraph(this.get('domains')));
     this.get('domains').url = this.url + '/domains';
-    this.set('inClassrooms', new Mentats.ClassroomsCollection(this.get('inClassrooms')));
-    this.get('inClassrooms').url = this.url + '/classrooms';
+    this.bindCollection('classrooms', Mentats.ClassroomsCollection);
     var owner = Mentats.User.find(this.get('owner'));
     if (owner) {
       this.set('owner', owner);

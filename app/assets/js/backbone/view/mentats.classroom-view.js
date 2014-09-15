@@ -25,6 +25,12 @@ Mentats.ClassroomView = Backbone.View.extend({
 		  + module.id + '"]');
   },
 
+  onDomainClick: function (evt) {
+    console.log('Mentats.ClassroomView.onDomainClick', this, evt);
+    
+    evt.preventDefault();
+  },
+
   onModulesListClick: function (evt) {
     console.log('Mentats.ClassroomView.onModuleAdd', this);
     this.selectModule(Mentats.Module.find($(evt.currentTarget).data('module')));
@@ -33,7 +39,7 @@ Mentats.ClassroomView = Backbone.View.extend({
 
   selectModule: function (module) {
     console.log('Mentats.ClassroomView.selectModule', this, module);
-    if (!module || module == this.module)
+    if (!module)
       return;
     var domains = module.get('domains');
     if (!domains)

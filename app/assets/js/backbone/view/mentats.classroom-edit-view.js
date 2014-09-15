@@ -8,17 +8,16 @@ Mentats.ClassroomEditView = Backbone.View.extend({
   initialize: function(options) {
     Backbone.View.prototype.initialize.apply(this, arguments);
     console.log('new Mentats.ClassroomEditView', this);
-    var modules = this.model.get('modules');
+    var modules = this.model.collection.modules;
     this.listenTo(modules, 'add', this.onModuleAdd);
     this.listenTo(modules, 'remove', this.onModuleRemove);
     this.modulesList = this.$('.classroom-modules-list');
 
-    var available = new Mentats.ModulesCollection();
-    available.fetch();
+    Mentats.Module.cache.fetch();
     this.moduleSelector = new Mentats.ModulesSelectorView({
       el: this.$('.modules-selector ul.modules-list'),
       model: {
-	available: available,
+	available: Mentats.Module.cache,
 	selected: modules
       }
     }).render();
