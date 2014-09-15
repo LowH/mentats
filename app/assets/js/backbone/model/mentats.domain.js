@@ -21,7 +21,7 @@ Mentats.Domain = SVGG.Node.extend({
     competences.set(competences.parse(attr.competences, options));
     delete attr.competences;
     return attr;
-  },
+  }
 
 });
 
@@ -40,6 +40,6 @@ Mentats.DomainsGraph = SVGG.Graph.extend({
       nodes: new Mentats.DomainsCollection(this.get('nodes')),
       links: new SVGG.LinksCollection(this.get('links'))
     });
-  },
+  }
 
 });

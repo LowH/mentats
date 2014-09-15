@@ -74,6 +74,6 @@ SVGG.Graph = Backbone.Model.extend({
     });
     console.log('SVGG.Graph.toJSON', json);
     return json;
-  },
+  }
 
 });

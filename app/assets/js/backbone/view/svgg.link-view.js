@@ -2,7 +2,7 @@
 SVGG.LinkView = Backbone.View.extend({
 
   events: {
-    'mousedown polygon': 'onArrowMouseDown',
+    'mousedown polygon': 'onArrowMouseDown'
   },
 
   initialize: function(options) {
@@ -64,6 +64,6 @@ SVGG.LinkView = Backbone.View.extend({
     this.target = nodeView;
     this.listenTo(this.target, 'move', this.onMove);
     this.onMove();
-  },
+  }
 
 });

@@ -37,8 +37,8 @@ Mentats.ModuleEditor = Backbone.View.extend({
       model: this.model.get('domains'),
       el: '#module-graph-editor',
       width: 900,
-      height: 602,
+      height: 602
     });
-  },
+  }
 
 });

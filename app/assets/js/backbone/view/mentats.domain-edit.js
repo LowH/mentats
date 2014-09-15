@@ -37,8 +37,8 @@ Mentats.DomainEditor = Backbone.View.extend({
       model: this.model.get('competences'),
       el: '#domain-graph-editor',
       width: 900,
-      height: 602,
+      height: 602
     });
-  },
+  }
 
 });

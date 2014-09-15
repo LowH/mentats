@@ -32,7 +32,7 @@ Mentats.ResourceView = Backbone.View.extend({
     }
     if (evt)
       evt.preventDefault();
-  },
+  }
 
 });
 
@@ -44,11 +44,11 @@ $(function () {
       competence: $this.data('competence'),
       date: $this.data('date'),
       owner: $this.data('owner'),
-      text: $this.find('textarea[name=text]').val(),
+      text: $this.find('textarea[name=text]').val()
     });
     var view = new Mentats.ResourceView({
       model: resource,
-      el: $this,
+      el: $this
     });
   });
 });

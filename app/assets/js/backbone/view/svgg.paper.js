@@ -42,7 +42,7 @@ SVGG.Paper = Backbone.View.extend({
     var offset = this.$paper.offset();
     var p = {
       x: evt.pageX - offset.left,
-      y: evt.pageY - offset.top,
+      y: evt.pageY - offset.top
     };
     p.x = Math.round(p.x / this.grid) * this.grid;
     p.y = Math.round(p.y / this.grid) * this.grid;
@@ -71,7 +71,7 @@ SVGG.Paper = Backbone.View.extend({
       svg: this.svgLinks,
       model: link,
       source: this.getNodeView(link.get('source')),
-      target: this.getNodeView(link.get('target')),
+      target: this.getNodeView(link.get('target'))
     });
     v.on(this.linkEvents);
     console.log(v);

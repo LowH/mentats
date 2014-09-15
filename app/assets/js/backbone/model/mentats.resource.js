@@ -5,13 +5,13 @@ Mentats.Resource = Backbone.Model.extend({
     competence: null,
     date: null,
     owner: null,
-    text: null,
+    text: null
   },
 
   initialize: function () {
     Backbone.Model.prototype.initialize.apply(this, arguments);
     this.url = '/j/resource/' + this.id;
-  },
+  }
 
 });
 

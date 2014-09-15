@@ -115,6 +115,6 @@ SVGG.NodeView = Backbone.View.extend({
 
   x: 0,
 
-  y: 0,
+  y: 0
 
 });

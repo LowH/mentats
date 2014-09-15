@@ -2,13 +2,13 @@
 Mentats.User = Backbone.Model.extend({
 
   defaults: {
-    name: "",
+    name: ""
   },
 
   initialize: function() {
     Backbone.Model.prototype.initialize.apply(this, arguments);
     this.url = '/j/user/' + this.id;
-  },
+  }
 
 });
 

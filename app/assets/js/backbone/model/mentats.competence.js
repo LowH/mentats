@@ -6,7 +6,7 @@ Mentats.Competence = SVGG.Node.extend({
     var id = this.get('id');
     if (id)
       Mentats.viewCompetence(id);
-  },
+  }
 
 });
 
@@ -23,6 +23,6 @@ Mentats.CompetencesGraph = SVGG.Graph.extend({
       nodes: new Mentats.CompetencesCollection(this.get('nodes')),
       links: new SVGG.LinksCollection(this.get('links'))
     });
-  },
+  }
 
 });

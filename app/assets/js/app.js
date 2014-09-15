@@ -80,7 +80,7 @@ $(function () {
       type: $this.data('method'),
       success: function (xhr) {
 	console.log('success', xhr);
-      },
+      }
     });
     evt.preventDefault();
     return true;

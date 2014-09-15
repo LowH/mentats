@@ -10,7 +10,7 @@ SVGG.Editor = SVGG.Paper.extend({
     'mousemove svg': 'onMouseMove',
     'mouseup svg': 'onMouseUp',
     'click svg': 'onClick',
-    'click .toolbar': 'onToolbarClick',
+    'click .toolbar': 'onToolbarClick'
   },
 
   initialize: function (options) {
@@ -32,12 +32,12 @@ SVGG.Editor = SVGG.Paper.extend({
     },
 
     this.linkEvents = {
-      arrowmousedown: this.onArrowMouseDown,
+      arrowmousedown: this.onArrowMouseDown
     };
 
     $(window).on({
       click: this.onWindowClick,
-      keydown: this.onKey,
+      keydown: this.onKey
     });
   },
 
@@ -45,10 +45,10 @@ SVGG.Editor = SVGG.Paper.extend({
     var o = this.focused;
     var m;
     switch (direction) {
-    case 0: m = function (c) { return {a:(o.y - c.y), b:(c.x - o.x)}}; break;
-    case 1: m = function (c) { return {a:(c.x - o.x), b:(c.y - o.y)}}; break;
-    case 2: m = function (c) { return {a:(c.y - o.y), b:(c.x - o.x)}}; break;
-    case 3: m = function (c) { return {a:(o.x - c.x), b:(c.y - o.y)}}; break;
+    case 0: m = function (c) { return {a:(o.y - c.y), b:(c.x - o.x)}; }; break;
+    case 1: m = function (c) { return {a:(c.x - o.x), b:(c.y - o.y)}; }; break;
+    case 2: m = function (c) { return {a:(c.y - o.y), b:(c.x - o.x)}; }; break;
+    case 3: m = function (c) { return {a:(o.x - c.x), b:(c.y - o.y)}; }; break;
     }
     var s = null;
     var sd = Number.MAX_VALUE;
@@ -358,6 +358,6 @@ SVGG.Editor = SVGG.Paper.extend({
     $(window).off('mouseup', this.stopMoving);
     this.moving = null;
     evt.preventDefault();
-  },
+  }
 
 });
