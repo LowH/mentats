@@ -6,7 +6,7 @@
  *= require article
  *= require svg
  *= require svgg
- *= require backbone/create-cache
+ *= require backbone/cache
  *= require backbone/model/svgg.graph
  *= require backbone/model/svgg.node
  *= require backbone/model/svgg.link

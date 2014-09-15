@@ -17,7 +17,7 @@ Mentats.UsersCollection = Backbone.Collection.extend({
   url: '/j/user'
 });
 
-Backbone.createCache(Mentats.User, Mentats.UsersCollection);
+Backbone.Model.cache(Mentats.User, Mentats.UsersCollection);
 
 $(function () {
   Mentats.sessionUser = Mentats.User.find($('body').data('session-user'));

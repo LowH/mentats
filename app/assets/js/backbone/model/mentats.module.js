@@ -49,4 +49,4 @@ Mentats.ModulesCollection = Backbone.Collection.extend({
 
 });
 
-Backbone.createCache(Mentats.Module, Mentats.ModulesCollection);
+Backbone.Model.cache(Mentats.Module, Mentats.ModulesCollection);

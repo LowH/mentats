@@ -25,4 +25,4 @@ Mentats.ClassroomsCollection = Backbone.Collection.extend({
   url: '/j/classroom'
 });
 
-Backbone.createCache(Mentats.Classroom, Mentats.ClassroomsCollection);
+Backbone.Model.cache(Mentats.Classroom, Mentats.ClassroomsCollection);

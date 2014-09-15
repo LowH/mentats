@@ -1,5 +1,5 @@
 
-Backbone.Model.createCache = function (model, collection) {
+Backbone.Model.cache = function (model, collection) {
   model.cache = new collection;
   model.find = function (id) {
     if (!id)

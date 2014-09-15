@@ -20,4 +20,4 @@ Mentats.ResourcesCollection = Backbone.Collection.extend({
   url: '/j/resource'
 });
 
-Backbone.createCache(Mentats.Resource, Mentats.ResourcesCollection);
+Backbone.Model.cache(Mentats.Resource, Mentats.ResourcesCollection);

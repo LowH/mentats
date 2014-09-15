@@ -30,7 +30,7 @@ Mentats.DomainsCollection = Backbone.Collection.extend({
   url: '/j/domaine'
 });
 
-Backbone.createCache(Mentats.Domain, Mentats.DomainsCollection);
+Backbone.Model.cache(Mentats.Domain, Mentats.DomainsCollection);
 
 Mentats.DomainsGraph = SVGG.Graph.extend({
 
