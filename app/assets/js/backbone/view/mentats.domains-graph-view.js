@@ -4,11 +4,11 @@ Mentats.DomainsGraphView = SVGG.Paper.extend({
   nodeRadius: Mentats.domainRadius,
 
   initialize: function (options) {
+    this.nodeEvents = {
+      click: options.onNodeClick || this.onNodeClick
+    };
     SVGG.Paper.prototype.initialize.apply(this, arguments);
     this.$el.addClass('domains-graph').attr('data-module', options.module.id);
-    this.nodeEvents = {
-      click: this.onNodeClick
-    };
   },
 
   onNodeClick: function (node, evt) {

@@ -14,6 +14,7 @@ Mentats.ClassroomView = Backbone.View.extend({
   },
 
   initialize: function(options) {
+    _.bindAll(this, 'onDomainClick');
     Backbone.View.prototype.initialize.apply(this, arguments);
     console.log('new Mentats.ClassroomView', this);
     //this.selectModule(this.model.get('modules').sample());
@@ -25,10 +26,21 @@ Mentats.ClassroomView = Backbone.View.extend({
 		  + module.id + '"]');
   },
 
-  onDomainClick: function (evt) {
+  onDomainClick: function (node, evt) {
     console.log('Mentats.ClassroomView.onDomainClick', this, evt);
-    
-    evt.preventDefault();
+    if (evt.button == 0) {
+      var domain = Mentats.Domain.find(node.model.get('id'));
+      var div = $('<div></div>');
+      this.$('.main').html('').append(div);
+      var v = new Mentats.CompetencesGraphView({
+	domain: domain,
+	el: div,
+	model: domain.get('competences'),
+	autocrop: true
+      });
+      this.mainView = v;
+      evt.stopPropagation();
+    }
   },
 
   onModulesListClick: function (evt) {
@@ -46,13 +58,15 @@ Mentats.ClassroomView = Backbone.View.extend({
       return;
     this.deselectModule();
     var div = $('<div></div>');
-    this.$('.main').append(div);
-    this.mainView = new Mentats.DomainsGraphView({
+    this.$('.main').html('').append(div);
+    var v = new Mentats.DomainsGraphView({
       el: div,
       model: domains,
       module: module,
+      onNodeClick: this.onDomainClick,
       autocrop: true
     });
+    this.mainView = v;
     this.module = module;
     this.moduleListItem(module).addClass('active');
   }

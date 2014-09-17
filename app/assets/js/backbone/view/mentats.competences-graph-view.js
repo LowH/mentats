@@ -4,10 +4,11 @@ Mentats.CompetencesGraphView = SVGG.Paper.extend({
   nodeRadius: Mentats.competenceRadius,
 
   initialize: function (options) {
-    SVGG.Paper.prototype.initialize.apply(this, arguments);
     this.nodeEvents = {
       click: this.onNodeClick
     };
+    SVGG.Paper.prototype.initialize.apply(this, arguments);
+    this.$el.addClass('competences-graph').attr('data-domain', options.domain.id);
   },
 
   onNodeClick: function (node, evt) {
