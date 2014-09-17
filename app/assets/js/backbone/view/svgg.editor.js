@@ -172,7 +172,7 @@ SVGG.Editor = SVGG.Paper.extend({
     case 'd': case 46: // delete
       if (this.focused) {
 	evt.preventDefault();
-	this.removeFocused();
+	this.removeNode();
       }
       break;
     }
