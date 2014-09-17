@@ -8,7 +8,7 @@ Mentats.ClassroomEditView = Backbone.View.extend({
   initialize: function(options) {
     Backbone.View.prototype.initialize.apply(this, arguments);
     console.log('new Mentats.ClassroomEditView', this);
-    var modules = this.model.collection.modules;
+    var modules = this.model.get('modules');
     this.listenTo(modules, 'add', this.onModuleAdd);
     this.listenTo(modules, 'remove', this.onModuleRemove);
     this.modulesList = this.$('.classroom-modules-list');
@@ -37,7 +37,7 @@ Mentats.ClassroomEditView = Backbone.View.extend({
   },
 
   onModuleRemove: function (module) {
-    console.log('Mentats.ClassroomEditView.onModuleAdd', this);
+    console.log('Mentats.ClassroomEditView.onModuleRemove', this);
     this.modulesList.children('.module.thumbnail[data-module="'+module.id+'"]').remove();
   }
 

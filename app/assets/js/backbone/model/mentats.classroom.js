@@ -1,5 +1,5 @@
 
-Mentats.Classroom = Backbone.Model.extend({
+Mentats.Classroom = Backbone.RelationalModel.extend({
 
   defaults: {
     level: "",
@@ -11,11 +11,9 @@ Mentats.Classroom = Backbone.Model.extend({
 
   initialize: function() {
     console.log('new Mentats.Classroom', this, arguments);
-    Backbone.Model.prototype.initialize.apply(this, arguments);
+    Backbone.RelationalModel.prototype.initialize.apply(this, arguments);
+    this.hasMany('modules', Mentats.Module);
     this.url = '/j/classroom/' + this.id;
-    this.bindCollection('modules', Mentats.ModulesCollection);
-    //this.bindCollection('students', Mentats.StudentsCollection);
-    //this.bindCollection('teachers', Mentats.UsersCollection);
   }
 
 });

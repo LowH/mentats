@@ -1,5 +1,6 @@
 
 Backbone.Model.cache = function (model, collection) {
+  model.collection = collection;
   model.cache = new collection;
   model.find = function (id) {
     if (!id)
@@ -14,21 +15,54 @@ Backbone.Model.cache = function (model, collection) {
   };
 };
 
-Backbone.Model.prototype.bindCollection = function (attribute, collectionType, collectionName) {
-  collectionType = collectionType || Backbone.Collection;
-  collectionName = collectionName || attribute;
-  var col = new collectionType(_.map(this.get(attribute),
-				     collectionType.prototype.model.find));
-  var onCollectionChange = function () {
-    this.set(attribute, col.pluck('id'));
-  };
-  this.listenTo(col, 'add', onCollectionChange);
-  this.listenTo(col, 'remove', onCollectionChange);
-  this.listenTo(col, 'reset', onCollectionChange);
-  this.on('sync', function () {
-    col.set(_.map(this.get(attribute),
-		  collectionType.prototype.model.find));
-  });
-  this.collection = this.collection || {};
-  this.collection[collectionName] = col;
-};
+Backbone.RelationalModel = Backbone.Model.extend({
+
+  get: function (attr) {
+    var rel = this.relations[attr];
+    if (rel) {
+      if (rel.hasMany)
+	return this.relations[attr].collection;
+    }
+    return Backbone.Model.prototype.get.apply(this, arguments);
+  },
+
+  hasMany: function (attribute, model, options) {
+    options = options || {};
+    var get = _.bind(Backbone.Model.prototype.get, this);
+    var set = _.bind(Backbone.Model.prototype.set, this);
+    var rel = {
+      attribute: attribute,
+      hasMany: options.collection || model.collection || Backbone.Collection,
+      key: options.key || 'id',
+      model: model
+    };
+    rel.collection = new rel.hasMany(_.map(get(attribute) || [],
+					   model.find));
+    var update = function () {
+      set(attribute, rel.collection.pluck(rel.key));
+    };
+    this.listenTo(rel.collection, 'add', update);
+    this.listenTo(rel.collection, 'remove', update);
+    this.listenTo(rel.collection, 'reset', update);
+    this.on('sync', function () {
+      rel.collection.set(_.map(get(attribute) || [], model.find));
+    });
+    this.relations[attribute] = rel;
+  },
+
+  initialize: function () {
+    Backbone.Model.prototype.initialize.apply(this, arguments);
+  },
+
+  set: function (attr, value) {
+    var rel = this.relations[attr];
+    if (rel) {
+      if (rel.hasMany)
+	return this.relations[attr].collection.set(value);
+    }
+    return Backbone.Model.prototype.set.apply(this, arguments);
+  },
+
+  relations: {}
+
+});
