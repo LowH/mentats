@@ -43,7 +43,7 @@
        (description . ,(module.description module))
        (background-image . ,(asset-url (module-image module)))
        (in-library . ,(module-in-library-p module))
-       (in-classrooms . ,(mapcar #'module.id (module.classrooms module)))
+       (classrooms . ,(mapcar #'classroom.id (module.classrooms module)))
        (domains . ,(module-domains-json module))
        (can . ((use . ,(can :use module))
 	       (edit . ,(can :edit module))))))))
