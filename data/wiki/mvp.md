@@ -90,8 +90,8 @@ On veut pouvoir :
         +   Valider une *compétence* pour un *élève*.
         +   Visualise les résultats d'un *élève*.
         +   Retourner à la *classe* d'un *élève*.
-    +   Administrer une *classe*.
-    +   Administrer des *modules* → [Admin modules](https://www.pivotaltracker.com/story/show/65252638) 2h
+    +   **DONE** Administrer une *classe*.
+    +   **DONE** Administrer des *modules* → [Admin modules](https://www.pivotaltracker.com/story/show/65252638) 2h
 +  **DONE** Logout
 
 
