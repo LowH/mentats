@@ -8,14 +8,18 @@ SVGG.Graph = Backbone.Model.extend({
 
   initialize: function() {
     _.bindAll(this, 'link');
-    var nodes = new Backbone.Collection(this.get('nodes'));
-    var links = new Backbone.Collection(this.get('links'));
+    var nodes = new this.nodesCollection(this.get('nodes'));
+    var links = new this.linksCollection(this.get('links'));
     this.set({
       nodes: nodes,
       links: links
     });
     this.listenTo(nodes, 'remove', this.onRemove);
   },
+
+  linksCollection: SVGG.LinksCollection,
+
+  nodesCollection: Backbone.Collection,
 
   add: function (node) {
     this.get('nodes').add(node);
@@ -38,11 +42,10 @@ SVGG.Graph = Backbone.Model.extend({
   },
 
   onRemove: function (node) {
+    console.log('SVGG.Graph.onRemove', this, node);
     var links = this.get('links');
-    links.where({source: node.cid})
-      .each(links.remove);
-    links.where({target: node.cid})
-      .each(links.remove);
+    links.remove(links.where({source: node.cid}));
+    links.remove(links.where({target: node.cid}));
   },
 
   parse: function(attr, options) {

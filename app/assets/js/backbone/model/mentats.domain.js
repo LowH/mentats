@@ -34,12 +34,6 @@ Backbone.Model.cache(Mentats.Domain, Mentats.DomainsCollection);
 
 Mentats.DomainsGraph = SVGG.Graph.extend({
 
-  initialize: function() {
-    Backbone.Model.prototype.initialize.apply(this, arguments);
-    this.set({
-      nodes: new Mentats.DomainsCollection(this.get('nodes')),
-      links: new SVGG.LinksCollection(this.get('links'))
-    });
-  }
+  nodesCollection: Mentats.DomainsCollection
 
 });

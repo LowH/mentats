@@ -7,9 +7,9 @@
  *= require svg
  *= require svgg
  *= require backbone/cache
- *= require backbone/model/svgg.graph
  *= require backbone/model/svgg.node
  *= require backbone/model/svgg.link
+ *= require backbone/model/svgg.graph
  *= require backbone/view/svgg.node-view
  *= require backbone/view/svgg.link-view
  *= require backbone/view/svgg.paper
