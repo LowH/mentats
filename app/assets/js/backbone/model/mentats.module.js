@@ -16,7 +16,6 @@ Mentats.Module = Backbone.RelationalModel.extend({
 
   initialize: function() {
     Backbone.RelationalModel.prototype.initialize.apply(this, arguments);
-    this.hasMany('classrooms', Mentats.Classroom);
     this.url = '/j/module/' + this.id;
     this.set('domains', new Mentats.DomainsGraph(this.get('domains')));
     this.get('domains').url = this.url + '/domains';
