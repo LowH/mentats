@@ -1,5 +1,5 @@
 
-<h1><a href="«=(h (classroom-uri $classroom))»">«=(h (classroom.name $classroom))» <span class="level">«=(h (classroom.level $classroom))»</span></a></h1>
+<h1><a href="«=(h (classroom-uri $classroom))»"><span class="classroom-name">«=(h (classroom.name $classroom))»</span> <span class="classroom-level level">«=(h (classroom.level $classroom))»</span></a></h1>
 
 <form id="edit-classroom" class="form-inline" role="form" action="«=(h (classroom-uri $classroom))»" method="POST" data-classroom="«=(h (classroom.id $classroom))»">
   <div class="form-group">
