@@ -7,8 +7,13 @@ __fixed__ bugs a l'ajout de modules a une classe, au lieu d'ajouter un module, o
 
 __fixed__ Pas de suppression de classe possible ?
 
+mise en page front page
+
 Modifier les informations du user (nom, email).
 
 Selectioner des couleurs pour les images de modules.
 
 http://mentats.lowh.net/module -> bouton pour sort par alphabetical du blaze du module / blaze du niveau.
+
+
+http://mentats.lowh.net/classroom/y5fPtg/ changement de nom -> perte des modules inscrits

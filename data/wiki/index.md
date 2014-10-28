@@ -9,14 +9,17 @@ Bienvenue sur MENTATS
   </h1></div>
   <div class="panel-body">
 
-[insert logo]
+<!insert logo>
 
 
 <div class="competences-graph" data-domain="9cN5s1"></div>
 
-MENTATS est un outil qui assiste les enseignants dans leurs choix pédagogiques et réduit leurs temps de préparation.
+MENTATS est un outil qui assiste les enseignants dans leurs choix pédagogiques et réduit leurs temps de préparation.  
 
-Il représente les compétences des élèves au sein de graphes faisant apparaître clairement ce qui a été appris, ce que les élèves sont en train d'apprendre, et ce qu'il leur reste à apprendre. 
+
+Il représente les compétences des élèves au sein de graphes faisant apparaître clairement ce qui a été appris, ce que les élèves sont en train d'apprendre et ce qu'il leur reste à apprendre.
+<br><br>
+
    <p></p>
    <div class="clearfix">
     <a href="/tuto/module" class="btn btn-primary pull-left" type="button"> Suivre la présentation &nbsp;<i class="icon-arrow-right"></i></a>
