@@ -55,7 +55,7 @@
 	(push :email error-fields))
       (if error-fields
 	  (template-let (error-fields name email)
-			(render-view :account :register '.html))
+	    (render-view :account :register '.html))
 	  (progn (add-user 'user.name name
 			   'user.email email
 			   'user.password-hash (hash-password password))
