@@ -24,8 +24,8 @@ SVGG.Paper = Backbone.View.extend({
       .fixSubPixelOffset();
     if (options.width && options.height)
       this.svg.size(options.width, options.height);
+    this.svgNodes = this.svg.group();
     this.svgLinks = this.svg.group();
-    this.svgNodes = this.svg.group().front();
 
     var nodes = this.model.get('nodes');
     this.nodeViews = [];
