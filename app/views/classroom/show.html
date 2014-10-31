@@ -1,27 +1,31 @@
 
 <div class="row">
   <div class="col-sm-12">
-    <h1 data-classroom="«=(h (classroom.id $classroom))»"><a href="«=(h (classroom-uri $classroom))»">«=(h (classroom.name $classroom))» <span class="level">«=(h (classroom.level $classroom))»</span></a></h1>
   </div>
 </div>
 <div class="row">
-  <div class="main col-sm-12 col-md-8 col-lg-9">
+  <div class="col-sm-12 col-md-9 col-lg-9">
+    <h1 data-classroom="«=(h (classroom.id $classroom))»"><a href="«=(h (classroom-uri $classroom))»">«=(h (classroom.name $classroom))» <span class="level">«=(h (classroom.level $classroom))»</span></a></h1>
+    <div class="main"></div>
+    <div class="main-sub"></div>
   </div>
-  <div class="left-column col-sm-12 col-md-4 col-lg-3">
+  <div class="left-column col-md-12 col-lg-3">
     <div class="row">
-      <div class="col-sm-4 col-md-12">
+      <div class="col-sm-4 col-lg-12">
 	<div class="students panel panel-default">
 	  <div class="panel-heading">
 	    <h4>Élèves</h4>
 	  </div>
-	  <div class="panel-body">
+	  <div class="panel-body list-group">
 	    « (dolist (student (classroom.students $classroom)) »
-	    <div class="student">«=(h (student.name student))»</div>
+	    <div class="list-group-item student" data-student="«=(h (student.id student))»">
+	      «=(h (student.name student))»
+	    </div>
 	    « ) »
 	  </div>
 	</div>
       </div>
-      <div class="col-sm-4 col-md-12">
+      <div class="col-sm-4 col-lg-12">
 	<div class="modules panel panel-default">
 	  <div class="panel-heading">
 	    <h4>Modules</h4>
@@ -36,7 +40,7 @@
 	  </div>
 	</div>
       </div>
-      <div class="col-sm-4 col-md-12">
+      <div class="col-sm-4 col-lg-12">
 	<div class="teachers panel panel-default">
 	  <div class="panel-heading">
 	    <h4>Enseignants</h4>

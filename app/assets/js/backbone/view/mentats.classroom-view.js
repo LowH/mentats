@@ -4,7 +4,7 @@ Mentats.ClassroomView = Backbone.View.extend({
   deselectModule: function () {
     if (this.module) {
       this.$('.modules.panel .list-group-item.module').removeClass('active');
-      this.$('.main').html('');
+      this.$('.main, .main-sub').html('');
       this.module = null;
     }
   },
@@ -14,11 +14,18 @@ Mentats.ClassroomView = Backbone.View.extend({
   },
 
   initialize: function(options) {
-    _.bindAll(this, 'onDomainClick');
+    _.bindAll(this, 'onCompetenceClick', 'onDomainClick');
     Backbone.View.prototype.initialize.apply(this, arguments);
     console.log('new Mentats.ClassroomView', this);
-    //this.selectModule(this.model.get('modules').sample());
+    this.studentsView = new Mentats.StudentsSelectorView({
+      el: $('.students .list-group')[0],
+      model: {
+	available: this.model.get('students'),
+	selected: new Mentats.StudentsCollection
+      }
+    });
     this.module = null;
+    this.listenTo(this.model.get('modules'), 'change', this.onModulesChange);
   },
 
   moduleListItem: function (module) {
@@ -26,8 +33,16 @@ Mentats.ClassroomView = Backbone.View.extend({
 		  + module.id + '"]');
   },
 
+  onCompetenceClick: function (node, evt) {
+    console.log('Mentats.ClassroomView.onCompetenceClick', this, node, evt);
+    if (evt.button == 0) {
+      this.selectCompetence(node);
+      evt.stopPropagation();
+    }
+  },
+
   onDomainClick: function (node, evt) {
-    console.log('Mentats.ClassroomView.onDomainClick', this, evt);
+    console.log('Mentats.ClassroomView.onDomainClick', this, node, evt);
     if (evt.button == 0) {
       var domain = Mentats.Domain.find(node.model.get('id'));
       var div = $('<div></div>');
@@ -36,17 +51,33 @@ Mentats.ClassroomView = Backbone.View.extend({
 	domain: domain,
 	el: div,
 	model: domain.get('competences'),
+	onNodeClick: this.onCompetenceClick,
 	autocrop: true
       });
       this.mainView = v;
+      v.$el.click(_.bind(function () {
+	this.selectCompetence(null);
+      }, this));
       evt.stopPropagation();
     }
   },
 
+  onModulesChange: function () {
+    console.log('Mentats.ClassroomView.onModulesChange', this, arguments);
+    if (!this.module)
+      this.selectModule(this.model.get('modules').at(0));
+  },
+
   onModulesListClick: function (evt) {
-    console.log('Mentats.ClassroomView.onModuleAdd', this);
+    console.log('Mentats.ClassroomView.onModulesListClick', this);
     this.selectModule(Mentats.Module.find($(evt.currentTarget).data('module')));
     evt.preventDefault();
+  },
+
+  selectCompetence: function (competence) {
+    console.log('Mentats.ClassroomView.selectCompetence', this, competence);
+    this.mainView.setFocus(competence);
+    this.$('.main-sub').html('');
   },
 
   selectModule: function (module) {

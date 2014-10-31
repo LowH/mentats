@@ -15,12 +15,14 @@
  *= require backbone/view/svgg.paper
  *= require backbone/view/svgg.editor
  *= require mentats
+ *= require backbone/model/mentats.student
  *= require backbone/model/mentats.classroom
  *= require backbone/model/mentats.competence
  *= require backbone/model/mentats.domain
  *= require backbone/model/mentats.module
  *= require backbone/model/mentats.resource
  *= require backbone/model/mentats.user
+ *= require backbone/view/mentats.student-selector-view
  *= require backbone/view/mentats.classroom-edit-view
  *= require backbone/view/mentats.classroom-view
  *= require backbone/view/mentats.competences-graph-view

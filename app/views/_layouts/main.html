@@ -92,6 +92,10 @@
       <li class="list-group-item clearfix" data-module="<%- id %>"><p><%- description %></p></li>
     </script>
 
+    <script type="text/template" id="students-selector-template">
+      <div class="list-group-item student" data-student="<%- id %>"><p><%- name %></p></li>
+    </script>
+
     « (print-asset-tag "app.js") »
   </body>
 </html>
