@@ -2,7 +2,7 @@
 SVGG.Paper = Backbone.View.extend({
 
   focusDefaults: {
-    color: '#ADF',
+    color: '#5da5e5',
     width: 4
   },
 
