@@ -5,7 +5,7 @@ Mentats.CompetencesGraphView = SVGG.Paper.extend({
 
   initialize: function (options) {
     this.nodeEvents = {
-      click: this.onNodeClick
+      click: options.onNodeClick || this.onNodeClick
     };
     SVGG.Paper.prototype.initialize.apply(this, arguments);
     this.$el.addClass('competences-graph').attr('data-domain', options.domain.id);
