@@ -1,10 +1,16 @@
 
 SVGG.Paper = Backbone.View.extend({
 
+  focusDefaults: {
+    color: '#ADF',
+    width: 4
+  },
+
   initialize: function (options) {
     Backbone.View.prototype.initialize.apply(this, arguments);
     _.bindAll(this, 'onAddNode', 'onAddLink');
 
+    this.options = options;
     this.width = options.width;
     this.height = options.height;
     this.autocrop = options.autocrop;
@@ -34,6 +40,9 @@ SVGG.Paper = Backbone.View.extend({
     this.listenTo(links, 'add', this.onAddLink);
     this.listenTo(links, 'remove', this.onRemoveLink);
     this.listenTo(links, 'reset', this.onResetLinks);
+
+    this.updateFocusStyle(options.focus);
+    this.focused = null;
   },
 
   linkEvents: {},
@@ -135,12 +144,61 @@ SVGG.Paper = Backbone.View.extend({
   refreshAutocrop: function () {
     if (this.autocrop) {
       var r = this.svg.bbox();
-      r.x -= 1;
-      r.y -= 1;
-      r.width += 2;
-      r.height += 2;
+      r.x -= 8;
+      r.y -= 8;
+      r.width += 16;
+      r.height += 16;
       this.svg.width(r.width).height(r.height).viewbox(r.x, r.y, r.width, r.height);
     }
+  },
+
+  resizeFocus: function (w, h) {
+    if (this.focused)
+      this.focus.size(w + 4, h + 4);
+  },
+
+  setFocus: function (node, options) {
+    console.log('setFocus', this.focused, node);
+    if (!node.model || !node.rect)
+      node = _.find(this.nodeViews, {model: node});
+    if (this.focused != node) {
+      if (this.focused)
+	this.stopListening(this.focused, 'resize', this.resizeFocus);
+      this.focused = node;
+      if (node) {
+	this.listenTo(node, 'resize', this.resizeFocus);
+	this.resizeFocus(node.rect.width(), node.rect.height());
+	this.focus
+	  .addTo(node.group)
+	  .radius(node.radius + 2)
+	  .back()
+	  .show();
+	this.$('.btn.renameNode').removeClass('disabled');
+	this.$('.btn.removeNode').removeClass('disabled');
+      }
+      else {
+	this.focus
+	  .addTo(this.svg)
+	  .hide();
+	this.$('.btn.renameNode').addClass('disabled');
+	this.$('.btn.removeNode').addClass('disabled');
+      }
+    }
+  },
+
+  updateFocusStyle: function (opt) {
+    opt = _.merge(this.focusDefaults, opt);
+    if (!this.focus) {
+      this.focus = this.svg.rect(40, 30)
+	.hide();
+    }
+    this.focus
+      .move(- opt.width / 2, - opt.width / 2)
+      .stroke({
+	color: opt.color,
+	width: opt.width
+      })
+      .fill('none');
   }
 
 });

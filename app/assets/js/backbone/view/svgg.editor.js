@@ -17,13 +17,6 @@ SVGG.Editor = SVGG.Paper.extend({
     SVGG.Paper.prototype.initialize.apply(this, arguments);
     _.bindAll(this, 'nodePosition', 'onArrowMouseDown', 'onKey', 'renameNode', 'stopMoving', 'onNodeMouseDown', 'onNodeMouseUp', 'onNodeClick', 'onNodeDblClick', 'onMouseDown', 'onMouseUp', 'onMouseMove', 'onClick', 'onToolbarClick', 'onWindowClick');
 
-    this.focus = this.svg.rect(40, 30)
-      .move(-2, -2)
-      .stroke({color:'#ADF', width:4})
-      .fill('none')
-      .hide();
-    this.focused = null;
-
     this.nodeEvents = {
       mousedown: this.onNodeMouseDown,
       mouseup: this.onNodeMouseUp,
@@ -301,38 +294,6 @@ SVGG.Editor = SVGG.Paper.extend({
       this.focused.model.promptName();
       if (evt && evt.stopPropagation)
 	evt.stopPropagation();
-    }
-  },
-
-  resizeFocus: function (w, h) {
-    if (this.focused)
-      this.focus.size(w + 4, h + 4);
-  },
-
-  setFocus: function (node) {
-    console.log('setFocus', this.focused, node);
-    if (this.focused != node) {
-      if (this.focused)
-	this.stopListening(this.focused, 'resize', this.resizeFocus);
-      this.focused = node;
-      if (node) {
-	this.listenTo(node, 'resize', this.resizeFocus);
-	this.resizeFocus(node.rect.width(), node.rect.height());
-	this.focus
-	  .addTo(node.group)
-	  .radius(node.radius + 2)
-	  .back()
-	  .show();
-	this.$('.btn.renameNode').removeClass('disabled');
-	this.$('.btn.removeNode').removeClass('disabled');
-      }
-      else {
-	this.focus
-	  .addTo(this.svg)
-	  .hide();
-	this.$('.btn.renameNode').addClass('disabled');
-	this.$('.btn.removeNode').addClass('disabled');
-      }
     }
   },
 
