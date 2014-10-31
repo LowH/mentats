@@ -40,7 +40,7 @@ Mentats.ModulesSelectorView = Backbone.View.extend({
   },
 
   onDeselect: function (module) {
-    console.log('Mentats.ModulesSelectorView.onSelect', arguments);
+    console.log('Mentats.ModulesSelectorView.onDeselect', arguments);
     var li = this.$('li[data-module="'+module.id+'"]');
     li.removeClass('active');
   },
