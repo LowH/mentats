@@ -159,7 +159,7 @@ SVGG.Paper = Backbone.View.extend({
 
   setFocus: function (node, options) {
     console.log('setFocus', this.focused, node);
-    if (!node.model || !node.rect)
+    if (node && !(node.model && node.rect))
       node = _.find(this.nodeViews, {model: node});
     if (this.focused != node) {
       if (this.focused)
