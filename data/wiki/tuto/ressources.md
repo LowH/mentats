@@ -1,7 +1,7 @@
 Name: tuto/ressources
-Date: 2014-02-01 15:28:34
-Author: Olivier THOMAS
 Title: Ressources
+Author: Olivier THOMAS
+Date: 2014-02-01 15:28:34
 
 [<-- Domaines, compétences, graphes](/tuto/domainecompetencegraphe)
 

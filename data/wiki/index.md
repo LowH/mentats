@@ -1,6 +1,6 @@
 Name: index
-Date: 2014-01-01
 Author: Olivier THOMAS
+Date: 2014-01-01
 
 <div class="col-md-10 col-md-offset-1">
  <div class="panel panel-info">
@@ -23,6 +23,7 @@ Il représente les compétences des élèves au sein de graphes faisant apparaî
    <p></p>
    <div class="clearfix">
     <a href="/tuto/module" class="btn btn-primary pull-left" type="button"> Suivre la présentation &nbsp;<i class="icon-arrow-right"></i></a>
+
 <a href="/module" class="btn btn-primary center" type="button"> Accéder aux modules &nbsp;<i class="icon-arrow-right"></i></a>
     <a href="/account/register" class="btn btn-primary pull-right" type="button">S'inscrire &nbsp;<i class="icon-arrow-right"></i></a>
    </div>

@@ -1,7 +1,7 @@
 Name: tuto/evaluation
-Date: 2014-05-12 16:21:49
-Author: Olivier THOMAS
 Title: L'évaluation
+Author: Olivier THOMAS
+Date: 2014-05-12 16:21:49
 
 [<-- Les ressources](/tuto/ressources)
 

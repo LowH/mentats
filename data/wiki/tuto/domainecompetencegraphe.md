@@ -1,7 +1,7 @@
 Name: tuto/domainecompetencegraphe
-Date: 2014-02-01 14:42:52
-Author: Olivier THOMAS
 Title: Domaines, compétences, graphes
+Author: Olivier THOMAS
+Date: 2014-02-01 14:42:52
 
 [<-- Les modules](/tuto/module)
 

@@ -1,7 +1,7 @@
 Name: tuto/module
-Date: 2014-01-21 16:55:06
-Author: Olivier THOMAS
 Title: Les modules
+Author: Olivier THOMAS
+Date: 2014-01-21 16:55:06
 
 [<- Revenir à la page d'accueil](/)
 
