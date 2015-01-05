@@ -40,17 +40,17 @@
       (return ?user))))
 
 (defun session.user (session)
-  (lowh-facts:first-bound ((session 'session.user ?))))
+  (facts:first-bound ((session 'session.user ?))))
 
 (defsetf session.user (session) (user)
   (let ((g!session (gensym "SESSION-")))
     `(when-let ((,g!session ,session))
-       (lowh-facts:with-transaction
+       (facts:with-transaction
 	 (cond
-	   ((null ,user) (lowh-facts:rm ((,g!session 'session.user ?))))
+	   ((null ,user) (facts:rm ((,g!session 'session.user ?))))
 	   (t (when (facts:bound-p ((,g!session 'session.user ?)))
 		(error "Session user cannot be set twice."))
-	      (lowh-facts:add (,g!session 'session.user ,user))))
+	      (facts:add (,g!session 'session.user ,user))))
 	 ,user))))
 
 (defun session-user ()

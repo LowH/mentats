@@ -70,8 +70,11 @@ Mentats.ModuleThumbnailView = Backbone.View.extend({
   },
 
   render: function () {
-    console.log('Mentats.ModuleThumbnailView.render', this.model.attributes.owner);
-    this.$el.html(this.template(this.model.attributes))
+    var attrs = _.extend(_.clone(this.model.attributes), {
+      owner: this.model.get('owner')
+    });
+    console.log('Mentats.ModuleThumbnailView.render', attrs);
+    this.$el.html(this.template(attrs))
       .css('background-image', 'url(' + this.model.get('backgroundImage') + ')');
     return this;
   },

@@ -23,7 +23,7 @@ SVGG.Paper = Backbone.View.extend({
     this.svg = SVG(this.$paper[0])
       .fixSubPixelOffset();
     if (options.width && options.height)
-      this.svg.size(options.width, options.height);
+      this.resize(options.width, options.height);
     this.svgNodes = this.svg.group();
     this.svgLinks = this.svg.group();
 
@@ -68,52 +68,80 @@ SVGG.Paper = Backbone.View.extend({
 
   nodeRadius: 8,
 
-  getNodeView: function(cid) {
+  getNodeView: function(node) {
+    if (_.isObject(node))
+      return _.find(this.nodeViews, { model: node});
     return _.find(this.nodeViews, function(v) {
-      return v.model.cid == cid;
+      //console.log('SVGG.Paper.getNodeView', node, v.model);
+      return v.model.cid == node || v.model.id == node;
+    });
+  },
+
+  getLinkView: function(link) {
+    return _.find(this.linkViews, function(v) {
+      return (v.model.get('source') === link.get('source') &&
+	      v.model.get('target') === link.get('target'));
     });
   },
 
   onAddLink: function(link) {
     console.log('SVGG.Paper.onAddLink', arguments);
-    var v = new SVGG.LinkView({
-      svg: this.svgLinks,
-      model: link,
-      source: this.getNodeView(link.get('source')),
-      target: this.getNodeView(link.get('target'))
-    });
-    v.on(this.linkEvents);
+    var source = this.getNodeView(link.get('source'));
+    var target = this.getNodeView(link.get('target'));
+    if (!source || !target)
+      return;
+    var v = this.getLinkView(link);
+    if (!v) {
+      v = new SVGG.LinkView({
+	model: link,
+	paper: this,
+	source: source,
+	svg: this.svgLinks,
+	target: target
+      });
+      v.on(this.linkEvents);
+    }
     console.log(v);
     this.linkViews.push(v);
   },
 
   onAddNode: function(node, collection, options) {
-    console.log('SVGG.Paper.onAddNode', arguments);
+    console.log('SVGG.Paper.onAddNode', this, node, collection, options);
     var v = this.getNodeView(node);
     if (!v) {
       v = new SVGG.NodeView({
-	svg: this.svgNodes,
 	model: node,
-	radius: this.nodeRadius
+	paper: this,
+	radius: this.nodeRadius,
+	svg: this.svgNodes
       });
       v.on(this.nodeEvents);
       this.nodeViews.push(v);
       if (options && options.focus)
 	this.setFocus(v);
+      var links = this.model.get('links');
+      links.each(function (link) {
+	var source = link.get('source');
+	var target = link.get('target');
+	if ((source === node.cid || source === node.id
+	     || target === node.cid || target === node.id)
+	    && !this.getLinkView(link))
+	  this.onAddLink(link);
+      }, this);
+      this.refreshAutocrop();
     }
-    this.refreshAutocrop();
     return v;
   },
 
   onRemoveLink: function(link) {
-    console.log('SVGG.Editor.onRemoveLink', arguments);
+    console.log('SVGG.Paper.onRemoveLink', arguments);
     var v = _.find(this.linkViews, {model: link});
     v.remove();
     _.remove(this.linkViews, v);
   },
 
   onRemoveNode: function(node) {
-    console.log('SVGG.Editor.onRemoveNode', arguments);
+    console.log('SVGG.Paper.onRemoveNode', arguments);
     if (node == this.focused.model)
       this.setFocus(null);
     var v = _.find(this.nodeViews, {model: node});
@@ -132,7 +160,7 @@ SVGG.Paper = Backbone.View.extend({
   },
 
   onResetNodes: function(nodes) {
-    console.log('SVGG.Editor.onResetNodes', arguments);
+    console.log('SVGG.Paper.onResetNodes', arguments);
     _.each(this.nodeViews, function(v) {
       v.remove();
     });
@@ -144,12 +172,19 @@ SVGG.Paper = Backbone.View.extend({
   refreshAutocrop: function () {
     if (this.autocrop) {
       var r = this.svg.bbox();
-      r.x -= 8;
-      r.y -= 8;
-      r.width += 16;
-      r.height += 16;
-      this.svg.width(r.width).height(r.height).viewbox(r.x, r.y, r.width, r.height);
+      var x = r.x - 8;
+      var y = r.y - 8;
+      var w = r.width + 16;
+      var h = r.height + 16;
+      console.log('SVGG.Paper.refreshAutocrop ', r, x, y, w, h);
+      this.resize(w, h, x, y);
     }
+  },
+
+  resize: function (w, h, x, y) {
+    x || (x = 0);
+    y || (y = 0);
+    this.svg.width(w).height(h).viewbox(x - 0.5, y - 0.5, w - 0.5, h - 0.5);
   },
 
   resizeFocus: function (w, h) {

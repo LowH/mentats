@@ -25,12 +25,13 @@
 (defun domain-competences-json (domain)
   (let ((competences (domain-competences domain)))
     (json:make-object
-     `((nodes . ,(mapcar #'competence-json competences))
+     `((nodes . ,(mapcar #'competence.id competences))
        (links . ,(mapcan (lambda (competence)
-			   (mapcan (lambda (req)
-				     `(((source . ,(competence.id req))
-					(target . ,(competence.id competence)))))
-				   (competence-required-competences competence)))
+			   (let ((id (competence.id competence)))
+			     (mapcar (lambda (req)
+				       `((source . ,(competence.id req))
+					 (target . ,id)))
+				     (competence-required-competences competence))))
 			 competences)))
      nil)))
 

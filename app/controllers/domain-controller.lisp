@@ -21,10 +21,14 @@
 (defun /domain#update (domain)
   (check-can :edit domain)
   (facts:with-transaction
-    (with-form-data (description name)
+    (with-form-data (description name position)
       (setf (domain.description domain) description
-	    (domain.name domain) name)
-      (redirect-to (domain-uri domain)))))
+	    (domain.name domain) name
+	    (domain.position domain) position))
+    (cond ((accept-p :application/json)
+	   (render-json (domain-json domain)))
+	  (t
+	   (redirect-to (domain-uri domain))))))
 
 (defun parse-competence-json (node domain)
   (with-json-accessors (id name position) node

@@ -1,5 +1,11 @@
+/*
+ *  SVGG Graph base class
+ *  Attributes :
+ *    -  nodes: a collection of SVGG.Node or a subtype.
+ *    -  links: a collection of SVGG.Link or a subtype.
+ */
 
-SVGG.Graph = Backbone.Model.extend({
+SVGG.Graph = Backbone.RelationalModel.extend({
 
   defaults: {
     nodes: [],
@@ -8,18 +14,16 @@ SVGG.Graph = Backbone.Model.extend({
 
   initialize: function() {
     _.bindAll(this, 'link');
-    var nodes = new this.nodesCollection(this.get('nodes'));
-    var links = new this.linksCollection(this.get('links'));
-    this.set({
-      nodes: nodes,
-      links: links
+    Backbone.RelationalModel.prototype.initialize.apply(this, arguments);
+    this.hasMany('nodes', this.nodeModel, {
+      init: function (nodes) {
+        this.listenTo(nodes, 'remove', this.onRemove);
+      }
     });
-    this.listenTo(nodes, 'remove', this.onRemove);
+    this.hasCollection('links', this.linksCollection);
   },
 
   linksCollection: SVGG.LinksCollection,
-
-  nodesCollection: Backbone.Collection,
 
   add: function (node) {
     this.get('nodes').add(node);
@@ -44,39 +48,19 @@ SVGG.Graph = Backbone.Model.extend({
   onRemove: function (node) {
     console.log('SVGG.Graph.onRemove', this, node);
     var links = this.get('links');
-    links.remove(links.where({source: node.cid}));
-    links.remove(links.where({target: node.cid}));
+    var pos = this.get('nodes').indexOf(node);
+    links.remove(links.where({source: pos}));
+    links.remove(links.where({target: pos}));
   },
 
-  parse: function(attr, options) {
-    console.log('SVGG.Graph.parse', attr, options);
-    var nodes = this.get('nodes');
-    nodes.reset(attr.nodes);
-    delete attr.nodes;
-    _.each(attr.links, function(link) {
-      link.source = nodes.findWhere({id: link.source}).cid;
-      link.target = nodes.findWhere({id: link.target}).cid;
-    });
-    this.get('links').reset(attr.links);
-    delete attr.links;
-    return attr;
+  parse: function (attrs) {
+    this.get('links').set(attrs.links);
+    delete attrs.links;
+    return attrs;
   },
 
   remove: function (node) {
     this.get('nodes').remove(node);
-  },
-
-  toJSON: function() {
-    var nodes = this.get('nodes').models;
-    var json = _.mapValues(this.attributes, function(x) {
-      return (x.toJSON && typeof(x.toJSON) == 'function') ? x.toJSON() : x;
-    });
-    _.each(json.links, function(link) {
-      link.source = _.findIndex(nodes, {cid: link.source});
-      link.target = _.findIndex(nodes, {cid: link.target});
-    });
-    console.log('SVGG.Graph.toJSON', json);
-    return json;
   }
 
 });

@@ -20,12 +20,13 @@
 (defun module-domains-json (module)
   (let ((domains (module-domains module)))
     (json:make-object
-     `((nodes . ,(mapcar #'domain-json domains))
+     `((nodes . ,(mapcar #'domain.id domains))
        (links . ,(mapcan (lambda (domain)
-			   (mapcan (lambda (req)
-				     `(((source . ,(domain.id req))
-					(target . ,(domain.id domain)))))
-				   (domain-required-domains domain)))
+			   (let ((id (domain.id domain)))
+			     (mapcar (lambda (req)
+				       `((source . ,(domain.id req))
+					 (target . ,id)))
+				     (domain-required-domains domain))))
 			 domains)))
      nil)))
 

@@ -12,6 +12,7 @@ SVGG.NodeView = Backbone.View.extend({
     Backbone.View.prototype.initialize.apply(this, arguments);
     _.bindAll(this, 'onMouseDown', 'onMouseUp', 'onClick', 'onDblClick', 'onMove', 'onChangeLabel', 'onChangeStyle');
 
+    this.paper = options.paper;
     this.group = options.svg.group();
     this.setElement(this.group.node);
     this.group.attr('class', 'node');
@@ -56,15 +57,20 @@ SVGG.NodeView = Backbone.View.extend({
       this.y = position.y;
       this.group.move(this.x, this.y);
       this.trigger('move', this);
+      if (this.paper)
+        this.paper.refreshAutocrop();
     }
   },
 
   resize: function() {
     var bbox = this.label.bbox();
-    this.width = Math.floor((bbox.width + 24) / 2) * 2;
-    this.height = Math.floor((bbox.height + 16) / 2) * 2;
+    var g = this.paper ? (2 * this.paper.grid) : 2;
+    this.width = Math.ceil((bbox.width + 20) / g) * g;
+    this.height = Math.ceil((bbox.height + 8) / g) * g;
     this.rect.size(this.width, this.height);
     this.trigger('resize', this.width, this.height);
+    if (this.paper)
+      this.paper.refreshAutocrop();
   },
 
   onChangeLabel: function() {

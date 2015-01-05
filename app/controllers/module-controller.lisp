@@ -64,6 +64,7 @@
     (facts:add ((session-user) 'user.library-modules module)))
   (redirect-to (user-uri (session-user))))
 
+#+nil
 (defun parse-domain-json (node module)
   (with-json-accessors (id name position) node
     (cond (id
@@ -86,14 +87,14 @@
   (check-can :edit module)
   (facts:with-transaction
     (with-form-data (nodes links)
-      (let* ((domains (map 'vector (lambda (node)
-				     (parse-domain-json node module))
-			   nodes))
-	     (requires (map 'vector
-			    (lambda (link)
-			      (cons (elt domains (json-slot link 'source))
-				    (elt domains (json-slot link 'target))))
-			    links)))
+      (let ((domains (map 'vector #'find-domain nodes))
+            (requires (map 'vector
+                           (lambda (link)
+                             (cons (find-domain (json-slot link 'source))
+                                   (find-domain (json-slot link 'target))))
+                           links)))
+        (format t "DEBUG domains ~S~%" domains)
+        (format t "DEBUG requires ~S~%" requires)
 	(facts:with ((?d 'domain.module module))
 	  (if (find ?d domains)
 	      (facts:with ((?d 'domain.required-domains ?r))

@@ -69,7 +69,7 @@ SVGG.Editor = SVGG.Paper.extend({
       case 2: p.y = p.y + this.grid; break;
       case 3: p.x = p.x - this.grid; break;
       }
-      this.focused.model.set({position: p});
+      this.focused.model.save({position: p});
     }
   },
 
@@ -120,7 +120,7 @@ SVGG.Editor = SVGG.Paper.extend({
     case 13: // Enter
       if (this.focused) {
 	evt.preventDefault();
-	this.focused.model.promptName();
+	this.focused.model.promptName(true);
       }
       break;
     case 'h': case 37: // ←
@@ -201,6 +201,7 @@ SVGG.Editor = SVGG.Paper.extend({
     if (evt.button == 0) {
       this.moving = null;
       if (this.newLink) {
+	this.model.save();
 	this.newLink.remove();
 	this.newLink = null;
       }
@@ -241,7 +242,8 @@ SVGG.Editor = SVGG.Paper.extend({
 	this.moving = {
 	  nodeView: nodeView,
 	  pageX: position.x - evt.pageX,
-	  pageY: position.y - evt.pageY
+	  pageY: position.y - evt.pageY,
+	  prevPos: _.clone(position)
 	};
 	$(window).on('mouseup', this.stopMoving);
 	this.setFocus(nodeView);
@@ -265,6 +267,7 @@ SVGG.Editor = SVGG.Paper.extend({
 	this.newLink = null;
 	link.remove();
 	this.model.link(link.source.model, node.model);
+	this.model.save();
       }
     }
   },
@@ -285,13 +288,15 @@ SVGG.Editor = SVGG.Paper.extend({
   },
 
   removeNode: function () {
-    if (this.focused)
+    if (this.focused) {
       this.model.remove(this.focused.model);
+      this.model.save();
+    }
   },
 
   renameNode: function (evt) {
     if (this.focused) {
-      this.focused.model.promptName();
+      this.focused.model.promptName(true);
       if (evt && evt.stopPropagation)
 	evt.stopPropagation();
     }
@@ -310,13 +315,21 @@ SVGG.Editor = SVGG.Paper.extend({
     case 3: p.x = p.x - this.grid * 4 - targetView.width; break;
     }
     p = this.nodePosition(p.x, p.y, targetView.width, targetView.height);
-    target.set({position: p});
+    target.save({position: p});
     this.model.link(source, target);
+    this.model.save();
   },
 
   stopMoving: function(evt) {
     console.log('Paper.stopMoving', this);
     $(window).off('mouseup', this.stopMoving);
+    var v = this.moving.nodeView;
+    if (v) {
+      var p = v.model.get('position');
+      if (p.x != this.moving.prevPos.x ||
+	  p.y != this.moving.prevPos.y)
+	v.model.save();
+    }
     this.moving = null;
     evt.preventDefault();
   }

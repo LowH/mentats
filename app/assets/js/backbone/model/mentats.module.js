@@ -16,24 +16,19 @@ Mentats.Module = Backbone.RelationalModel.extend({
 
   initialize: function() {
     Backbone.RelationalModel.prototype.initialize.apply(this, arguments);
-    this.url = '/j/module/' + this.id;
-    this.set('domains', new Mentats.DomainsGraph(this.get('domains')));
-    this.get('domains').url = this.url + '/domains';
-    var owner = Mentats.User.find(this.get('owner'));
-    if (owner) {
-      this.set('owner', owner);
-      this.listenTo(owner, 'change', function () { this.trigger('change'); });
-    }
-  },
-
-  parse: function(attr, options) {
-    console.log('Module.parse', attr, options);
-    var domains = this.get('domains') || new Mentats.DomainsGraph(this.get('domains'));
-    domains.set(domains.parse(attr.domains, options));
-    delete attr.domains;
-    if ((attr.owner = Mentats.User.find(attr.owner)))
-      this.listenTo(attr.owner, 'change', function () { this.trigger('change'); });
-    return attr;
+    this.hasNested('domains', Mentats.DomainsGraph, {
+      init: function (domains) {
+        domains.module = this;
+        domains.url = this.url() + '/domains';
+      }
+    });
+    this.hasOne('owner', Mentats.User, {
+      init: function (owner) {
+	this.listenTo(owner, 'change', function () {
+	  this.trigger('change');
+	});
+      }
+    });
   }
 
 });
