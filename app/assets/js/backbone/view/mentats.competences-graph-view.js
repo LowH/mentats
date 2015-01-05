@@ -24,14 +24,19 @@ Mentats.CompetencesGraphView = SVGG.Paper.extend({
 });
 
 Mentats.competencesGraph = function () {
-  var $this = $(this);
-  var domain = Mentats.Domain.find($this.data('domain'));
-  var view = new Mentats.CompetencesGraphView({
-    model: domain.get('competences'),
-    el: this,
-    autocrop: true
-  });
-  console.log(view);
+  try {
+    var $this = $(this);
+    var domain = Mentats.Domain.find($this.data('domain'));
+    var view = new Mentats.CompetencesGraphView({
+      model: domain.get('competences'),
+      el: this,
+      autocrop: true
+    });
+    console.log(view);
+  }
+  catch (e) {
+    console.log(e);
+  }
 };
 
 $(function () {

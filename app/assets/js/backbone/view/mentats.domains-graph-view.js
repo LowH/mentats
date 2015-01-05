@@ -23,15 +23,21 @@ Mentats.DomainsGraphView = SVGG.Paper.extend({
 });
 
 Mentats.domainsGraph = function () {
-  var $this = $(this);
-  var module = Mentats.Module.find($this.data('module'));
-  var view = new Mentats.DomainsGraphView({
-    model: module.get('domains'),
-    module: module,
-    el: this,
-    autocrop: true
-  });
-  console.log(view);
+  try {
+    var $this = $(this);
+    var module = Mentats.Module.find($this.data('module'));
+    var view = new Mentats.DomainsGraphView({
+      model: module.get('domains'),
+      module: module,
+      el: this,
+      autocrop: true
+    });
+    console.log(view);
+  }
+  catch (e) {
+    console.log(e);
+  }
+
 };
 
 $(function () {
