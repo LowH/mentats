@@ -15,6 +15,9 @@ SVGG.Paper = Backbone.View.extend({
     this.height = options.height;
     this.autocrop = options.autocrop;
 
+    this.nodeViews = [];
+    this.linkViews = [];
+
     this.grid = options.grid || 8;
     this.$paper = this.$el.find('.paper');
     if (!this.$paper.length)
@@ -28,14 +31,12 @@ SVGG.Paper = Backbone.View.extend({
     this.svgLinks = this.svg.group();
 
     var nodes = this.model.get('nodes');
-    this.nodeViews = [];
     nodes.each(this.onAddNode);
     this.listenTo(nodes, 'add', this.onAddNode);
     this.listenTo(nodes, 'remove', this.onRemoveNode);
     this.listenTo(nodes, 'reset', this.onResetNodes);
 
     var links = this.model.get('links');
-    this.linkViews = [];
     links.each(this.onAddLink);
     this.listenTo(links, 'add', this.onAddLink);
     this.listenTo(links, 'remove', this.onRemoveLink);
