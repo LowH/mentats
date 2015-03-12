@@ -17,7 +17,7 @@ Un domaine regroupe plusieurs compétences concernant une même notion.
 
 En cliquant sur un domaine on accède aux compétences, elles aussi organisées par un graphe qui met en évidence les pré-requis.
 
-<div class="competences-graph" data-domain="uBf2tx"></div>
+<div class="competences-graph" data-domain=""></div>
 
 Ces graphes rendent compte de précédences chronologiques dans la progression des compétences. 
 
