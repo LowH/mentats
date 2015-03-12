@@ -14,7 +14,7 @@ Mentats.ClassroomView = Backbone.View.extend({
   },
 
   initialize: function(options) {
-    _.bindAll(this, 'onCompetenceClick', 'onDomainClick');
+    _.bindAll(this, 'onCompetenceClick', 'onDomainClick', 'onModulesListClick');
     Backbone.View.prototype.initialize.apply(this, arguments);
     console.log('new Mentats.ClassroomView', this);
     this.studentsView = new Mentats.StudentsSelectorView({
