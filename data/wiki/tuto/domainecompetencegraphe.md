@@ -1,7 +1,7 @@
 Name: tuto/domainecompetencegraphe
-Title: Domaines, compétences, graphes
 Author: Olivier THOMAS
 Date: 2014-02-01 14:42:52
+Title: Domaines, compétences, graphes
 
 [<-- Les modules](/tuto/module)
 
@@ -23,4 +23,4 @@ Ces graphes rendent compte de précédences chronologiques dans la progression d
 
 En cliquant sur une compétence, on accède à ses ressources.
 
-[<button class="btn btn-primary pull-right" type="button">Les ressources &nbsp;<i class="icon-arrow-right"></i></button>](/tuto/ressources)
+[<button class="btn btn-primary pull-right" type="button">Les ressources &nbsp;<i class="fa fa-arrow-right"></i></button>](/tuto/ressources)

@@ -17,4 +17,4 @@ Il peut alors ou :
 
 - sélectionner un élève puis modifier le statut de ses compétences/domaines en cliquant sur ceux-ci. 
 
-[<button class="btn btn-primary pull-right" type="button"> Contribuer &nbsp;<i class="icon-arrow-right"></i></button>](/tuto/contribuer)
+[<button class="btn btn-primary pull-right" type="button"> Contribuer &nbsp;<i class="fa fa-arrow-right"></i></button>](/tuto/contribuer)

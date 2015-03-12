@@ -22,7 +22,7 @@ Il représente les compétences des élèves au sein de graphes faisant apparaî
 <br><br>
 
 
-   <a href="/account/register" class="btn btn-primary pull-right" type="button">S'inscrire &nbsp;<i class="icon-arrow-right"></i></a>
+   <a href="/account/register" class="btn btn-primary pull-right" type="button">S'inscrire &nbsp;<i class="fa fa-arrow-right"></i></a>
    </div>
   </div>
  </div>

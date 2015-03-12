@@ -10,7 +10,7 @@
     <label for="level" class="sr-only">Niveau</label>
     <input class="form-control" type="text" name="level" value="«=(h (classroom.level $classroom))»" placeholder="Niveau" required/>
   </div>
-  <button class="btn btn-default" type="submit" name="_method" value="PUT"><i class="icon-ok"></i> Sauvegarder</button>
+  <button class="btn btn-default" type="submit" name="_method" value="PUT"><i class="fa fa-check"></i> Sauvegarder</button>
 </form>
 
 <h2>Élèves</h2>
@@ -26,7 +26,7 @@
     <label for="name" class="sr-only">Nom</label>
     <input class="form-control" type="text" name="name" placeholder="Nom" required/>
   </div>
-  <button class="btn btn-default" type="submit" name="_method" value="POST" title="Ajouter"><i class="icon-plus"></i> Ajouter</button>
+  <button class="btn btn-default" type="submit" name="_method" value="POST" title="Ajouter"><i class="fa fa-plus"></i> Ajouter</button>
 </form>
 
 <h2>Modules</h2>
@@ -35,7 +35,7 @@
 
 <div>
   <button type="button" class="btn btn-default" data-toggle="modal" data-target="#classroom-modules-selector">
-    <i class="icon-plus"></i> Selectionner des modules
+    <i class="fa fa-plus"></i> Selectionner des modules
   </button>
   <div class="modal fade modules-selector" id="classroom-modules-selector" tabindex="-1" role="dialog" aria-labelledby="add-module-list-label" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -75,7 +75,7 @@
 	  <input class="form-control" type="checkbox" name="delete" value="0" required/> Confirmer
 	</label>
       </div>
-      <button type="submit" class="btn btn-danger" name="_method" value="DELETE"><i class="icon-trash"></i> Supprimer</button>
+      <button type="submit" class="btn btn-danger" name="_method" value="DELETE"><i class="fa fa-trash-o"></i> Supprimer</button>
     </form>
   </div>
 </div>

@@ -8,6 +8,6 @@ Dans chaque module, MENTATS représente les relations de précédence entre diff
 
 Un domaine porte le nom d'une notion. Il regroupe plusieurs compétences portant sur cette notion.
 
-[<button class="btn btn-primary pull-right" type="button">Les compétences &nbsp;<i class="icon-arrow-right"></i></button>](/tuto/competence)
+[<button class="btn btn-primary pull-right" type="button">Les compétences &nbsp;<i class="fa fa-arrow-right"></i></button>](/tuto/competence)
 
 

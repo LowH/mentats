@@ -23,11 +23,11 @@ Mentats.ModuleThumbnailView = Backbone.View.extend({
   onLibraryChange: function () {
     console.log('Mentats.ModuleThumbnailView.onLibraryChange', arguments);
     if (this.model.get('inLibrary')) {
-      this.$('.toggle-library i').attr('class', 'icon-star');
+      this.$('.toggle-library i').attr('class', 'fa fa-star');
       this.$('.toggle-library').attr('title', 'Enlever de ma bibliothèque');
     }
     else {
-      this.$('.toggle-library i').attr('class', 'icon-star-empty');
+      this.$('.toggle-library i').attr('class', 'fa fa-star-o');
       this.$('.toggle-library').attr('title', 'Ajouter à ma bibliothèque');
     }
   },
@@ -43,7 +43,7 @@ Mentats.ModuleThumbnailView = Backbone.View.extend({
   onClassroomAdd: function (classroom) {
     console.log('Mentats.ModuleThumbnailView.onClassroomAdd', arguments);
     var li = this.$('.menu li.toggle-classroom[data-classroom="'+classroom.id+'"]');
-    li.find('i').attr('class', 'icon-minus');
+    li.find('i').attr('class', 'fa fa-minus');
     li.find('span.toggle').text('Enlever de');
   },
 
@@ -65,7 +65,7 @@ Mentats.ModuleThumbnailView = Backbone.View.extend({
   onClassroomRemove: function (classroom) {
     console.log('Mentats.ModuleThumbnailView.onClassroomRemove', arguments);
     var li = this.$('.menu li.toggle-classroom[data-classroom="'+classroom.id+'"]');
-    li.find('i').attr('class', 'icon-plus');
+    li.find('i').attr('class', 'fa fa-plus');
     li.find('span.toggle').text('Ajouter à');
   },
 

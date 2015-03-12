@@ -10,8 +10,8 @@
 	<span class="caret"></span>
       </button>
       <ul class="dropdown-menu" role="menu">
-	<li><a href="#" class="edit"><i class="icon-edit"></i> Éditer</a></li>
-	<li><a href="#" class="trash"><i class="icon-trash"></i> Supprimer</a></li>
+	<li><a href="#" class="edit"><i class="fa fa-pencil"></i> Éditer</a></li>
+	<li><a href="#" class="trash"><i class="fa fa-trash-o"></i> Supprimer</a></li>
       </ul>
     </div>
   </div>
@@ -23,7 +23,7 @@
     <b>Éditer</b>
     <form role="form" class="form" action="«=(h (resource-uri $resource))»" method="POST">
       <textarea name="text" class="form-control markdown-editor" rows="10">«=(h (resource.text $resource))»</textarea>
-      <button type="submit" class="btn btn-primary form-control" name="_method" value="PUT"><i class="icon-ok"></i></button>
+      <button type="submit" class="btn btn-primary form-control" name="_method" value="PUT"><i class="fa fa-check"></i>&nbsp; Publier</button>
     </form>
   </div>
 </div>

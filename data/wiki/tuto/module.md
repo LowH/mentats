@@ -20,5 +20,5 @@ Les modules sont présentés avec les identifiants de leurs *propriétaires* : l
 
 Pour le moment, tous les modules créés sont disponible [ici](/module).
 
-[<button class="btn btn-primary pull-right" type="button"> Domaines, Compétences, Graphes &nbsp;<i class="icon-arrow-right"></i></button>](/tuto/domainecompetencegraphe)
+[<button class="btn btn-primary pull-right" type="button"> Domaines, Compétences, Graphes &nbsp;<i class="fa fa-arrow-right"></i></button>](/tuto/domainecompetencegraphe)
 

@@ -13,4 +13,4 @@ Il peut s'agir de références aux programmes officiels ou à leurs documents d'
 
 L'organisation des modules sous forme de graphes permet non seulement la structuration des ressources pédagogiques, mais également l'évaluation des élèves.
 
-[<button class="btn btn-primary pull-right" type="button"> L'évaluation &nbsp;<i class="icon-arrow-right"></i></button>](/tuto/evaluation)
+[<button class="btn btn-primary pull-right" type="button"> L'évaluation &nbsp;<i class="fa fa-arrow-right"></i></button>](/tuto/evaluation)

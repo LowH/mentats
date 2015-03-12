@@ -24,29 +24,25 @@
 « (when (can :create 'resources) »
 <div id="contribute-resource" class="panel-default">
   <div class="panel-body">
-    <button type="button" class="btn btn-primary pull-right" data-toggle="collapse" data-target="#contribute-resource .panel-footer, #contribute-resource .panel-body .mentats-user, #contribute-resource .panel-body .date">
-      <i class="icon-plus"></i> &nbsp; Contribuer une resource
+    <button type="button" class="btn btn-primary pull-right" data-toggle="collapse" data-target="#contribute-resource .panel-body .infos, #contribute-resource .panel-footer">
+      <i class="fa fa-plus"></i> &nbsp; Contribuer une resource
     </button>
-    <a href="«=(h (user-uri (session-user)))»" class="mentats-user collapse">
-      <img class="avatar" src="«=(h (gravatar:image-url (user.email (session-user)) :size 32 :default :mm))»" alt=""/>
-      <b>«=(h (user.name (session-user)))»</b>
-    </a>
-    <span class="small date collapse">
-      «=(h (rw-ut:write-time-string (get-universal-time) "DD/MM/YYYY"))»
-    </span>
+    <div class="infos collapse">
+      <a href="«=(h (user-uri (session-user)))»" class="mentats-user">
+        <img class="avatar" src="«=(h (gravatar:image-url (user.email (session-user)) :size 32 :default :mm))»" alt=""/>
+        <b>«=(h (user.name (session-user)))»</b>
+      </a>
+      <span class="small date">
+        «=(h (rw-ut:write-time-string (get-universal-time) "DD/MM/YYYY"))»
+      </span>
+    </div>
   </div>
-  <div class="panel-footer collapse">
-    <form role="form" class="form" action="«=(h (resource-uri))»" method="POST">
-      <input type="hidden" name="competence" value="«=(h (competence.id $competence))»"/>
-      <div class="row">
-	<div class="col-sm-12">
-	  <textarea name="text" class="form-control markdown-editor" rows="10"></textarea>
-	</div>
-	<div class="col-sm-12">
-	  <button type="submit" class="btn btn-primary form-control" name="_method" value="POST"><i class="icon-ok"></i> Publier</button>
-	</div>
-      </div>
-    </form>
-  </div>
+  <form role="form" class="form" action="«=(h (resource-uri))»" method="POST">
+    <input type="hidden" name="competence" value="«=(h (competence.id $competence))»"/>
+    <div class="panel-footer shallow collapse">
+      <textarea name="text" class="form-control markdown-editor" rows="10"></textarea>
+      <button type="submit" class="btn btn-primary form-control" name="_method" value="POST"><i class="fa fa-check"></i>&nbsp; Publier</button>
+    </div>
+  </form>
 </div>
 « ) »

@@ -75,13 +75,13 @@
 	<div class="btn-toolbar">
 	  <% if (can.edit) { %>
 	    <a class="btn btn-default" href="<%- Mentats.uri.module(id, 'edit') %>" title="Éditer">
-	      <i class="icon-edit"></i>
+	      <i class="fa fa-pencil"></i>
 	    </a>
 	  <% } %>
 	  <% if (can.use) { %>
 	    <button type="button" class="toggle-library btn btn-default"
-		    title="<%- inLibrary ? 'Ajouter à' : 'Enlever de' %> ma bibliothèque">
-	      <i class="icon-star<%- inLibrary ? '' : '-empty' %>"></i>
+		    title="<%- inLibrary ? 'Enlever de' : 'Ajouter à' %> ma bibliothèque">
+	      <i class="fa fa-star<%- inLibrary ? '' : '-o' %>"></i>
 	    </button>
 	  <% } %>
 	</div>

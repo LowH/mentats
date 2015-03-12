@@ -9,9 +9,9 @@ Author: Olivier THOMAS
 <div class="competences-graph" data-domain="9cN5s1"></div>
 
 
-[<button class="btn btn-primary pull-left" type="button"> Suivre la présentation &nbsp;<i class="icon-arrow-right"></i></button>](/tuto/module)
+[<button class="btn btn-primary pull-left" type="button"> Suivre la présentation &nbsp;<i class="fa fa-arrow-right"></i></button>](/tuto/module)
 
 
-[<button class="btn btn-primary pull-right" type="button">S'inscrire &nbsp;<i class="icon-arrow-right"></i></button>](/account/register)
+[<button class="btn btn-primary pull-right" type="button">S'inscrire &nbsp;<i class="fa fa-arrow-right"></i></button>](/account/register)
 
 
