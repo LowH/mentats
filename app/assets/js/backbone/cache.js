@@ -25,6 +25,7 @@ Backbone.Relation = function (model, attribute) {
   this.model = model;
   this.attribute = attribute;
   this.initialize.apply(this, arguments);
+  model.relations || model.relations = {};
   model.relations[attribute] = this;
 };
 
@@ -290,6 +291,7 @@ Backbone.RelationalModel = Backbone.Model.extend({
 
   initialize: function () {
     Backbone.Model.prototype.initialize.apply(this, arguments);
+    this.relations = {};
   },
 
   relations: {},
