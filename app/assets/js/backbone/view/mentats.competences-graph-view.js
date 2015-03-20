@@ -26,6 +26,10 @@ Mentats.CompetencesGraphView = SVGG.Paper.extend({
 Mentats.competencesGraph = function () {
   try {
     var $this = $(this);
+    if ($this.children().first().length) {
+      debug.log('Mentats.competencesGraph', 'already applied', this);
+      return false;
+    }
     var domain = Mentats.Domain.find($this.data('domain'));
     var view = new Mentats.CompetencesGraphView({
       model: domain.get('competences'),
@@ -40,5 +44,5 @@ Mentats.competencesGraph = function () {
 };
 
 $(function () {
-  $('.competences-graph').each(Mentats.competencesGraph);
+  $('.competences-graph:empty').each(Mentats.competencesGraph);
 });
