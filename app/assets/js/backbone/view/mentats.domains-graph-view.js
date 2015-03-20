@@ -25,6 +25,10 @@ Mentats.DomainsGraphView = SVGG.Paper.extend({
 Mentats.domainsGraph = function () {
   try {
     var $this = $(this);
+    if ($this.children().first().length) {
+      debug.log('Mentats.domainsGraph', 'already applied', this);
+      return false;
+    }
     var module = Mentats.Module.find($this.data('module'));
     var view = new Mentats.DomainsGraphView({
       model: module.get('domains'),
@@ -41,5 +45,5 @@ Mentats.domainsGraph = function () {
 };
 
 $(function () {
-  $('.domains-graph').each(Mentats.domainsGraph);
+  $('.domains-graph:empty').each(Mentats.domainsGraph);
 });
