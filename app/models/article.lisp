@@ -116,3 +116,10 @@
 
 #+test
 (write-article *standard-output* (read-article #P"data/blog/intro.txt"))
+
+
+;;  Tags
+
+(defun article-has-tag (tag article)
+  (re-match `(:sequence :case-insensitive-p :word-boundary ,(string tag) :word-boundary)
+            (article.tags article)))
