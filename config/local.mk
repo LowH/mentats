@@ -1,4 +1,0 @@
-APP_USER = ${USER}
-APP_GROUP = ${USER}
-WEB_USER = ${USER}
-WEB_GROUP = _nginx
