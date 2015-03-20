@@ -6,6 +6,7 @@
  *= require article
  *= require svg
  *= require svgg
+ *= require debug
  *= require backbone/cache
  *= require backbone/model/svgg.node
  *= require backbone/model/svgg.link
@@ -60,7 +61,7 @@ $(function () {
     var forInput = $conf.closest('form').find('input[name="'+forId+'"],input[id="'+forId+'"]').first();
     if (forInput && forInput[0]) {
       var i = forInput[0];
-      console.log(conf, 'confirmation for', forId, ' = ', i);
+      debug.log('form', conf, 'confirmation for', forId, ' = ', i);
       var f = function() {
 	conf.setCustomValidity(i.value === conf.value ? '' :
 			       'Le mot de passe n\'est pas identique.');
@@ -71,17 +72,17 @@ $(function () {
       forInput.blur(f);
     }
     else {
-      console.log('confirmation for', forId, 'not found.', this);
+      debug.log('form', 'confirmation for', forId, 'not found.', this);
     }
   });
 
   $('a[data-method]').click(function (evt) {
     var $this = $(this);
-    console.log('click', $this.attr('href'), $this.data('method'), evt);
+    debug.log('form', 'click', $this.attr('href'), $this.data('method'), evt);
     $.ajax($this.attr('href'), {
       type: $this.data('method'),
       success: function (xhr) {
-	console.log('success', xhr);
+	debug.log('form', 'success', xhr);
       }
     });
     evt.preventDefault();

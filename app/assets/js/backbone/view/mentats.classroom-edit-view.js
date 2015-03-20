@@ -8,7 +8,7 @@ Mentats.ClassroomEditView = Backbone.View.extend({
 
   initialize: function(options) {
     Backbone.View.prototype.initialize.apply(this, arguments);
-    console.log('new Mentats.ClassroomEditView', this);
+    this.log('new', this);
 
     this.listenTo(this.model, 'change:name', this.onChangeName);
     this.listenTo(this.model, 'change:level', this.onChangeLevel);
@@ -28,6 +28,8 @@ Mentats.ClassroomEditView = Backbone.View.extend({
     }).render();
   },
 
+  log: debug.logger('Mentats.ClassroomEditView'),
+
   onChangeName: function () {
     this.$('.classroom-name').text(this.model.get('name'));
   },
@@ -37,12 +39,12 @@ Mentats.ClassroomEditView = Backbone.View.extend({
   },
 
   onHideModulesSelector: function (modules) {
-    console.log('Mentats.ClassroomEditView.onHideModulesSelector', this);
+    this.log('onHideModulesSelector', this);
     this.model.save();
   },
 
   onModuleAdd: function (module) {
-    console.log('Mentats.ClassroomEditView.onModuleAdd', this);
+    this.log('onModuleAdd', this);
     var v = new Mentats.ModuleThumbnailView({
       model: module
     }).render();
@@ -50,12 +52,12 @@ Mentats.ClassroomEditView = Backbone.View.extend({
   },
 
   onModuleRemove: function (module) {
-    console.log('Mentats.ClassroomEditView.onModuleRemove', this);
+    this.log('onModuleRemove', this);
     this.modulesList.children('.module.thumbnail[data-module="'+module.id+'"]').remove();
   },
 
   onSubmit: function (evt) {
-    console.log('Mentats.ClassroomEditView.onSubmit', this, evt);
+    this.log('onSubmit', this, evt);
     this.model.set({
       name: this.$('input[name="name"]').val(),
       level: this.$('input[name="level"]').val()

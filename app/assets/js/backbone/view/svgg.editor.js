@@ -34,6 +34,8 @@ SVGG.Editor = SVGG.Paper.extend({
     });
   },
 
+  log: debug.logger('SVGG.Editor'),
+
   moveFocus: function (direction) {
     var o = this.focused;
     var m;
@@ -92,7 +94,7 @@ SVGG.Editor = SVGG.Paper.extend({
   },
 
   onArrowMouseDown: function (linkView, evt) {
-    console.log('SVGG.Editor.onArrowMouseDown', evt);
+    this.log('onArrowMouseDown', evt);
     if (evt.button == 0) {
       var p = this.mousePosition(evt);
       this.newLink = new SVGG.LinkView({
@@ -105,7 +107,7 @@ SVGG.Editor = SVGG.Paper.extend({
   },
 
   onClick: function (evt) {
-    console.log('onClick', evt);
+    this.log('onClick', evt);
     if (evt.button == 0) {
       this.setFocus(null);
       if (evt && evt.stopPropagation)
@@ -115,7 +117,7 @@ SVGG.Editor = SVGG.Paper.extend({
 
   onKey: function(evt) {
     var k = evt.charCode ? String.fromCharCode(evt.charCode) : evt.keyCode;
-    console.log('SVGG.Editor.onKey', k, evt);
+    this.log('onKey', k, evt);
     switch (k) {
     case 13: // Enter
       if (this.focused) {
@@ -172,12 +174,12 @@ SVGG.Editor = SVGG.Paper.extend({
   },
 
   onMouseDown: function() {
-    //console.log('onmousedown');
+    //this.log('onMouseDown');
   },
 
   onMouseMove: function(evt) {
     if (this.moving) {
-      //console.log(this.moving);
+      //this.log(this.moving);
       var p = this.nodePosition(evt.pageX + this.moving.pageX,
 				evt.pageY + this.moving.pageY,
 				this.moving.nodeView.width,
@@ -197,7 +199,7 @@ SVGG.Editor = SVGG.Paper.extend({
   },
 
   onMouseUp: function(evt) {
-    console.log('SVGG.Editor.onMouseUp', evt);
+    this.log('onMouseUp', evt);
     if (evt.button == 0) {
       this.moving = null;
       if (this.newLink) {
@@ -210,7 +212,7 @@ SVGG.Editor = SVGG.Paper.extend({
   },
 
   onNodeClick: function(node, evt) {
-    console.log('onNodeClick', node, evt);
+    this.log('onNodeClick', node, evt);
     if (evt.button == 0) {
       evt.preventDefault();
       evt.stopPropagation();
@@ -218,7 +220,7 @@ SVGG.Editor = SVGG.Paper.extend({
   },
 
   onNodeDblClick: function(node, evt) {
-    console.log('onNodeDblClick', node, evt);
+    this.log('onNodeDblClick', node, evt);
     if (evt.button == 0) {
       if (node.model.edit) {
 	node.model.edit();
@@ -227,7 +229,7 @@ SVGG.Editor = SVGG.Paper.extend({
   },
 
   onNodeMouseDown: function(nodeView, evt) {
-    console.log('onNodeMouseDown', nodeView, evt);
+    this.log('onNodeMouseDown', nodeView, evt);
     if (evt.button == 0) {
       if (evt.ctrlKey) {
 	var p = this.mousePosition(evt);
@@ -253,7 +255,7 @@ SVGG.Editor = SVGG.Paper.extend({
   },
 
   onNodeMouseUp: function(node, evt) {
-    console.log('onNodeMouseUp', node, evt);
+    this.log('onNodeMouseUp', node, evt);
     if (evt.button == 0) {
       if (this.moving) {
 	evt.stopPropagation();
@@ -273,7 +275,7 @@ SVGG.Editor = SVGG.Paper.extend({
   },
 
   onToolbarClick: function (evt) {
-    console.log('onToolbarClick', evt);
+    this.log('onToolbarClick', evt);
     if (evt.button == 0) {
       if (evt && evt.stopPropagation)
 	evt.stopPropagation();
@@ -281,7 +283,7 @@ SVGG.Editor = SVGG.Paper.extend({
   },
 
   onWindowClick: function (evt) {
-    console.log('onWindowClick', evt);
+    this.log('onWindowClick', evt);
     if (evt.button == 0) {
       this.setFocus(null);
     }
@@ -321,7 +323,7 @@ SVGG.Editor = SVGG.Paper.extend({
   },
 
   stopMoving: function(evt) {
-    console.log('Paper.stopMoving', this);
+    this.log('stopMoving', this);
     $(window).off('mouseup', this.stopMoving);
     var v = this.moving.nodeView;
     if (v) {

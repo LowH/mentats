@@ -17,7 +17,7 @@ Mentats.Domain = SVGG.Node.extend({
   },
 
   edit: function () {
-    console.log('Mentats.Domain.edit', this);
+    debug.log('Mentats.Domain', 'edit', this);
     var id = this.get('id');
     if (id)
       Mentats.editDomain(id);

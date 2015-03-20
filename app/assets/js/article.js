@@ -3,7 +3,7 @@ $(function () {
   var article = {
     live: function () {
       var $article = $(this);
-      console.log('article', $article);
+      debug.log('article', $article);
       $article.find('button[role="show"]').click(function() {
 	$article.find('.header button').removeClass('active');
 	$article.find('.header button[role="show"]').addClass('active');

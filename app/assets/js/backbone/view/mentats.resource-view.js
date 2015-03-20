@@ -4,7 +4,7 @@ Mentats.ResourceView = Backbone.View.extend({
   initialize: function (options) {
     _.bindAll(this, 'edit', 'editClose', 'trash');
     Backbone.View.prototype.initialize.apply(this, arguments);
-    console.log('new Mentats.ResourceView', this);
+    this.log('new', this);
     this.editDiv = this.$el.find('div.edit');
     this.$el.find('a.edit').click(this.edit);
     this.$el.find('a.trash').click(this.trash);
@@ -13,7 +13,7 @@ Mentats.ResourceView = Backbone.View.extend({
   },
 
   edit: function (evt) {
-    console.log('Mentats.ResourceView.edit', this, evt);
+    this.log('edit', this, evt);
     this.editDiv.show();
     if (evt)
       evt.preventDefault();
@@ -25,8 +25,10 @@ Mentats.ResourceView = Backbone.View.extend({
       evt.preventDefault();
   },
 
+  log: debug.logger('Mentats.ResourceView'),
+
   trash: function (evt) {
-    console.log('Mentats.ResourceView.trash', this, evt);
+    this.log('trash', this, evt);
     if (confirm('Supprimer définitivement cette resource ?')) {
       this.model.destroy({wait: true});
     }

@@ -25,6 +25,8 @@ SVGG.Graph = Backbone.RelationalModel.extend({
 
   linksCollection: SVGG.LinksCollection,
 
+  log: debug.logger('SVGG.Graph'),
+  
   add: function (node) {
     this.get('nodes').add(node);
   },
@@ -32,12 +34,12 @@ SVGG.Graph = Backbone.RelationalModel.extend({
   link: function(source, target) {
     var links = this.get('links');
     if (links.findWhere({source: source.cid, target: target.cid})) {
-      console.log('already linked');
+      this.log('already linked');
       return null;
     }
     var link = links.findWhere({source: target.cid, target: source.cid});
     if (link) {
-      console.log('reverse link');
+      this.log('reverse link');
       links.remove(link);
     }
     link = new SVGG.Link({source: source.cid, target: target.cid});
@@ -46,7 +48,7 @@ SVGG.Graph = Backbone.RelationalModel.extend({
   },
 
   onRemove: function (node) {
-    console.log('SVGG.Graph.onRemove', this, node);
+    this.log('onRemove', this, node);
     var links = this.get('links');
     var pos = this.get('nodes').indexOf(node);
     links.remove(links.where({source: pos}));

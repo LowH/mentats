@@ -6,7 +6,7 @@ Mentats.Student = Backbone.RelationalModel.extend({
   },
 
   initialize: function() {
-    console.log('new Mentats.Student', this, arguments);
+    debug.log('Mentats.Student', 'new', this, arguments);
     Backbone.RelationalModel.prototype.initialize.apply(this, arguments);
     this.url = '/j/student/' + this.id;
   }

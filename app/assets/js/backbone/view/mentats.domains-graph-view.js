@@ -4,7 +4,7 @@ Mentats.DomainsGraphView = SVGG.Paper.extend({
   nodeRadius: Mentats.domainRadius,
 
   initialize: function (options) {
-    console.log('new Mentats.DomainsGraphView', options);
+    debug.log('Mentats.DomainsGraphView', 'new', options);
     this.nodeEvents = {
       click: options.onNodeClick || this.onNodeClick
     };
@@ -13,7 +13,7 @@ Mentats.DomainsGraphView = SVGG.Paper.extend({
   },
 
   onNodeClick: function (node, evt) {
-    console.log('Mentats.DomainsGraphView.onNodeClick', evt, node);
+    debug.log('Mentats.DomainsGraphView', 'onNodeClick', evt, node);
     if (evt.button == 0) {
       Mentats.viewDomain(node.model.get('id'));
       evt.stopPropagation();
@@ -32,10 +32,10 @@ Mentats.domainsGraph = function () {
       el: this,
       autocrop: true
     });
-    console.log(view);
+    debug.log('Mentats.domainsGraph', view);
   }
   catch (e) {
-    console.log(e);
+    debug.log('Mentats.domainsGraph', e);
   }
 
 };

@@ -6,10 +6,12 @@ Mentats.DomainGraphEditor = SVGG.Editor.extend({
     _.bindAll(this, 'spawnNode', 'save');
   },
 
+  log: debug.logger('Mentats.DomainGraphEditor'),
+
   nodeRadius: Mentats.domainRadius,
 
   spawnNode: function(evt) {
-    console.log('module spawn node');
+    this.log('spawnNode');
     var node = Mentats.Domain.create({
       name: "",
       position: { x: 10, y: 10 }
@@ -24,7 +26,7 @@ Mentats.DomainGraphEditor = SVGG.Editor.extend({
   },
 
   save: function() {
-    console.log('Mentats.DomainGraphEditor.save', this);
+    this.log('save', this);
     this.model.get('nodes').each(function (node) {
       node.save();
     });
@@ -37,7 +39,7 @@ Mentats.ModuleEditor = Backbone.View.extend({
 
   initialize: function(options) {
     Backbone.View.prototype.initialize.apply(this, arguments);
-    console.log('new Mentats.ModuleEditor', this);
+    this.log('new', this);
     this.domainGraphEditor = new Mentats.DomainGraphEditor({
       model: this.model.get('domains'),
       module: this,

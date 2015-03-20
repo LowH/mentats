@@ -8,7 +8,7 @@ Mentats.ClassroomView = Backbone.View.extend({
   initialize: function(options) {
     _.bindAll(this, 'onCompetenceClick', 'onDomainClick', 'onModulesListClick');
     Backbone.View.prototype.initialize.apply(this, arguments);
-    console.log('new Mentats.ClassroomView', this);
+    this.log('new', this);
     this.studentsView = new Mentats.StudentsSelectorView({
       el: $('.students .list-group')[0],
       model: {
@@ -20,9 +20,11 @@ Mentats.ClassroomView = Backbone.View.extend({
     this.listenTo(this.model.get('modules'), 'change', this.onModulesChange);
   },
 
+  log: debug.logger('Mentats.ClassroomView'),
+
   moduleDeselect: function () {
     if (this.module) {
-      console.log('Mentats.ClassroomView.moduleDeselect', this.module);
+      this.log('moduleDeselect', this.module);
       this.$('.modules.panel .list-group-item.module').removeClass('active');
       if (this.mainView)
         this.mainView.remove();
@@ -43,7 +45,7 @@ Mentats.ClassroomView = Backbone.View.extend({
     if (!domains)
       return;
     this.moduleDeselect();
-    console.log('Mentats.ClassroomView.moduleSelect', module);
+    this.log('moduleSelect', module);
     var div = $('<div></div>');
     this.$('.main').append(div);
     var v = new Mentats.DomainsGraphView({
@@ -59,7 +61,7 @@ Mentats.ClassroomView = Backbone.View.extend({
   },
 
   onCompetenceClick: function (node, evt) {
-    console.log('Mentats.ClassroomView.onCompetenceClick', this, node, evt);
+    this.log('onCompetenceClick', this, node, evt);
     if (evt.button == 0) {
       this.selectCompetence(node);
       evt.stopPropagation();
@@ -67,7 +69,7 @@ Mentats.ClassroomView = Backbone.View.extend({
   },
 
   onDomainClick: function (node, evt) {
-    console.log('Mentats.ClassroomView.onDomainClick', this, node, evt);
+    this.log('onDomainClick', this, node, evt);
     if (evt.button == 0) {
       var domain = Mentats.Domain.find(node.model.get('id'));
       var div = $('<div></div>');
@@ -88,19 +90,19 @@ Mentats.ClassroomView = Backbone.View.extend({
   },
 
   onModulesChange: function () {
-    console.log('Mentats.ClassroomView.onModulesChange', this, arguments);
+    this.log('onModulesChange', this, arguments);
     if (!this.module)
       this.moduleSelect(this.model.get('modules').at(0));
   },
 
   onModulesListClick: function (evt) {
-    console.log('Mentats.ClassroomView.onModulesListClick', this);
+    this.log('onModulesListClick', this);
     this.moduleSelect(Mentats.Module.find($(evt.currentTarget).data('module')));
     evt.preventDefault();
   },
 
   selectCompetence: function (competence) {
-    console.log('Mentats.ClassroomView.selectCompetence', this, competence);
+    this.log('selectCompetence', this, competence);
     this.mainView.setFocus(competence);
     this.$('.main-sub').html('');
   }

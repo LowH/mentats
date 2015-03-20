@@ -22,7 +22,7 @@ SVGG.Paper = Backbone.View.extend({
     this.$paper = this.$el.find('.paper');
     if (!this.$paper.length)
       this.$paper = $('<div class="paper"></div>').appendTo(this.$el);
-    console.log(this.$paper);
+    this.log(this.$paper);
     this.svg = SVG(this.$paper[0])
       .fixSubPixelOffset();
     if (options.width && options.height)
@@ -48,6 +48,8 @@ SVGG.Paper = Backbone.View.extend({
 
   linkEvents: {},
 
+  log: debug.logger('SVGG.Paper'),
+
   mousePosition: function (evt) {
     var offset = this.$paper.offset();
     var p = {
@@ -72,10 +74,10 @@ SVGG.Paper = Backbone.View.extend({
   getNodeView: function(node) {
     if (_.isObject(node))
       return _.find(this.nodeViews, { model: node});
-    return _.find(this.nodeViews, function(v) {
-      //console.log('SVGG.Paper.getNodeView', node, v.model);
+    return _.find(this.nodeViews, _.bind(function(v) {
+      this.log('getNodeView', node, v.model);
       return v.model.cid == node || v.model.id == node;
-    });
+    }, this));
   },
 
   getLinkView: function(link) {
@@ -86,7 +88,7 @@ SVGG.Paper = Backbone.View.extend({
   },
 
   onAddLink: function(link) {
-    console.log('SVGG.Paper.onAddLink', arguments);
+    this.log('onAddLink', arguments);
     var source = this.getNodeView(link.get('source'));
     var target = this.getNodeView(link.get('target'));
     if (!source || !target)
@@ -102,12 +104,12 @@ SVGG.Paper = Backbone.View.extend({
       });
       v.on(this.linkEvents);
     }
-    console.log(v);
+    this.log(v);
     this.linkViews.push(v);
   },
 
   onAddNode: function(node, collection, options) {
-    console.log('SVGG.Paper.onAddNode', this, node, collection, options);
+    this.log('onAddNode', this, node, collection, options);
     var v = this.getNodeView(node);
     if (!v) {
       v = new SVGG.NodeView({
@@ -135,14 +137,14 @@ SVGG.Paper = Backbone.View.extend({
   },
 
   onRemoveLink: function(link) {
-    console.log('SVGG.Paper.onRemoveLink', arguments);
+    this.log('onRemoveLink', arguments);
     var v = _.find(this.linkViews, {model: link});
     v.remove();
     _.remove(this.linkViews, v);
   },
 
   onRemoveNode: function(node) {
-    console.log('SVGG.Paper.onRemoveNode', arguments);
+    this.log('onRemoveNode', arguments);
     if (node == this.focused.model)
       this.setFocus(null);
     var v = _.find(this.nodeViews, {model: node});
@@ -152,7 +154,7 @@ SVGG.Paper = Backbone.View.extend({
   },
 
   onResetLinks: function(links) {
-    console.log('SVGG.Paper.onResetLinks', arguments);
+    this.log('onResetLinks', arguments);
     _.each(this.linkViews, function(v) {
       v.remove();
     });
@@ -161,7 +163,7 @@ SVGG.Paper = Backbone.View.extend({
   },
 
   onResetNodes: function(nodes) {
-    console.log('SVGG.Paper.onResetNodes', arguments);
+    this.log('onResetNodes', arguments);
     _.each(this.nodeViews, function(v) {
       v.remove();
     });
@@ -177,7 +179,7 @@ SVGG.Paper = Backbone.View.extend({
       var y = r.y - 8;
       var w = r.width + 16;
       var h = r.height + 16;
-      console.log('SVGG.Paper.refreshAutocrop ', r, x, y, w, h);
+      this.log('refreshAutocrop ', r, x, y, w, h);
       this.resize(w, h, x, y);
     }
   },
@@ -194,7 +196,7 @@ SVGG.Paper = Backbone.View.extend({
   },
 
   setFocus: function (node, options) {
-    console.log('setFocus', this.focused, node);
+    this.log('setFocus', this.focused, node);
     if (node && !(node.model && node.rect))
       node = _.find(this.nodeViews, {model: node});
     if (this.focused != node) {

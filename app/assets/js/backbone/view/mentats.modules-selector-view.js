@@ -8,7 +8,7 @@ Mentats.ModulesSelectorView = Backbone.View.extend({
   initialize: function (options) {
     _.bindAll(this, 'render');
     Backbone.View.prototype.initialize.apply(this, arguments);
-    console.log('new Mentats.ModulesSelectorView', this);
+    this.log('new', this);
     this.$el.addClass('list-group');
     this.listenTo(this.model.available, 'add', this.onAdd);
     this.listenTo(this.model.available, 'remove', this.onRemove);
@@ -16,8 +16,10 @@ Mentats.ModulesSelectorView = Backbone.View.extend({
     this.listenTo(this.model.selected, 'remove', this.onDeselect);
   },
 
+  log: debug.logger('Mentats.ModulesSelectorView'),
+
   onAdd: function (module) {
-    console.log('Mentats.ModulesSelectorView.onAdd', arguments);
+    this.log('onAdd', arguments);
     var v = new Mentats.ModuleThumbnailView({
       model: module
     }).render();
@@ -29,7 +31,7 @@ Mentats.ModulesSelectorView = Backbone.View.extend({
   },
 
   onClick: function (evt) {
-    console.log('Mentats.ModulesSelectorView.onClick', this, arguments);
+    this.log('onClick', this, arguments);
     var li = $(evt.currentTarget);
     var m = this.model.available.get(li.data('module'));
     if (li.hasClass('active'))
@@ -40,19 +42,19 @@ Mentats.ModulesSelectorView = Backbone.View.extend({
   },
 
   onDeselect: function (module) {
-    console.log('Mentats.ModulesSelectorView.onDeselect', arguments);
+    this.log('onDeselect', arguments);
     var li = this.$('li[data-module="'+module.id+'"]');
     li.removeClass('active');
   },
 
   onRemove: function (module) {
-    console.log('Mentats.ModulesSelectorView.onRemove', arguments);
+    this.log('onRemove', arguments);
     var li = this.$('li[data-module="'+module.id+'"]');
     li.parent().remove();
   },
 
   onSelect: function (module) {
-    console.log('Mentats.ModulesSelectorView.onSelect', arguments);
+    this.log('onSelect', arguments);
     var li = this.$('li[data-module="'+module.id+'"]');
     li.addClass('active');
   },

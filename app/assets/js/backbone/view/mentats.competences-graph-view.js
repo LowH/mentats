@@ -4,7 +4,7 @@ Mentats.CompetencesGraphView = SVGG.Paper.extend({
   nodeRadius: Mentats.competenceRadius,
 
   initialize: function (options) {
-    console.log('new Mentats.CompetencesGraphView', options);
+    debug.log('Mentats.CompetencesGraphView', 'new', options);
     this.nodeEvents = {
       click: options.onNodeClick || this.onNodeClick
     };
@@ -14,7 +14,7 @@ Mentats.CompetencesGraphView = SVGG.Paper.extend({
   },
 
   onNodeClick: function (node, evt) {
-    console.log('Mentats.CompetencesGraphView.onNodeClick', evt, node);
+    debug.log('Mentats.CompetencesGraphView', 'onNodeClick', evt, node);
     if (evt.button == 0) {
       Mentats.viewCompetence(node.model.get('id'));
       evt.stopPropagation();
@@ -32,10 +32,10 @@ Mentats.competencesGraph = function () {
       el: this,
       autocrop: true
     });
-    console.log(view);
+    debug.log('Mentats.competencesGraph', view);
   }
   catch (e) {
-    console.log(e);
+    debug.log('Mentats.competencesGraph', e);
   }
 };
 

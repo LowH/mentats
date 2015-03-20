@@ -9,7 +9,7 @@ Mentats.CompetenceGraphEditor = SVGG.Editor.extend({
   nodeRadius: Mentats.competenceRadius,
 
   spawnNode: function(evt) {
-    console.log('domain spawn node');
+    debug.log('Mentats.CompetenceGraphEditor', 'spawnNode');
     var node = Mentats.Competence.create({
       name: "",
       position: { x: 10, y: 10 }
@@ -24,7 +24,7 @@ Mentats.CompetenceGraphEditor = SVGG.Editor.extend({
   },
 
   save: function() {
-    console.log('Mentats.CompetenceGraphEditor.save', this);
+    debug.log('Mentats.CompetenceGraphEditor', 'save');
     this.model.save();
   }
 
@@ -34,7 +34,7 @@ Mentats.DomainEditor = Backbone.View.extend({
 
   initialize: function(options) {
     Backbone.View.prototype.initialize.apply(this, arguments);
-    console.log('new Mentats.DomainEditor', this);
+    debug.log('Mentats.DomainEditor', this);
     this.competenceGraphEditor = new Mentats.CompetenceGraphEditor({
       domain: this,
       model: this.model.get('competences'),

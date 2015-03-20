@@ -25,7 +25,8 @@ Backbone.Relation = function (model, attribute) {
   this.model = model;
   this.attribute = attribute;
   this.initialize.apply(this, arguments);
-  model.relations || model.relations = {};
+  if (!model.relations)
+    model.relations = {};
   model.relations[attribute] = this;
 };
 
@@ -60,14 +61,18 @@ Backbone.RelationHasCollection = Backbone.Relation.extend({
   },
 
   initialize: function (model, attribute, collection, options) {
-    console.log('hasCollection', model, attribute);
+    this.log('new', model, attribute);
     this.options = options || {};
     this.collection = collection;
   },
 
+  log: debug.logger(['Backbone.RelationHasCollection',
+                     'Backbone.cache',
+                     'Backbone.Relation']),
+
   related: function () {
     if (!this.related_value) {
-      console.log('hasCollection.related init', this.model, this.attribute);
+      this.log('related init', this.model, this.attribute);
       this.related_value =
 	new this.collection(this.getAttribute());
     }
@@ -76,7 +81,7 @@ Backbone.RelationHasCollection = Backbone.Relation.extend({
 
   set: function (value) {
     if (this.related_value) {
-      console.log('hasCollection.set', this, value);
+      this.log('set', this, value);
       this.related_value.reset(value);
     }
     else
@@ -94,7 +99,7 @@ Backbone.RelationHasMany = Backbone.Relation.extend({
 
   initialize: function (model, attribute, relatedModel, options) {
     _.bindAll(this, 'update', 'sync');
-    console.log('hasMany', attribute, model);
+    this.log('new', attribute, model);
     this.options = options || {};
     this.relatedModel = relatedModel;
     this.collection = (this.options.collection ||
@@ -103,9 +108,13 @@ Backbone.RelationHasMany = Backbone.Relation.extend({
     this.key = this.options.key || 'id';
   },
 
+  log: debug.logger(['Backbone.RelationHasMany',
+                     'Backbone.cache',
+                     'Backbone.Relation']),
+
   related: function () {
     if (!this.related_value) {
-      console.log('hasMany.related init', this.model, this.attribute);
+      this.log('related init', this.model, this.attribute);
       var r = new this.collection(this.relatedModels());
       r.on({
 	add: this.update,
@@ -126,7 +135,7 @@ Backbone.RelationHasMany = Backbone.Relation.extend({
 
   set: function (value) {
     if (this.related_value) {
-      console.log('hasMany.set', this, value);
+      this.log('set', this, value);
       if (_.isArray(value) && value.length > 0 && !_.isObject(value[0]))
 	value = _.map(value, this.relatedModel.find);
       this.related_value.reset(value);
@@ -137,13 +146,13 @@ Backbone.RelationHasMany = Backbone.Relation.extend({
   },
 
   sync: function () {
-    console.log('hasMany.sync', this, this.getAttribute());
+    this.log('sync', this, this.getAttribute());
     if (this.related_value)
       this.related_value.set(this.relatedModels());
   },
 
   update: function () {
-    console.log('hasMany.update', this, this.related().pluck(this.key));
+    this.log('update', this, this.related().pluck(this.key));
     this.setAttribute(this.related().pluck(this.key));
   }
 
@@ -157,14 +166,18 @@ Backbone.RelationHasNested = Backbone.Relation.extend({
 
   initialize: function (model, attribute, relatedModel, options) {
     _.bindAll(this, 'update', 'sync');
-    console.log('hasNested', attribute, model);
+    this.log('new', attribute, model);
     this.options = options || {};
     this.relatedModel = relatedModel;
   },
 
+  log: debug.logger(['Backbone.RelationHasNested',
+                     'Backbone.cache',
+                     'Backbone.Relation']),
+
   related: function () {
     if (!this.related_value) {
-      console.log('hasNested.related init', this.model, this.attribute);
+      this.log('related init', this.model, this.attribute);
       var a = this.getAttribute();
       var r = (this.relatedModel.create ? this.relatedModel.create(a)
 	       : new this.relatedModel(a));
@@ -179,7 +192,7 @@ Backbone.RelationHasNested = Backbone.Relation.extend({
 
   set: function (value) {
     if (this.related_value) {
-      console.log('hasNested.set', this, value);
+      this.log('set', this, value);
       this.related_value.set(value);
     }
     else
@@ -188,13 +201,13 @@ Backbone.RelationHasNested = Backbone.Relation.extend({
   },
 
   sync: function () {
-    console.log('hasNested.sync', this, this.getAttribute());
+    this.log('sync', this, this.getAttribute());
     if (this.related_value)
       this.related_value.set(this.getAttribute());
   },
 
   update: function () {
-    console.log('hasNested.update', this, this.related().toJSON());
+    this.log('update', this, this.related().toJSON());
     this.setAttribute(this.related().toJSON());
   }
 
@@ -208,16 +221,20 @@ Backbone.RelationHasOne = Backbone.Relation.extend({
 
   initialize: function (model, attribute, relatedModel, options) {
     _.bindAll(this, 'update', 'sync');
-    console.log('hasOne', attribute, model);
+    this.log('new', attribute, model);
     this.options = options || {};
     this.relatedModel = relatedModel;
     this.key = this.options.key || 'id';
     this.model.on('sync', this.sync);
   },
 
+  log: debug.logger(['Backbone.RelationHasOne',
+                     'Backbone.cache',
+                     'Backbone.Relation']),
+
   related: function () {
     if (!this.related_value) {
-      console.log('hasOne.related init', this.attribute, this.model);
+      this.log('related init', this.attribute, this.model);
       var r = this.relatedModel.find(this.getAttribute());
       if (r) {
 	if (this.options.init)
@@ -231,7 +248,7 @@ Backbone.RelationHasOne = Backbone.Relation.extend({
 
   set: function (value) {
     if (this.related_value) {
-      console.log('hasOne.set', this, value);
+      this.log('set', this, value);
       this.related_value.off('change:' + this.key, this.update);
       this.related_value = null;
       this.related();
@@ -242,13 +259,13 @@ Backbone.RelationHasOne = Backbone.Relation.extend({
   },
 
   sync: function () {
-    console.log('hasOne.sync', this, this.getAttribute());
+    this.log('sync', this, this.getAttribute());
     if (this.related_value)
       this.related_value.set(this.getAttribute());
   },
 
   update: function () {
-    console.log('hasOne.update', this, this.related_value[this.key]);
+    this.log('update', this, this.related_value[this.key]);
     this.setAttribute(this.related_value[this.key]);
   }
 
@@ -297,7 +314,7 @@ Backbone.RelationalModel = Backbone.Model.extend({
   relations: {},
 
   set: function (key, val, options) {
-    console.log('Backbone.RelationalModel.set', this, key, val, options);
+    debug.log('Backbone.RelationalModel', 'set', this, key, val, options);
     Backbone.Model.prototype.set.apply(this, arguments);
     if (this.relations) {
       var attr, attrs;
