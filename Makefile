@@ -9,6 +9,6 @@ MEM = 512
 APP_USER = mentats
 APP_GROUP = mentats
 WEB_USER = mentats
-WEB_GROUP = www
+WEB_GROUP = _nginx
 
 . include "lib/triangle/server/app.mk"
