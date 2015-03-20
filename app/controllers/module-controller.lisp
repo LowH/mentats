@@ -126,6 +126,7 @@
 		     (classroom.id ?c))))))
 
 (defun /module (&optional module.id action arg)
+  (declare (ignore arg))
   (let ((module (when module.id
 		  (or (find-module module.id)
 		      (http-error "404 Not found" "Module not found."))))
