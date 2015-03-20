@@ -42,17 +42,18 @@
 	(action (when action
 		  (or (find (string-upcase action) '(:edit :domains :json) :test #'string=)
 		      (http-error "404 Not found" "Action not found.")))))
+    (format t "~%method ~S action ~S student ~S~%" *method* action student)
     (case *method*
-      (:GET (if student
-		(ecase action
-		  ((nil) (/student#show student))
-		  ((:edit) (/student#edit student))
-		  ((:json) (/student#json student)))
-		(http-error "404 Not found" "Action not found.")))
-      (:POST   (/student#create))
-      (:PUT    (if student
-		   (/student#update student)
-		   (http-error "404 Not found" "Action not found."))))
-      (:DELETE (if student
-		   (/student#delete student)
-		   (http-error "404 Not found" "Action not found.")))))
+      ((:GET) (if student
+                  (ecase action
+                    ((nil) (/student#show student))
+                    ((:edit) (/student#edit student))
+                    ((:json) (/student#json student)))
+                  (http-error "404 Not found" "Action not found.")))
+      ((:POST)   (/student#create))
+      ((:PUT)    (if student
+                     (/student#update student)
+                     (http-error "404 Not found" "Action not found.")))
+      ((:DELETE) (if student
+                     (/student#delete student)
+                     (http-error "404 Not found" "Action not found."))))))

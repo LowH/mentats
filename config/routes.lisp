@@ -52,6 +52,7 @@
 
 (define-route "/student" `(/student))
 (define-route "/student/{id}" `(/student ,(uri-var 'id)))
+(define-route "/j/student/{id}" `(/student ,(uri-var 'id) "json"))
 
 (define-route "/favicon.ico" (find-route "/assets/favicon.ico"))
 
