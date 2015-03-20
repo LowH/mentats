@@ -22,3 +22,6 @@
 (require :gravatar)
 
 (require :can)
+
+(require :re)
+(use-package :re)
