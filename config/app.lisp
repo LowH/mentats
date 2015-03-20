@@ -2,12 +2,6 @@
 (setf *layout* :main)
 (setf *session-timeout* (* 3600 24 7))
 
-(when (eq :development *environment*)
-  (setf (debug-p :app) t)
-  (setf (debug-p :assets) t))
-
-(msg "DEBUG tags:~{ ~A~}" cl-debug::*debug*)
-
 (define-template-var title
     "Mentats")
 
