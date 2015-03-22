@@ -1,7 +1,7 @@
 Name: bugs
-Title: bugs
 Author: Olivier THOMAS
 Date: 2014-06-22 21:50:05
+Title: bugs
 
 ## Classrooms
 * Vue
@@ -18,7 +18,7 @@ Date: 2014-06-22 21:50:05
 ## Front
 * Modifier les informations du user (nom, email).
 * mise en page front page
-* **NOT DONE** bug affichage http://mentats.lowh.net/tuto/domainecompetencegraphe (cf edit)
+* **DONE** bug affichage http://mentats.lowh.net/tuto/domainecompetencegraphe (cf edit)
 * **DONE** plus generalement bug affichage http://mentats.lowh.net/front
 
 ## skill graphs
