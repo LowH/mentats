@@ -15,9 +15,16 @@
 (require :cl-bcrypt)
 (use-package :cl-bcrypt)
 
-(require :gravatar)
-
-(require :can)
-
 (require :re)
 (use-package :re)
+
+(require :can)
+(require :gravatar)
+(require :rw-ut)
+
+(defun setup-environment (env)
+  (case env
+    ((:development)
+     (setf (debug-p :app) t)
+     (setf (debug-p :assets) t)))
+  (msg "DEBUG tags:~{ ~A~}" cl-debug::*debug*))
