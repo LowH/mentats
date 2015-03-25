@@ -27,12 +27,12 @@
       (cond ((accept-p :application/json) (render-json {}))
 	    (t (redirect-to (competence-uri c)))))))
 
-(defun /resource (&optional id action)
+(defun /resource (&optional id #+nil action)
   (let ((r (when id (or (find-resource id)
 			(http-error "404 Not found" "Resource not found."))))
-	(action (when action
-		  (or (find (string-upcase action) '(:json) :test #'string=)
-		      (http-error "404 Not found" "Action not found.")))))
+	#+nil(action (when action
+                       (or (find (string-upcase action) '(:json) :test #'string=)
+                           (http-error "404 Not found" "Action not found.")))))
     (ecase *method*
       ((:GET)    (cond #+nil((null action) (/resource#show r))
 		       #+nil((eq :json action) (/resource#json r))

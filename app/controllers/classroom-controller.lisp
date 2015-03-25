@@ -58,11 +58,8 @@
 		  ((nil) (/classroom#show classroom))
 		  ((:edit) (/classroom#edit classroom))
 		  ((:json) (/classroom#json classroom)))
-		(/classroom#index)))
-      (:POST   (cond ((and classroom (eq action :domains))
-		      (/classroom#update-domains classroom))
-		     (t
-		      (/classroom#create))))
+                (http-error "404 Not found" "Classroom index not available.")))
+      (:POST   (/classroom#create))
       (:PUT    (/classroom#update classroom))
       (:DELETE (if classroom
 		   (/classroom#delete classroom)

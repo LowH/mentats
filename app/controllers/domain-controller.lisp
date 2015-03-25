@@ -57,8 +57,8 @@
 			       nodes))
 	     (requires (map 'vector
 			    (lambda (link)
-			      (cons (elt competences (json-slot link source))
-				    (elt competences (json-slot link target))))
+			      (cons (elt competences (json-slot link 'source))
+				    (elt competences (json-slot link 'target))))
 			    links)))
 	(facts:with ((?d 'competence.domain domain))
 	  (if (find ?d competences)

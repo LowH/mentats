@@ -20,17 +20,7 @@
       (render-view :file :index '.html))))
 
 (defun /file#show (path)
-  (let ((write-date (file-write-date path))
-	(if-modified-since (request-header :if-modified-since)))
-    (cond ((and if-modified-since
-		(= (parse-rfc1123-date-time if-modified-since)
-		   write-date))
-	   (status "304 not modified"))
-	  (t (header :last-modified (rfc1123-date-time write-date))
-	     (header :content-type (mime-type path) "; charset=utf-8")
-	     (with-input-from-file (s path)
-	       (header :content-length (file-length s))
-	       (copy-stream s *reply-stream*))))))
+  (send-file path))
 
 (defun /file (base &rest path)
   (let* ((base (sanitize (str base "/")))

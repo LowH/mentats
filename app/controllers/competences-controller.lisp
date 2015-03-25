@@ -1,4 +1,7 @@
 
+(defun /competence#index ()
+  (http-error "404 Not found" "Competence index not available."))
+
 (defun /competence#show (competence)
   (check-can :view competence)
   (facts:with-transaction
@@ -61,4 +64,4 @@
 		       ((eq :json action) (/competence#json c))))
       ((:POST)   (/competence#create))
       ((:PUT)    (/competence#update c))
-      ((:DELETE) (/competence#delete c)))))
+      #+nil((:DELETE) (/competence#delete c)))))

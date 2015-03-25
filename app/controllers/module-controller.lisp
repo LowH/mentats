@@ -37,7 +37,7 @@
 (defun /module#update (module)
   (check-can :edit module)
   (facts:with-transaction
-    (with-form-data (description discipline level in-library in-classrooms)
+    (with-form-data (description discipline level in-library)
       (when description
 	(setf (module.description module) description))
       (when discipline
