@@ -25,6 +25,7 @@
 (defun setup-environment (env)
   (case env
     ((:development)
+     #+swank (setf (debug-p :conditions) t)
      (setf (debug-p :app) t)
      (setf (debug-p :assets) t)))
   (msg "DEBUG tags:~{ ~A~}" cl-debug::*debug*))
