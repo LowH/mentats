@@ -19,13 +19,11 @@
        (not (module.deleted ?module))))
 
 (can:define-permission (?user :can :edit ?module)
-  (facts:bound-p ((?user :is-a 'user)
-                  (?module :is-a 'module
+  (facts:bound-p ((?module :is-a 'module
                            'module.owner ?user))))
 
 (can:define-permission (?user :can :edit ?domain)
-  (facts:bound-p ((?user :is-a 'user)
-                  (?domain 'domain.module ?module)
+  (facts:bound-p ((?domain 'domain.module ?module)
                   (?module 'module.owner ?user))))
 
 (can:define-permission (?user :can :admin :all)
