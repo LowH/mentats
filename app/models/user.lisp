@@ -40,18 +40,20 @@
       (return ?user))))
 
 (defun session.user (session)
-  (facts:first-bound ((session 'session.user ?))))
+  (with-session-db
+    (facts:first-bound ((session 'session.user ?)))))
 
 (defsetf session.user (session) (user)
   (let ((g!session (gensym "SESSION-")))
     `(when-let ((,g!session ,session))
-       (facts:with-transaction
-	 (cond
-	   ((null ,user) (facts:rm ((,g!session 'session.user ?))))
-	   (t (when (facts:bound-p ((,g!session 'session.user ?)))
-		(error "Session user cannot be set twice."))
-	      (facts:add (,g!session 'session.user ,user))))
-	 ,user))))
+       (with-session-db
+         (facts:with-transaction
+           (cond
+             ((null ,user) (facts:rm ((,g!session 'session.user ?))))
+             (t (when (facts:bound-p ((,g!session 'session.user ?)))
+                  (error "Session user cannot be set twice."))
+                (facts:add (,g!session 'session.user ,user))))
+           ,user)))))
 
 (defun session-user ()
   (session.user (session)))
