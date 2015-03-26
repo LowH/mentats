@@ -10,17 +10,6 @@
 (defun user-uri (user)
   (uri-for `(/user ,(user.id user))))
 
-(defun user-json (user)
-  (facts:with-transaction
-    (json:make-object
-     `((id . ,(user.id user))
-       (login . ,(user.login user))
-       (name . ,(user.name user))
-       (group . ,(user.group user))
-       (library-modules . ,(mapcar #'module.id
-				   (user.library-modules user))))
-     nil)))
-
 (defun hash-password (password)
   (bcrypt password))
 

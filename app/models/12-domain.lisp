@@ -7,9 +7,6 @@
   (has-one position)
   (has-many required-domains))
 
-(defun domain-owner (d)
-  (module.owner (domain.module d)))
-
 (defun domain-uri (domain &key action)
   (let ((uri (uri-for `(/domain ,(domain.id domain)))))
     (ecase action

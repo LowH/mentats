@@ -33,18 +33,14 @@
 (defun module-in-library-p (module &optional (user (session-user)))
   (facts:bound-p ((user 'user.library-modules module))))
 
-(defun module-json (module)
-  (facts:with-transaction
-    (to-json
-     `((id . ,(module.id module))
-       (discipline . ,(module.discipline module))
-       (level . ,(module.level module))
-       (version . ,(module.version module))
-       (owner . ,(user.id (module.owner module)))
-       (description . ,(module.description module))
-       (background-image . ,(asset-url (module-image module)))
-       (in-library . ,(module-in-library-p module))
-       (classrooms . ,(mapcar #'classroom.id (module.classrooms module)))
-       (domains . ,(module-domains-json module))
-       (can . ((use . ,(can :use module))
-	       (edit . ,(can :edit module))))))))
+
+;;  Related domain
+
+(defun domain-owner (d)
+  (module.owner (domain.module d)))
+
+
+;;  Related competence
+
+(defun competence-owner (c)
+  (domain-owner (competence.domain c)))

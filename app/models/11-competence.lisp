@@ -7,9 +7,6 @@
   (has-one position)
   (has-many required-competences))
 
-(defun competence-owner (c)
-  (domain-owner (competence.domain c)))
-
 (defun competence-uri (competence)
   (uri-for `(/competence ,(competence.id competence))))
 
