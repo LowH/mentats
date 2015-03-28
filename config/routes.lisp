@@ -32,22 +32,26 @@
 (define-route "/domaine/{domain}" `(/domain ,(uri-var 'domain)))
 (define-route "/domaine/{domain}/{action}" `(/domain ,(uri-var 'domain)
 						     ,(uri-var 'action)))
+(define-route "/j/domaine" `(/domain))
 (define-route "/j/domaine/{domain}" `(/domain ,(uri-var 'domain) "json"))
 (define-route "/j/domaine/{domain}/{action}" `(/domain ,(uri-var 'domain)
 						       ,(uri-var 'action)))
 
 (define-route "/competence" `(/competence))
 (define-route "/competence/{competence}" `(/competence ,(uri-var 'competence)))
+(define-route "/j/competence" `(/competence))
 (define-route "/j/competence/{competence}" `(/competence ,(uri-var 'competence) "json"))
 
 (define-route "/resource" `(/resource))
 (define-route "/resource/{resource}" `(/resource ,(uri-var 'resource)))
+(define-route "/j/resource" `(/resource))
 (define-route "/j/resource/{resource}" `(/resource ,(uri-var 'resource) "json"))
 
 (define-route "/classroom" `(/classroom))
 (define-route "/classroom/{classroom}" `(/classroom ,(uri-var 'classroom)))
 (define-route "/classroom/{classroom}/{action}" `(/classroom ,(uri-var 'classroom)
 							     ,(uri-var 'action)))
+(define-route "/j/classroom" `(/classroom))
 (define-route "/j/classroom/{classroom}" `(/classroom ,(uri-var 'classroom) "json"))
 
 (define-route "/student" `(/student))
