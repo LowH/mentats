@@ -39,7 +39,7 @@ Mentats.ModuleEditor = Backbone.View.extend({
 
   initialize: function(options) {
     Backbone.View.prototype.initialize.apply(this, arguments);
-    this.log('new', this);
+    debug.log('Mentats.ModuleEditor', 'new', this);
     this.domainGraphEditor = new Mentats.DomainGraphEditor({
       model: this.model.get('domains'),
       module: this,
