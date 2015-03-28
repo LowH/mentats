@@ -1,6 +1,7 @@
 (setf *port* 4207)
 (setf *layout* :main)
 (setf *session-timeout* (* 3600 24 7))
+(setf facts:*db-path* #P"data/mentats")
 
 (define-template-var title
     "Mentats")
