@@ -11,18 +11,28 @@ Title: bugs
 * Edition
   * enlever un eleve
 
+ajouter un eleve buggue
+
+selectionner des eleves buggue
+
+
 ## Modules
 * Selectioner des couleurs pour les images de modules.
-* http://mentats.lowh.net/module -> bouton pour sort par alphabetical du blaze du module / blaze du niveau.
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+http://mentats.lowh.net/module/WW--wn les arcs du premier node sont par dessus celui ci.
+
+http://mentats.lowh.net/module/WW--wn/edit le graph n'apparait pas dans l'editeur
+
+!!!!!!!!!!!!!!!!!!!!!!!
 
 ## Front
 * Modifier les informations du user (nom, email).
 * mise en page front page
-* **DONE** bug affichage http://mentats.lowh.net/tuto/domainecompetencegraphe (cf edit)
-* **DONE** plus generalement bug affichage http://mentats.lowh.net/front
 
 ## skill graphs
-* **WIP** http://mentats.lowh.net/domaine/Ha60Jn impossible d'enregistrer de nouveaux arcs
-* **WIP** http://mentats.lowh.net/domaine/-DaTcS/edit j'arrive pas a virer cette putain de faute d'orthographe, no save qd edit nodename
 
-impossible d'ajouter des élèves
+http://mentats.lowh.net/domaine/rcAJIn/edit toujours le bug de double affichage
+* **WIP** http://mentats.lowh.net/domaine/Ha60Jn impossible d'enregistrer de nouveaux arcs
+
