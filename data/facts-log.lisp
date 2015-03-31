@@ -41233,3 +41233,72 @@ Il s'agit ici de renforcer cette compréhension."))
                           #(FACTS.ANON::SESSION-01D5
                             LOWH.TRIANGLE.SERVER::SESSION.USER-AGENT
                             "Mozilla/5.0 (X11; OpenBSD amd64; rv:26.0) Gecko/20100101 Firefox/26.0"))
+(FACTS::DB-INDEXES-INSERT FACTS:*DB* #(FACTS.ANON::SESSION-01D6 :IS-A SESSION))
+(FACTS::DB-INDEXES-INSERT FACTS:*DB*
+                          #(FACTS.ANON::SESSION-01D6
+                            LOWH.TRIANGLE.SERVER::SESSION.ID
+                            "LsAtSJgxDW3tlVQXtzk8q0sRbDBfcGU3"))
+(FACTS::DB-INDEXES-INSERT FACTS:*DB*
+                          #(FACTS.ANON::SESSION-01D6
+                            LOWH.TRIANGLE.SERVER::SESSION.CTIME 3636772677))
+(FACTS::DB-INDEXES-INSERT FACTS:*DB*
+                          #(FACTS.ANON::SESSION-01D6
+                            LOWH.TRIANGLE.SERVER::SESSION.ATIME 3636772677))
+(FACTS::DB-INDEXES-INSERT FACTS:*DB*
+                          #(FACTS.ANON::SESSION-01D6
+                            LOWH.TRIANGLE.SERVER::SESSION.KEY
+                            "81o26kQQ7n9I-kD3bdEzgFWetKQHr1pd"))
+(FACTS::DB-INDEXES-INSERT FACTS:*DB*
+                          #(FACTS.ANON::SESSION-01D6
+                            LOWH.TRIANGLE.SERVER::SESSION.REMOTE-ADDR
+                            "78.250.172.44"))
+(FACTS::DB-INDEXES-INSERT FACTS:*DB*
+                          #(FACTS.ANON::SESSION-01D6
+                            LOWH.TRIANGLE.SERVER::SESSION.USER-AGENT
+                            "Mozilla/5.0 (X11; OpenBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.102 Safari/537.36"))
+(FACTS::DB-INDEXES-INSERT FACTS:*DB* #(FACTS.ANON::SESSION-01D7 :IS-A SESSION))
+(FACTS::DB-INDEXES-INSERT FACTS:*DB*
+                          #(FACTS.ANON::SESSION-01D7
+                            LOWH.TRIANGLE.SERVER::SESSION.ID
+                            "ND7vbwDzW6k9qg8eLGlim4PbSy0YakIg"))
+(FACTS::DB-INDEXES-INSERT FACTS:*DB*
+                          #(FACTS.ANON::SESSION-01D7
+                            LOWH.TRIANGLE.SERVER::SESSION.CTIME 3636772677))
+(FACTS::DB-INDEXES-INSERT FACTS:*DB*
+                          #(FACTS.ANON::SESSION-01D7
+                            LOWH.TRIANGLE.SERVER::SESSION.ATIME 3636772677))
+(FACTS::DB-INDEXES-INSERT FACTS:*DB*
+                          #(FACTS.ANON::SESSION-01D7
+                            LOWH.TRIANGLE.SERVER::SESSION.KEY
+                            "FwyIF71l8Hj1s6l0ntZyO_vNAF9547CZ"))
+(FACTS::DB-INDEXES-INSERT FACTS:*DB*
+                          #(FACTS.ANON::SESSION-01D7
+                            LOWH.TRIANGLE.SERVER::SESSION.REMOTE-ADDR
+                            "78.250.172.44"))
+(FACTS::DB-INDEXES-INSERT FACTS:*DB*
+                          #(FACTS.ANON::SESSION-01D7
+                            LOWH.TRIANGLE.SERVER::SESSION.USER-AGENT
+                            "Mozilla/5.0 (X11; OpenBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.102 Safari/537.36"))
+(FACTS::DB-INDEXES-INSERT FACTS:*DB* #(FACTS.ANON::SESSION-01D8 :IS-A SESSION))
+(FACTS::DB-INDEXES-INSERT FACTS:*DB*
+                          #(FACTS.ANON::SESSION-01D8
+                            LOWH.TRIANGLE.SERVER::SESSION.ID
+                            "PgkBrqTmECWTYxsCHPizlL0zgmEYXpYb"))
+(FACTS::DB-INDEXES-INSERT FACTS:*DB*
+                          #(FACTS.ANON::SESSION-01D8
+                            LOWH.TRIANGLE.SERVER::SESSION.CTIME 3636772677))
+(FACTS::DB-INDEXES-INSERT FACTS:*DB*
+                          #(FACTS.ANON::SESSION-01D8
+                            LOWH.TRIANGLE.SERVER::SESSION.ATIME 3636772677))
+(FACTS::DB-INDEXES-INSERT FACTS:*DB*
+                          #(FACTS.ANON::SESSION-01D8
+                            LOWH.TRIANGLE.SERVER::SESSION.KEY
+                            "QspzdGiiAkoYymKWL5mmqHzAXAWKx5kW"))
+(FACTS::DB-INDEXES-INSERT FACTS:*DB*
+                          #(FACTS.ANON::SESSION-01D8
+                            LOWH.TRIANGLE.SERVER::SESSION.REMOTE-ADDR
+                            "78.250.172.44"))
+(FACTS::DB-INDEXES-INSERT FACTS:*DB*
+                          #(FACTS.ANON::SESSION-01D8
+                            LOWH.TRIANGLE.SERVER::SESSION.USER-AGENT
+                            "Mozilla/5.0 (X11; OpenBSD amd64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.102 Safari/537.36"))
