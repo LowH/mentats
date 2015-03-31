@@ -37,6 +37,7 @@
     (json:make-object
      `((id . ,(domain.id domain))
        (name . ,(domain.name domain))
-       (position . ,(domain.position domain))
+       (position . ,(or (domain.position domain)
+                        {"x": 10, "y": 10}))
        (competences . ,(domain-competences-json domain)))
      nil)))

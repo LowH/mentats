@@ -51,7 +51,7 @@ SVGG.NodeView = Backbone.View.extend({
   },
 
   onMove: function() {
-    var position = this.model.get('position');
+    var position = this.model.get('position') || { x: 10, y: 10 };
     if (this.x != position.x || this.y != position.y) {
       this.x = position.x;
       this.y = position.y;
