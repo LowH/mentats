@@ -52,13 +52,11 @@
   (check-can :edit domain)
   (facts:with-transaction
     (with-form-data (nodes links)
-      (let* ((competences (map 'vector (lambda (node)
-					 (parse-competence-json node domain))
-			       nodes))
+      (let* ((competences (map 'vector #'find-competence nodes))
 	     (requires (map 'vector
 			    (lambda (link)
-			      (cons (elt competences (json-slot link 'source))
-				    (elt competences (json-slot link 'target))))
+			      (cons (find-competence (json-slot link 'source))
+				    (find-competence (json-slot link 'target))))
 			    links)))
 	(facts:with ((?d 'competence.domain domain))
 	  (if (find ?d competences)

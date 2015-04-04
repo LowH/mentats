@@ -99,6 +99,10 @@
 	     (setf id (domain.id domain))
 	     domain)))))
 
+(defun /module#domains (module)
+  (check-can :view module)
+  (render-json (module-domains-json module)))
+
 (defun /module#update-domains (module)
   (check-can :edit module)
   (facts:with-transaction
@@ -109,8 +113,6 @@
                              (cons (find-domain (json-slot link 'source))
                                    (find-domain (json-slot link 'target))))
                            links)))
-        (format t "DEBUG domains ~S~%" domains)
-        (format t "DEBUG requires ~S~%" requires)
 	(facts:with ((?d 'domain.module module))
 	  (if (find ?d domains)
 	      (facts:with ((?d 'domain.required-domains ?r))
@@ -157,6 +159,7 @@
 		  ((nil) (/module#show module))
 		  ((:edit) (/module#edit module))
 		  ((:json) (/module#json module))
+                  ((:domains) (/module#domains module))
 		  (t (http-error "404 Not found" "Action not found")))
 		(/module#index)))
       (:POST   (if module
