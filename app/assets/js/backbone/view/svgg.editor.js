@@ -268,8 +268,8 @@ SVGG.Editor = SVGG.Paper.extend({
 	var link = this.newLink;
 	this.newLink = null;
 	link.remove();
-	this.model.link(link.source.model, node.model);
-	this.model.save();
+	if (this.model.link(link.source.model, node.model))
+	  this.model.save();
       }
     }
   },
