@@ -74,10 +74,10 @@ SVGG.Paper = Backbone.View.extend({
   getNodeView: function(node) {
     if (_.isObject(node))
       return _.find(this.nodeViews, { model: node});
-    return _.find(this.nodeViews, _.bind(function(v) {
+    return _.find(this.nodeViews, function(v) {
       this.log('getNodeView', node, v.model);
       return v.model.cid == node || v.model.id == node;
-    }, this));
+    }, this);
   },
 
   getLinkView: function(link) {
