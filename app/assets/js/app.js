@@ -41,6 +41,8 @@
 
 $(function () {
 
+  //debug.all = true;
+
   $('.competence .edit .btn.edit').click(function () {
     $this = $(this);
     if ($this.hasClass('active')) {
