@@ -31,18 +31,27 @@ SVGG.Graph = Backbone.RelationalModel.extend({
     this.get('nodes').add(node);
   },
 
+  findLink: function (source, target) {
+    return this.get('links').find(function (link) {
+      var linkSource = link.get('source');
+      var linkTarget = link.get('target');
+      return ((linkSource === source.id || linkSource === source.cid) &&
+              (linkTarget === target.id || linkTarget === target.cid));
+    });
+  },
+
   link: function(source, target) {
     var links = this.get('links');
-    if (links.findWhere({source: source.cid, target: target.cid})) {
+    if (this.findLink(source, target)) {
       this.log('already linked');
       return null;
     }
-    var link = links.findWhere({source: target.cid, target: source.cid});
+    var link = this.findLink(target, source);
     if (link) {
       this.log('reverse link');
       links.remove(link);
     }
-    link = new SVGG.Link({source: source.cid, target: target.cid});
+    link = new SVGG.Link({source: source.id, target: target.id});
     links.add(link);
     return link;
   },
@@ -53,12 +62,6 @@ SVGG.Graph = Backbone.RelationalModel.extend({
     var pos = this.get('nodes').indexOf(node);
     links.remove(links.where({source: pos}));
     links.remove(links.where({target: pos}));
-  },
-
-  parse: function (attrs) {
-    this.get('links').set(attrs.links);
-    delete attrs.links;
-    return attrs;
   },
 
   remove: function (node) {
