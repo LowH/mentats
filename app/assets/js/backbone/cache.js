@@ -56,11 +56,26 @@ Backbone.Relation.extend = Backbone.Model.extend;
 
 Backbone.RelationHasCollection = Backbone.Relation.extend({
 
+  onRelatedAdd: function (model, collection) {
+    if (this.noEvents)
+      return;
+    this.log('onRelatedAdd', arguments);
+    this.setAttribute(collection.toJSON());
+  },
+
+  onRelatedRemove: function (model, collection) {
+    if (this.noEvents)
+      return;
+    this.log('onRelatedRemove', arguments);
+    this.setAttribute(collection.toJSON());
+  },
+
   get: function () {
     return this.related();
   },
 
   initialize: function (model, attribute, collection, options) {
+    _.bindAll(this, 'onRelatedAdd', 'onRelatedRemove');
     this.log('new', model, attribute);
     this.options = options || {};
     this.collection = collection;
@@ -75,17 +90,22 @@ Backbone.RelationHasCollection = Backbone.Relation.extend({
       this.log('related init', this.model, this.attribute);
       this.related_value =
 	new this.collection(this.getAttribute());
+      this.related_value.on({
+        add: this.onRelatedAdd,
+        remove: this.onRelatedRemove
+      });
     }
     return this.related_value;
   },
 
   set: function (value) {
+    this.log('set', this, value);
+    this.setAttribute(value);
     if (this.related_value) {
-      this.log('set', this, value);
+      this.noEvents = true;
       this.related_value.reset(value);
+      this.noEvents = false;
     }
-    else
-      this.setAttribute(value);
     return this;
   }
 
