@@ -190,9 +190,9 @@ SVGG.Editor = SVGG.Paper.extend({
       evt.preventDefault();
     }
     else if (this.newLink) {
-      var p = this.mousePosition(evt);
-      this.newLink.target.x = p.x;
-      this.newLink.target.y = p.y;
+      var q = this.mousePosition(evt);
+      this.newLink.target.x = q.x;
+      this.newLink.target.y = q.y;
       this.newLink.onMove();
       evt.preventDefault();
     }
