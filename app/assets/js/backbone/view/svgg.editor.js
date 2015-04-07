@@ -203,9 +203,9 @@ SVGG.Editor = SVGG.Paper.extend({
     if (evt.button == 0) {
       this.moving = null;
       if (this.newLink) {
-	this.model.save();
-	this.newLink.remove();
-	this.newLink = null;
+        this.model.save();
+        this.newLink.remove();
+        this.newLink = null;
       }
       evt.preventDefault();
     }
