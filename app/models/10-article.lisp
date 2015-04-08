@@ -89,7 +89,8 @@
 
 (defmethod write-article ((output stream) (article json:fluid-object))
   (dolist (slot (bound-slots article))
-    (print (cons slot (slot-value article slot)))
+    (when (debug-p :article)
+      (print (cons slot (slot-value article slot))))
     (when-let ((value (case slot
 			((json.symbols::body
 			  json.symbols::date-string)
