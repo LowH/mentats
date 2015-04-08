@@ -34,11 +34,14 @@ SVGG.NodeView = Backbone.View.extend({
     //this.onChangeStyle();
   },
 
+  log: debug.logger('SVGG.NodeView'),
+
   onMouseDown: function(evt) {
     this.trigger('mousedown', this, evt);
   },
 
   onMouseUp: function(evt) {
+    this.log('onMouseUp', arguments);
     this.trigger('mouseup', this, evt);
   },
 
