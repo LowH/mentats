@@ -24,9 +24,11 @@
 (require :rw-ut)
 
 (defun setup-environment (env)
+  (log-msg :INFO "setup environment ~A" (string-downcase env))
   (case env
     ((:development)
-     #+swank (setf (debug-p :conditions) t)
+     #+swank
+     (setf (debug-p :conditions) t)
      (setf (debug-p :app) t)
      (setf (debug-p :assets) t)))
-  (msg "DEBUG tags:~{ ~A~}" cl-debug::*debug*))
+  (log-msg :DEBUG "tags:~{ ~A~}" cl-debug::*debug*))
