@@ -1,2 +1,2 @@
 (defvar *backend* :fastcgi)
-(load #P"lib/triangle/server/load/app")
+(load #P"lib/rol/server/load/app")
