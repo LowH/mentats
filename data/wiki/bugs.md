@@ -9,30 +9,18 @@ Title: bugs
     * gris, turquoise, emeraude
   * selection un seul eleve a la fois
 * Edition
-  * enlever un eleve
-
-ajouter un eleve buggue
-
-selectionner des eleves buggue
-
+  * liste des eleves
+  * **WIP** liste des modules
 
 ## Modules
 * Selectioner des couleurs pour les images de modules.
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-http://mentats.lowh.net/module/WW--wn les arcs du premier node sont par dessus celui ci.
-
-http://mentats.lowh.net/module/WW--wn/edit le graph n'apparait pas dans l'editeur
-
-!!!!!!!!!!!!!!!!!!!!!!!
+* **DONE** http://mentats.lowh.net/module/WW--wn les arcs du premier node sont par dessus celui ci.
+* **DONE** http://mentats.lowh.net/module/WW--wn/edit le graph n'apparait pas dans l'editeur
 
 ## Front
 * Modifier les informations du user (nom, email).
 * mise en page front page
 
 ## skill graphs
-
-http://mentats.lowh.net/domaine/rcAJIn/edit toujours le bug de double affichage
-* **WIP** http://mentats.lowh.net/domaine/Ha60Jn impossible d'enregistrer de nouveaux arcs
-
+* **DONE** http://mentats.lowh.net/domaine/rcAJIn/edit toujours le bug de double affichage
+* **DONE** http://mentats.lowh.net/domaine/Ha60Jn impossible d'enregistrer de nouveaux arcs
