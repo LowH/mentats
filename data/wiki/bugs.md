@@ -10,9 +10,11 @@ Title: bugs
   * selection un seul eleve a la fois
 * Edition
   * liste des eleves
+  * Selection des modules ne fonctionne pas
   * **WIP** liste des modules
 
 ## Modules
+* L'etoile pour ajouter un modules a ma bibliotheque ne fonctionne pas.
 * Selectioner des couleurs pour les images de modules.
 * **DONE** http://mentats.lowh.net/module/WW--wn les arcs du premier node sont par dessus celui ci.
 * **DONE** http://mentats.lowh.net/module/WW--wn/edit le graph n'apparait pas dans l'editeur
