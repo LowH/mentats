@@ -14,9 +14,11 @@ Mentats.StudentsSelectorView = Backbone.View.extend({
     this.listenTo(this.model.available, 'remove', this.onRemove);
     this.listenTo(this.model.selected, 'add', this.onSelect);
     this.listenTo(this.model.selected, 'remove', this.onDeselect);
+    this.listenTo(this.model.selected, 'reset', this.onResetSelection);
   },
 
   listGroupItem: function (model) {
+    this.log('listGroupItem', model);
     return this.$('.list-group-item[data-student="'+model.id+'"]');
   },
 
@@ -33,9 +35,10 @@ Mentats.StudentsSelectorView = Backbone.View.extend({
     var li = $(evt.currentTarget);
     var m = this.model.available.get(li.data('student'));
     if (li.hasClass('active'))
-      this.model.selected.remove(m);
+      this.model.selected.reset();
     else
-      this.model.selected.add(m);
+      this.model.selected.reset([m]);
+    //this.model.selected.add(m);
     evt.preventDefault();
   },
 
@@ -47,6 +50,13 @@ Mentats.StudentsSelectorView = Backbone.View.extend({
   onRemove: function (model) {
     this.log('onRemove', arguments);
     this.listGroupItem(model).remove();
+  },
+
+  onResetSelection: function (models) {
+    this.log('onResetSelection', arguments);
+    this.$('.list-group-item[data-student]').removeClass('active');
+    if (models.length > 0)
+      this.listGroupItem(models.at(0)).addClass('active');
   },
 
   onSelect: function (model) {
