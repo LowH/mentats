@@ -91,8 +91,11 @@ Mentats.ClassroomView = Backbone.View.extend({
 
   onModulesChange: function () {
     this.log('onModulesChange', this, arguments);
-    if (!this.module)
+    if (!this.module && !this.changingModules) {
+      this.changingModule = true;
       this.moduleSelect(this.model.get('modules').at(0));
+      this.changingModule = false;
+    }
   },
 
   onModulesListClick: function (evt) {
