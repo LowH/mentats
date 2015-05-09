@@ -6,6 +6,9 @@
 ;(can:define-permission (:anonymous :can :view :all))
 (can:define-permission (:anonymous :can :list 'modules))
 
+(can:define-permission (:everyone :can :view ?user)
+  (facts:bound-p ((?user :is-a 'user))))
+
 (can:define-permission (:anonymous :can :view ?article)
   (and (typep ?article 'json:fluid-object)
        (not (article-has-tag :private ?article))))
