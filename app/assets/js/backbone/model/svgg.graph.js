@@ -66,6 +66,24 @@ SVGG.Graph = Backbone.RelationalModel.extend({
 
   remove: function (node) {
     this.get('nodes').remove(node);
+  },
+
+  rootNodes: function () {
+    var links = this.attributes.links;
+    return _.reject(this.attributes.nodes, function (node) {
+      return _.find(links, { target: node });
+    }, this);
+  },
+
+  successors: function (node) {
+    if (_.isObject(node))
+      node = node.id;
+    var succ = [];
+    _.each(this.attributes.links, function (link) {
+      if (link.source == node && !_.find(succ, link.target))
+        succ.push(link.target);
+    });
+    return succ;
   }
 
 });

@@ -19,6 +19,48 @@ Mentats.CompetencesGraphView = SVGG.Paper.extend({
       Mentats.viewCompetence(node.model.get('id'));
       evt.stopPropagation();
     }
+  },
+
+  setNodesBg: function (color, nodes) {
+    _.each(nodes, function (n) {
+      this.getNodeView(n).rect.fill(color);
+    }, this);
+  },
+
+  evalStudent: function (student) {
+    console.log('evalStudent', student);
+    var nodes = this.model.attributes.nodes;
+    this.setNodesBg(Mentats.colors.competence.neutral, nodes);
+    if (!student) {
+      if (this.eval_student) {
+        this.stopListening(this.eval_student, 'change:competences', this.evalStudent);
+        this.eval_student = null;
+      }
+    }
+    else {
+      if (this.eval_student != student) {
+        this.stopListening(this.eval_student, 'change:competences', this.evalStudent);
+        this.eval_student = student;
+        this.listenTo(student, 'change:competences', this.evalStudent);
+      }
+      var i = this.model.rootNodes();
+      while (i.length) {
+        var j = [];
+        _.each(i, function (node) {
+          var validated = student.hasCompetence(node);
+          this.getNodeView(node).rect.fill(validated ?
+                                           Mentats.colors.competence.validated :
+                                           Mentats.colors.competence.open);
+          if (validated) {
+            _.each(this.model.successors(node), function (succ) {
+              if (!_.find(j, succ))
+                j.push(succ);
+            });
+          }
+        }, this);
+        i = j;
+      }
+    }
   }
 
 });

@@ -9,11 +9,14 @@ Mentats.ClassroomView = Backbone.View.extend({
     _.bindAll(this, 'onCompetenceClick', 'onDomainClick', 'onModulesListClick');
     Backbone.View.prototype.initialize.apply(this, arguments);
     this.log('new', this);
+    this.student = null;
+    this.students = new Mentats.StudentsCollection;
+    this.listenTo(this.students, 'reset', this.onStudentsReset);
     this.studentsView = new Mentats.StudentsSelectorView({
       el: this.$('.students .list-group')[0],
       model: {
 	available: this.model.get('students'),
-	selected: new Mentats.StudentsCollection
+	selected: this.students
       }
     });
     this.module = null;
@@ -67,7 +70,12 @@ Mentats.ClassroomView = Backbone.View.extend({
   onCompetenceClick: function (node, evt) {
     this.log('onCompetenceClick', this, node, evt);
     if (evt.button == 0) {
-      this.selectCompetence(node);
+      if (this.student) {
+        if (this.student.hasCompetence(node.model))
+          this.student.removeCompetence(node.model);
+        else
+          this.student.addCompetence(node.model);
+      }
       evt.stopPropagation();
     }
   },
@@ -91,6 +99,8 @@ Mentats.ClassroomView = Backbone.View.extend({
 	onNodeClick: this.onCompetenceClick,
 	autocrop: true
       });
+      if (this.student)
+        v.evalStudent(this.student);
       this.mainView = v;
       v.$el.click(_.bind(function () {
 	this.selectCompetence(null);
@@ -112,6 +122,13 @@ Mentats.ClassroomView = Backbone.View.extend({
     this.log('onModulesListClick', this);
     this.moduleSelect(Mentats.Module.find($(evt.currentTarget).data('module')));
     evt.preventDefault();
+  },
+
+  onStudentsReset: function () {
+    this.student = this.students.length ? this.students.at(0) : null;
+    if (this.mainView && this.mainView.evalStudent) {
+      this.mainView.evalStudent(this.student);
+    }
   },
 
   selectCompetence: function (competence) {

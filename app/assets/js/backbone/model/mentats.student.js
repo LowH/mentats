@@ -2,7 +2,28 @@
 Mentats.Student = Backbone.RelationalModel.extend({
 
   defaults: {
-    name: null
+    name: null,
+    competences: []
+  },
+
+  addCompetence: function (competence) {
+    if (_.isObject(competence))
+      competence = competence.id;
+    this.set('competences', _.union(this.get('competences'), [competence]));
+    console.log('add competence', competence, this.get('competences'));
+  },
+
+  hasCompetence: function (competence) {
+    if (_.isObject(competence))
+      competence = competence.id;
+    return _.indexOf(this.get('competences'), competence) >= 0;
+  },
+
+  removeCompetence: function (competence) {
+    console.log('remove competence');
+    if (_.isObject(competence))
+      competence = competence.id;
+    this.set('competences', _.difference(this.get('competences'), [competence]));
   },
 
   initialize: function() {

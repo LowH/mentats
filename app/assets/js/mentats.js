@@ -1,6 +1,14 @@
 
 var Mentats = {
 
+  colors: {
+    competence: {
+      neutral: '#ffffff',
+      validated: '#99ff77',
+      open: '#ffee88'
+    }
+  },
+
   competenceRadius: 15,
 
   domainRadius: 4,
