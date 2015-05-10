@@ -29,8 +29,15 @@ body.classroom {
 		margin-bottom: 0.8em;
 	}
 }
-.list-group-item.module, .list-group-item.student {
+.panel-body.list-group > .list-group-item.module,
+.panel-body.list-group > .list-group-item.student {
 	cursor: pointer;
+}
+.panel-body.list-group > .list-group-item.domain {
+        cursor: default;
+        font-size: 85%;
+        padding-top: 0;
+        padding-left: 10px;
 }
 
 body.classroom--edit {

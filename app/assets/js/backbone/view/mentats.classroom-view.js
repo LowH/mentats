@@ -10,13 +10,15 @@ Mentats.ClassroomView = Backbone.View.extend({
     Backbone.View.prototype.initialize.apply(this, arguments);
     this.log('new', this);
     this.studentsView = new Mentats.StudentsSelectorView({
-      el: $('.students .list-group')[0],
+      el: this.$('.students .list-group')[0],
       model: {
 	available: this.model.get('students'),
 	selected: new Mentats.StudentsCollection
       }
     });
     this.module = null;
+    this.domain = null;
+    this.domainListItem = this.$('.modules.panel .list-group-item.domain');
     this.listenTo(this.model.get('modules'), 'change', this.onModulesChange);
   },
 
@@ -25,6 +27,7 @@ Mentats.ClassroomView = Backbone.View.extend({
   moduleDeselect: function () {
     if (this.module) {
       this.log('moduleDeselect', this.module);
+      this.domainListItem.hide();
       this.$('.modules.panel .list-group-item.module').removeClass('active');
       if (this.mainView)
         this.mainView.remove();
@@ -44,7 +47,9 @@ Mentats.ClassroomView = Backbone.View.extend({
     var domains = module.get('domains');
     if (!domains)
       return;
+    this.domain = null;
     this.moduleDeselect();
+    this.module = module;
     this.log('moduleSelect', module);
     var div = $('<div></div>');
     this.$('.main').append(div);
@@ -56,7 +61,6 @@ Mentats.ClassroomView = Backbone.View.extend({
       autocrop: true
     });
     this.mainView = v;
-    this.module = module;
     this.moduleListItem(module).addClass('active');
   },
 
@@ -72,6 +76,12 @@ Mentats.ClassroomView = Backbone.View.extend({
     this.log('onDomainClick', this, node, evt);
     if (evt.button == 0) {
       var domain = Mentats.Domain.find(node.model.get('id'));
+      this.domain = domain;
+      this.domainListItem
+        .data('domain', domain.id)
+        .text(domain.get('name'))
+        .insertAfter(this.moduleListItem(this.module))
+        .show();
       var div = $('<div></div>');
       this.$('.main').html('').append(div);
       var v = new Mentats.CompetencesGraphView({
