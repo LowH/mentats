@@ -2,6 +2,7 @@
  *= require lodash
  *= require jquery
  *= require bootstrap
+ *  require bootstrap/material-design
  *= require backbone
  *= require article
  *= require svg
@@ -91,4 +92,9 @@ $(function () {
     return true;
   });
 
+  Mentats.router = new Mentats.Router();
+  Backbone.history.start({pushState: true});
+
+  if ($.material)
+    $.material.init();
 });
