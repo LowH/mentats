@@ -1,4 +1,10 @@
 
+(defun student-json (student)
+  (set-json-attributes
+   {}
+   :name (student.name student)
+   :competences (map 'vector #'student.id (student.competences student))))
+
 (defun /student#show (student)
   (check-can :view student)
   (template-let (student)
@@ -25,9 +31,14 @@
 
 (defun /student#update (student)
   (check-can :edit student)
-  (with-form-data (name)
-    (setf (student.name student) name)
-    (redirect-to (student-uri student))))
+  (with-form-data (name competences)
+    (facts:with-transaction
+      (setf (student.name student) name
+            (student.competences student) (map 'list #'find-competence competences))
+      (cond ((accept-p :application/json)
+             (render-json (student-json student)))
+            (t
+             (redirect-to (student-uri student)))))))
 
 (defun /student#delete (student)
   (check-can :delete student)
@@ -40,7 +51,7 @@
 		  (or (find-student student.id)
 		      (http-error "404 Not found" "Student not found."))))
 	(action (when action
-		  (or (find (string-upcase action) '(:edit :domains :json) :test #'string=)
+		  (or (find (string-upcase action) '(:edit :json) :test #'string=)
 		      (http-error "404 Not found" "Action not found.")))))
     (format t "~%method ~S action ~S student ~S~%" *method* action student)
     (case *method*

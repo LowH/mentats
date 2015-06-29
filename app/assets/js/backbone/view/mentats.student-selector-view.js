@@ -10,6 +10,7 @@ Mentats.StudentsSelectorView = Backbone.View.extend({
     Backbone.View.prototype.initialize.apply(this, arguments);
     this.log('new', this);
     this.$el.addClass('list-group');
+    this.listenTo(this.model.available, 'change', this.render);
     this.listenTo(this.model.available, 'add', this.onAdd);
     this.listenTo(this.model.available, 'remove', this.onRemove);
     this.listenTo(this.model.selected, 'add', this.onSelect);
@@ -65,12 +66,12 @@ Mentats.StudentsSelectorView = Backbone.View.extend({
   },
 
   render: function () {
-    var h = this.model.available.map(_.bind(function (model) {
+    var h = this.model.available.map(function (model) {
       return this.template(model);
-    })).join();
+    }, this).join();
     this.$el.html(h);
   },
 
-  template: _.template($('#student-selector-template').html())
+  template: _.template($('#students-selector-template').html())
 
 });

@@ -7,6 +7,22 @@ Mentats.User = Backbone.Model.extend({
 
   initialize: function() {
     Backbone.Model.prototype.initialize.apply(this, arguments);
+  },
+
+  can: function (action, klass, object) {
+    if (!_.isObject(object) && klass.find)
+      object = klass.find(object);
+    if (this.get('group' == 'admin'))
+      return true;
+    if (action === 'view') {
+      return true;
+    }
+    else if (action === 'edit') {
+      if (klass == Mentats.Classroom)
+        if (_.indexOf(object.attributes.teachers, this.id) >= 0)
+          return true;
+    }
+    return false;
   }
 
 });

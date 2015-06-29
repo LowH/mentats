@@ -7,7 +7,8 @@
        (name . ,(user.name user))
        (group . ,(user.group user))
        (library-modules . ,(mapcar #'module.id
-				   (user.library-modules user))))
+				   (user.library-modules user)))
+       (avatar . ,(gravatar:image-url (user.email user) :size 32 :default :mm)))
      nil)))
 
 (defun /user#show (user)

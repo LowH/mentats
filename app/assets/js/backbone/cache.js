@@ -2,14 +2,28 @@
 Backbone.Model.cache = function (model, collection) {
   model.collection = collection;
   model.cache = new collection;
-  model.find = function (id) {
+  model.find = function (id, callback, this_arg) {
     if (!id)
       return null;
     var obj = model.cache.get(id);
     if (!obj) {
       obj = new model({id: id});
+      obj.cache_loaded = false;
       model.cache.add(obj);
+      obj.once('change', function () {
+        this.cache_loaded = true;
+        if (callback)
+          callback.call(this_arg || obj, obj);
+      });
       obj.fetch();
+    }
+    else if (callback) {
+      if (obj.cache_loaded)
+        callback.call(this_arg || obj, obj);
+      else
+        obj.once('change', function () {
+          callback.call(this_arg || obj, obj);
+        });
     }
     return obj;
   };
@@ -89,7 +103,7 @@ Backbone.RelationHasCollection = Backbone.Relation.extend({
     if (!this.related_value) {
       this.log('related init', this.model, this.attribute);
       this.related_value =
-	new this.collection(this.getAttribute());
+        new this.collection(this.getAttribute());
       this.related_value.on({
         add: this.onRelatedAdd,
         remove: this.onRelatedRemove
@@ -123,8 +137,8 @@ Backbone.RelationHasMany = Backbone.Relation.extend({
     this.options = options || {};
     this.relatedModel = relatedModel;
     this.collection = (this.options.collection ||
-		       this.relatedModel.collection ||
-		       Backbone.Collection);
+                       this.relatedModel.collection ||
+                       Backbone.Collection);
     this.key = this.options.key || 'id';
   },
 
@@ -137,9 +151,9 @@ Backbone.RelationHasMany = Backbone.Relation.extend({
       this.log('related init', this.model, this.attribute);
       var r = new this.collection(this.relatedModels());
       r.on({
-	add: this.update,
-	remove: this.update,
-	reset: this.update
+        add: this.update,
+        remove: this.update,
+        reset: this.update
       });
       this.model.on('sync', this.sync);
       this.related_value = r;
@@ -150,14 +164,18 @@ Backbone.RelationHasMany = Backbone.Relation.extend({
   },
 
   relatedModels: function () {
-    return _.map(this.getAttribute() || [], this.relatedModel.find);
+    return _.map(this.getAttribute() || [], function (id) {
+      return this.relatedModel.find(id);
+    }, this);
   },
 
   set: function (value) {
     if (this.related_value) {
       this.log('set', this, value);
       if (_.isArray(value) && value.length > 0 && !_.isObject(value[0]))
-	value = _.map(value, this.relatedModel.find);
+        value = _.map(value, function (id) {
+          return this.relatedModel.find(id);
+        }, this);
       this.related_value.reset(value);
     }
     else
@@ -200,9 +218,9 @@ Backbone.RelationHasNested = Backbone.Relation.extend({
       this.log('related init', this.model, this.attribute);
       var a = this.getAttribute();
       var r = (this.relatedModel.create ? this.relatedModel.create(a)
-	       : new this.relatedModel(a));
+               : new this.relatedModel(a));
       if (this.options.init)
-	this.options.init.call(this.model, r);
+        this.options.init.call(this.model, r);
       r.on('change', this.update);
       this.model.on('sync', this.sync);
       this.related_value = r;
@@ -257,8 +275,8 @@ Backbone.RelationHasOne = Backbone.Relation.extend({
       this.log('related init', this.attribute, this.model);
       var r = this.relatedModel.find(this.getAttribute());
       if (r) {
-	if (this.options.init)
-	  this.options.init.call(this.model, r);
+        if (this.options.init)
+          this.options.init.call(this.model, r);
         r.on('change:' + this.key, this.update);
       }
       this.related_value = r;
@@ -348,7 +366,7 @@ Backbone.RelationalModel = Backbone.Model.extend({
       for (attr in attrs) {
         var rel = this.relations[attr];
         if (rel)
-	  rel.set(attrs[attr]);
+          rel.set(attrs[attr], options);
       }
     }
     return this;

@@ -14,6 +14,7 @@ Mentats.Classroom = Backbone.RelationalModel.extend({
     Backbone.RelationalModel.prototype.initialize.apply(this, arguments);
     this.hasMany('modules', Mentats.Module);
     this.hasMany('students', Mentats.Student);
+    this.hasMany('teachers', Mentats.User);
   }
 
 });

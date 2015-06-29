@@ -16,6 +16,9 @@ SVGG.NodeView = Backbone.View.extend({
     this.group = options.svg.group();
     this.setElement(this.group.node);
     this.group.attr('class', 'node');
+    _.forOwn(options.data, function (key, val) {
+      this.group.attr('data-' + key, val);
+    });
     this.radius = options.radius;
     this.rect = this.group.rect(20, 20)
       .radius(this.radius)

@@ -21,27 +21,6 @@ var Mentats = {
     document.location = '/module/' + id + '/edit';
   },
 
-  uri: {
-    module: function (id, action) {
-      id = (id && typeof(id) === 'object') ? id.id : id;
-      var u = '/module';
-      if (id) {
-	u += '/' + id;
-	if (action)
-	  u += '/' + action;
-      }
-      return u;
-    },
-
-    user: function (id) {
-      id = (id && typeof(id) === 'object') ? id.id : id;
-      var u = '/user';
-      if (id)
-	u += '/' + id;
-      return u;
-    }
-  },
-
   viewCompetence: function(id) {
     document.location = '/competence/' + id;
   },
@@ -52,6 +31,18 @@ var Mentats = {
 
   viewModule: function(id) {
     document.location = '/module/' + id;
+  },
+
+  setBody: function (view) {
+    console.log('Mentats.setBody', view);
+    if (this.body)
+      this.body.remove();
+    this.body = view;
+    view.render().$el.appendTo('#body');
+  },
+
+  can: function () {
+    this.sessionUser.can.apply(this.sessionUser, arguments);
   }
 
 };
