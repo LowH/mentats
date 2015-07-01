@@ -13,6 +13,10 @@
   (and (typep ?article 'json:fluid-object)
        (not (article-has-tag :private ?article))))
 
+(can:define-permission (:anonymous :can :view ?competence)
+  (and (facts:bound-p ((?competence :is-a 'competence)))
+       (not (competence.deleted ?competence))))
+
 (can:define-permission (:anonymous :can :view ?domain)
   (and (facts:bound-p ((?domain :is-a 'domain)))
        (not (domain.deleted ?domain))))
