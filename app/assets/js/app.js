@@ -17,6 +17,7 @@
  *= require backbone/view/svgg.paper
  *= require backbone/view/svgg.editor
  *= require mentats
+ *= require mentats.uri
  *= require backbone/model/mentats.student
  *= require backbone/model/mentats.classroom
  *= require backbone/model/mentats.competence
