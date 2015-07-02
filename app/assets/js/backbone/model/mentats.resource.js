@@ -10,6 +10,10 @@ Mentats.Resource = Backbone.Model.extend({
 
   initialize: function () {
     Backbone.Model.prototype.initialize.apply(this, arguments);
+  },
+
+  url: function () {
+    return '/resource/' + this.id;
   }
 
 });
