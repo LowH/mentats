@@ -8,10 +8,12 @@ SVGG.Node = Backbone.RelationalModel.extend({
 
   promptName: function(save) {
     var n = prompt("Nouveau nom :", this.get('name'));
-    if (n)
+    if (n) {
       this.set({name: n});
-    if (save)
-      this.save();
+      if (save)
+        this.save();
+    }
+    return n;
   }
 
 });

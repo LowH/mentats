@@ -27,10 +27,18 @@ Backbone.Model.cache = function (model, collection) {
     }
     return obj;
   };
-  model.create = function (attrs) {
+  model.create = function (attrs, options) {
     var obj = new model(attrs);
-    model.cache.add(obj);
-    obj.save();
+    var success = options.success;
+    options.url = options.url || model.cache.url;
+    if (options.beforeSave)
+      options.beforeSave(obj);
+    options.success = function () {
+      model.cache.add(obj);
+      if (success)
+        success.apply(this, arguments);
+    };
+    obj.save(null, options);
     return obj;
   };
 };

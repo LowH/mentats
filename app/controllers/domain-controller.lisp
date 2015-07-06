@@ -13,6 +13,19 @@
   (check-can :view domain)
   (render-json (domain-json domain)))
 
+(defun /domain#create ()
+  (check-can :create 'domains)
+  (facts:with-transaction
+    (with-form-data (description module name position required-domains)
+      (let ((domain (add-domain 'domain.description description
+                                'domain.module (find-module! module)
+                                'domain.name name
+                                'domain.position position)))
+        (setf (domain.required-domains domain) required-domains)
+        (cond ((accept-p :application/json)
+               (render-json (domain-json domain)))
+              (:otherwise (redirect-to (domain-uri domain))))))))
+
 (defun /domain#edit (domain)
   (check-can :edit domain)
   (template-let (domain)
@@ -29,24 +42,6 @@
 	   (render-json (domain-json domain)))
 	  (t
 	   (redirect-to (domain-uri domain))))))
-
-(defun parse-competence-json (node domain)
-  (with-json-accessors (id name position) node
-    (cond (id
-	   (let ((competence (find-competence id)))
-	     (unless (and competence (eq domain (competence.domain competence)))
-	       (http-error "404 Not found" "Competence not found"))
-	     (check-can :edit competence)
-	     (setf (competence.name competence) name
-		   (competence.position competence) position)
-	     competence))
-	  (t
-	   (let ((competence (add-competence
-			       'competence.domain domain
-			       'competence.name name
-			       'competence.position position)))
-	     (setf id (competence.id competence))
-	     competence)))))
 
 (defun /domain#update-competences (domain)
   (check-can :edit domain)
@@ -92,6 +87,6 @@
       (:POST   (cond ((and domain (eq action :competences))
 		      (/domain#update-competences domain))
 		     (t
-		      (http-error "404 Not found" "Action not found."))))
+		      (/domain#create))))
       (:PUT    (/domain#update domain))
       #+nil(:DELETE (/domain#delete domain)))))

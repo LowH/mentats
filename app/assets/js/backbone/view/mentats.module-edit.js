@@ -10,26 +10,33 @@ Mentats.DomainGraphEditor = SVGG.Editor.extend({
 
   nodeRadius: Mentats.domainRadius,
 
-  spawnNode: function(evt) {
+  promptName: function (name) {
+    return prompt("Nouveau nom :", name || "") || "";
+  },
+
+  spawnNode: function(evt, options) {
     this.log('spawnNode');
-    var node = Mentats.Domain.create({
-      name: "",
-      position: { x: 10, y: 10 }
-    });
-    node.promptName();
-    node.save();
-    this.model.get('nodes').add(node, {focus: true});
-    this.model.save();
     if (evt && evt.stopPropagation)
       evt.stopPropagation();
+    var model = this.model;
+    var node = Mentats.Domain.create({
+      module: model.module.id,
+      name: this.promptName(),
+      position: { x: 10, y: 10 }
+    }, {
+      beforeSave: options.beforeSaveNode,
+      success: function () {
+        model.get('nodes').add(node, {focus: true});
+        if (options.beforeSaveGraph)
+          options.beforeSaveGraph(model, node);
+        model.save();
+      }
+    });
     return node;
   },
 
   save: function() {
     this.log('save', this);
-    this.model.get('nodes').each(function (node) {
-      node.save();
-    });
     this.model.save();
   }
 

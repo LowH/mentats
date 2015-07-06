@@ -22,10 +22,14 @@
   (render-json (competence-json competence)))
 
 (defun /competence#create ()
-  (with-form-data (competence.name)
-    (cond ((emptyp competence.name) (redirect-to `(/competence)))
-	  (:otherwise (add-competence 'competence.name competence.name)
-		      (redirect-to `(/competence :name ,competence.name))))))
+  (facts:with-transaction
+    (with-form-data (domain name position)
+      (let ((competence (add-competence 'competence.domain (find-domain! domain)
+                                        'competence.name name
+                                        'competence.position position)))
+        (cond ((accept-p :application/json)
+               (render-json (competence-json competence)))
+              (:otherwise (redirect-to (competence-uri competence))))))))
 
 (defun /competence#update (competence)
   (check-can :edit competence)

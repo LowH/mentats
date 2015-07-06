@@ -7,6 +7,15 @@
   (has-one position)
   (has-many required-domains))
 
+(defun find-domain? (id)
+  (let ((domain (find-domain id)))
+    (when (and domain (not (domain.deleted domain)))
+      domain)))
+
+(defun find-domain! (id)
+  (or (find-domain? id)
+      (http-error "404 Not found." "Domain not found.")))
+
 (defun domain-uri (domain &key action)
   (let ((uri (uri-for `(/domain ,(domain.id domain)))))
     (ecase action

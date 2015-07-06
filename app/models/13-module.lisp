@@ -7,6 +7,15 @@
   (has-one deleted)
   (has-one description))
 
+(defun find-module? (id)
+  (let ((module (find-module id)))
+    (when (and module (not (module.deleted module)))
+      module)))
+
+(defun find-module! (id)
+  (or (find-module? id)
+      (http-error "404 Not found." "Module not found.")))
+
 (defun module-uri (module &rest args)
   (uri-for `(/module ,(module.id module) ,@args)))
 
@@ -20,7 +29,7 @@
 (defun module-domains-json (module)
   (let ((domains (module-domains module)))
     (json:make-object
-     `((nodes . ,(mapcar #'domain.id domains))
+     `((nodes . ,(nreverse (mapcar #'domain.id domains)))
        (links . ,(mapcan (lambda (domain)
 			   (let ((id (domain.id domain)))
 			     (mapcar (lambda (req)

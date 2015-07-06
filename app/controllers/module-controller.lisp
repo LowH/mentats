@@ -80,25 +80,6 @@
     (facts:add ((session-user) 'user.library-modules module)))
   (redirect-to (user-uri (session-user))))
 
-#+nil
-(defun parse-domain-json (node module)
-  (with-json-accessors (id name position) node
-    (cond (id
-	   (let ((domain (find-domain id)))
-	     (unless (and domain (eq module (domain.module domain)))
-	       (http-error "404 Not found" "Domain not found"))
-	     (check-can :edit domain)
-	     (setf (domain.name domain) name
-		   (domain.position domain) position)
-	     domain))
-	  (t
-	   (let ((domain (add-domain
-			   'domain.module module
-			   'domain.name name
-			   'domain.position position)))
-	     (setf id (domain.id domain))
-	     domain)))))
-
 (defun /module#domains (module)
   (check-can :view module)
   (render-json (module-domains-json module)))
