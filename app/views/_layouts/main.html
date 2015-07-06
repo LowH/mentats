@@ -39,6 +39,12 @@
       « (print-template #.(find-template '.html "_nav" "_layouts")) »
     </nav>
 
+    <svg id="loader" height="20" width="20" viewbox="-10 -10 95 95">
+      <g>
+        <circle cx="37.5" cy="37.5" r="33.5" stroke="#448AFF" stroke-width="17" fill="none" />
+      </g>
+    </svg>
+
     <div id="messages" class="container">
       « (dolist (alert $alerts) »
       «   (destructuring-bind (level message) alert »

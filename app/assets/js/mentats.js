@@ -43,6 +43,24 @@ var Mentats = {
 
   can: function () {
     this.sessionUser.can.apply(this.sessionUser, arguments);
+  },
+
+  loader: {
+    init: function () {
+      this.$el = $('#loader');
+      $(document)
+        .ajaxStart(this.show)
+        .ajaxStop(this.hide);
+      return this;
+    },
+    show: function () {
+      Mentats.loader.$el.fadeIn();
+      return Mentats.loader;
+    },
+    hide: function () {
+      Mentats.loader.$el.fadeOut();
+      return Mentats.loader;
+    }
   }
 
 };

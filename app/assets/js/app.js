@@ -46,6 +46,8 @@ $(function () {
 
   //debug.all = true;
 
+  Mentats.loader.init();
+
   $('.competence .edit .btn.edit').click(function () {
     $this = $(this);
     if ($this.hasClass('active')) {
