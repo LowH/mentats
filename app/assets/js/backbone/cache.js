@@ -125,7 +125,7 @@ Backbone.RelationHasCollection = Backbone.Relation.extend({
     this.setAttribute(value);
     if (this.related_value) {
       this.noEvents = true;
-      this.related_value.reset(value);
+      this.related_value.set(value, {merge: false});
       this.noEvents = false;
     }
     return this;
@@ -184,7 +184,9 @@ Backbone.RelationHasMany = Backbone.Relation.extend({
         value = _.map(value, function (id) {
           return this.relatedModel.find(id);
         }, this);
-      this.related_value.reset(value);
+      else if (_.equalp(value, this.related_value.models))
+        return this;
+      this.related_value.set(value, {merge: false});
     }
     else
       this.setAttribute(value);
@@ -194,7 +196,7 @@ Backbone.RelationHasMany = Backbone.Relation.extend({
   sync: function () {
     this.log('sync', this, this.getAttribute());
     if (this.related_value)
-      this.related_value.set(this.relatedModels());
+      this.related_value.set(this.relatedModels(), {merge: false});
   },
 
   update: function () {

@@ -1,5 +1,6 @@
 /*
  *= require lodash
+ *= require lodash.equalp
  *= require jquery
  *= require bootstrap
  *  require bootstrap/material-design
