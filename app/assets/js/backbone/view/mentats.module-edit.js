@@ -18,6 +18,7 @@ Mentats.DomainGraphEditor = SVGG.Editor.extend({
     this.log('spawnNode');
     if (evt && evt.stopPropagation)
       evt.stopPropagation();
+    options = options || {};
     var model = this.model;
     var node = Mentats.Domain.create({
       module: model.module.id,
