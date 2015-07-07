@@ -19,6 +19,7 @@
  *= require backbone/view/svgg.editor
  *= require mentats
  *= require mentats.uri
+ *= require mentats.template
  *= require backbone/router/mentats.router
  *= require backbone/model/mentats.student
  *= require backbone/model/mentats.classroom

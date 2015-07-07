@@ -32,6 +32,20 @@ body.classroom {
 .panel-body.list-group > .list-group-item.module,
 .panel-body.list-group > .list-group-item.student {
 	cursor: pointer;
+        a, a:hover, a:active {
+                color: @text-color;
+                & .level {
+                        border-color: @text-color;
+                }
+        }
+        &.active {
+                a, a:hover, a:active {
+                        color: @component-active-color;
+                        & .level {
+                                border-color: @component-active-color;
+                        }
+                }
+        }
 }
 .panel-body.list-group > .list-group-item.domain {
         cursor: default;

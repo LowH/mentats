@@ -45,6 +45,7 @@
   (facts:with-transaction
     (json:make-object
      `((id . ,(domain.id domain))
+       (module . ,(module.id (domain.module domain)))
        (name . ,(domain.name domain))
        (position . ,(or (domain.position domain)
                         {"x": 10, "y": 10}))

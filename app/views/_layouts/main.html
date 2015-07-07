@@ -115,75 +115,115 @@
       </div>
     </script>
 
-    <script type="text/template" id="classroom-template">
-      <div class="row">
-        <div class="col-sm-12">
+    <script type="text/template" id="classroom-a-template">
+      <a href="<%- Mentats.uri.classroom(id) %>">
+        <%- name %>
+        <span class="level"><%- level %></span>
+      </a>
+    </script>
+
+    <script type="text/template" id="students-panel-template">
+      <div class="students panel panel-default">
+        <div class="panel-heading">
+          <h4>Élèves</h4>
+        </div>
+        <div class="panel-body list-group">
+          <% students.each(function (student) { %>
+            <div class="list-group-item student" data-student="<%- student.id %>">
+              <%- student.get('name') %>
+            </div>
+          <% }) %>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm-12 col-md-9 col-lg-9">
-          <h1 data-classroom="<%- id %>">
-            <a href="<%- Mentats.uri.classroom(id) %>">
-              <%- name %>
-              <span class="level"><%- level %></span>
-            </a>
-          </h1>
-          <div class="main">
-          </div>
-          <div class="main-sub"></div>
+    </script>
+
+    <script type="text/template" id="modules-panel-template">
+      <div class="modules panel panel-default">
+        <div class="panel-heading">
+          <h4>Modules</h4>
         </div>
-        <div class="left-column col-md-12 col-lg-3">
-          <div class="row">
-            <div class="col-sm-4 col-lg-12">
-              <div class="students panel panel-default">
-                <div class="panel-heading">
-                  <h4>Élèves</h4>
-                </div>
-                <div class="panel-body list-group">
-                  <% students.each(function (student) { %>
-                    <div class="list-group-item student" data-student="<%- student.id %>">
-                      <%- student.get('name') %>
-                    </div>
-                  <% }); %>
-                </div>
-              </div>
+        <div class="panel-body list-group">
+          <% if (!domain) { %>
+            <div class="list-group-item domain active" data-domain="" style="display:none"></div>
+          <% } %>
+          <% modules.each(function (module) { %>
+            <div class="list-group-item module<%- (active === module) ? ' active' : '' %>" data-module="<%- module.id %>">
+              <a href="<%- Mentats.uri.classroom(classroom, module) %>">
+                <%- module.get('discipline') %>
+                <span class="level"><%- module.get('level') %></span>
+              </a>
             </div>
-            <div class="col-sm-4 col-lg-12">
-              <div class="modules panel panel-default">
-                <div class="panel-heading">
-                  <h4>Modules</h4>
-                </div>
-                <div class="panel-body list-group">
-                  <% modules.each(function (module) { %>
-                    <div class="list-group-item module" data-module="<%- module.id %>">
-                      <%- module.get('discipline') %>
-                      <span class="level"><%- module.get('level') %></span>
-                    </div>
-                  <% }); %>
-                  <div class="list-group-item domain active" data-domain="" style="display:none"></div>
-                </div>
+            <% if (active === module && domain) { %>
+              <div class="list-group-item domain active" data-domain="<%- domain.id %>">
+                <%- domain.get('name') %>
               </div>
+            <% } %>
+          <% }); %>
+        </div>
+      </div>
+    </script>
+
+    <script type="text/template" id="teachers-panel-template">
+      <div class="teachers panel panel-default">
+        <div class="panel-heading">
+          <h4>Enseignants</h4>
+        </div>
+        <div class="panel-body">
+          <% teachers.each(function (user) { %>
+            <%= Mentats.template.userThumb(user.attributes || {}) %>
+          <% }); %>
+        </div>
+      </div>
+    </script>
+
+    <script type="text/template" id="classroom-template">
+      <div>
+        <div class="row">
+          <div class="col-sm-12">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-9 col-lg-9">
+            <h1>
+              <a href="<%- Mentats.uri.classroom(id) %>">
+                <%- name %>
+                <span class="level"><%- level %></span>
+              </a>
+            </h1>
+            <div class="main">
             </div>
-            <div class="col-sm-4 col-lg-12">
-              <div class="teachers panel panel-default">
-                <div class="panel-heading">
-                  <h4>Enseignants</h4>
-                </div>
-                <div class="panel-body">
-                  <% teachers.each(function (user) { %>
-                    <%= _.template($('#user-thumbnail-template').html(), user.attributes || {}) %>
-                  <% }); %>
-                </div>
+            <div class="main-sub"></div>
+          </div>
+          <div class="left-column col-md-12 col-lg-3">
+            <div class="row">
+              <div class="classroom-students col-sm-4 col-lg-12">
+                <%= studentsTemplate({
+                classroom: id,
+                students: students,
+                active: student
+                }) %>
               </div>
-            </div>
-            <div class="col-sm-12">
-              <div class="actions">
-                <% if (Mentats.can('edit', Mentats.Classroom, id)) { %>
-                  <a href="<%- Mentats.uri.classroom(id, 'edit') %>"
-                     class="btn btn-default" title="Éditer la classe">
-                    <i class="fa fa-pencil"></i>
-                  </a>
-                <% } %>
+              <div class="classroom-modules col-sm-4 col-lg-12">
+                <%= modulesTemplate({
+                classroom: id,
+                modules: modules,
+                active: module,
+                domain: domain}) %>
+              </div>
+              <div class="classroom-teachers col-sm-4 col-lg-12">
+                <%= teachersTemplate({
+                teachers: teachers
+                }) %>
+              </div>
+              <div class="col-sm-12">
+                <div class="actions">
+                  <% if (Mentats.can('edit', Mentats.Classroom, id)) { %>
+                    <a href="<%- Mentats.uri.classroom(id, 'edit') %>"
+                       class="btn btn-default" title="Éditer la classe">
+                      <i class="fa fa-pencil"></i>
+                    </a>
+                  <% } %>
+                </div>
               </div>
             </div>
           </div>
