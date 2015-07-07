@@ -1,27 +1,27 @@
 
 Mentats.uri = {
 
+  id: function (x) {
+    return _.isObject(x) ? x.id : x;
+  },
+
   classroom: function (id, action_or_module, domain) {
-    if (_.isObject(id))
-      id = id.id;
     var u = '/classroom';
     if (id) {
-      u += '/' + id;
+      u += '/' + this.id(id);
       if (action_or_module) {
-        u = u + '/' + action_or_module;
+        u = u + '/' + this.id(action_or_module);
         if (domain)
-          u = u + '/' + domain;
+          u = u + '/' + this.id(domain);
       }
     }
     return u;
   },
 
   module: function (id, action) {
-    if (_.isObject(id))
-      id = id.id;
     var u = '/module';
     if (id) {
-      u += '/' + id;
+      u += '/' + this.id(id);
       if (action)
 	u += '/' + action;
     }
@@ -29,11 +29,9 @@ Mentats.uri = {
   },
 
   user: function (id) {
-    if (_.isObject(id))
-      id = id.id;
     var u = '/user';
     if (id)
-      u += '/' + id;
+      u += '/' + this.id(id);
     return u;
   }
 
