@@ -1,12 +1,4 @@
 
-(define-resource user
-  (has-one login)
-  (has-one password-hash)
-  (has-one email)
-  (has-one name)
-  (has-one group)
-  (has-many library-modules))
-
 (defun user-uri (user)
   (uri-for `(/user ,(user.id user))))
 

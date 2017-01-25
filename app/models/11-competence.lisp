@@ -1,12 +1,4 @@
 
-(define-resource competence
-  (has-one deleted)
-  (has-one description)
-  (has-one domain :having domain.competences)
-  (has-one name)
-  (has-one position)
-  (has-many required-competences))
-
 (defun competence-uri (competence)
   (uri-for `(/competence ,(competence.id competence))))
 
