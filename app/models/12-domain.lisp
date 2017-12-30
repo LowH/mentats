@@ -1,12 +1,4 @@
 
-(define-resource domain
-  (has-one deleted)
-  (has-one description)
-  (has-one module :having module.domains)
-  (has-one name)
-  (has-one position)
-  (has-many required-domains))
-
 (defun find-domain? (id)
   (let ((domain (find-domain id)))
     (when (and domain (not (domain.deleted domain)))

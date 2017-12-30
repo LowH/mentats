@@ -1,12 +1,4 @@
 
-(define-resource module
-  (has-one discipline)
-  (has-one level)
-  (has-one version)
-  (has-one owner :having user.modules)
-  (has-one deleted)
-  (has-one description))
-
 (defun find-module? (id)
   (let ((module (find-module id)))
     (when (and module (not (module.deleted module)))
