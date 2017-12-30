@@ -11,4 +11,4 @@ APP_GROUP = mentats
 WEB_USER = mentats
 WEB_GROUP = _nginx
 
-. include "lib/rol/server/app.mk"
+include lib/rol/server/app.mk
