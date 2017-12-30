@@ -40,6 +40,6 @@
        (module . ,(module.id (domain.module domain)))
        (name . ,(domain.name domain))
        (position . ,(or (domain.position domain)
-                        {"x": 10, "y": 10}))
+                        `{"x": 10, "y": 10}))
        (competences . ,(domain-competences-json domain)))
      nil)))
