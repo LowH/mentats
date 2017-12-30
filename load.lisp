@@ -2,6 +2,4 @@
 ;;
 ;;  Set compilation options here
 
-(defvar *backend* :fastcgi)
-
-(load #P"lib/rol/server/load/app")
+(load #P"lib/rol/server/load/fastcgi")
