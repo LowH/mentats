@@ -23,6 +23,8 @@
 (require :gravatar)
 (require :rw-ut)
 
+(cl-json:set-decoder-simple-clos-semantics)
+
 (defun setup-environment (env)
   (log-msg :INFO "setup environment ~A" (string-downcase env))
   (case env
