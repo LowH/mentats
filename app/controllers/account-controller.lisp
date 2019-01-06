@@ -55,7 +55,7 @@
     (declare (type string password))
     (let (error-fields)
       (when (facts:bound-p ((?u 'user.email email)))
-	(alert :danger "Un compte existe déjà avec cette adresse e-mail.")
+	(alert :danger "Un compte existe d&eacute;j&agrave; avec cette adresse e-mail.")
 	(push :email error-fields))
       (if error-fields
 	  (template-let (error-fields name email)
@@ -74,5 +74,5 @@
 
 (defun /account/register/ok ()
   (template-let ((alerts nil))
-    (alert :success "Votre inscription a bien été validée. Vous pouvez maintenant vous connecter avec votre adresse e-mail et votre mot de passe.")
+    (alert :success "Votre inscription a bien &eacute;t&eacute; valid&eacute;e. Vous pouvez maintenant vous connecter avec votre adresse e-mail et votre mot de passe.")
     (render-view :account :login '.html)))

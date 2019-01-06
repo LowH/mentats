@@ -7,7 +7,7 @@
     "Mentats")
 
 (define-template-var nav
-    '("<li><a href=\"/competence\">Compétences</a></li>"
+    '("<li><a href=\"/competence\">Comp&eacute;tences</a></li>"
       "<li><a href=\"/blog\">Blog</a></li>"))
 
 (define-template-var nav-right
