@@ -2,4 +2,4 @@
 ;;
 ;;  Set compilation options here
 
-(load #P"lib/rol/server/load/fastcgi")
+(load #P"lib/rol/server/load/thot")
