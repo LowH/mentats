@@ -103,4 +103,6 @@ $(function () {
 
   if ($.material)
     $.material.init();
+
+  $("#loader").hide();
 });
