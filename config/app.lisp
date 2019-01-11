@@ -32,5 +32,5 @@
      #+swank
      (setf (debug-p :conditions) t)
      (setf (debug-p :app) t)
-     (setf (debug-p :assets) t)))
+     (setf (debug-p :assets) nil)))
   (log-msg :DEBUG "tags:~{ ~A~}" cl-debug::*debug*))
