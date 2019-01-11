@@ -14,15 +14,15 @@
       (let ((session (session-attach)))
         (if (session.user session)
             (redirect)
-            (let ((u (authenticate-user l p)))
+            (let ((user (authenticate-user l p)))
               (template-let ((alerts nil)
                              redirect-to)
-                (unless u
+                (unless user
                   (alert :danger "Login et/ou mot de passe incorrect.")
                   (http-error "401 Not authorized" "Account not found"))
                 (when session
                   (session-reset))
-                (setf (session-user) u)
+                (setf (session-user) user)
                 (redirect))))))))
 
 (defun /account/login ()
