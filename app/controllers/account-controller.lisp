@@ -62,7 +62,7 @@
 	    (render-view :account :register '.html))
 	  (progn (add-user 'user.name name
 			   'user.email email
-			   'user.password-hash (hash-password password))
+			   'user.password-hash (password-hash password))
 		 ;; FIXME: e-mail confirmation
 		 (redirect-to `(/account/register/ok)))))))
 

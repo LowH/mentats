@@ -2,14 +2,11 @@
 (defun user-uri (user)
   (uri-for `(/user ,(user.id user))))
 
-(defun hash-password (password)
-  (bcrypt password))
-
 (defun check-password (password hash)
-  (string= (bcrypt password :salt hash) hash))
+  (string= (password-hash password hash) hash))
 
 (defsetf user.password (user) (password)
-  `(setf (user.password-hash ,user) (hash-password ,password)))
+  `(setf (user.password-hash ,user) (password-hash ,password)))
 
 (defun authenticate-user (id password)
   (facts:with ((?user :is-a 'user
