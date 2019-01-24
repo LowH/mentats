@@ -13,6 +13,7 @@
 (define-route "/account/login" '(/account/login))
 (define-route "/account/logout" '(/account/logout))
 (define-route "/account/reset-password" '(/account/reset-password))
+(define-route "/account/reset-password/{token}" `(/account/reset-password ,token))
 
 (define-route "/user/{login}" `(/user ,login))
 (define-route "/j/user/{login}" `(/user ,login "json"))

@@ -42,8 +42,49 @@
 
 ;;  Reset password
 
-(defun /account/reset-password (&optional hmac)
-  (declare (ignore hmac)))
+(defun /account/reset-password#form (&optional email)
+  (template-let (email)
+    (render-view :account :reset-password '.html)))
+
+(defun /account/reset-password#submit ()
+  (with-form-data (email)
+    (let ((user (facts:first-bound ((?user 'user.email email)))))
+      (cond (user
+             (let* ((date (get-universal-time))
+                    (token (hmac-string (str date) email)))
+               (facts:add (token 'token.date date
+                                 'token.email email))
+               (template-let (token)
+                 (send-email :account :reset-password-email email
+                             "Réinitialisation du mot de passe")))
+             (template-let (email)
+               (render-view :account :reset-password-submit '.html)))
+            (t
+             (template-let (email)
+               (render-view :account :register '.html)))))))
+
+(trace send-email)
+
+(defun /account/reset-password#token (token)
+  (template-let (token)
+    (render-view :account :reset-password-token '.html)))
+
+(defun /account/reset-password#token-submit (token)
+  (facts:with ((token 'token.email ?email)
+               (?user 'user.email ?email))
+    (with-form-data (password)
+      (setf (user.password ?user) password))
+    (render-view :account :reset-password-token-submit '.html)))
+
+(defun /account/reset-password (&optional token)
+  (template-let ((alerts nil))
+    (ecase *method*
+      ((:GET)  (if token
+                   (/account/reset-password#token token)
+                   (/account/reset-password#form)))
+      ((:POST) (if token
+                   (/account/reset-password#token-submit token)
+                   (/account/reset-password#submit))))))
 
 ;;  Register
 
