@@ -12,7 +12,7 @@ Mentats.User = Backbone.Model.extend({
   can: function (action, klass, object) {
     if (!_.isObject(object) && klass.find)
       object = klass.find(object);
-    if (this.get('group' == 'admin'))
+    if (this.get('group') == 'admin')
       return true;
     if (action === 'view') {
       return true;
