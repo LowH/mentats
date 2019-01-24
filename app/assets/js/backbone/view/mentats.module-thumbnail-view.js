@@ -72,8 +72,10 @@ Mentats.ModuleThumbnailView = Backbone.View.extend({
   },
 
   render: function () {
+    var owner = this.model.get('owner');
     var attrs = _.extend(_.clone(this.model.attributes), {
-      owner: this.model.get('owner')
+        owner: owner,
+        name: owner ? owner.name : "",
     });
     this.log('render', attrs);
     this.$el.html(this.template(attrs))
