@@ -74,7 +74,8 @@
                (?user 'user.email ?email))
     (with-form-data (password)
       (setf (user.password ?user) password))
-    (render-view :account :reset-password-token-submit '.html)))
+    (facts:rm ((token ?p ?o)))
+    (redirect-to '(/account/login))))
 
 (defun /account/reset-password (&optional token)
   (template-let ((alerts nil))
