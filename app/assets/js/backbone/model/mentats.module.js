@@ -24,9 +24,9 @@ Mentats.Module = Backbone.RelationalModel.extend({
     });
     this.hasOne('owner', Mentats.User, {
       init: function (owner) {
-	this.listenTo(owner, 'change', function () {
-	  this.trigger('change');
-	});
+        this.listenTo(owner, 'change', function () {
+          this.model.trigger('change');
+        });
       }
     });
   }
