@@ -1,5 +1,19 @@
 <h1>«=(h (user.name $user))»</h1>
 
+« (when (eq $user (session-user)) »
+<form id="edit-user" class="form-inline" role="form" action="«=(h *uri*)»" method="POST">
+  <div class="form-group">
+    <label for="name" class="sr-only">Nom</label>
+    <input class="form-control" type="text" name="name" value="«=(h (user.name $user))»" required/>
+  </div>
+  <div class="form-group">
+    <label for="email" class="sr-only">e-mail</label>
+    <input class="form-control" type="email" name="email" value="«=(h (user.email $user))»" required/>
+  </div>
+  <button class="btn btn-default" type="submit" name="_method" value="POST"><i class="fa fa-edit"></i>&nbsp; Éditer</button>
+</form>
+« ) »
+
 <h3>Classes</h3>
 <div>
 « (dolist (classroom $classrooms) »

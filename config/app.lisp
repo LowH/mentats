@@ -27,8 +27,7 @@
 
 (cl-json:set-decoder-simple-clos-semantics)
 
-(trace send-email find-template print-template
-       trivial-email-utf-8:send-email*)
+(trace send-email find-template print-template cl-smtp:send-email)
 
 (defun setup-environment (env)
   (log-msg :INFO "setup environment ~A" (string-downcase env))

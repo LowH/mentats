@@ -28,6 +28,23 @@
   (check-can :view user)
   (render-json (user-json user)))
 
+(defun /user#edit (user)
+  (check-can :edit user)
+  (with-form-data (name email)
+    (setf (user.name user) name)
+    (unless (equalp email (user.email user))
+      (let* ((date (get-universal-time))
+             (token (hmac-string (str date)
+                                 (user.email user)
+                                 email)))
+        (facts:add (token 'update-email.date date
+                          'update-email.old (user.email user)
+                          'update-email.new email))
+        (template-let (user email token)
+          (send-email :user :update-email email
+                      "Changement d'adresse e-mail"))))
+    (redirect-to (uri-for `(/user ,(user.id user))))))
+
 (defun /user (user.id &optional action)
   (let ((user (or (find-user user.id)
 		  (http-error "404 Not found" "User not found.")))
@@ -38,4 +55,5 @@
     (case *method*
       (:GET (if (eq action :json)
 		(/user#json user)
-		(/user#show user))))))
+		(/user#show user)))
+      (:POST (/user#edit user)))))

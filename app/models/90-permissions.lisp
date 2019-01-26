@@ -25,6 +25,9 @@
   (and (facts:bound-p ((?module :is-a 'module)))
        (not (module.deleted ?module))))
 
+(can:define-permission (?user :can :edit ?user_)
+  (eq ?user ?user_))
+
 (can:define-permission (?user :can :edit ?module)
   (facts:bound-p ((?module :is-a 'module
                            'module.owner ?user))))
@@ -35,6 +38,6 @@
 
 (can:define-permission (?user :can :admin :all)
   (facts:bound-p ((?user :is-a 'user
-                         'user.email "thomas@lowh.net"))))
+                         'user.email "thoxdg@gmail.com"))))
 
 (can:compile-rules)
