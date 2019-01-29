@@ -1,0 +1,9 @@
+
+Changement d'adresse e-mail.
+
+Vous avez demandé un changement d'adresse e-mail sur le site mentats.kmx.io
+
+Pour confirmer le changement d'adresse de «=(user.email $user)»
+vers «=$email » veuillez suivre le lien suivant :
+
+http://mentats.kmx.io«=(uri-for `(/user/update-email $token))»
