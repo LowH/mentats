@@ -63,18 +63,29 @@
              (template-let (email)
                (render-view :account :register '.html)))))))
 
-(trace send-email)
+(defun remove-reset-password-token (token)
+  (facts:rm ((token 'token-date ?date
+                    'token.email ?email))))
+
+(defun check-reset-password-token (token)
+  (let ((date (facts:first-bound ((token 'token.date ?date)))))
+    (when (or (null date)
+              (< date (- (get-universal-time) (* 3600 24))))
+      (remove-reset-password-token token)
+      (http-error "404 Not found" "Token not found"))))
 
 (defun /account/reset-password#token (token)
+  (check-reset-password-token token)
   (template-let (token)
     (render-view :account :reset-password-token '.html)))
 
 (defun /account/reset-password#token-submit (token)
+  (check-reset-password-token token)
   (facts:with ((token 'token.email ?email)
                (?user 'user.email ?email))
     (with-form-data (password)
       (setf (user.password ?user) password))
-    (facts:rm ((token ?p ?o)))
+    (remove-reset-password-token token)
     (redirect-to '(/account/login))))
 
 (defun /account/reset-password (&optional token)
