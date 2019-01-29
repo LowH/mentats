@@ -41,7 +41,7 @@
                           'update-email.old (user.email user)
                           'update-email.new email))
         (template-let (user email token)
-          (send-email :user :update-email email
+          (send-email :user :update-email-email email
                       "Changement d'adresse e-mail"))))
     (redirect-to (uri-for `(/user ,(user.id user))))))
 
@@ -57,3 +57,24 @@
 		(/user#json user)
 		(/user#show user)))
       (:POST (/user#edit user)))))
+
+(defun remove-update-email-token (token)
+  (facts:rm ((token 'update-email.date ?date
+                    'update-email.old ?old
+                    'update-email.new ?new))))
+
+(defun check-update-email-token (token)
+  (let ((date (facts:first-bound ((token 'update-email.date ?)))))
+    (when (or (null date)
+              (< date (- (get-universal-time) (* 3600 24))))
+      (remove-update-email-token token)
+      (http-error "404 Not found" "Token not found"))))
+
+(defun /user/update-email (token)
+  (check-update-email-token token)
+  (facts:with ((token 'update-email.old ?old
+                      'update-email.new ?new)
+               (?user :is-a 'user
+                      'user.email ?old))
+    (setf (user.email ?user) ?new)
+    (redirect-to `(/user ,(user.id ?user)))))
