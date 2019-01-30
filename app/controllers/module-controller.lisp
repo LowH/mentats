@@ -51,18 +51,19 @@
 		  :edit))))
 
 (defun /module#update (module)
-  (check-can :edit module)
   (facts:with-transaction
     (with-form-data (description discipline level in-library)
-      (when description
-	(setf (module.description module) description))
-      (when discipline
-	(setf (module.discipline module) discipline))
-      (when level
-	(setf (module.level module) level))
-      (if in-library
-	  (facts:add ((session-user) 'user.library-modules module))
-	  (facts:rm (((session-user) 'user.library-modules module))))
+      (when (session-user)
+        (if in-library
+	    (facts:add ((session-user) 'user.library-modules module))
+	    (facts:rm (((session-user) 'user.library-modules module)))))
+      (when (can :edit module)
+        (when description
+	  (setf (module.description module) description))
+        (when discipline
+	  (setf (module.discipline module) discipline))
+        (when level
+	  (setf (module.level module) level)))
       (cond ((accept-p :application/json)
 	     (render-json (module-json module)))
 	    (t
