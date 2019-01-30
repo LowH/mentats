@@ -17,6 +17,7 @@
 
 (define-route "/user/{login}" `(/user ,login))
 (define-route "/j/user/{login}" `(/user ,login "json"))
+(define-route "/user/update-email/{token}" `(/user/update-email ,token))
 
 (define-route "/module" `(/module))
 (define-route "/module/{module}" `(/module ,module))
