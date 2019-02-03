@@ -2522,7 +2522,7 @@ jg
  (facts.anon::user-0009 user.email "thoxdg@gmail.com")
  (facts.anon::user-0009 user.id "wYpYZQ")
  (facts.anon::user-0009 user.library-modules facts.anon::module-0012)
- (facts.anon::user-0009 user.name "thomas")
+ (facts.anon::user-0009 user.name "Thomas de Grivel")
  (facts.anon::user-0009 user.password-hash "MIXCNfYJAW4jJl_xhk3nU9hkupstjnoozd47/XpjxoY=")
  (facts.anon::user-0009 :is-a user)
  (facts.anon::user-000a user.email "nosuch@mail.mail")
