@@ -39,7 +39,8 @@
                                  email)))
         (facts:add (token 'update-email.date date
                           'update-email.old (user.email user)
-                          'update-email.new email))
+                          'update-email.new email
+                          'update-email.user user))
         (template-let (user email token)
           (send-email :user :update-email-email email
                       "Changement d'adresse e-mail"))))
@@ -61,7 +62,8 @@
 (defun remove-update-email-token (token)
   (facts:rm ((token 'update-email.date ?date
                     'update-email.old ?old
-                    'update-email.new ?new))))
+                    'update-email.new ?new
+                    'update-email.user ?user))))
 
 (defun check-update-email-token (token)
   (let ((date (facts:first-bound ((token 'update-email.date ?)))))
@@ -72,9 +74,10 @@
 
 (defun /user/update-email (token)
   (check-update-email-token token)
-  (facts:with ((token 'update-email.old ?old
-                      'update-email.new ?new)
-               (?user :is-a 'user
-                      'user.email ?old))
-    (setf (user.email ?user) ?new)
-    (redirect-to `(/user ,(user.id ?user)))))
+  (let ((user (facts:first-bound ((token 'update-email.user ?user))))
+        (old (facts:first-bound ((token 'update-email.old ?))))
+        (new (facts:first-bound ((token 'update-email.new ?)))))
+    (when (equalp (user.email user) old)
+      (setf (user.email user) new))
+    (remove-update-email-token token)
+    (redirect-to `(/user ,(user.id user)))))
