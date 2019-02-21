@@ -1,0 +1,27 @@
+
+<h1><a href="«=(h (student-uri $student))»">«=(h (student.name $student))»</a></h1>
+
+<form id="edit-student" class="form-inline" role="form" action="«=(h (student-uri $student))»" method="POST" data-student="«=(h (student.id $student))»">
+  <div class="form-group">
+    <label for="name" class="sr-only">Nom</label>
+    <input class="form-control" type="text" name="name" value="«=(h (student.name $student))»" placeholder="Nom" required/>
+  </div>
+  <button class="btn btn-default" type="submit" name="_method" value="PUT"><i class="fa fa-check"></i> Sauvegarder</button>
+</form>
+
+<h2>Supprimer</h2>
+<div class="row">
+  <div class="col-sm-5">
+    <form role="form" class="form" action="«=(h (student-uri $student))»" method="POST">
+      <div class="form-group">
+	<p>Attention, toute suppression est irréversible.</p>
+      </div>
+      <div class="checkbox">
+	<label>
+	  <input class="form-control" type="checkbox" name="delete" value="0" required/> Confirmer
+	</label>
+      </div>
+      <button type="submit" class="btn btn-danger" name="_method" value="DELETE"><i class="fa fa-trash-o"></i> Supprimer</button>
+    </form>
+  </div>
+</div>
