@@ -15,13 +15,11 @@
 
 <h2>Élèves</h2>
 « (dolist (student (classroom-students $classroom)) »
-<form class="student form-inline" role="form" action="«=(h (classroom-uri $classroom :action "student"))»" method="POST">«=(h (student.name student))»</form>
+  <a href="«=(h (student-uri student :edit))»">«=(h (student.name student))»</a>
 « ) »
 
 <h4>Ajouter un élève</h4>
-<form id="add-student" class="form-inline" role="form" action="«=(h (student-uri))»" method="POST">
-  <input type="hidden" name="classroom" value="«=(h (classroom.id $classroom))»"/>
-  <input type="hidden" name="redirect" value="«=(h (classroom-uri $classroom :action "edit"))»"/>
+<form id="add-student" class="form-inline" role="form" action="«=(h (uri-for `(/classroom/student ,(classroom.id $classroom))))»" method="POST">
   <div class="form-group">
     <label for="name" class="sr-only">Nom</label>
     <input class="form-control" type="text" name="name" placeholder="Nom" required/>

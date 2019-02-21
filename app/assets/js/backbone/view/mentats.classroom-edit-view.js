@@ -3,7 +3,6 @@ Mentats.ClassroomEditView = Backbone.View.extend({
 
   events: {
     'hide.bs.modal #classroom-modules-selector': 'onHideModulesSelector',
-    'submit form': 'onSubmit'
   },
 
   initialize: function(options) {
@@ -14,9 +13,9 @@ Mentats.ClassroomEditView = Backbone.View.extend({
     this.listenTo(this.model, 'change:level', this.onChangeLevel);
 
     var modules = this.model.get('modules');
+    this.modulesList = this.$('.classroom-modules-list');
     this.listenTo(modules, 'add', this.onModuleAdd);
     this.listenTo(modules, 'remove', this.onModuleRemove);
-    this.modulesList = this.$('.classroom-modules-list');
 
     Mentats.Module.cache.fetch();
     this.moduleSelector = new Mentats.ModulesSelectorView({
@@ -54,16 +53,6 @@ Mentats.ClassroomEditView = Backbone.View.extend({
   onModuleRemove: function (module) {
     this.log('onModuleRemove', this);
     this.modulesList.children('.module.thumbnail[data-module="'+module.id+'"]').remove();
-  },
-
-  onSubmit: function (evt) {
-    this.log('onSubmit', this, evt);
-    this.model.set({
-      name: this.$('input[name="name"]').val(),
-      level: this.$('input[name="level"]').val()
-    });
-    this.model.save();
-    evt.preventDefault();
   }
 
 });

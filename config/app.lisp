@@ -16,6 +16,7 @@
 (define-template-var nav-right
     '())
 
+(define-template-var classroom nil)
 (define-template-var token nil)
 
 (require :re)

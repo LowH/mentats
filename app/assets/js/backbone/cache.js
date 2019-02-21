@@ -268,7 +268,7 @@ Backbone.RelationHasOne = Backbone.Relation.extend({
   },
 
   initialize: function (model, attribute, relatedModel, options) {
-    _.bindAll(this, 'update', 'sync');
+    _.bindAll(this, 'update', 'sync', 'onChange');
     this.log('new', attribute, model);
     this.options = options || {};
     this.relatedModel = relatedModel;
@@ -288,6 +288,7 @@ Backbone.RelationHasOne = Backbone.Relation.extend({
         if (this.options.init)
           this.options.init.call(this.model, r);
         r.on('change:' + this.key, this.update);
+        r.on('change', this.onChange);
       }
       this.related_value = r;
     }
@@ -298,23 +299,30 @@ Backbone.RelationHasOne = Backbone.Relation.extend({
     if (this.related_value) {
       this.log('set', this, value);
       this.related_value.off('change:' + this.key, this.update);
+      this.related_value.off('change', this.onChange);
       this.related_value = null;
-      this.related();
     }
+    if (_.isObject(value))
+      this.setAttribute(value[this.key]);
     else
       this.setAttribute(value);
+    this.related();
+    this.model.trigger('change');
     return this;
   },
 
   sync: function () {
     this.log('sync', this, this.getAttribute());
-    if (this.related_value)
-      this.related_value.set(this.getAttribute());
+    this.set(this.getAttribute());
   },
 
   update: function () {
     this.log('update', this, this.related_value[this.key]);
     this.setAttribute(this.related_value[this.key]);
+  },
+
+  onChange: function () {
+    this.model.trigger('change');
   }
 
 });

@@ -14,9 +14,6 @@ Mentats.ModuleThumbnailView = Backbone.View.extend({
     this.$el.addClass('module thumbnail')
       .attr('data-module', this.model.id);
     this.listenTo(this.model, 'change', this.render);
-    this.listenTo(this.model, 'change:owner', function () {
-      this.listenTo(this.model.get('owner'), 'change', this.render);
-    });
     //this.listenTo(this.model, 'change:inLibrary', this.onLibraryChange);
     //var classrooms = this.model.get('inClassrooms');
     //this.listenTo(classrooms, 'add', this.onClassroomAdd);
@@ -24,6 +21,13 @@ Mentats.ModuleThumbnailView = Backbone.View.extend({
   },
 
   log: debug.logger('Mentats.ModuleThumbnailView'),
+
+  onOwnerChange: function () {
+    this.log('onOwnerChange', arguments);
+      var owner = this.model.get('owner', );
+    if (owner)
+      this.listenTo(owner, 'change', this.render);
+  },
 
   onLibraryChange: function () {
     this.log('onLibraryChange', arguments);

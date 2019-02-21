@@ -33,8 +33,10 @@
   (check-can :edit student)
   (with-form-data (name competences)
     (facts:with-transaction
-      (setf (student.name student) name
-            (student.competences student) (map 'list #'find-competence competences))
+      (setf (student.name student) name)
+      (facts:rm ((student 'student.competences ?c)))
+      (dolist (c competences)
+        (facts:add (student 'student.competences c)))
       (cond ((accept-p :application/json)
              (render-json (student-json student)))
             (t
@@ -43,8 +45,10 @@
 (defun /student#delete (student)
   (check-can :delete student)
   (facts:with-transaction
-    (setf (student.deleted student) t))
-  (redirect-to (user-uri (session-user))))
+    (let ((classroom (facts:first-bound
+                      ((?classroom 'classroom.students student)))))
+      (setf (student.deleted student) t)
+      (redirect-to (classroom-uri classroom :action "edit")))))
 
 (defun /student (&optional student.id action)
   (let ((student (when student.id

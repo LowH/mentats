@@ -1,7 +1,7 @@
 
 (defun classroom-uri (classroom &key action)
-  (uri-for `(/classroom ,(classroom.id classroom)
-			,@(when action `(,action)))))
+  (str "/classroom/" (classroom.id classroom)
+       (when action `("/" ,(string-downcase action)))))
 
 (defun classroom-students (c)
   (sort (remove-if #'student.deleted

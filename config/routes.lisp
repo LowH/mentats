@@ -45,7 +45,8 @@
 
 (define-route "/classroom" `(/classroom))
 (define-route "/classroom/{classroom}" `(/classroom ,classroom))
-(define-route "/classroom/{classroom}/edit" `(/classroom ,classroom "edit"))
+(define-route "/classroom/{classroom}/edit" `(/classroom ,classroom :edit))
+(define-route "/classroom/{classroom}/student" `(/classroom/student ,classroom))
 (define-route "/classroom/{classroom}/{module}" `(/classroom ,classroom))
 (define-route "/classroom/{classroom}/{module}/{domain}" `(/classroom ,classroom))
 
@@ -54,7 +55,8 @@
 
 (define-route "/student" `(/student))
 (define-route "/student/{id}" `(/student ,id))
-(define-route "/j/student/{id}" `(/student ,id "json"))
+(define-route "/student/{id}/{action}" `(/student ,id ,action))
+(define-route "/j/student/{id}" `(/student ,id :json))
 
 (define-route "/favicon.ico" (find-route "/assets/favicon.ico"))
 

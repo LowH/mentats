@@ -184,6 +184,9 @@
         </div>
         <div class="row">
           <div class="col-sm-12 col-md-9 col-lg-9">
+    <% if (Mentats.sessionUser && Mentats.sessionUser.can('edit', Mentats.Classroom, Mentats.Classroom.find(id))) { %>
+    <a href="<%- Mentats.uri.classroom(id, 'edit') %>" class="btn" style="float:right"><i class="fa fa-edit"></i>Éditer</a>
+    <% } %>
             <h1>
               <a href="<%- Mentats.uri.classroom(id) %>">
                 <%- name %>
@@ -214,16 +217,6 @@
                 <%= teachersTemplate({
                 teachers: teachers
                 }) %>
-              </div>
-              <div class="col-sm-12">
-                <div class="actions">
-                  <% if (Mentats.can('edit', Mentats.Classroom, id)) { %>
-                    <a href="<%- Mentats.uri.classroom(id, 'edit') %>"
-                       class="btn btn-default" title="Éditer la classe">
-                      <i class="fa fa-pencil"></i>
-                    </a>
-                  <% } %>
-                </div>
               </div>
             </div>
           </div>
