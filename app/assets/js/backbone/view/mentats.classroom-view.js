@@ -2,12 +2,14 @@
 Mentats.ClassroomView = Backbone.View.extend({
 
   events: {
-    'click .list-group-item.module': 'onModulesListClick'
+    'click .list-group-item.module': 'onModulesListClick',
+    'click .list-group-item.student': 'onStudentsListClick'
   },
 
   initialize: function(options) {
-    _.bindAll(this, 'domainSelect', 'moduleSelect',
-              'onCompetenceClick', 'onDomainClick', 'onModulesListClick');
+    _.bindAll(this, 'domainSelect', 'moduleSelect', 'studentSelect',
+              'onCompetenceClick', 'onDomainClick', 'onModulesListClick',
+              'onStudentsListClick');
     Backbone.View.prototype.initialize.apply(this, arguments);
     this.log('new', this);
     options = options || {};
@@ -36,6 +38,11 @@ Mentats.ClassroomView = Backbone.View.extend({
       Mentats.router.navigate(Mentats.uri.classroom(this.model, module));
       this.renderModule();
     }
+  },
+
+  studentSelect: function (student) {
+    this.student = student;
+    Mentats.router.navigate(Mentats.uri.classroom(this.model, this.module, this.domain, student));
   },
 
   onCompetenceClick: function (node, evt) {
@@ -89,6 +96,13 @@ Mentats.ClassroomView = Backbone.View.extend({
     }));
   },
 
+  onStudentsListClick: function (evt) {
+    this.log('onStudentsListClick', this);
+    if (evt && evt.preventDefault)
+      evt.preventDefault();
+    this.studentSelect(Mentats.Student.find($(evt.currentTarget).data('student')));
+  },
+
   render: function () {
     this.setElement($(this.template(this.templateAttributes())));
     this.$main = this.$('.main');
@@ -101,7 +115,14 @@ Mentats.ClassroomView = Backbone.View.extend({
       this.renderDomain();
     else if (this.module)
       this.renderModule();
+    if (this.student)
+      this.renderStudent();
     return this;
+  },
+
+  renderStudent: function () {
+    var student = this.student;
+    this.students.select(student);
   },
 
   renderModule: function () {

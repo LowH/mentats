@@ -3,7 +3,7 @@ var debug = {};
 
 _.extend(debug, {
 
-  all: false,
+  all: true,
 
   disable: function (tags) {
     var t = _.isArray(tags) ? tags : arguments;
@@ -25,7 +25,7 @@ _.extend(debug, {
     for (i = 0; i < t.length; i++) {
       var j;
       for (j = 0; j < this._tags.length; j++)
-        if (t[i] == this._tags[j])
+        if (t[i] == this._tags[j] || debug.all)
           return t[i];
     }
     return undefined;

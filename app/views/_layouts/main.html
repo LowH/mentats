@@ -71,7 +71,7 @@
       <div class="caption">
         <h1><a href="<%- Mentats.uri.module(id) %>"><%- discipline %> <span class="level"><%- level %></span></a></h1>
         <% if (owner) { %>
-          <p class="owner"><a href="<%- Mentats.uri.user(owner) %>"><%- name %></a></p>
+          <p class="owner"><a href="<%- Mentats.uri.user(owner) %>"><%- owner.get('name') %></a></p>
         <% } %>
         <% if (version) { %>
           <p class="version"><%- version %></p>

@@ -4,18 +4,20 @@ Mentats.Router = Backbone.Router.extend({
   routes: {
     "classroom/:classroom": "classroom",
     "classroom/:classroom/:module": "classroom",
-    "classroom/:classroom/:module/:domain": "classroom"
+    "classroom/:classroom/:module/:domain": "classroom",
+    "classroom/:classroom/:module/:domain/:student": "classroom"
   },
 
-  classroom: function(classroom, module, domain) {
-    console.log('Mentats.router.classroom', classroom, module, domain);
-    var c, m, d;
+  classroom: function(classroom, module, domain, student) {
+    console.log('Mentats.router.classroom', classroom, module, domain, student);
+    var c, m, d, s;
     var cb = function () {
-        if (c && (!module || m) && (!domain || d)) {
+      if (c && (!module || m) && (!domain || d) && (!student || s)) {
         var view = new Mentats.ClassroomView({
           model: c,
           module: m,
-          domain: d
+          domain: d,
+          student: s
         });
         Mentats.setBody(view);
       }
@@ -32,6 +34,10 @@ Mentats.Router = Backbone.Router.extend({
     }
     Mentats.Domain.find(domain, function (domain) {
       d = domain;
+      cb();
+    });
+    Mentats.Student.find(student, function (student) {
+      s = student;
       cb();
     });
   }

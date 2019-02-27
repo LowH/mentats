@@ -49,6 +49,7 @@
 (define-route "/classroom/{classroom}/student" `(/classroom/student ,classroom))
 (define-route "/classroom/{classroom}/{module}" `(/classroom ,classroom))
 (define-route "/classroom/{classroom}/{module}/{domain}" `(/classroom ,classroom))
+(define-route "/classroom/{classroom}/{module}/{domain}/{student}" `(/classroom ,classroom))
 
 (define-route "/j/classroom" `(/classroom))
 (define-route "/j/classroom/{classroom}" `(/classroom ,classroom "json"))

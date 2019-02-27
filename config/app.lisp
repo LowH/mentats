@@ -28,7 +28,13 @@
 
 (cl-json:set-decoder-simple-clos-semantics)
 
-(trace send-email find-template print-template cl-smtp:send-email)
+(untrace send-email find-template print-template cl-smtp:send-email)
+
+(untrace rol-server::reply-send rol-server::backend-send-headers
+       rol-server::backend-send thot:status thot:header thot:end-headers
+       rol-server::route-request rol-server::render-route
+       cl-stream:stream-write-sequence thot:reply-headers
+       thot:reply-stream thot:request-http-version)
 
 (defun setup-environment (env)
   (log-msg :INFO "setup environment ~A" (string-downcase env))
@@ -37,6 +43,7 @@
     ((:development)
      #+swank
      (setf (debug-p :conditions) t)
+     (setf (debug-p :reply) t)
      (setf (debug-p :app) t)
      (setf (debug-p :assets) t)))
   (log-msg :DEBUG "tags:~{ ~A~}" cl-debug::*debug*))

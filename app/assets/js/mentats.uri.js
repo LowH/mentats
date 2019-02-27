@@ -5,14 +5,17 @@ Mentats.uri = {
     return _.isObject(x) ? x.id : x;
   },
 
-  classroom: function (id, action_or_module, domain) {
+  classroom: function (id, action_or_module, domain, student) {
     var u = '/classroom';
     if (id) {
       u += '/' + this.id(id);
       if (action_or_module) {
         u = u + '/' + this.id(action_or_module);
-        if (domain)
+        if (domain) {
           u = u + '/' + this.id(domain);
+          if (student)
+            u = u + '/' + this.id(student);
+        }
       }
     }
     return u;

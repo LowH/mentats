@@ -37,9 +37,10 @@ Mentats.StudentsSelectorView = Backbone.View.extend({
     var m = this.model.available.get(li.data('student'));
     if (li.hasClass('active'))
       this.model.selected.reset();
-    else
-      this.model.selected.reset([m]);
-    //this.model.selected.add(m);
+    else {
+      this.model.selected.reset();
+      this.model.selected.add(m);
+    }
     evt.preventDefault();
   },
 
@@ -70,6 +71,11 @@ Mentats.StudentsSelectorView = Backbone.View.extend({
       return this.template(model);
     }, this).join();
     this.$el.html(h);
+  },
+
+  select: function (model) {
+    this.model.selected.reset();
+    this.model.selected.add(model);
   },
 
   template: _.template($('#students-selector-template').html())
