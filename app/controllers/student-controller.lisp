@@ -1,9 +1,8 @@
 
-(defun student-json (student)
-  (set-json-attributes
-   {}
-   :name (student.name student)
-   :competences (map 'vector #'student.id (student.competences student))))
+(defun student-json (s)
+  (to-json `((name . ,(student.name s))
+             (competences . (mapcar #'student.id
+                                    (student.competences s))))))
 
 (defun /student#show (student)
   (check-can :view student)
@@ -35,8 +34,11 @@
     (facts:with-transaction
       (setf (student.name student) name)
       (facts:rm ((student 'student.competences ?c)))
-      (dolist (c competences)
-        (facts:add (student 'student.competences c)))
+      (map nil (lambda (id)
+                 (let ((c (find-competence id)))
+                   (when c
+                     (facts:add (student 'student.competences c)))))
+           competences)
       (cond ((accept-p :application/json)
              (render-json (student-json student)))
             (t

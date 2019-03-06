@@ -9,7 +9,7 @@ Mentats.ClassroomView = Backbone.View.extend({
   initialize: function(options) {
     _.bindAll(this, 'domainSelect', 'moduleSelect', 'studentSelect',
               'onCompetenceClick', 'onDomainClick', 'onModulesListClick',
-              'onStudentsListClick');
+              'onStudentsListClick', 'renderStudent');
     Backbone.View.prototype.initialize.apply(this, arguments);
     this.log('new', this);
     options = options || {};
@@ -122,7 +122,7 @@ Mentats.ClassroomView = Backbone.View.extend({
 
   renderStudent: function () {
     var student = this.student;
-    this.students.select(student);
+    this.log("students", this.students);
   },
 
   renderModule: function () {
