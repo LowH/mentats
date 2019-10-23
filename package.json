@@ -7,7 +7,7 @@
     "font-awesome": "4.3.0",
     "svg.js": "1.0.0",
     "toastr": "^2.1.4",
-    "lodash": "3.10.0",
+    "lodash": "4.17.13",
     "backbone": "1.4.0"
   }
 }
